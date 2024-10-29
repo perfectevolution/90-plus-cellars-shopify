@@ -1,0 +1,14 @@
+<div class="icon-card">
+    <a href="{{block.settings.link_url}}"  target="{% if block.settings.link_external == true %}_blank{% else %}_self{%endif%}">
+        {% if block.settings.image %}
+            <img src="{{block.settings.image | img_url: 'master'}}" 
+                alt="{{block.settings.image.alt | default : block.settings.header}}" 
+                class="img-fluid"
+                width="{{block.settings.image.width}}"
+                height="{{block.settings.image.height}}"
+                loading="lazy"
+            />
+        {% endif %}
+    </a>
+    <h3 class="label font-weight-normal">{{block.settings.header}}</h3>
+</div>

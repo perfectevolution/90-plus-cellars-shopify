@@ -1,0 +1,7 @@
+{% if product.metafields.product.display_name != blank %}
+    {{ product.metafields.product.display_name }}
+    {% else %}
+      {% if product.metafields.product.varietal != blank %}
+      {{ product.metafields.product.varietal.value[0] }}
+      {% endif %}
+  {% endif %}

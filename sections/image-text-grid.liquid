@@ -1,0 +1,186 @@
+{% liquid 
+    assign first_section = false
+    if section.settings.header_tag == 'h1'
+        assign first_section = true
+    endif
+%}
+
+<section class="image-text-grid first-section--{{first_section}}" id="{{section.settings.section_id | default : section.id }}">
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-8 offset-lg-2 text-center header-wrap">
+                {% if section.settings.image  %}
+                    <img src="{{ section.settings.image | img_url: 'master' }} }}" 
+                        class="img-fluid"
+                        alt="{{section.settings.image.alt | default : section.settings.title}}"
+                        width="{{section.settings.image.width}}"
+                        height="{{section.settings.image.height}}"
+                    />        
+                {% endif %}
+                {% if section.settings.header  %}
+                    <{{ section.settings.header_tag }} class="h2 pb-3">
+                        {{section.settings.header}}
+                    </{{ section.settings.header_tag }}>
+                {% endif %}
+                {% if section.settings.body %}
+                    <div class = 'body body-1 rte'>
+                        {{section.settings.body}}
+                    </div>
+                {% endif %}
+                </div>
+            </div>
+        <div class="row justify-content-center">        
+            {% for block in section.blocks %}
+                <div class="{{ section.settings.mobile_columns }} col-lg-4  mb-5 image-text-grid__card" {{block.shopify_attributes}}>
+                    <div class=" image-text-grid__card__inner text-center ">
+                        {% if block.settings.image  %}
+                            <picture >
+                                <img src="{{ block.settings.image | img_url: 'master'  }}" 
+                                    alt="{{block.settings.image.alt | default : block.settings.header}}"
+                                    width="{{block.settings.image.width}}"
+                                    height="{{block.settings.image.height}}"
+                                />        
+                            </picture>
+                        {% endif %}
+                        {% if block.settings.header  %}
+                            <{% if first_section %}h2{%else%}h3{% endif %}  class="h6 pb-2">
+                                <b>{{block.settings.header}}</b>
+                            </{% if first_section -%}h2{%else%}h3{% endif %}>
+                        {% endif %}
+                        {% if block.settings.body  %}
+                            <div class = 'body rte '>{{block.settings.body}}</div>
+                        {% endif %}
+                        {% liquid
+                            if block.settings.link_url and block.settings.link_label
+                                render 'button', label: block.settings.link_label, url: section.settings.link_url, external: section.settings.link_external, btn_class: 'btn btn-dark mt-3'
+                            endif
+                        %}       
+                    </div>     
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Image Text Grid",
+    "settings": [{
+            "type": "text",
+            "id": "section_id",
+            "label": "Section ID",
+            "info": "Enter a url friendly id to link directly to this section."
+        },
+        {
+            "type": "text",
+            "id": "header",
+            "label": "Header"
+        },
+        {
+            "type": "select",
+            "id": "header_tag",
+            "label": "Header Tag",
+            "default": "h1",
+            "options": [{
+                    "value": "h1",
+                    "label": "H1"
+                },
+                {
+                    "value": "h2",
+                    "label": "H2"
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "id": "mobile_columns",
+            "label": "Mobile Columns",
+            "default": "col-6",
+            "options": [{
+                    "value": "col-12 col-sm-6",
+                    "label": "1"
+                },
+                {
+                    "value": "col-6",
+                    "label": "2"
+                }
+            ]
+        },
+        {
+            "type"  : "richtext",
+            "id"    : "body",
+            "label" : "Body"
+        }
+    ],
+    "blocks": [{
+        "type": "card",
+        "name": "Card",
+        "settings": [{
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+            },
+            {
+                "type": "text",
+                "id": "header",
+                "label": "Header"
+            },
+            {
+                "type": "richtext",
+                "id": "body",
+                "label": "Body"
+            },
+            {
+                "type": "text",
+                "id": "link_label",
+                "label": "Link Label"
+            },
+            {
+                "type": "url",
+                "id": "link_url",
+                "label": "Link URL"
+            },
+            {
+                "id": "link_external",
+                "type": "checkbox",
+                "label": "Open link in a new window",
+                "default": false
+            }
+        ]
+    }],
+    "presets": [{
+        "name": "Image Text Grid",
+        "settings": {
+            "header": "Image Text Grid",
+            "header_tag": "h1"
+        },
+        "blocks": [
+            {
+                "type": "card",
+                "settings": {
+                    "header": "Lorem Ipsum",
+                    "body": "<p>Lorem Ipsum dolor sit amet. Vic santum oran donor.</p>"
+                }
+            },
+            {
+                "type": "card",
+                "settings": {
+                    "header": "Lorem Ipsum",
+                    "body": "<p>Lorem Ipsum dolor sit amet. Vic santum oran donor.</p>"
+                }
+            },
+            {
+                "type": "card",
+                "settings": {
+                    "header": "Lorem Ipsum",
+                    "body": "<p>Lorem Ipsum dolor sit amet. Vic santum oran donor.</p>"
+                }
+            }
+
+
+        ]
+
+
+    }]
+}
+{% endschema %}

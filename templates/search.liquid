@@ -1,0 +1,42 @@
+<div class="container page-container search-page" >
+  <div class="row">
+    <div class="col">
+      <h1><b>Search Results</b></h1>
+      <h2 class="h1"><i>{{search.results_count}} for {{search.terms}}</i></h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="search-group">					
+        <form action ="/search">
+          <input type = 'text' name="q"  placeholder="Search" class="form-control" value="{{search.terms}}"/>
+        </form>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% paginate search.results by 100 %}
+
+  <section class="blog-grid">
+    <div class="container">
+      <div class="row">
+        {% for result in search.results %}
+            <div class="col-lg-6" >
+                {% render 'article-grid-item', article: result is_search:true %}
+            </div>
+        {% endfor %}
+      </div>
+      <div class="row">
+        <div class="col">        
+          {%- if paginate.pages > 1 -%}
+            {% render 'pagination', paginate: paginate %}
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endpaginate %}
+

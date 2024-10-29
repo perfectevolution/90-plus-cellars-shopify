@@ -1,0 +1,14 @@
+<div class="cart-drawer {% if cart.item_count == 0 %}empty{% endif %}" sh-cart-drawer>
+  <div class="nav-cart {% if cart.item_count == 0 %}empty{% endif %} cart-drawer__btn-close" sh-cart-drawer-trigger>
+    <a class="clickable" href="/cart/" aria-label="My Cart Button">
+      <span class="icon-close d-none">X</span>
+      <span id="cartCount" class="cart-count count d-none" data-count>
+        {%- if cart.item_count > 0 -%}{{ cart.item_count }}{%- endif -%}
+      </span>
+
+      {% render 'icon-close' %}
+    </a>
+  </div>
+
+  {% render 'cart' %}
+</div>

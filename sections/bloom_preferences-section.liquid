@@ -1,0 +1,68 @@
+<div class="Bloom__PreferenceSection__Container container mt-5 text-center h4" id="preferenceTextContainer">
+  <span class="preference-label">{{ section.settings.label_text }}</span>&nbsp;
+  <span class="preference-value" id="bloomPreferenceValue"></span>
+</div>
+<script>
+  
+setTimeout(function(){
+  if (bloom.storage().getItem('membership') != null) {
+    let storedLevelID = bloom.storage().getItem('membership').membershipLevelId;
+    let storedGroupID = bloom.storage().getItem('membership').preferenceGroupId;
+    let clubArray = Bloom.storefront.data.clubs;
+
+    let bloomPreferenceText = '';
+    let currentLevel = '';
+    let levelID = '';
+    let groupID = '';
+
+    //Find the current level
+    for (i in clubArray) {
+      if (clubArray[i].name === "90+ Cellars Wine Club") {
+        let club = clubArray[i];
+        for (j in club.levels) {
+          if (storedLevelID === club.levels[j].id) {
+            currentLevel = club.levels[j];
+            break;
+          }
+        }
+        break;
+      }
+    }
+    //Find the matching preference group
+    let groups = currentLevel.preferenceGroups;
+    for (i in groups) {
+      if (groups[i].id === storedGroupID) {
+        bloomPreferenceText = groups[i].values[0].name;
+        break;
+      }
+    }
+
+    //Attach preference name to HTML element
+    let preferenceNode = document.getElementById("bloomPreferenceValue");
+    let preferenceText = document.createTextNode(bloomPreferenceText);
+    preferenceNode.appendChild(preferenceText);
+  }
+}, 100);
+
+</script>
+
+{% schema %}
+  {
+  "name": "Preferences text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label_text",
+      "label": "Label text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Preferences text",
+      "blocks": [
+        
+      ]
+    }
+  ]
+}
+{% endschema %}

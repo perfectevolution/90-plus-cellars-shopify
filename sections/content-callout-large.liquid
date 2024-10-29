@@ -1,0 +1,67 @@
+
+<section id="{{ section.settings.anchor_id | default : section.id }}" 
+    class="content-callout-large ">
+    <div class="container">
+        <div class="row ">
+            <div class="col-xxl-8 offset-xxl-2  text-center">
+                <h2 class="h2 header">
+                    {{ section.settings.header }}
+                    <div class="decoration">
+                        {% render 'icon-starburst-large' %}
+                    </div>
+                </h2>
+                {% liquid
+                    if section.settings.link_url and section.settings.link_label
+                        render 'button', label: section.settings.link_label, url: section.settings.link_url, external: section.settings.link_external, btn_class: 'btn btn-primary mt-5'
+                    endif
+                %}    
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+    {
+        "name": "Content Callout Large",
+        "tag": "section",
+        "class": "section-content-callout-large",
+        "settings": [
+            {
+                "type": "text",
+                "id": "anchor_id",
+                "label": "Anchor Link ID",
+                "info" : "Enter a url friendly id to link directly to this section."
+            },
+            {
+                "type": "text",
+                "id": "header",
+                "label": "Header"
+            },
+            {
+                "type": "text",
+                "id": "link_label",
+                "label": "Link Label"
+            },
+            {
+                "type": "url",
+                "id": "link_url",
+                "label": "Link URL"
+            },
+            {
+                "id": "link_external",
+                "type": "checkbox",
+                "label": "Open link in a new window",
+                "default": false
+            }
+
+        ],
+        "presets": [
+            {
+                "name": "Large Callout",
+                "settings" : {}
+            }
+        ]
+    }
+{% endschema %}
+

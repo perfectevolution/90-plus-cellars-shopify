@@ -1,0 +1,95 @@
+{% liquid 
+    assign is_product = false
+    if article.object_type == 'product'
+        assign is_product = true
+    endif
+    assign image = article.image
+    assign url = article.url
+    assign title = article.title
+    assign tags = article.tags
+    if image == blank
+        assign image = article.images[0]
+    endif
+    capture tag_title
+        if is_product == false 
+            if tags != blank  or subtitle != blank
+                if subtitle != blank
+                    echo subtitle
+                endif
+            else 
+                if is_search == true
+                    case article.object_type
+                        when 'article'
+                            echo 'Article'
+                        when 'page'
+                            echo 'Page'
+                        when 'product'
+                            echo 'Product'
+                    endcase
+                endif
+            endif
+        endif
+    endcapture
+    if is_product
+        capture title
+            render 'product-title' product:article
+        endcapture
+    endif
+
+
+
+%}
+<div class="article-grid-item row {% if is_product %}  is-product {% endif %} {% if url != blank %} has-link {% endif %}"  >
+    <div class="article-grid-item__image col-4 col-md-3">
+        {% if url != blank %}
+            <a href="{{ url }}">
+        {% endif %}
+            <picture>
+                {% if image != blank %}
+                    {% if is_product  == true %}
+                        <img src="{{ image | img_url: '200x' }}" 
+                            class="img-fluid"
+                            alt="{{image.alt | default : article.title}}"
+                            width="{{image.width}}"
+                            height="{{image.height}}"
+                            loading="lazy"
+                        />
+                    {% endif %}
+                    {% if is_product == false %}
+                        <img src="{{ image | img_url: '170x120', crop: 'center' }}" 
+                            class="img-fluid"
+                            alt="{{image.alt | default : article.title}}"
+                            width="{{image.width}}"
+                            height="{{image.height}}"
+                            loading="lazy"
+
+                        />
+                    {% endif %}
+                    {% else %}
+                        {% render 'icon-logo-full' %}
+                {% endif %}
+            </picture>
+        {% if url != blank %}
+            </a>
+        {% endif %}     
+    </div>
+    <div class="article-grid-item__content col-8 col-lg-9">
+        {% if url != blank %}
+            <a href="{{ url }}">
+        {% endif %}
+            <h3 class="body-1 pr-2">{{title}} </h3>
+            {% if is_product == true %}
+                {% render 'product-region' product:article %}
+                {% if product.metafields.data.year != blank %} | {{product.metafields.data.year}} {% endif %}
+                {% render 'product-price' product:article variant:article.selected_or_first_available_variant%}
+            {% endif %}
+            {% if is_product == false and tag_title != blank %}
+                <p class="label pt-2">
+                    {{tag_title}}
+                </p>
+            {% endif %}
+        {% if url != blank %}
+            </a>
+        {% endif %}
+    </div>
+</div>

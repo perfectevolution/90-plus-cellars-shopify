@@ -1,0 +1,125 @@
+{% liquid
+  assign related_articles_string = product.metafields.accentuate.curated_articles
+  assign related_articles = product.metafields.accentuate.curated_articles | split: '|'
+  assign remaining_slots = section.settings.limit | minus: related_articles.size
+  
+  if remaining_slots > 0 
+    comment
+      Must use linklist since  for blog in blogs  doesn't work
+      Pulls related articles from all blogs
+    endcomment
+    for link in linklists.blogs.links
+      assign blog = link.object
+      for article in blog.articles
+        if article.metafields.accentuate.related_products contains product.handle
+          if related_articles_string != blank
+            assign related_articles_string = related_articles_string | append: '|'
+          endif
+          assign related_articles_string = related_articles_string | append: article.handle
+          assign related_articles = related_articles_string | split: '|'
+          if related_articles.size >= section.settings.limit 
+            break
+          endif
+        endif
+      endfor
+      if related_articles.size >= section.settings.limit 
+        break
+      endif
+    endfor
+  endif
+%}
+
+
+<section 
+  class="product-section-related-content {% if template == 'product' %}gsap-mininav{% endif %}">
+  {% if template == 'product' %}
+    <div id="mini-nav__recipes" class="mini-nav__anchor"></div>
+  {% endif %}
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-10 offset-md-1">
+        {% if product.metafields.accentuate.related_header != null %}
+          {% assign header = product.metafields.accentuate.related_header %}
+        {% else %}
+          {% assign header = "Our Recipes" %}
+        {% endif %}
+        {% render 'component-heading-basic', heading: header, show_swiper_buttons: true %}
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            {% if related_articles.size >= section.settings.min_articles %}
+              {% for article_handle in related_articles limit: section.settings.limit %}
+
+                {% liquid
+                  assign article = articles[article_handle]
+                  assign category = article_handle | split: '/'
+                  assign category = category[0] 
+                  if category == 'recipes'
+                    assign category = 'Recipe'
+                  else
+                    assign category = 'Article'
+                  endif
+                %}
+
+                <div class="swiper-slide" {{ block.shopify_attributes }}>
+                  <a href="{{ article.url }}" class="related-content-item">
+                    <div class="image-container">
+                      <picture>
+                        <img src="{{ article.image | img_url: '400x' }}" alt="{{ article.image.alt }}" loading="lazy">
+                        <source media="(min-width: 992px)" srcset="{{ article.image | img_url: '600x' }}">
+                      </picture>
+                    </div>
+                    <div class="related-content-item__content">
+                      <p class="related-content-item__category headline-6">{{ category }}</p>
+                      <h3 class="related-content-item__title headline-4">{{ article.title }}</h3>
+                      <p class="related-content-item__description body-1">{{ article.content | strip_html | truncate: 140 }}</p>
+                    </div>
+                  </a>
+                </div>
+              {% endfor %}
+            {% else %}
+
+              {%- assign tags = product.tags -%}
+              {%- capture tags_array -%}
+                {%- for tag in tags -%}
+                  {%- if tag contains "Category_Specialty Smoked Fish" or tag contains "Category_Other Specialties" -%}
+                    {%- assign this_tag = "fish" -%}
+                  {%- elsif tag contains "Category_" -%}
+                    {%- assign this_tag = tag | remove: "Category_" | handleize -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endcapture -%}
+
+              {%- for link in linklists.blogs.links -%}
+                {%- assign blog = link.object -%}
+                {%- if blog.handle == 'recipes' -%}  
+                  {%- for article in blog.articles -%}
+                    {%- assign match = article.title | handleize -%}
+                    {%- if match contains this_tag -%}  
+                      <div class="swiper-slide">
+                        <a href="{{ article.url }}" class="related-content-item">
+                          <div class="image-container">
+                            <picture>
+                              <img src="{{ article.image | img_url: '400x' }}" alt="{{ article.image.alt }}" loading="lazy">
+                              <source media="(min-width: 992px)" srcset="{{ article.image | img_url: '600x' }}">
+                            </picture>
+                          </div>
+                          <div class="related-content-item__content">
+                            {% comment %} <h3>{{ match }}</h3>
+                            <h2>Tag = {{ this_tag }}</h2> {% endcomment %}
+                            <p class="related-content-item__category headline-6">{{ category }}</p>
+                            <h3 class="related-content-item__title headline-4">{{ article.title }}</h3>
+                            <p class="related-content-item__description body-1">{{ article.content | strip_html | truncate: 140 }}</p>
+                          </div>
+                        </a>
+                      </div>
+                    {%- endif -%}
+                  {%- endfor -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+          </div>
+        </div><!-- .swiper -->
+      </div>
+    </div>
+  </div>
+</section>

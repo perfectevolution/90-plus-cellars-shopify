@@ -1,0 +1,254 @@
+{% liquid
+	assign menu = linklists[section.settings.menu]
+	assign product_menu = linklists[section.settings.product_menu]
+	assign current_url = canonical_url | replace : shop.secure_url , ''
+%}
+<header>
+	<nav class="navbar main-header navbar-expand-lg fixed-top" aria-label="90 Cellars Menu" id="main-menu">
+		<div class="navbar-inner ">
+			<div class="navbar-inner__menu">
+              {%  if section.settings.logo == blank  %}
+				<a class="navbar-brand" href="/" aria-label="90+ Cellars">
+					{{ '90Cellars-Logo.svg' | asset_url | img_tag }}
+				</a>
+                {%  else %}
+  				<a class="navbar-brand" href="/" aria-label="90+ Cellars">
+                    <img src="{{ section.settings.logo | img_url :'master' }}" alt="90+ Cellars Logo" />
+    			</a>
+              {%  endif  %}
+				<div class="navbar-mobile-buttons d-lg-none">
+					{% render 'btn-cart' %}
+					<div class="nav-search">
+						<a class="nav-link" 
+							data-bs-toggle="collapse" 
+							href="#search-mega-menu" 
+							aria-expanded="false" 
+							aria-controls="search-mega-menu"
+							aria-label="Search">
+							{% render "icon-search" %}
+						</a>				  
+					</div>
+					<button class="navbar-toggler" type="button" 
+						data-bs-toggle="collapse" 
+						data-bs-target="#navbar-mobile-menu" 
+						aria-controls="navbar-mobile-menu" 
+						aria-expanded="false" 
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon-custom"></span>
+						<span class="navbar-toggler-icon-custom"></span>
+					</button>
+				</div>
+	
+				<div class="collapse navbar-collapse justify-content-end ">
+					<ul class="navbar-nav">
+						{% for link in menu.links %}
+							<li class="nav-item">
+							{% if link.url == '#product-mega-menu'%}
+								<a class="nav-link" data-bs-toggle="collapse" href="#product-mega-menu" aria-expanded="false" aria-controls="product-mega-menu">
+									{{link.title}}
+									{% render 'icon-caret-down' %}
+								</a>				  
+								{% else %}
+								<a class="nav-link {% if current_url == link.url %} active{% endif %}"  href="{{link.url}}">{{link.title}}</a>
+							{% endif %}
+							</li>
+						{% endfor %}
+					</ul>
+					<div class="d-none d-lg-flex">
+						{% render 'btn-cart' %}
+						<div class="nav-search ">
+							<a class="nav-link" 
+								data-bs-toggle="collapse" 
+								href="#search-mega-menu" 
+								aria-expanded="false" 
+								aria-controls="search-mega-menu"
+								aria-label="Search">
+								{% render "icon-search" %}
+							</a>				  
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="collapse navbar-mobile-menu d-lg-none full-screen-mobile "  id="navbar-mobile-menu" data-bs-parent="#main-menu">
+				<div class="navbar-mobile-menu-inner">
+					
+					<ul class="main-links">
+						{% for link in menu.links %}
+							<li class="nav-item">
+							{% if link.url == '#product-mega-menu'%}
+								<a class="nav-link h5 d-flex justify-content-between" 
+									data-bs-toggle="collapse" 
+									href="#product-mega-menu" 
+									aria-expanded="false" 
+									aria-controls="product-mega-menu">
+									<span>{{link.title}}</span> <i class="body-1">( See More )</i>
+								</a>				  
+								{% else %}
+								<a class="nav-link h5"  href="{{link.url}}">{{link.title}}</a>
+							{% endif %}
+							<div class="icon-border d-lg-none">
+								{% render 'icon-border' %}
+							</div>
+							</li>
+						{% endfor %}
+					</ul>
+					<ul class="utility-links ">
+						{% if shop.customer_accounts_enabled %}
+							<li>
+								{% if customer %}
+									<a href="{{ routes.account_url }}">Account</a>
+								{% else %}
+									<a href="{{ routes.account_login_url }}">Login</a>
+									{% if shop.customer_accounts_optional %}
+									<span>or</span>
+									<a href="{{ routes.account_register_url }}">Create an account</a>
+									{% endif %}
+								{% endif %}
+							</li>
+						{% endif %}
+						{% for link in section.settings.utility_menu.links %}
+							<li ><a href="{{link.url}}">{{ link.title }}</a></li>
+						{% endfor %}
+					</ul>
+					<p class="label">&copy; {{ "now" | date: "%Y" }} {{ shop.name }}</p>
+				</div>
+				
+			</div>
+
+
+			{% if product_menu != blank %}
+			<div class="collapse mega-menu full-screen-mobile " id="product-mega-menu" data-bs-parent="#main-menu">
+				<div class="mega-menu__footer d-none d-lg-block">
+					<h3 class="h4"><a class="" href="{{section.settings.shop_all_url}}"><i>Shop All</i></a></h3>				
+				</div>
+				<div class="row">
+					<div class="col-lg-7">
+						<a class="mega-menu-header h4 w-100  d-lg-none"
+							data-bs-toggle="collapse" 
+							href="#product-mega-menu" 
+							aria-expanded="false" 
+							aria-controls="product-mega-menu">
+							<i class="body-1">(Back)</i><span>All Wines</span> 
+						</a>
+						<div class="icon-border d-lg-none">
+							{% render 'icon-border' %}
+						</div>
+						<div class="row main-links">
+							<h3 class="h4 d-lg-none"><a class="" href="{{section.settings.shop_all_url}}"><i>Shop All Wines</i></a></h3>				
+							{% for link in product_menu.links %}
+							<div class="col-lg-4">
+								<h3 class="subtitle-2">{{link.title}}</h3>
+								<ul>
+									{% for childLink in link.links %}
+										<li><a class="h6" href="{{childLink.url  | replace : 'Rose' , 'Rosé'}}">{{childLink.title}}</a></li>
+									{% endfor %}
+								</ul>
+								{% unless forloop.last %}
+									<div class="icon-border d-lg-none">
+										{% render 'icon-border' %}
+									</div>
+								{% endunless %}
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="col-lg-5 d-none d-lg-flex">
+						<div class="row">
+							{% if section.blocks %}
+								{% for block in section.blocks %}
+									<div class="col">
+										{% render 'icon-card' block:block %}
+									</div>
+								{% endfor %}
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			{% endif %}
+			<div class="collapse mega-menu full-screen-mobile" id="search-mega-menu" data-bs-parent="#main-menu">
+				<div class="row">
+					<div class="col">
+						<div class="search-group">					
+							<form action ="/search">
+								<input type = 'text' name="q"  placeholder="Search" class="form-control" />
+								<button type="submit" class="btn btn-primary">
+									Search
+								</button>
+								<button type="button"
+									data-bs-toggle="collapse" 
+									href="#search-mega-menu" 
+									aria-expanded="false" 
+									aria-controls="search-mega-menu" 
+									class="btn btn-outline-light">
+									Close
+								</button>		
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+
+	</nav>
+</header>
+
+
+{% schema %}
+{
+	"name": "Header",
+	"settings": [
+		{
+			"type" : "link_list",
+			"id" : "menu",
+			"label" : "Menu"
+		},
+		{
+			"type" : "image_picker",
+			"id" : "logo",
+			"label" : "Logo"
+		},
+		{
+			"type" : "link_list",
+			"id" : "product_menu",
+			"label" : "Product Menu"
+		},
+		{
+			"id" : "utility_menu",
+			"label" : "Utility Menu",
+			"type" : "link_list"				
+		},
+		{
+			"type" : "url",
+			"id" : "shop_all_url",
+			"label" : "Shop All URL"
+		}
+	],
+	"max_blocks": 2,
+    "blocks": [
+        {
+            "type": "card",
+            "name": "Card",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "header",
+                    "label": "Header"
+                },
+                {
+                    "type": "url",
+                    "id": "link_url",
+                    "label": "Link URL"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                }
+            ]
+        }
+    ]	
+}
+{% endschema %}

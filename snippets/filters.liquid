@@ -1,0 +1,407 @@
+{% comment %}
+  Renders filters for a product collection.
+
+  Accepts:
+  - filters: {String} (required) - Comma separated string of filters. E.g:  Brand,Category,Size.
+  Filters are created from tags using the structure:  Brand Name_Test Brand  
+  - custom_collection: {Object} (optional) - Collection Liquid object.
+
+  Usage:
+  {% render "filters" filters:section.settings.filters custom_collection:section.settings.custom_collection -%}
+
+{% endcomment %}
+{%- liquid
+if custom_collection != blank
+    assign collection = custom_collection
+endif 
+-%}
+
+{% unless collection.products.size == 0 %}
+
+{% liquid 
+# Generates the filters based on what is entered in the customizer for the collection-product-grid section
+assign filters = filters | split : ','
+assign filters_with_tags = ''
+for filter in filters 
+    unless filters_with_tags contains filter
+        for tag in collection.all_tags 
+            assign tag_split = tag | split: '_'
+            if tag_split[0] == filter 
+                unless filters_with_tags contains filter
+                    assign filters_with_tags = filters_with_tags | append : '||' | append: filter
+                endunless
+
+                # Count number of products tagged with each tag and create a new string
+                # associating tags with number of products that have that tag
+                assign tag_count = 0
+                for product in collection.products
+                    unless product.tags contains 'private' or product.tags contains 'Private' or product.tags contains 'PRIVATE'
+                    for product_tag in product.tags
+                        if product_tag == tag
+                        assign tag_count = tag_count | plus: 1
+                        endif
+                    endfor
+                    endunless
+                endfor
+                assign tags_with_num = tags_with_num | append: '||' | append: tag | append: ':' | append: tag_count
+            endif 
+        endfor 
+    endunless
+endfor 
+assign filters_with_tags = filters_with_tags | split: '||' | slice: 1, filters_with_tags.size
+
+# Gets sort options from collection-product-grid section.settings
+assign sortby_featured = section.settings.sortby_featured
+assign sortby_title_alphabetically = section.settings.sortby_title_alphabetically
+assign sortby_price = section.settings.sortby_price
+assign sortby_date_added = section.settings.sortby_date_added
+assign show_sort_options = false
+if sortby_featured or sortby_title_alphabetically or sortby_price or sortby_date_added
+    assign show_sort_options = true
+    assign default_sort = ''
+    if sortby_featured
+        assign default_sort = 'featured'
+    elsif sortby_title_alphabetically
+        assign default_sort = 'title-ascending'
+    elsif sortby_price
+        assign default_sort = 'price-descending'
+    elsif sortby_date_added
+        assign default_sort = 'date-descending'
+    endif
+endif
+%}
+<section class="section-product-filter">
+  <div
+    class="filters-container container"
+    mx-collection-filter
+    data-default-sort="{{ default_sort }}">
+    <div class="row mobile-filter-button d-md-none">
+      <button type="button" class="col btn btn-primary" data-bs-toggle="modal" data-bs-target="#mobileFiltersModal">Filters</button>
+    </div>
+    <div class="row filter-options">
+      <div class="col-8 col-xl-9 col-xxl-10 gx-0 d-none d-md-flex">
+        <div
+          class="btn-group"
+          role="group"
+          aria-label="Product Filters">
+          {% for filter in filters_with_tags %}
+            <div
+              class="btn-group dropdown {{filter}}-filter"
+              role="group"
+              mx-filter-group="{{filter}}"
+              data-group='{{filter | handleize}}'>
+              <button
+                class="btn btn-filter dropdown-toggle"
+                type="button"
+                id="filterButton-{{filter | handleize}}"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false">
+                {{ filter }}
+              </button>
+
+              <ul class="dropdown-menu" aria-labelledby="filterButton-{{filter | handleize}}">
+                {%- for tag in collection.all_tags -%}
+                  {%- if tag contains filter -%}
+                    {% liquid
+                      # Get the number of products with this tag
+                      assign num_products_in_tag = tags_with_num | split: tag
+                      assign num_products_in_tag = num_products_in_tag[1] | remove_first: ':' | split: '||'
+                      assign num_products_in_tag = num_products_in_tag[0]
+
+                      # Get nice name from tag to display
+                      assign stripped_tag = tag | remove_first: filter | remove_first: '_'
+                      %}
+                    <li
+                      class="dropdown-item checkbox-row "
+                      mx-filter-toggle
+                      data-group="{{ filter | handleize }}"
+                      data-filter="{{ tag  | handleize }}"
+                      data-filter-without-group="{{tag | remove_first: filter | remove_first: '_' | handleize}}">
+                      <label for="{{tag | handleize}}-filter-checkbox">
+                        <input
+                          type="checkbox"
+                          id="{{tag | handleize}}-filter-checkbox"
+                          name="{{tag | handleize}}"
+                          data-filter="{{tag | handleize}} ">
+                        <span>{{ stripped_tag }}</span>
+                      </label>
+                    </li>
+                  {%- endif -%}
+                {%- endfor -%}
+              </ul>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+      {%- if show_sort_options == true -%}
+        <div class="dropdown col gx-0 sort-options">
+          <button
+            class="btn btn-filter dropdown-toggle mt-3"
+            type="button"
+            id="sortButton"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false">
+            Sort By
+          </button>
+
+          <ul
+            class="dropdown-menu"
+            aria-labelledby="sortButton"
+            id="sort-menu">
+            {%- if sortby_featured == true -%}
+              <li
+                class="dropdown-item"
+                mx-sortby-toggle
+                data-sortby="featured">
+                <label for="featured">
+                  <input
+                    type="radio"
+                    id="featured"
+                    name="sort"
+                    value="featured"
+                    data-filter="sort">
+                  <span>Featured</span>
+                </label>
+              </li>
+            {%- endif -%}
+
+            {%- if sortby_title_alphabetically -%}
+              <li
+                class="dropdown-item"
+                mx-sortby-toggle
+                data-sortby="title-ascending">
+                <label for="a-z">
+                  <input
+                    type="radio"
+                    id="a-z"
+                    name="sort"
+                    value="a-z"
+                    data-filter="sort">
+                  <span>Alphabetically, A-Z</span>
+                </label>
+              </li>
+
+              <li
+                class="dropdown-item"
+                mx-sortby-toggle
+                data-sortby="title-descending">
+                <label for="z-a">
+                  <input
+                    type="radio"
+                    id="z-a"
+                    name="sort"
+                    value="z-a"
+                    data-filter="sort">
+                  <span>Alphabetically, Z-A</span>
+                </label>
+              </li>
+            {%- endif -%}
+
+            {%- if sortby_price -%}
+              <li
+                class="dropdown-item"
+                mx-sortby-toggle
+                data-sortby="price-descending">
+                <label for="price-descending">
+                  <input
+                    type="radio"
+                    id="price-descending"
+                    name="sort"
+                    value="price-descending"
+                    data-filter="sort">
+                  <span>Price, highest</span>
+                </label>
+              </li>
+
+              <li
+                class="dropdown-item"
+                mx-sortby-toggle
+                data-sortby="price-ascending">
+                <label for="price-ascending">
+                  <input
+                    type="radio"
+                    id="price-ascending"
+                    name="sort"
+                    value="price-ascending"
+                    data-filter="sort">
+                  <span>Price, lowest</span>
+                </label>
+              </li>
+            {%- endif -%}
+
+            {%- if sortby_date_added -%}
+              <li
+                class="dropdown-item"
+                mx-sortby-toggle
+                data-sortby="date-ascending">
+                <label for="created-at-ascending">
+                  <input
+                    type="radio"
+                    id="created-at-ascending"
+                    name="sort"
+                    value="created-at-ascending"
+                    data-filter="sort">
+                  <span>Date, old to new</span>
+                </label>
+              </li>
+              <li
+                class="dropdown-item"
+                mx-sortby-toggle
+                data-sortby="date-descending">
+                <label for="created-at-descending">
+                  <input
+                    type="radio"
+                    id="created-at-descending"
+                    name="sort"
+                    value="created-at-descending"
+                    data-filter="sort">
+                  <span>Date, new to old</span>
+                </label>
+              </li>
+            {%- endif -%}
+          </ul>
+        </div>
+      {%- endif -%}
+    </div>
+    <div class="row badge-row">
+      <div class="col-8 col-xl-9 col-xxl-10 gx-0 d-none d-md-flex">
+        <ul class="badge-container">
+          {% for filter in filters %}
+            {% for tag in collection.all_tags %}
+              {%- if tag contains filter -%}
+                <li
+                  class="filter-badge"
+                  mx-filter-toggle
+                  data-group="{{ filter | handleize }}"
+                  data-filter="{{ tag |  handleize }}">
+                  <button class="btn btn-filter-badge">{{ tag | remove_first: filter | remove_first: '_' }} 
+                    <span class="icon-holder">{% render 'icon-close' %}</span>
+                  </button>
+                </li>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+
+          <li
+            class="filter-badge clear-all"
+            mx-filter-toggle
+            data-group="clear-all-filters"
+            data-filter=""
+            data-filter-active>
+            <button class="btn btn-clear-all-filters btn-outline-dark">Clear Filters</button>
+          </li>
+
+        </ul>
+      </div>
+          
+      
+      <div class="col gx-0">
+        <p class="num-results" mx-num-results></p>
+      </div>
+
+    </div>
+
+
+    {% comment %} MOBILE FILTER MODAL {% endcomment %}
+    <div class="modal modal-filters fade d-md-none" id="mobileFiltersModal" tabindex="-1" aria-label="Filters" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+
+
+
+              <button type="button" class="btn-close dark" data-bs-dismiss="modal" aria-label="Close">{% render 'icon-close' %}</button>
+              <div class="modal-body">
+   
+                <h2 class="filters-header headline-3">Filters</h2>
+                <div class="active-filters-container">
+                  <h3 class="active-filters-header">Active Filters</h3>
+                  <ul class="badge-container">
+                    {% for filter in filters %}
+                      {% for tag in collection.all_tags %}
+                        {%- if tag contains filter -%}
+                          <li
+                            class="filter-badge"
+                            mx-filter-toggle
+                            data-group="{{ filter | handleize }}"
+                            data-filter="{{ tag |  handleize }}">
+                            <button class="btn btn-filter-badge">{{ tag | remove_first: filter | remove_first: '_' }}
+                              <span class="icon-holder">{% render 'icon-close' %}</span>
+                            </button>
+                          </li>
+                        {% endif %}
+                      {% endfor %}
+                    {% endfor %}
+    
+                    <li
+                      class="filter-badge clear-all"
+                      mx-filter-toggle
+                      data-group="clear-all-filters"
+                      data-filter=""
+                      data-filter-active>
+                      <button class="btn btn-clear-all-filters btn-outline-dark">Clear Filters</button>
+                    </li>
+    
+                  </ul>
+                </div>
+  
+  
+                {% for filter in filters_with_tags %}
+                  <div
+                    class="{{filter}}-filter filter-list-container"
+                    mx-filter-group="{{filter}}"
+                    data-group='{{filter | handleize}}'>
+                    <h3 class="filter-category-header mb-3" id="filterButton-{{filter | handleize}}-mobile">
+                      {{ filter }}
+                    </h3>
+                    <ul class="mobile-filter-list" aria-labelledby="filterButton-{{filter | handleize}}-mobile">
+                      {%- for tag in collection.all_tags -%}
+                        {%- if tag contains filter -%}
+                          {% liquid
+                            # Get the number of products with this tag
+                            assign num_products_in_tag = tags_with_num | split: tag
+                            assign num_products_in_tag = num_products_in_tag[1] | remove_first: ':' | split: '||'
+                            assign num_products_in_tag = num_products_in_tag[0]
+        
+                            # Get nice name from tag to display
+                            assign stripped_tag = tag | remove_first: filter | remove_first: '_'
+                            %}
+                          <li
+                            class="dropdown-item checkbox-row "
+                            mx-filter-toggle
+                            data-group="{{ filter | handleize }}"
+                            data-filter="{{ tag  | handleize }}"
+                            data-filter-without-group="{{tag | remove_first: filter | remove_first: '_' | handleize}}">
+                            <label for="{{tag | handleize}}-filter-checkbox">
+                              <input
+                                type="checkbox"
+                                id="{{tag | handleize}}-filter-checkbox-mobile"
+                                name="{{tag | handleize}}"
+                                data-filter="{{tag | handleize}} ">
+                              <span>{{ stripped_tag }}</span>
+                            </label>
+                          </li>
+                        {%- endif -%}
+                      {%- endfor -%}
+                    </ul>
+                  </div>
+                  {% endfor %}
+    
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="noFish container">
+    <div class="row">
+      <div class="col-12 d-flex flex-column align-items-center">
+        <h2 class="tagline headline-3 mt-3">No Results</h2>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+{% endunless %}

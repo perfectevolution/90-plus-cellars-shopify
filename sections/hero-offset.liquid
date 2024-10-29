@@ -1,0 +1,128 @@
+<section id="{{ section.settings.anchor_id | default : section.id }}" 
+    class="hero-offset">
+    <div class="container">
+        <div class="grid">
+
+            <div class="g-col-12 g-col-lg-8 order-1 order-lg-1 header-col">
+                {% if section.settings.header %}
+                    <h1 class="display-2">{{section.settings.header}}</h1>
+                {% endif %}
+
+            </div>
+
+            <div class="g-col-12 g-col-lg-6 order-2 order-lg-1 image-col">
+                {% if section.settings.image %}    
+                    <img 
+                        class="img-fluid"
+                        src="{{ section.settings.image | img_url: 'master' }}" 
+                        alt="{{ section.settings.image.alt | default : section.settings.header }}"
+                        width="{{ section.settings.image.width | default: 'auto' }}"
+                        height="{{ section.settings.image.height | default: 'auto' }}" >
+                {% endif %}
+
+            </div>
+
+            <div class="g-col-12 g-col-lg-6 g-col-xl-4 order-3 content-col">
+                {% if section.settings.body or section.settings.link_url %}
+                    <div class = 'body'>
+                        {{section.settings.body}}
+                        {% liquid
+                            if section.settings.link_url and section.settings.link_label
+                                render 'button', label: section.settings.link_label, url: section.settings.link_url, external: section.settings.link_external, btn_class: 'btn btn-dark my-3 d-inline-block'
+                            endif
+                        %}    
+                    </div>
+                {% endif %}
+            </div>            
+
+            <div class="g-col-12 g-col-lg-4 order-4 order-lg-0 d-none d-lg-block">
+                {% if section.settings.label or section.settings.sub_label %}
+                    <div class = 'labels'>
+                        <div class="decoration" >{% render 'icon-starburst-large' %}</div>
+                        <h6 class="labels-content relative">
+                            {% if section.settings.label %}
+                                <b>{{ section.settings.label }}</b>
+                            {% endif %}
+                            {% if section.settings.sub_label %}
+                                <div >{{ section.settings.sub_label }}</div>
+                            {% endif %}
+                        </h6>
+                    </div>
+                {% endif %}
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name": "Hero Offset",
+        "tag": "section",
+        "class": "section-hero-offset",
+        "settings": [
+            {
+                "type": "text",
+                "id": "section_id",
+                "label": "Section ID",
+                "info" : "Enter a url friendly id to link directly to this section."
+            },
+            {
+                "type": "text",
+                "id": "label",
+                "label": "Label"
+            },
+            {
+                "type": "text",
+                "id": "sub_label",
+                "label": "Sub Label"
+            },
+            {
+                "type": "text",
+                "id": "header",
+                "label": "Header"
+            },
+            {
+                "type": "richtext",
+                "id": "body",
+                "label": "Body"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Choose Background Image"
+            },
+            {
+                "type": "text",
+                "id": "link_label",
+                "label": "Link Label"
+            },
+            {
+                "type": "url",
+                "id": "link_url",
+                "label": "Link URL"
+            },
+            {
+                "id": "link_external",
+                "type": "checkbox",
+                "label": "Open link in a new window",
+                "default": false
+            }
+
+
+        ],
+        "presets": [
+            {
+                "name": "Hero Offset",
+                "settings": {
+                    "header": "Great Wine For All",
+                    "image": "shopify:\/\/shop_images\/beach-sunset-thailand.jpg",
+                    "link_label": "Shop All",
+                    "link_url": "shopify:\/\/collections\/all",
+                    "link_external": false
+                  }                            
+            }
+        ]
+    }
+{% endschema %}
+

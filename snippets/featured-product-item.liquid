@@ -1,0 +1,55 @@
+{% liquid
+  assign current_variant = product.selected_or_first_available_variant
+  assign custom_grid_image = false
+	if product.metafields.product.grid_image != blank
+		assign custom_grid_image = product.metafields.product.grid_image
+		assign product_image = custom_grid_image
+	endif
+
+%}
+
+<div class="col-12 col-md-4 product-grid-item product-grid-item--image">
+  <!-- Image -->
+  <div class="product-grid-item__image-wrapper">
+    <a href="{{ product.url }}" class="product-grid-item__image d-flex justify-content-center align-items-center">
+      {% if product.metafields.product.highlight != blank %}
+        <div class="product-grid-item__flag ">
+          {{ product.metafields.product.highlight }}
+        </div>
+      {% endif %}
+      <img
+        class="img-fluid d-block"
+        src="{{ product_image | image_url: width: 412 }}"
+        width="{{ product_image.width }}"
+        height="{{ product_image.height }}"
+        alt="{{ product_image.alt | default : product.title }}"
+        loading="lazy"
+      >
+    </a>
+  </div>
+</div>
+
+<div class="col-12 col-md-4 product-grid-item product-grid-item--details">
+  <div class="product-grid-item__content">
+    <a href="{{ product.url }}" class="product-grid-item__content d-block mb-3">
+      {% if product.metafields.data.lot != blank %}
+        <h3 class="label label--lot">LOT {{ product.metafields.data.lot }}</h3>
+      {% endif %}
+      <h3 class="h6 font-sans mb-2">{% render 'product-title', product: product %}</h3>
+      <div class="label">{% render 'product-region', product: product %}</div>
+      <div class="label">{{ product.metafields.data.year }}</div>
+    </a>
+    <div class="label">
+      {% render 'product-price', variant: current_variant, show_vendor: false %}
+    </div>
+    <div class="product-button">
+      {% if section.settings.button_link != blank %}
+          <a class="btn btn-dark mt-4" href="{{ section.settings.button_link }}" target="{{ section.settings.button_target }}">
+            {{ section.settings.button_text }}
+          </a>
+        {% else %}
+          <a href="{{ product.url }}" class="btn btn-dark mt-4" target="_self">Product Details</a>
+        {% endif %}
+    </div>
+  </div>
+</div>

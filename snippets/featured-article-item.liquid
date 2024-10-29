@@ -1,0 +1,15 @@
+<a class="featured-article-grid-item row " href="{{ article.url }}" >
+    <div class="article-grid-item__image col-3">
+        <img src="{{ article.image | img_url }}" 
+            class="img-fluid"
+            alt="{{article.image.alt | default : article.title}}"
+            width="{{article.image.width}}"
+            height="{{article.image.width}}"
+            loading="lazy"
+        />
+    </div>
+    <div class="article-grid-item__content col-9">
+        <h3>{{article.title}}</h3>
+        <p>{% for tag in article.tags %}{{tag}}{% if forloop.last == false %}, {% endif%}{% endfor %}</p>
+    </div>
+</a>

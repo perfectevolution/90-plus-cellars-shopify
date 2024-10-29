@@ -1,0 +1,266 @@
+{%- liquid
+  assign on_sale = false
+  assign sold_out = false
+  if product.compare_at_price > product.price or product.compare_at_price_max > 0
+    assign on_sale = true
+  endif
+  if product.available == false
+    assign sold_out = true
+  endif
+  assign current_variant = product.selected_or_first_available_variant
+
+  assign category = ''
+  for tag in product.tags
+    if tag contains 'Category_'
+      assign category = tag | split: '_'
+      assign category = category[1]
+    endif
+  endfor
+-%}
+
+{% comment %} get the primary collection {% endcomment %}
+{% liquid
+  assign primary_collection = false
+  for collection in product.collections
+    if collection.metafields.collection.primary_collection == true
+      assign primary_collection = collection
+    endif
+  endfor
+
+
+  assign description = product.content
+  if description == blank
+  assign description = product.metafields.data.description
+  endif
+
+
+%}
+
+{% capture product_form_intro_mobile %}
+		<div class="product-form-intro pb-4">		
+			<div class="product-title ">
+        <div id="product-title-wrap-mobile">
+          <h1 class="eyebrow">
+            <div class="mb-2">&nbsp;</div>
+            <div class="h3">&nbsp;</div>
+          </h1>
+        </div>
+				<div class="d-flex">
+          {% render 'product-region'%}
+				  {% if product.metafields.data.year != blank %}| {{product.metafields.data.year}} {% endif %}
+          | &nbsp;
+				  {% render 'product-price', variant: current_variant, show_vendor: false %}
+				</div>
+			</div>
+			<div
+				class="stamped-product-reviews-badge stamped-main-badge"
+				data-id="{{ product.id }}"
+				style="display: block;margin-right:5px;" >
+				{{- product.metafields.stamped.badge -}}
+			</div>
+		</div>
+
+{% endcapture %}
+
+{% capture product_form_intro %}
+		<div class="product-form-intro pb-4">		
+			<div class="product-title ">
+        <div id="product-title-wrap-desktop">
+          <h1 class="eyebrow">
+            <div class="mb-2">{% if product.metafields.data.lot != blank %} LOT {{product.metafields.data.lot}} {% endif %} {% if product.metafields.product.range != null %}&mdash; {{ product.metafields.product.range.value[0] }} {% endif %}</div>
+            <div class="h3">{% render 'product-title' %}</div>
+          </h1>
+        </div>
+				<div class="d-flex">
+          {% render 'product-region'%}
+				  {% if product.metafields.data.year != blank %}| {{product.metafields.data.year}} {% endif %}
+          | &nbsp;
+				  {% render 'product-price', variant: current_variant, show_vendor: false %}
+				</div>
+			</div>
+			<div
+				class="stamped-product-reviews-badge stamped-main-badge"
+				data-id="{{ product.id }}"
+				style="display: block;margin-right:5px;" >
+				{{- product.metafields.stamped.badge -}}
+			</div>
+		</div>
+
+{% endcapture %}
+
+
+
+{%- capture product_flags -%}{%- if on_sale -%} flag-on-sale {%- endif -%} {%- if sold_out -%} flag-out-of-stock {%- endif -%}{%- endcapture -%}
+
+<div
+  class="product-template "
+>
+  <div class="container product-single">
+    
+    <div class="row ">
+      <div class="col-lg-6 ">
+        <div class="d-lg-none">
+          {{ product_form_intro_mobile }}
+
+          
+        </div>
+        <div class="product-featured-image-container">
+          {%   unless product.metafields.product.show_in_background == true %}
+            <div class="prooduct-bg-image"  ></div>
+            <picture class="product-featured-image-wrapper">
+              <img class="product-featured-image" 
+              src="{{ product.images[0] | img_url: '900x' }}" {% if product.images[0].alt %} 
+              alt="{{ product.images[0].alt }}" {% else %} alt="{{product.title}}" {% endif %} />
+            </picture>
+          {% endunless %}
+          {%   if product.metafields.product.show_in_background == true%}
+            <img class="prooduct-bg-image" 
+              src="{{product.images[0] | img_url: '1600x' }}" alt="{{product.title}}" class="img-fluid" alt="" >
+              <div class = 'product-featured-image-spacer'></div>
+          {% endif  %}
+        </div>
+      </div>
+      <!-- // col-12 -->
+
+      <div class="product-single__details col-lg-6 ">
+        <div class="content-container">
+          
+          {% render 'product-single-form', product: product primary_collection:primary_collection  product_form_intro:product_form_intro %}
+          
+          <div class="product-description-block">          
+            {% if description != blank %}
+              <h3 class="label"><b class="label">DESCRIPTION</b></h3>
+              <div class="description">{{description}}</div>
+            {% endif %}
+          </div>
+      
+
+          {% if product.metafields.data.tasting-notes != blank %}
+            <div class="product-description-block">
+              <h3 class="label"><b class="label">TASTING NOTES</b></h3>
+              <div class="description">{{product.metafields.data.tasting-notes}}</div>
+              {% if product.metafields.product.tasting_note_icons %}
+                <div class="row tasting-notes">
+                  {% for icon in product.metafields.product.tasting_note_icons.value %}
+                    <div class="col-3 text-center tasting-note">
+                      {% render 'image' image:icon.image%}
+                      <p>{{icon.header}}</p>
+                    </div>
+                  {% endfor %}
+                </div>
+                {% else %}
+                <div class = 'pb-4'></div>
+              {% endif%}
+              
+            </div>
+          {% endif %}
+
+
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            {% if product.metafields.spec.alcohol != blank or
+              product.metafields.data.varietal != blank
+            %}
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#flush-collapseOne" 
+                    aria-expanded="false" aria-controls="flush-collapseOne">
+                    {% render 'icon-circle-caret' %}
+                    <b class="label">SPECIFICATIONS</b>
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul>
+                      {% if product.metafields.spec.alcohol != blank %}
+                        <li><b>ABV:</b> {{product.metafields.spec.alcohol}}</li>
+                      {% endif %}
+                      {% if product.metafields.product.varietal != blank  %}
+                        <li><b>Varietal:</b> {% if product.metafields.product.varietal.value.size > 1 %}<br/>{% endif %}
+                        {% for varietal in product.metafields.product.varietal.value %}
+                          {{varietal}}{% if forloop.last != true %}<br/>{% endif %}
+                          </li>
+                        {% endfor %}            
+                      {% endif %}
+                    </ul>
+                    {% if product.metafields.product.nfp_image != blank %}
+                      <!-- Button trigger modal -->
+                      <a type="button" class="nfp-button"  data-bs-toggle="modal" data-bs-target="#nfp-modal">
+                        View Nutrition Information
+                      </a>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+            {% if product.metafields.product.certifications %}
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" 
+                    type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#flush-collapseTwo" 
+                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                    {% render 'icon-circle-caret' %}
+                    <b class="label">CERTIFICATIONS</b>
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body" {{block.shopify_attributes}}>
+                    {% for certification in product.metafields.product.certifications.value %}
+                        <div class="d-flex align-items-center mb-3">
+                          <img src="{{ certification.image | img_url : '50x50' }}" class="img-fluid me-2" />
+                          <div class="label">
+                            <div><b>{{certification.header}}</b></div>
+                            <div>{{certification.sub_header}}</div>
+                          </div>
+                        </div>
+                    {% endfor %}
+
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- row -->
+  </div>
+  <!-- // container -->
+</div>
+<!-- // product container -->
+{% if product.metafields.product.nfp_image != blank %}
+    <!-- Modal -->
+  <div class="modal modal-nfp fade" id="nfp-modal" tabindex="-1" aria-labelledby="nfp-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          {% render 'icon-close' %}
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid" src="{{product.metafields.product.nfp_image | img_url : 'master'}}">
+        </div>
+        <div class="modal-footer d-lg-none">
+          <button type="button"  data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Product Template",
+  "templates": ["product"],
+  "settings": [
+
+  ]
+}
+{% endschema %}

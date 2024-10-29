@@ -1,0 +1,136 @@
+<section class="content-grid article-grid bg-{{section.settings.background}}" id="{{section.settings.section_id | default : section.id }}">
+    <div class="container">
+    
+        <div class="row mb-4">
+            <div class="col">
+                {% if section.settings.header  %}
+                <h2 class="h3 mobile-sm pb-4">{{ section.settings.header }}</h2>
+                {% endif %}
+            </div>
+            <div class="col text-end">
+                {% liquid
+                    if section.settings.link_label and section.settings.link_url
+                        render 'button', label: section.settings.link_label, url: section.settings.link_url external: section.settings.link_external btn_class:'btn btn-outline-light'
+                    endif
+                %}
+            </div>
+        </div>
+        <div class="row">
+            {% for block in section.blocks %}
+                {% assign url = block.settings.link_url %}
+                <div class="col-lg-6" {{ block.shopify_attributes }} >
+                    <div class="article-grid-item row {% if url != blank %} has-link {% endif %}"  >
+                        <div class="article-grid-item__image col-4 col-md-3">
+                            {% if url != blank %}
+                                <a href="{{ url }}" target="{% if block.settings.link_external == true %}_blank{%else%}_self{% endif %}">
+                            {% endif %}
+                            {% if block.settings.image != blank %}
+                                <picture>
+                                    <img src="{{ block.settings.image | img_url: '170x120' }}" 
+                                        class="img-fluid"
+                                        alt="{{block.settings.image.alt | default : article.block.settings.header}}"
+                                        width="{{block.settings.image.width}}"
+                                        height="{{block.settings.image.height}}"
+                                        loading="lazy"
+
+                                    />
+                                </picture>
+                            {% endif %}
+                            {% if url != blank %}
+                                </a>
+                            {% endif %}     
+                        </div>
+                        <div class="article-grid-item__content col-8 col-lg-9">
+                            {% if url != blank %}
+                                <a href="{{ url }}">
+                            {% endif %}
+                            <h3 class="h4 pb-2 pr-2">{{block.settings.header}} </h3>
+                            {% if block.settings.body != blank %}
+                               <div class="label">{{block.settings.body }}</div>
+                            {% endif %}
+                            {% if url != blank %}
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>                
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</section>
+
+{% schema %}
+    {
+        "name": "Content Grid",
+        "settings": [
+            {
+                "type": "text",
+                "id": "section_id",
+                "label": "Section ID",
+                "info" : "Enter a url friendly id to link directly to this section."
+            },
+            {
+                "type": "text",
+                "id": "header",
+                "label": "Header"
+            },
+            {
+                "type" :"select",
+                "id": "background",
+                "label": "Background Color",
+                "default": "gray-light",
+                "options": [
+                    {
+                        "value": "light",
+                        "label": "White"
+                    },
+                    {
+                        "value": "gray-light",
+                        "label": "Gray"
+                    }
+                ]
+            }
+        ],
+        "blocks": [
+            {
+                "type": "content",
+                "name": "Content",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "header",
+                        "label": "Header"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "body",
+                        "label": "BOdy"
+                    },
+                    {
+                        "type": "url",
+                        "id": "link_url",
+                        "label": "Link URL"
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "link_external",
+                        "label": "Open link in new tab"
+                    }
+        
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Content Grid",
+                "settings" : {}
+            }
+        ]
+    }
+{% endschema %}

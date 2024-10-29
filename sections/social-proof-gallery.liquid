@@ -1,0 +1,112 @@
+{% liquid
+    assign blocks = section.blocks
+    assign footer_header = section.settings.footer_header
+    assign footer_sub_header = section.settings.footer_sub_header
+    assign dataType = 'section'
+    if section.settings.metaobject_handle != blank
+        assign data = shop.metaobjects.social_proof_gallery[section.settings.metaobject_handle]
+        assign footer_header = data.footer_header
+        assign footer_sub_header = data.footer_sub_header
+        assign blocks = data.blocks.value
+        assign dataType = 'meta'
+    endif
+
+%}
+<section class="social-proof-gallery container-fluid" id="{{section.settings.id | default : section.id}}"  >
+    <div class="row">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                {% for block in blocks %}
+                    {% render 'social-proof-gallery-item' dataType : dataType block : block %}
+                {% endfor %}
+                {% for block in blocks %}
+                    {% render 'social-proof-gallery-item' dataType : dataType block : block %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center pb-5 social-proof-gallery__footer">
+                <p class="eyebrow font-sans mb-0">{{footer_header}}</p>
+                {% if section.settings.footer_sub_header_link %}
+                    <a href="{{ section.settings.footer_sub_header_link }}" target="_blank" class="font-sans footer-social-link">{{footer_sub_header}}</a>
+                {% else %}
+                    <p class="font-sans">{{footer_sub_header}}</p>
+                {% endif %}
+            </p>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Social Proof Gallery",
+    "settings": [
+        {
+            "type": "text",
+            "id": "id",
+            "label": "Section ID"
+        },
+        {
+            "type": "text",
+            "id": "metaobject_handle",
+            "label": "Metaobject Handle",
+            "info" : "If you want to use a metaobject for the content, enter the handle here. Otherwise, leave blank."
+        },
+        {
+            "type": "text",
+            "id": "footer_header",
+            "label": "Footer Header",
+            "default": "Tag us on Instagram"
+        },
+        {
+            "type": "text",
+            "id": "footer_sub_header",
+            "label": "Footer Sub Header",
+            "default": "@90cellars"
+        },
+        {
+            "type": "url",
+            "id": "footer_sub_header_link",
+            "label": "Footer Sub Header Link"
+        }
+
+    ],
+    "blocks": [
+        {
+            "type": "card",
+            "name": "Card",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+
+                },
+                {
+                    "type": "text",
+                    "id": "header",
+                    "label": "Header",
+                    "default": "Default Header"
+                },
+                {
+                    "type": "text",
+                    "id": "sub_header",
+                    "label": "Sub Header",
+                    "default": "Default Sub Header"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Social Proof Gallery",
+            "settings": {
+                "id": "social-proof-gallery",
+                "metaobject_handle": "social-proof-gallery-main"
+              }                            
+        }
+    ]
+}
+{% endschema %}
+

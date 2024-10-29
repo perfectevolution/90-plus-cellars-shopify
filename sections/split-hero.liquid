@@ -1,0 +1,142 @@
+{% liquid
+    assign image_pos = section.settings.image_position
+    assign body = section.settings.body
+    assign link_url = section.settings.link_url
+    assign link_text = section.settings.link_text
+    assign link_target = section.settings.link_target
+    if collection
+        assign body = collection.description
+    endif
+    assign tags = false 
+    if blog
+        if current_tags
+            assign tags = current_tags
+        endif
+    endif 
+    
+
+%}
+
+<section class="split-hero  image-position--{{ image_pos }}" id="{{section.settings.section_id | default : section.id}}">
+    <div class="container container-main">
+        <div class="row row-main">
+            <div class="order-2 {% if image_pos == 'right' %} order-md-1 {% endif %} col-12 col-md-6 col-lg-4 split-hero__col-content">
+                {% if tags %}
+                    <h1 class="split-hero__header h2">{{ tags | join: ', ' }}</h1>
+                    {% else %}
+                        <h1 class="split-hero__header h2">{{ section.settings.header }}</h1>
+                {% endif %}
+                {% if body != blank %}
+                    <div class="split-hero__body body-2 my-0">{{ body }}</div>
+                {% endif  %}
+                {% if link_url != blank %}
+                  <a class="btn btn-dark mt-4" href="{{ link_url }}" target="{{ link_target }}">
+                    {{ link_text }}
+                  </a>
+                {% endif %}
+            </div>
+            <div class="order-1 {% if image_pos == 'right' %} order-md-2 {% endif %} col-12 col-md-6 col-lg-8 split-hero__col-image">
+                {% if section.settings.image %}    
+                    <picture class="split-hero__image img-fluid"> 
+                        {% if section.settings.mobile_image != blank %}
+                            <source media="(max-width: 768px)" srcset="{{section.settings.mobile_image | img_url: 'master'}}" />
+                        {% endif %}
+        
+                        {% render "image" image:section.settings.image className:""%}
+                    </picture>
+                {% endif %}
+                {% if section.settings.script != blank %}
+                    <div class="split-hero__script script">{{section.settings.script}}</div>   
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name": "Split Hero",
+        "tag": "section",
+        "class": "hero",
+        "settings": [
+            {
+                "type": "text",
+                "id": "section_id",
+                "label": "Anchor Link ID"
+            },
+            {
+                "type": "select",
+                "id": "image_position",
+                "label": "Image Position",
+                "options": [
+                    {
+                        "value": "left",
+                        "label": "Left"
+                    },
+                    {
+                        "value": "right",
+                        "label": "Right"
+                    }
+                ],
+                "default": "right"
+            },
+            {
+                "type": "text",
+                "id": "header",
+                "label": "Header Text"
+            },
+            {
+                "type": "richtext",
+                "id": "body",
+                "label": "Body Text"
+            },
+            {
+              "type": "text",
+              "id": "link_text",
+              "label": "CTA Text"
+            },
+            {
+              "type": "url",
+              "id": "link_url",
+              "label": "CTA Link"
+            },
+            {
+              "type": "radio",
+              "id": "link_target",
+              "label": "Open link in",
+              "default": "_self",
+              "options": [
+                {
+                  "value": "_self",
+                  "label": "Current window"
+                },
+                {
+                  "value": "_blank",
+                  "label": "New window"
+                }
+              ]
+            },
+            {
+                "type": "text",
+                "id": "script",
+                "label": "Script Text"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Desktop Image"
+            },
+            {
+                "type": "image_picker",
+                "id": "mobile_image",
+                "label": "Mobile Image"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Split Hero",
+                "settings" : {}
+            }
+        ]
+    }
+{% endschema %}

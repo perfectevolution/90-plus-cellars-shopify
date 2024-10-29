@@ -1,0 +1,7 @@
+<div id="edit-address-{{address.id}}-modal"  class=" pb-5 my-4  collapse" data-bs-parent="#customer-addresses">
+    <h2 class="h4">Edit Address</h2>
+    {%- form 'customer_address', address , class:'form' -%}
+        {% render 'customer-address-form' form:form address:address %}
+        
+    {%- endform -%}
+</div>      

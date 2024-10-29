@@ -1,0 +1,26 @@
+{% liquid 
+  if fill ==  blank 
+    assign fill = "rgba(255,255,255,0)"
+  endif
+  if stroke == blank
+    assign stroke = "#231f20"
+  endif
+  if direction == blank
+    assign direction = "next"
+  endif
+%}
+<svg class="icon-circle-caret icon-circle-caret--{{direction}}" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
+  <g  data-name="Group 22027" transform="translate(55) rotate(90)">
+    <g class="icon-circle-caret__circle" data-name="Ellipse 246" transform="translate(0 0)" 
+      fill="{{fill}}" stroke="{{ stroke }}" stroke-width="1.25">
+      <circle cx="27.5" cy="27.5" r="27.5" stroke="none"/>
+      <circle cx="27.5" cy="27.5" r="26.875" fill="none"/>
+    </g>
+    <path class="icon-circle-caret__caret" 
+      data-name="Path 137111" 
+      d="M2.365,10.982c.149-.156.231-.246.317-.332Q7.1,6.229,11.528,1.809a1.091,1.091,0,0,0,.39-.964.993.993,0,0,0-1.6-.631,2.625,2.625,0,0,0-.224.214L.44,10.084a1.027,1.027,0,0,0,0,1.683q4.849,4.85,9.7,9.7a1.028,1.028,0,0,0,1.088.34.985.985,0,0,0,.5-1.555,3.247,3.247,0,0,0-.278-.292q-4.378-4.378-8.758-8.754A2.355,2.355,0,0,0,2.365,10.982Z" 
+      transform="translate(38.354 20.316) rotate(90)" 
+      fill="{{ stroke }}" 
+      stroke="{{ stroke }}" stroke-width="0.75"/>
+  </g>
+</svg>

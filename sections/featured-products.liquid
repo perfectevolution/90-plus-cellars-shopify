@@ -1,0 +1,104 @@
+{% liquid
+    assign layout = section.settings.layout | default : 'swiper' 
+    assign coll = collections[section.settings.collection]
+    assign products = coll.products
+	assign columns = section.settings.columns | default: 6
+%}
+<section class = 'featured-products layout--{{layout }} theme--gray-light' 
+	animated="{{ section.settings.animated  }}"
+	id="{{ section.settings.anchor_id | default : section.id}}">
+    {% render 'featured-products' products:products recommeded:false product:false layout:layout collection:coll columns:columns %}
+</section>
+
+
+
+
+{% schema %}
+{	
+    "name": "Featured Products",
+    "tag": "section",
+    "class" : "section-featured-products",
+	"settings" : [
+        
+		{
+			"type": "select",
+			"id": "layout",
+			"label": "Layout",
+			"options": [
+				{
+				  "value": "grid",
+				  "label": "Grid"
+				},
+				{
+				  "value": "swiper",
+				  "label": "Swiper"
+				}
+			  ]
+		},
+		{
+			"type": "checkbox",
+			"id": "animated",
+			"label": "Animated",
+			"info": "Animate the products in from the right",
+			"default": true
+		},
+		{
+			"type": "select",
+			"id": "columns",
+			"label": "Columns",
+			"options": [
+				{
+				  "value": "6",
+				  "label": "6"
+				},
+				{
+				  "value": "4",
+				  "label": "4"
+				},
+				{
+				  "value": "3",
+				  "label": "3"
+				}
+			  ]
+		},
+		{
+			"type": "text",
+			"id": "header",
+			"label": "Header"
+		},
+		{
+			"type": "collection",
+			"id": "collection",
+			"label": "Collection"
+		},
+        {
+            "type": "text",
+            "id": "link_label",
+            "label": "Link Label"
+        },
+        {
+            "type": "url",
+            "id": "link_url",
+            "label": "Link URL"
+        },
+        {
+            "id": "link_external",
+            "type": "checkbox",
+            "label": "Open link in a new window",
+            "default": false
+        }
+
+	],
+	"presets" : [{
+		"name" : "Featured Products",
+		"category" : "Sections",
+        "settings": {
+            "layout": "grid",
+            "header": "Explore the world of wine",
+            "collection": "easter-wine-collection",
+			"animated" : true
+          }
+	}]
+
+}
+{% endschema %}

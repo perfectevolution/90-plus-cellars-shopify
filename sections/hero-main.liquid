@@ -1,0 +1,227 @@
+{%
+    assign btn_class = 'btn mt- mt-lg-4 ' | append: section.settings.btn_color
+%}
+<section id="{{ section.settings.anchor_id | default : section.id }}" 
+    class="hero-main theme--{{section.settings.theme}} layout--{{ section.settings.layout }} mobile-layout--{{ section.settings.mobile_layout }} ">
+    {% if section.settings.image %}    
+        <picture>
+            {% if section.settings.mobile_image != blank %}
+                <source media="(max-width: 768px)" srcset="{{section.settings.mobile_image | img_url: 'master'}}" />
+            {% endif %}
+            <img 
+                class="img-fluid"
+                src="{{ section.settings.image | img_url: 'master' }}" 
+                alt="{{ section.settings.image.alt | default : section.settings.header }}"
+                width="{{ section.settings.image.width | default: 'auto' }}"
+                height="{{ section.settings.image.height | default: 'auto' }}" >
+        </picture >
+    {% endif %}
+        <div class="content-wrap container ">
+            <h1 class="display-1 hero-main__header ">
+                <div>{{ section.settings.header }}</div>
+                {%- if section.blocks.size > 0 -%}
+                    {%- capture words -%}
+                        {%- for block in section.blocks -%}
+                            ,{{- block.settings.word -}}
+                        {%- endfor-%}
+                    {%- endcapture -%}
+                    <div class="rotating-words ">{{ section.blocks[0].settings.word }}</div>
+                    {% assign words = words | replace_first:',' | split :','%}
+                    <script class = 'rotating-words-data' type="application/json">
+                        {{ words | json }}
+                    </script>
+                {%- endif -%}
+            </h1>
+    
+            {% if section.settings.body %}
+                <p class = 'h4'>{{section.settings.body}}</p>
+            {% endif %}
+            {% render 'button', 
+                label: section.settings.link_label, url: 
+                section.settings.link_url, 
+                external: section.settings.link_external, 
+                btn_class: btn_class,
+            %}    
+        </div>
+
+</section>
+
+
+
+{% schema %}
+    {
+        "name": "Hero Main",
+        "tag": "section",
+        "class": "section-hero-main",
+        "settings": [
+            {
+                "type": "text",
+                "id": "anchor_id",
+                "label": "Anchor Link ID",
+                "info" : "Enter a url friendly id to link directly to this section."
+            },
+            {
+                "type": "select",
+                "id": "theme",
+                "label": "Text Color",
+                "options": [
+                    {
+                        "value": "light",
+                        "label": "Light Text"
+                    },
+                    {
+                        "value": "dark",
+                        "label": "Dark Text"
+                    }
+                ],
+                "default": "light"
+            },
+            {
+                "type": "select",
+                "id": "btn_color",
+                "label": "Button Color",
+                "options": [
+                    {
+                        "value": "btn-outline-light",
+                        "label": "Light "
+                    },
+                    {
+                        "value": "btn-primary",
+                        "label": "Dark "
+                    }
+                ],
+                "default": "btn-primary"
+            },
+            {
+                "type": "select",
+                "id": "layout",
+                "label": "Layout",
+                "options": [
+                    {
+                        "value": "bottom-left",
+                        "label": "Bottom Left"
+                    },
+                    {
+                        "value": "bottom-right",
+                        "label": "Bottom Right"
+                    },
+                    {
+                        "value": "top-left",
+                        "label": "Top Left"
+                    },
+                    {
+                        "value": "top-right",
+                        "label": "Top Right"
+                    },
+                    {
+                        "value": "center-left",
+                        "label": "Center Left"
+                    },
+                    {
+                        "value": "center-right",
+                        "label": "Center Right"
+                    }
+                ],
+                "default": "bottom-left"
+            },
+            {
+                "type": "select",
+                "id": "mobile_layout",
+                "label": "Mobile Layout",
+                "options": [
+                    {
+                        "value": "top-left",
+                        "label": "Top Left"
+                    },                    
+                    {
+                        "value": "center-left",
+                        "label": "Center Left"
+                    },
+                    {
+                        "value": "bottom-left",
+                        "label": "Bottom Left"
+                    },
+                    {
+                        "value": "top-right",
+                        "label": "Top Right"
+                    },                    
+                    {
+                        "value": "center-right",
+                        "label": "Center Right"
+                    },
+                    {
+                        "value": "bottom-right",
+                        "label": "Bottom Right"
+                    }
+                ],
+                "default": "top-left"
+            },
+
+            {
+                "type": "text",
+                "id": "header",
+                "label": "Header"
+            },
+            {
+                "type": "textarea",
+                "id": "body",
+                "label": "Body"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Choose Background Image"
+            },
+            {
+                "type": "image_picker",
+                "id": "mobile_image",
+                "label": "Choose Mobile Background Image"
+            },
+            {
+                "type": "text",
+                "id": "link_label",
+                "label": "Link Label"
+            },
+            {
+                "type": "url",
+                "id": "link_url",
+                "label": "Link URL"
+            },
+            {
+                "id": "link_external",
+                "type": "checkbox",
+                "label": "Open link in a new window",
+                "default": false
+            }
+
+
+        ],
+        "blocks": [
+            {
+                "type": "word",
+                "name": "Word",
+                "settings": [
+                    {
+                        "id": "word",
+                        "type": "text",
+                        "label": "word"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Hero Main",
+                "settings": {
+                    "anchor_id": "",
+                    "header": "Great Wine For All",
+                    "image": "shopify:\/\/shop_images\/beach-sunset-thailand.jpg",
+                    "link_label": "Shop All",
+                    "link_url": "shopify:\/\/collections\/all",
+                    "link_external": false
+                  }                            
+            }
+        ]
+    }
+{% endschema %}
+

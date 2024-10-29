@@ -1,0 +1,33 @@
+{% paginate blog.articles by 12 %}
+<section class="blog-grid">
+  <div class="container">
+    <div class="row">
+      {% for article in blog.articles %}
+          <div class="col-lg-6" >
+              {% render 'article-grid-item', article: article %}
+          </div>
+      {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col">
+      
+        {%- if paginate.pages > 1 -%}
+          {% render 'pagination', paginate: paginate %}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+
+
+
+</section>
+
+{% endpaginate %}
+
+
+{% schema %}
+  {
+    "name": "Blog Grid",
+    "settings": []
+  }
+{% endschema %}

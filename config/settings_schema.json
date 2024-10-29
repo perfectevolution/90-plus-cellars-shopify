@@ -1,0 +1,259 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "MX Shopiy",
+    "theme_version": "7.0.1",
+    "theme_author": "Shopify",
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
+  },
+  {
+    "name": "Favicon",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon",
+        "info": "Chose a Favicon"
+      }
+    ]
+  },
+  {
+    "name": "Cart",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "cart_drawer_enabled",
+        "label": "Enable Cart Drawer",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Shipping"
+      },
+      {
+        "type": "text",
+        "id": "cart_shipping_delay_message",
+        "label": "Shipping Delay Message"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_free_shipping_enabled",
+        "label": "Show Free Shipping Notice In Cart",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "cart_free_shipping_threshold_product_page_message",
+        "label": "Free Shipping Threshold Product Page Message",
+        "default": "Free Shipping on orders of "
+      },
+      {
+        "type": "select",
+        "id": "cart_free_shipping_threshold_type",
+        "label": "Free Shipping Threshold Type",
+        "default": "price",
+        "options": [
+          {
+            "value": "price",
+            "label": "Price"
+          },
+          {
+            "value": "quantity",
+            "label": "Quantity"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "cart_free_shipping_threshold",
+        "label": "Free Shipping Threshold",
+        "info": "Enter amount for customer spend to allow free shipping"
+      },
+      {
+        "type": "text",
+        "id": "cart_free_shipping_unit_type",
+        "label": "Free Shipping Unit Type",
+        "info": "Enter the unit type for the free shipping threshold, for example 'bottle' or 'case' or 'box'. Typically used when the threshold type is 'quantity"
+      },
+      {
+        "type": "text",
+        "id": "cart_free_shipping_notice_passed",
+        "label": "Free Shipping Notice Amount Passed",
+        "info": "Note to display when the customer has reached the free shipping amount.",
+        "default": "<b>Congrats! You're getting free shipping!<\/b>"
+      },
+      {
+        "type": "text",
+        "id": "cart_free_shipping_notice_almost_passed",
+        "label": "Free Shipping Notice Almost There",
+        "info": "Note to display when the customer is close to getting free shipping. The __AMOUNT__ will be replaced with the amount needed to spend, __UNIT__ will be replaced with the unit type entered above.",
+        "default": "You're almost there.<br\/>Spend <b>$__AMOUNT__<\/b> more for <b>free shipping.<\/b>"
+      }
+    ]
+  },
+  {
+    "name": "Retailers",
+    "settings": [
+      {
+        "type" :"header",
+        "content": "Buy Online Locations"
+      },
+      {
+        "type" :"paragraph",
+        "content": "This setting manages the url for the buy local option. All other online Locations can be managed in the Online Vendors Metaobject"
+      },
+      {
+        "type": "url",
+        "id": "retailers_nearby",
+        "label": "Nearby"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.social-media.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.social-media.settings.header.content"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter_link",
+        "label": "t:settings_schema.social-media.settings.social_twitter_link.label",
+        "info": "t:settings_schema.social-media.settings.social_twitter_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_facebook_link",
+        "label": "t:settings_schema.social-media.settings.social_facebook_link.label",
+        "info": "t:settings_schema.social-media.settings.social_facebook_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_pinterest_link",
+        "label": "t:settings_schema.social-media.settings.social_pinterest_link.label",
+        "info": "t:settings_schema.social-media.settings.social_pinterest_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram_link",
+        "label": "t:settings_schema.social-media.settings.social_instagram_link.label",
+        "info": "t:settings_schema.social-media.settings.social_instagram_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_tiktok_link",
+        "label": "t:settings_schema.social-media.settings.social_tiktok_link.label",
+        "info": "t:settings_schema.social-media.settings.social_tiktok_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_tumblr_link",
+        "label": "t:settings_schema.social-media.settings.social_tumblr_link.label",
+        "info": "t:settings_schema.social-media.settings.social_tumblr_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_snapchat_link",
+        "label": "t:settings_schema.social-media.settings.social_snapchat_link.label",
+        "info": "t:settings_schema.social-media.settings.social_snapchat_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_youtube_link",
+        "label": "t:settings_schema.social-media.settings.social_youtube_link.label",
+        "info": "t:settings_schema.social-media.settings.social_youtube_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_vimeo_link",
+        "label": "t:settings_schema.social-media.settings.social_vimeo_link.label",
+        "info": "t:settings_schema.social-media.settings.social_vimeo_link.info"
+      }
+    ]
+  },
+  {
+    "name": "Bloom",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Cart date of birth"
+      },
+      {
+        "type": "checkbox",
+        "id": "bloom_cart_dob_show",
+        "label": "Ask for date of birth",
+        "info": "This will be required for new club signups and orders containing alcohol",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "bloom_cart_dob_label",
+        "label": "Label",
+        "default": "Please enter your date of birth to checkout"
+      },
+      {
+        "type": "select",
+        "id": "bloom_cart_dob_minimum_age",
+        "label": "Minimum age requirement",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "18",
+            "label": "18"
+          },
+          {
+            "value": "19",
+            "label": "19"
+          },
+          {
+            "value": "20",
+            "label": "20"
+          },
+          {
+            "value": "21",
+            "label": "21"
+          }
+        ],
+        "default": "0",
+        "info": "Customer will be required to input a date at least this number of years old"
+      },
+      {
+        "type": "header",
+        "content": "Shipping notice"
+      },
+      {
+        "type": "checkbox",
+        "id": "bloom_shipping_notice_enabled",
+        "label": "Display shipping notice",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "bloom_shipping_notice_title",
+        "label": "Title",
+        "default": "Shipping notice"
+      },
+      {
+        "type": "richtext",
+        "id": "bloom_shipping_notice_message",
+        "label": "Message",
+        "default": "<p>We are experiencing some delays in shipping. You will be notified by email when your order ships.<\/p>"
+      },
+      {
+        "type": "header",
+        "content": "Tock"
+      },
+      {
+        "type": "text",
+        "id": "tock_subdomain",
+        "label": "Tock subdomain",
+        "info": "If you use Tock, enter the Tock subdomain."
+      }
+    ]
+  }
+]

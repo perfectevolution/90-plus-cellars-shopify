@@ -1,0 +1,185 @@
+{% liquid
+        assign col_class = 'col-md-6'
+        assign layout = section.settings.layout
+        if section.settings.layout == 'three-column' 
+            assign col_class = 'col-6 col-lg-4'
+        endif
+%}
+<section class="image-text-panels pb-4  layout--{{layout}} {% if request.design_mode %} design-mode {% endif %} " id="{{ section.settings.section_id  | default : section.id}}">
+    <div class="container">
+        {% if section.settings.header %}
+            <div class="row">
+                <div class="col">
+                    <h2 class="h3 mb-4">{{section.settings.header}}</h2>
+                </div>
+            </div>
+        {% endif %}
+        <div class = 'row'>
+                {% for block in section.blocks %}
+                    {% liquid 
+                        if block.type == 'article'
+                            assign article = block.settings.article 
+                            assign parts = article | split: "/"
+                            assign first_part = parts[0]
+                            assign blog = blogs[first_part]
+                            assign header = article.title
+                            assign body = article.excerpt
+                            assign image = article.image
+                            assign link_label = 'Read Post'
+                            assign link_url = article.url
+                        endif
+                        if block.type == 'content'
+                            assign header = block.settings.header
+                            assign body = block.settings.body
+                            assign link_label = block.settings.link_label
+                            assign link_url = block.settings.link_url
+                            assign image = block.settings.image
+                        endif                        
+                    %}
+                    <div class="two-column-panels__block content mb-5 pb-3 {{col_class}} px-md-2" {{block.shopify_attributes}}>
+                        <div class="content-wrap {% if link_url != blank %} has-link {% endif %}">
+                            {% if link_url != blank %}
+                                <a class="two-column-panels__link" 
+                                    href="{{ link_url }}" aria-label="{{ header }}" {% if block.settings.link_external %}target="_blank"{% endif %}></a>
+                            {% endif %}
+                            <img class="img-fluid mb-4" 
+                                src="{{ image | img_url: '560x'}}" {% if image.alt %} alt="{{ image.alt }}" {% else %} alt="{{block.settings.header}}" {% endif %} loading="lazy"
+                                width="{{image.width }}"   height="{{image.height}}"
+                            >
+                            {% if header != blank %}
+                                <h3 class=" h4 mb-3">{{ header }}</h3>
+                            {% endif %}
+                            {% if body != blank %}
+                                <p class="body-2 mb-3">{{ body }}</p>
+                            {% endif %}
+
+                        </div>
+                        {% if link_url != blank and link_label != blank %}                    
+                            <a class="mt-3  btn btn-dark" href="{{ link_url }}" {% if block.settings.link_external %}target="_blank"{% endif %}>{% if link_label != blank %}{{ link_label }}{% endif %}</a>
+                        {% endif %}
+                    </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Image Text Panels",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "Section ID"
+        },
+        {
+            "type" : "text",
+            "id" : "header",
+            "label" : "Header"
+        },
+        {
+            "type": "select",
+            "id": "layout",
+            "label": "Layout",
+            "options": [
+                {
+                    "value": "two-column",
+                    "label": "2 Column"
+                },
+                {
+                    "value": "three-column",
+                    "label": "3 Column"
+                }
+            ],
+            "default": "two-column"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "article",
+            "name": "Article",
+            "settings": [
+                {
+                    "type": "article",
+                    "id": "article",
+                    "label": "Choose an Article"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "link_external",
+                    "label": "Open Link in New Window",
+                    "default": false
+                }
+            ]
+        },
+        {
+            "type": "content",
+            "name": "Content",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "header",
+                    "label": "Header"
+                },
+                {
+                    "type": "richtext",
+                    "id": "body",
+                    "label": "Body"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Choose an Image"
+                },
+                {
+                    "type": "text",
+                    "id": "link_label",
+                    "label": "Link Label"
+                },
+                {
+                    "type": "url",
+                    "id": "link_url",
+                    "label": "Link URL"
+                },
+                {
+                    "id": "link_external",
+                    "type": "checkbox",
+                    "label": "Open link in a new window",
+                    "default": false
+                }
+
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Image Text Panels",
+            "settings" : {},
+            "blocks" : [
+                {
+                    "type": "content",
+                    "settings": {
+                        "header": "Lorum IPsum",
+                        "image": "shopify:\/\/shop_images\/beach-sunset-thailand.jpg",
+                        "link_label": "Link Label",
+                        "link_url": "/",
+                        "link_external": false
+                    }
+                },
+                {
+                    "type": "content",
+                    "settings": {
+                        "header": "Lorum Ipsum",
+                        "image": "shopify:\/\/shop_images\/beach-sunset-thailand.jpg",
+                        "link_label": "Link Label",
+                        "link_url": "/",
+                        "link_external": false
+                    }
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,23 @@
+<section class="footer-fix" id="{{section.settings.section_id | default : section.id }}">
+
+</section>
+
+{% schema %}
+    {
+        "name": "Footer Fix",
+        "settings": [
+            {
+                "type": "text",
+                "id": "section_id",
+                "label": "Section ID",
+                "info" : "Enter a url friendly id to link directly to this section."
+            }
+        ],
+        "presets": [
+            {
+                "name": "Footer Fix",
+                "settings" : {}
+            }
+        ]
+    }
+{% endschema %}

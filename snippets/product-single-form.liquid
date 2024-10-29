@@ -1,0 +1,187 @@
+{% assign current_variant = product.selected_or_first_available_variant %}
+{% capture "form_classes" -%}
+product-add-form product-form-{{ product.id }}
+{%- unless true %} product-form--hide-variant-labels {% endunless %}
+{%- if false and product.has_only_default_variant %} product-form--payment-button-no-variants {%- endif -%}
+{%- if current_variant.available == false %} product-form--variant-sold-out {%- endif -%}
+{%- endcapture %}
+
+	<div class = 'product-form mb-0' 
+		sh-product-form 
+		sh-cart-aware-product-form
+		data-product-id="{{product.id}}">
+		{% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
+
+		<div class="d-none d-lg-block">
+			{{ product_form_intro }}
+		</div>
+
+
+		<!-- Single Variant -->
+		{% if product.has_only_default_variant %}
+		<input name='id' value="{{current_variant.id}}" type='hidden' />
+		{% endif %}
+		<!-- // Single Variant -->
+
+		
+		{% if product.has_only_default_variant or product.variants.size == 1 %}
+			<div class="product-single__single-variant">
+				{% if current_variant.title != 'Default Title'%}
+				<h2 >{{current_variant.title}}</h2>
+				{% endif %}
+				<input type = 'hidden' name="id" value="{{current_variant.id}}" />
+			</div>
+		{% endif %}
+
+		{% if product.variants.size > 1  %}
+			<div class="product-single__multiple-variants">
+				<!-- Multiple Variants or options -->
+					<div class="form-group">
+						<select name="id"
+							data-productid="{{product.id}}"
+							sh-option-select
+							id="product-select-{{ product.id }}" class=" form-control product-form__variants no-js ">
+							{% for variant in product.variants %}
+							<option value="{{ variant.id }}"
+								{%- if variant == current_variant %} selected="selected" {%- endif -%} >
+								{{ variant.title }}  {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
+							</option>
+							{% endfor %}
+						</select>
+					</div>
+				<!-- // multiple variants  -->
+				<!-- swatch Options -->
+				{% for option in product.options %}
+					<div class="row product-form-row">
+						<div class="col">
+						<span class = 'swatch-container-label'>Select a {{option}}</span>
+						{% render 'swatch' with option as swatch %}
+						</div>
+					</div>
+				{% endfor %}
+				<!-- // swatch Options -->
+
+			</div>
+
+		{% endif %}
+
+		<div class="product-form__footer d-flex ">
+			<div sh-quantity-component data-min-value="1" class = 'd-none'>
+				<div class="product-form__qty-title visually-hidden"><span class="option-title">Quantity</span></div>
+				<div class="product-form__qty me-3 mb-3 mb-lg-0  ">
+					<a class="qty-dec clickable"  
+						aria-label="Decrease Quantity" 
+						data-quantity-dec ><span class="icon-minus">-</span></a>
+					<input class="qty-input"type="text" id="Quantity-{{ product.id }}"
+						name="quantity" value="1" min="1" pattern="[0-9]*"
+						title="Qty" min="0" data-quantity-input >
+					
+					<a class="qty-inc clickable" 
+						aria-label="Increase Quantity"
+						data-quantity-inc  ><span class="icon-plus">+</span></a>
+				</div><!-- .product-qty -->
+			</div>
+
+			<div class="product-form__item product-form__item--submit
+				{%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}" >
+				<button type="submit" name="add" class="btn btn-primary btn-test btn-block me-3 mb-3 mb-lg-0"
+					{% unless current_variant.available %} aria-disabled="true"{% endunless %}
+					aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
+					sh-add-to-cart data-product-id="{{product.id}}">
+					<span sh-add-to-cart-text>
+						{% unless current_variant.available %}
+						{{ 'products.product.sold_out' | t }}
+						{% else %}
+						{{ 'products.product.add_to_cart' | t }}
+						{% endunless %}
+					</span>
+					<span class="d-none" data-loader></span>
+				</button>
+				{% if product.metafields.product.hide_find_nearby != true %}
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-outline-light mb-3 mb-lg-0 " data-bs-toggle="modal" data-bs-target="#find-nearby-modal">
+						Find Nearby
+					</button>								
+				{% endif %}
+			</div>
+		</div>
+
+		{% if product.metafields.product.hide_find_nearby != true %}
+
+			<!-- Modal -->
+			<div class="modal fade" id="find-nearby-modal" tabindex="-1" aria-labelledby="find-nearby-modals" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div class="modal-header d-lg-none">
+								<h2 class="h4">Find Nearby</h2>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+								{% render 'icon-close' %}
+								</button>
+							</div>
+					
+							<div class="container-fluid">
+								<div class="row mb-5 mt-3 mt-lg-0">
+									<div class="col-4 col-lg-3">
+										<div class="product-featured-image-wrapper">
+											<img src="{{product.featured_image | img_url: 'small' }}" 
+												alt="{{product.title}}" 
+												class="img-fluid"
+												loading="lazy">
+										</div>
+									</div>
+									<div class="col-8 col-lg-7 product-info">
+										<h2 class="h5">Lot {{product.metafields.data.lot}} {% render 'product-title' product:product %}</h2>
+										<h3 class="label region">{% render 'product-region'%}| {{product.metafields.data.year}}</h3>
+									</div>
+									<div class="col-2 d-none d-lg-flex align-self-baseline">
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+											{% render 'icon-close' %}
+											</button>
+									</div>
+								</div>
+								<div class="row">
+                                    {%  if settings.retailers_nearby != blank %}
+									<div class="col-lg-6 retailer-column">
+										<a class="row retailer-column__inner bordered" href="{{settings.retailers_nearby}}" >
+											<div class="col-3">
+												<img src="{{'icon-store-locator.png' | asset_url }}" class="img-fluid" loading="lazy">
+											</div>
+											<div class="col-9">
+												<p class="label">Store Locator</p>
+											</div>
+										</a>
+									</div>
+                                    {% endif %}
+
+                                  {% for vendor in shop.metaobjects.online_vendors.values %}
+									<div class="col-lg-6 retailer-column">
+										<a class="row retailer-column__inner bordered" href="{{vendor.link}}" target="_blank">
+											<div class="col-3">
+												<img src="{{ vendor.image | img_url  }}" class="img-fluid" loading="lazy">
+											</div>
+											<div class="col-9">
+												<p class="label">{{ vendor.title }}</p>
+											</div>
+										</a>
+									</div>
+                                  {% endfor %}                                  
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer d-lg-none">
+							<button type="button" class="btn-minimal label" data-bs-dismiss="modal">Close</button>
+						</div>			  
+					</div>
+				</div>
+			</div>
+
+		{% endif %}
+
+	{% render 'product-json' proudct:product %}
+	
+	{% endform %}            
+</div>
+
+
+

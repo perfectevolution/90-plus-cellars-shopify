@@ -1,0 +1,26 @@
+<div class="product-reviews mb-4 mt-3 ">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class = 'h2 mb-5 mt-5 mt-lg-3 pt-2 pt-lg-0'>Reviews</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <!--Start Stamped.io Auto Installation-->
+                <div id="stamped-main-widget" class="stamped-main-widget" data-widget-style="standard" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}" data-url="{{ shop.url }}{{ product.url }}" data-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}" data-description="{{ product.description | escape }}" data-product-sku="{{product.handle}}">{{ product.metafields.stamped.reviews }}</div><!--End Stamped.io Auto Installation-->
+        
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+<style>
+
+    #stamped-main-widget, div.stamped-container[data-widget-style], div[data-widget-style] div.stamped-container {
+        margin:0 !important;
+        max-width:100%;
+    }
+    
+</style>

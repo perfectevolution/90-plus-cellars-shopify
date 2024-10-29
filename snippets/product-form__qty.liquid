@@ -1,0 +1,28 @@
+{% assign quantity_total = 1 %}
+
+{% if product.quantity %}
+    {% assign quantity_total = product.quantity %}
+{% endif %}
+
+<div sh-quantity-component data-min-value="1">
+    <div class="product-form__qty-title visually-hidden"><span class="option-title">Quantity</span></div>
+    <div class="product-form__qty">
+        <a class="product-form__qty-dec clickable order-lg-last"  
+            data-quantity-dec aria-label="Decrease Quantity"><span class="icon-minus">-</span></a>
+        <input
+            class="product-form__qty-input"
+            type="text"
+            id="Quantity-{{ product.id }}"
+            name="quantity"
+            value="{{ product.quantity | default: 1 }}"
+            min="1"
+            pattern="[0-9]*"
+            title="Qty"
+            min="0"
+            data-quantity-input
+            data-quantity-item="{{ index }}" >
+        <a class="product-form__qty-inc clickable order-lg-first" 
+            aria-label="Increase Quantity"
+            data-quantity-inc  ><span class="icon-plus">+</span></a>
+    </div><!-- .product-qty -->
+</div>

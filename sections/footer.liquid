@@ -1,0 +1,124 @@
+{% liquid
+	assign footer_menu = linklists[section.settings.footer_menu]
+	assign social_menu = linklists[section.settings.social_menu]
+	assign utility_menu = linklists[section.settings.utility_menu]
+%}
+<footer class="main-footer section bg-gray-dark ">
+	<div class="container footer-container">
+		<div class="footer-logo">
+			<img src="{{ '90-cellars-2024-footer-logo.png' | asset_url }}" /> 
+			{% comment %} {% render 'icon-logo-full' %} {% endcomment %}
+		</div>
+		<div class="row main-links">
+			<div class="col-md-5 col-lg-4 order-md-last">
+				<h3 class="h5 mb-4">{{section.settings.newsletter_header}}</h3>
+				<p class="body-2">{{section.settings.newsletter_body}}</p>
+				<div class="{{section.settings.klaviyo_newsletter_id}}"></div>
+				<ul class="social-links d-md-none mb-4">
+					{% for link in social_menu.links %}
+						<li ><a href="{{ link.url }}" aria-label="{{ link.title }}" target="_blank">
+							{% render 'social-icon' type:link.title %}
+						</a></li>
+					{% endfor %}
+				</ul>		
+			</div>
+
+			<div class="col-md-7  mt-4 mt-lg-0 mt-mb-0">
+				<div class="row">
+					{% for link in footer_menu.links %}
+						<div class="col-6 col-lg-4 col-xl-3 mb-5 mb-lg-0">
+							<h3 class="h5 mb-4">{{link.title}}</h3>
+							{% if link.links %}
+								{% for child_link in link.links %}
+									<ul >
+										<li class="">
+											<a class="label font-serif" href="{{ child_link.url }}">{{ child_link.title }}</a>
+										</li>
+									</ul>
+								{% endfor %}
+							{% endif %}
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+
+		</div>
+		<div class="row footer-footer">
+			<div class=" col-12 col-md-5 offset-md-2 mb-5 mb-lg-0 order-md-last d-none d-md-flex">
+				<ul class="social-links">
+					{% for link in social_menu.links %}
+						<li ><a href="{{ link.url }}" aria-label="{{ link.title }}" target="_blank">
+							{% render 'social-icon' type:link.title %}
+						</a></li>
+					{% endfor %}
+				</ul>		
+			</div>
+
+			<div class="col-12 col-md-5">			
+				<ul class="utility-links mb-2">
+					{% if shop.customer_accounts_enabled %}
+						<li>
+							{% if customer %}
+								<a href="{{ routes.account_url }}">Account</a>
+							{% else %}
+								<a href="{{ routes.account_login_url }}"><b>Login</b></a>
+								{% if shop.customer_accounts_optional %}
+								<span>or</span>
+								<a href="{{ routes.account_register_url }}"><b>Create an account</b></a>
+								{% endif %}
+							{% endif %}
+						</li>
+					{% endif %}
+					{% for link in utility_menu.links %}
+						<li ><a href="{{link.url}}">{{ link.title }}</a></li>
+					{% endfor %}
+				</ul>
+				<p class="label font-serif"><i>&copy; {{ "now" | date: "%Y" }} {{ shop.name }}</i></p>
+			</div>
+		</div>
+	</div><!-- .container -->
+</footer>
+
+
+
+{% schema %}
+{
+	"name" : "Footer",
+	"settings" : [
+		{
+			"id" : "footer_menu",
+			"label" : "Footer Menu",
+			"type" : "link_list"				
+		},
+		{
+			"id" : "social_menu",
+			"label" : "Social Menu",
+			"type" : "link_list"				
+		},
+		{
+			"id" : "utility_menu",
+			"label" : "Utility Menu",
+			"type" : "link_list"				
+		},
+		{
+			"type"  :"text",
+			"id"    :"newsletter_header",
+			"label" :"Newsletter Header",
+			"default" : "Sign up for our newsletter"
+		},
+		{
+			"type"  :"text",
+			"id"    :"klaviyo_newsletter_id",
+			"label" :"Klaviyo Newsletter ID",
+			"default" : "klaviyo-form-SNxMx5"
+		},
+		{
+			"type" : "textarea",
+			"id" : "newsletter_body",
+			"label" : "Newsletter Body",
+			"default" : "Get the latest news on new arrivals, gifts, special offers and other discount information."
+		}
+	]
+   }
+
+{% endschema %}

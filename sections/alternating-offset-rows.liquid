@@ -1,0 +1,202 @@
+{% liquid
+    assign image_position = section.settings.image_position 
+%}
+{% if section.blocks.size > 0 %}
+    <section class="alternating-offset-rows image-position--{{image_position}}" id="{{ section.settings.section_id | default : section.id}}">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    {% if section.settings.header != blank or section.settings.sub_header != blank %}
+                        <h2 class="h1 d-flex align-items-center d-lg-block">
+                            <span>
+                                {% if section.settings.header != blank %}
+                                    <b>{{section.settings.header}}</b>
+                                {% endif %}
+                                {% if section.settings.sub_header != blank %}
+                                    <i>{{section.settings.sub_header}}</i>
+                                {% endif %}
+                            </span>
+                            <span class = 'icon-arrow'>
+                                <img class="img-fluid" src="{{ 'icon-arrow.png' | asset_url}}" alt="icon-arrow">
+                            </span>
+                        </h2>
+                    {% endif %}
+                </div>
+            </div>
+
+            {% for block in section.blocks %}
+                {% liquid 
+                    assign image_class = 'col-lg-4 offset-lg-4'
+                    assign content_class = 'col-lg-4 '
+                    if image_position == 'right'
+                        assign content_class = 'col-lg-4'
+                        assign image_class = 'col-lg-4 order-lg-last'
+                    endif
+                    if section.blocks.size > 1
+                        assign modulo = forloop.index0 | modulo: 2 
+                        if modulo == 0 
+                            if image_position == 'left'
+                                assign image_class = 'col-lg-4 offset-lg-4'
+                                assign content_class = 'col-lg-4 '
+                            endif 
+                            if image_position == 'right'
+                                assign image_class = 'col-lg-4 order-lg-last'
+                                assign content_class = 'col-lg-4 '
+                            endif 
+                        endif
+                        if modulo == 1 
+                            if image_position == 'left'
+                                assign image_class = 'col-lg-4 order-lg-last'
+                                assign content_class = 'col-lg-4 '
+                            endif 
+                            if image_position == 'right'
+                                assign image_class = 'col-lg-4 offset-lg-4'
+                                assign content_class = 'col-lg-4 '
+                            endif 
+                        endif
+                    endif
+
+                %}
+
+                <div class="row block modulo-{{modulo}}  " {{block.shopify_attributes}}>
+                    {% if block.settings.image %}
+                        <div class="{{image_class}} mb-3 mb-lg-0 ">
+                            <div class="image-col">
+                                <picture>
+                                    {{ block.settings.image | image_url: width:500  | image_tag: class: 'img-fluid', loading: 'lazy' }}
+                                </picture>
+                            </div>
+                        </div>
+                    {% endif %}
+                    <div class="{{content_class}} ">
+                        <div class="content-col">
+                            <h3 class=" mb-3 mt-1">
+                                <b>{{ block.settings.header }}</b>
+                                {% if block.settings.sub_header != blank %}
+                                    <i >{{ block.settings.sub_header }}</i>
+                                {% endif%}
+                            </h3>
+                            <div class="content">
+                                {{ block.settings.body }}        
+                            </div>
+                            {% liquid
+                                if block.settings.link_url and block.settings.link_label
+                                    render 'button', label: block.settings.link_label, url: section.settings.link_url, external: section.settings.link_external, btn_class: 'btn btn-dark mt-3'
+                                endif
+                            %}    
+                        </div>                    
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+    </section>
+{% endif %}
+
+{% schema %}
+{
+    "name": "Alternating Offset Rows",
+    "settings": [
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "Section ID"
+        },
+        {
+            "type" : "text",
+            "id" : "header",
+            "label" : "Header"
+        },
+        {
+            "type" : "text",
+            "id" : "sub_header",
+            "label" : "Sub Header ( Italics ) "
+        },
+        {
+            "type": "select",
+            "id": "image_position",
+            "label": "Image Position",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "Left"
+                },
+                {
+                    "value": "right",
+                    "label": "Right"
+                }
+            ],
+            "default": "left"
+        }
+
+    ],
+    "blocks": [
+        {
+            "type" : "Slide",
+            "name" : "Slide",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "header",
+                    "label": "Header"
+                },
+                {
+                    "type": "text",
+                    "id": "sub_header",
+                    "label": "Sub Header ( Italics )"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Choose an Image"
+                },
+                {
+                    "type": "select",
+                    "id": "image_size",
+                    "label": "Image Size",
+                    "options": [
+                        {
+                            "value": "contain",
+                            "label": "Contain Image to Bounds"
+                        },
+                        {
+                            "value": "cover",
+                            "label": "Fill Image to Fit"
+                        }
+                    ],
+                    "default": "cover"
+                },
+                {
+                    "type": "richtext",
+                    "id": "body",
+                    "label": "Body"
+                },
+                {
+                    "type": "text",
+                    "id": "link_label",
+                    "label": "Link Label"
+                },
+                {
+                    "type": "url",
+                    "id": "link_url",
+                    "label": "Link URL"
+                },
+                {
+                    "id": "link_external",
+                    "type": "checkbox",
+                    "label": "Open link in a new window",
+                    "default": false
+                }
+
+            ]
+        }
+
+    ],
+    "presets": [
+        {
+            "name": "Alternating Offset Rows",
+            "settings" : {}
+        }
+    ]
+}
+{% endschema %}

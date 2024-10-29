@@ -1,0 +1,158 @@
+<section class="faqs" id="{{section.settings.section_id | default : section.id }}">
+    <div class="container">
+        <div class="row mb-3 pb-5 faqs-header">
+            <div class="col-lg-6 offset-lg-3 text-center">
+                <h2 class="h1">
+                    <div class = 'decoration'>{% render 'icon-starburst-large'%}</div>
+                    {% if section.settings.sub_header != blank %}                      
+                        <b>{{ section.settings.header }}</b>
+                   {% endif %}
+                    {% if section.settings.sub_header != blank %}
+                        <i class="d-block">{{section.settings.sub_header}}</i>
+                    {% endif %}
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="accordion " id="faqs-accordion-{{section.id}}">
+                    {% for block in section.blocks %}
+                        <div class="accordion-item">
+                            <h3 class="accordion-header h4" id="heading-{{forloop.index}}">
+                                <button class="accordion-button collapsed " 
+                                    type="button" 
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target="#collapse-{{forloop.index}}" 
+                                    aria-expanded="false" 
+                                    aria-controls="collapse-{{forloop.index}}">
+                                <div class="w-100 h4">{{block.settings.question}}</div>
+                                {% render 'icon-circle-caret' %}
+                                </button>
+                            </h3>
+                            <div id="collapse-{{forloop.index}}" class="accordion-collapse collapse pr-5" aria-labelledby="heading-{{forloop.index}}" data-bs-parent="#faqs-accordion-{{section.id}}">
+                                <div class="accordion-body body-2">{{block.settings.answer}}</div>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+                  </div>
+                  
+                  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                {% if section.settings.footer_header != blank %}
+                    <h3 class="h4 mt-5 pt-4 d-block">{{section.settings.footer_header}}</h3>
+                {% endif %}
+                {% render 'button' 
+                    url:section.settings.link_url
+                    label:section.settings.link_label
+                    external:section.settings.link_external
+                    btn_class: 'btn btn-primary mt-5'
+                %}
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+{% schema %}
+    {
+        "name": "FAQs",
+        "settings": [
+            {
+                "type": "text",
+                "id": "section_id",
+                "label": "Section ID",
+                "info" : "Enter a url friendly id to link directly to this section."
+            },
+            {
+                "type": "text",
+                "id": "header",
+                "label": "Header",
+                "default": "Frequently"
+            },
+            {
+                "type": "text",
+                "id": "sub_header",
+                "label": "Sub Header",
+                "default": "Asked Questions"
+            },
+            {
+                "type": "text",
+                "id": "footer_header",
+                "label": "Footer Header"
+            },
+            {
+                "type": "text",
+                "id": "link_label",
+                "label": "Link Label"
+            },
+            {
+                "type": "url",
+                "id": "link_url",
+                "label": "Link URL"
+            },
+            {
+                "type": "checkbox",
+                "id": "link_external",
+                "label": "Link External"
+            }
+
+        ],
+        "blocks" : [
+            {
+                "type": "faq",
+                "name": "FAQ",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "question",
+                        "label": "Question",
+                        "default": "<b>Frequently</b> <i>Asked Question</i>"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "answer",
+                        "label": "Answer",
+                        "default": "<p>FAQ Answer</p>"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "FAQs",
+                "settings" : {
+                    "header": "Frequenty",
+                    "sub_header": "Asked Questions"
+                },
+                "blocks": [
+                    {
+                        "type": "faq",
+                        "settings": {
+                            "question": "FAQ Question 1",
+                            "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure </p>"
+                        }
+                    },
+                    {
+                        "type": "faq",
+                        "settings": {
+                            "question": "FAQ Question 2",
+                            "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure </p>"
+                        }
+                    },
+                    {
+                        "type": "faq",
+                        "settings": {
+                            "question": "FAQ Question 3",
+                            "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure </p>"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}

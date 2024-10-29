@@ -1,0 +1,74 @@
+{% assign meta = product.metafields.accentuate %}
+{% if meta.description_text != blank %}
+<section class="product-section-details {% if template == 'product' %}gsap-mininav" id="mini-nav__details"{% endif %}>
+	{% comment %} <div class="watermark-image-holder">
+		<picture>
+			<img src="{{ section.settings.watermark_image | img_url: '600x' }}" {% if section.settings.watermark_image.alt %} alt="{{ section.settings.watermark_image.alt }}" {% else %} alt="Acme Smoked Fish" {% endif %} loading="lazy">
+			<source media="(min-width: 992px)" srcset="{{ section.settings.watermark_image | img_url: 'master' }}">
+		</picture>
+	</div> {% endcomment %}
+	<div class="container product-section-details__inner">
+		<div class="row">
+			{% if meta.details_image %}
+				<div class="section-image col-lg-5 offset-lg-1 d-none d-lg-block">
+					<img src="{{ meta.details_image[0].src }}" class='img-fluid' loading='lazy' alt='{{ meta.details_image[0].alt }}'/>
+				</div>
+			{% endif %}
+			<div class="col-md-10 offset-md-1 offset-lg-0 col-lg-6 details-content details-content">
+				<header class="section-header">
+					<h2 class="section-title headline-2">{{ section.settings.heading }}</h2>
+					<div class="section-image d-lg-none">
+						<img src="{{ meta.details_image[0].src }}" class='img-fluid' loading='lazy' alt='{{ meta.details_image[0].alt }}'/>
+					</div>
+					<p class="section-description body-1">{{ meta.description_text }}</p>
+				</header>
+
+				{% if meta.details_accordion_heading[0] != blank %}
+				<div class="accordion accordion-flush" id="detailsAccordion">
+
+					{% for item in meta.details_accordion_heading %}
+
+						<div class="accordion-item">
+							<header class="accordion-header" id="detailsAccordionHeading{{ forloop.index0 }}">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#detailsAccordionCollapse{{ forloop.index0 }}" aria-expanded="false" aria-controls="detailsAccordionCollapse{{ forloop.index0 }}">
+									<h2 class="headline-3">{{ item }}</h2>
+									<div class="icon-holder">
+										{% render 'icon-dropdown-blue' %}
+									</div>
+								</button>
+							</header>
+							<div id="detailsAccordionCollapse{{ forloop.index0 }}" class="accordion-collapse collapse" aria-labelledby="detailsAccordionHeading{{ forloop.index0 }}" data-bs-parent="#detailsAccordion">
+								<div class="accordion-body mb-0">{{ meta.details_accordion_body[forloop.index0].html }}</div>
+							</div>
+						</div>
+
+					{% endfor %}
+				</div>
+				{% endif %}
+
+				<div class="button-holder">
+					{% if meta.nfp_image != blank %}
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#NFPModal">Nutrition Information</button>
+					{% endif %}
+					{% if section.settings.button_url != blank %}
+					<a href="{{ section.settings.button_url }}" class="btn btn-outline-primary">{{ section.settings.button_text }}</a>
+					{% endif %}
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+{% if meta.nfp_image != blank %}
+<div class="modal modal-nfp fade" id="NFPModal" tabindex="-1" aria-label="Nutrition Facts Panel Image" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="btn-close dark" data-bs-dismiss="modal" aria-label="Close">{% render 'icon-close' %}</button>
+            <div class="modal-body">
+				<img src="{{ meta.nfp_image[0].src }}" alt="{{ meta.nfp_image[0].alt }}" loading="lazy" />
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endif %}

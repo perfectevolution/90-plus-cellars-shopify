@@ -1,0 +1,249 @@
+{% liquid
+	if section.settings.col_alignment == 'center'
+		assign col_center = true
+	endif
+	if section.settings.header_alignment == 'center'
+		assign header_center = true
+	endif
+
+  assign display_pag_class = ''
+  assign display_nav_class = ''
+
+  assign hide_pag_mobile = section.settings.hide_pagination_mobile
+  assign hide_pag_desktop = section.settings.hide_pagination_desktop
+
+  assign hide_nav_mobile = section.settings.hide_navigation_mobile
+  assign hide_nav_desktop = section.settings.hide_navigation_desktop
+
+  if section.settings.pagination == 'false'
+    assign display_pag_class = 'd-none'
+  elsif hide_pag_mobile == true and hide_pag_desktop == true
+    assign display_pag_class = 'd-none'
+  elsif hide_pag_mobile == false and hide_pag_desktop == false
+    assign display_pag_class = 'd-block'
+  elsif hide_pag_mobile == false and hide_pag_desktop == true
+    assign display_pag_class = 'd-block d-lg-none'
+  elsif hide_pag_mobile == true and hide_pag_desktop == false
+    assign display_pag_class = 'd-none d-lg-block'
+  endif
+
+  if section.settings.navigation == 'false'
+    assign display_nav_class = 'd-none'
+  elsif hide_nav_mobile == true and hide_nav_desktop == true
+    assign display_pag_class = 'd-none'
+  elsif hide_nav_mobile == false and hide_nav_desktop == false
+    assign display_nav_class = 'd-flex'
+  elsif hide_nav_mobile == false and hide_nav_desktop == true
+    assign display_nav_class = 'd-flex d-lg-none'
+  elsif hide_nav_mobile == true and hide_nav_desktop == false
+    assign display_nav_class = 'd-none d-lg-flex'
+  endif
+%}
+
+<section class="content-cards">
+	{% if section.settings.background_image %}
+		<picture class="background-image img-fluid">
+			<img
+				src="{{ section.settings.background_image | img_url: 'master' }}"
+				alt="{{ section.settings.background_image.alt | default : section.settings.title }}"
+				width="{{ section.settings.background_image.width | default: 'auto' }}"
+				height="{{ section.settings.background_image.height | default: 'auto' }}"
+			>
+		</picture>
+	{% endif %}
+
+	<div class="container content">
+		{% if section.settings.title != blank %}
+			<h2 class="text-center w-100">{{ section.settings.title }}</h2>
+		{% endif %}
+		<div class="row cards-wrapper">
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					{% for block in section.blocks %}
+						<div class="swiper-slide">
+							<div
+								class="content-card text-center {% if block.settings.link_url != blank %}has-link{% endif %}"
+								{{ block.shopify_attributes }}
+							>
+								{% if block.settings.image %}
+									<picture>
+										<source
+											media="(min-width: 992px)"
+											srcset="{{ block.settings.image | img_url: '650x' }}"
+										>
+										<img
+											class="img-fluid d-block mx-auto"
+											src="{{ block.settings.image | img_url: '450x' }}"
+											alt="{{ block.settings.image.alt | default : block.settings.title }}"
+											width="{{ block.settings.image.width | default: 'auto' }}"
+											height="{{ block.settings.image.height | default: 'auto' }}"
+											loading="lazy"
+										>
+									</picture>
+								{% endif %}
+								{% if block.settings.label != blank %}
+									<p class="eyebrow mt-3 mb-4">{{ block.settings.label }}</p>
+								{% endif %}
+								{% if block.settings.title != blank %}
+									<h2 class="h4 content-card-title">
+										<b>{{ block.settings.title }}</b>
+										{% if block.settings.sub_header != blank %}
+											<i class="d-block">{{ block.settings.sub_header }}</i>
+										{% endif %}
+									</h2>
+								{% endif %}
+								{% liquid
+									if block.settings.link_label and block.settings.link_url
+										render 'button', label: block.settings.link_label, url: block.settings.link_url, external: block.settings.link_external, btn_class: 'btn btn-dark mt-4'
+									endif
+								%}
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+
+        <div class="swiper-pagination--wrapper {{ display_pag_class }}">
+          <div class="swiper-pagination"></div>
+        </div>
+        
+        <div class="swiper-navigation--wrapper {{ display_nav_class }}">
+          <div class="swiper-button-prev swiper-button">
+            {% render 'icon-circle-caret' %}
+          </div>
+          <div class="swiper-button-next swiper-button">
+            {% render 'icon-circle-caret' %}
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% schema %}
+{
+	"name": "Content Cards",
+	"tag": "section",
+	"class": "section-content-cards",
+	"settings": [
+		{
+			"type": "text",
+			"id": "anchor_id",
+			"label": "Anchor Link ID"
+		},
+    {
+      "type": "header",
+      "content": "Show Pagination"
+    },
+    {
+      "type": "select",
+      "id": "pagination",
+      "label": "Show Pagination",
+      "default": "false",
+      "options": [
+        {
+          "value": "true",
+          "label": "Yes"
+        },
+        {
+          "value": "false",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_pagination_mobile",
+      "label": "Hide Pagination on Mobile",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_pagination_desktop",
+      "label": "Hide Pagination on Desktop",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Show Navigation"
+    },
+    {
+      "type": "select",
+      "id": "navigation",
+      "label": "Show Navigation",
+      "default": "false",
+      "options": [
+        {
+          "value": "true",
+          "label": "Yes"
+        },
+        {
+          "value": "false",
+          "label": "No"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_navigation_mobile",
+      "label": "Hide Navigation on Mobile",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_navigation_desktop",
+      "label": "Hide Navigation on Desktop",
+      "default": true
+    }
+	],
+	"blocks": [
+		{
+			"type": "content",
+			"name": "Content",
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Choose an Image"
+				},
+				{
+					"type": "text",
+					"id": "label",
+					"label": "Label"
+				},
+				{
+					"type": "text",
+					"id": "title",
+					"label": "Header"
+				},
+				{
+					"type": "text",
+					"id": "sub_header",
+					"label": "Sub title"
+				},
+				{
+					"type": "text",
+					"id": "link_label",
+					"label": "Link Label"
+				},
+				{
+					"type": "url",
+					"id": "link_url",
+					"label": "Link URL"
+				},
+				{
+					"id": "link_external",
+					"type": "checkbox",
+					"label": "Open link in a new window",
+					"default": false
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "Content Cards",
+			"settings": {}
+		}
+	]
+}
+{% endschema %}

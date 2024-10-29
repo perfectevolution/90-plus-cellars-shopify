@@ -1,0 +1,178 @@
+{% liquid
+    assign header = section.settings.header
+    assign sub_header = section.settings.sub_header
+    assign sub_header_2 = section.settings.sub_header_2
+    assign body = section.settings.body
+    assign citation = section.settings.citation
+    assign image = section.settings.image
+    assign handle = section.settings.metaobject_handle
+    if handle != blank
+        assign data = shop.metaobjects.testimonial_callout[handle]
+        if data != blank
+            assign header = data.header
+            assign sub_header = data.sub_header
+            assign sub_header_2 = data.sub_header_2
+            assign body = data.body
+            assign citation = data.citation
+            assign image = data.image
+        endif
+    endif
+    assign layout = "offset-quote"
+    assign col_class = 'col-lg-7'
+    if section.settings.layout == "Centered Headline"
+        assign layout = "centered-headline"
+        assign col_class = 'col-md-10 offset-md-1 col-xl-8 offset-xl-2 col-xxl-6 offset-xxl-3'
+    endif
+
+%}
+
+{% if header != blank and image != blank %}
+<section class="testimonial-callout layout--{{layout}} {% if layout == 'centered-headline' %} text-center {% endif %}" id="{{ section.settings.id | default : section.id }}">
+    {% if image %}
+        <picture>
+            {% if section.settings.mobile_image != blank %}
+                <source media="(max-width: 768px)" srcset="{{section.settings.mobile_image | img_url: 'master'}}" />
+            {% endif %}
+
+            <img src="{{ image | image_url : width:1600 }}" 
+                class="background-image"
+                alt="{{image.alt | default : section.settings.header}}"
+                width="{{image.width}}"
+                height="{{image.width}}"
+                loading="lazy"/>
+        </picture>
+            
+        
+        
+    {% endif %}
+    <div class="container content-container">
+        <div class="row">
+            <div class="{{col_class}}">            
+                <div class="content-card">
+                    {% if header %}
+                        <h2 class="{% if layout == 'offset-quote'%}h4-plus mb-3 pb-2 pb-lg-3{% endif %} {% if layout == 'centered-headline'%}h1 {% endif %}">{{header}}</h2>
+                    {% endif %}
+                    <div class="content-card__footer">
+                        {% if sub_header != blank  %}
+                            <h5 class="pb-0 mb-0"><b>{{sub_header}}</b></h5>
+                        {% endif %}
+                        {% if sub_header_2 != blank %}
+                            <p class = 'subtitle mb-5'>{{sub_header_2}}</p>
+                        {% endif %}
+                        {% if body %}
+                            <p>{{body}}</p>
+                        {% endif %}
+                        {% if citation %}
+                            <p class="label pb-0 mb-0">{{citation}}</p>
+                        {% endif %}
+                        {% liquid
+                            if section.settings.link_url and section.settings.link_label
+                                render 'button', label: section.settings.link_label, url: section.settings.link_url, external: section.settings.link_external, btn_class: 'btn btn-dark mt-3'
+                            endif
+                        %}    
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% schema %}
+{
+    "name": "Testimonial Callout",
+    "settings": [
+        {
+            "type" : "text",
+            "id" : "metaobject_handle",
+            "label" :  "Testimonial Metaobject Handle",
+            "info" : "Enter the metaobject handle handle for the testimonial callout. or fill out the fields below."
+        },
+        {
+            "type" : "select",
+            "id" : "layout",
+            "label" :  "Layout",
+            "options" : [
+                {
+                    "value" : "Offset Quote",
+                    "label" : "Offset Quote"
+                },
+                {
+                    "value" : "Centered Headline",
+                    "label" : "Centered Headline"
+                }
+            ],
+            "default" : "Offset Quote"
+
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "image_picker",
+            "id": "mobile_image",
+            "label": "Mobile Image"
+        },
+        {
+            "type": "text",
+            "id": "header",
+            "label": "Header"
+        },
+        {
+            "type": "text",
+            "id": "sub_header",
+            "label": "Sub Header"
+        },
+        {
+            "type": "text",
+            "id": "sub_header_2",
+            "label": "Sub Header 2"
+        },
+        {
+            "type": "richtext",
+            "id": "body",
+            "label": "Body"
+        },
+        {
+            "type": "text",
+            "id": "citation",
+            "label": "Citation"
+        },
+        {
+            "type": "text",
+            "id": "link_label",
+            "label": "Link Label"
+        },
+        {
+            "type": "url",
+            "id": "link_url",
+            "label": "Link URL"
+        },
+        {
+            "id": "link_external",
+            "type": "checkbox",
+            "label": "Open link in a new window",
+            "default": false
+        }
+    ],
+    "presets" : [
+        {
+            "name" : "Testimonial Callout",
+            "category": "Callout",
+            "settings" : {
+                "image": "shopify:\/\/shop_images\/beach-sunset-thailand.jpg",
+                "header" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ",
+                "sub_header" : "Brett Vankaoski",
+                "sub_header_2" : "Wine Director",
+                "citation" : "90+ Cellars"
+            }
+        }
+    ]
+}
+{% endschema %}
+
+
+

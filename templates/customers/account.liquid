@@ -1,0 +1,79 @@
+<div class="my-account-container account-container">
+  <div class="container ">
+    
+    <div class="row account-container__header-row">
+      <div class="col">
+          <h1 class="h3 account-container__header-title ">{{ 'customer.account.details' | t }}</h1>
+          {{ 'Sign out' | customer_logout_link | replace: '<a', '<a class="btn btn-primary logout-btn"' }}
+      </div>
+    </div>
+{% section 'bloom-my-account-section' %}
+    <div class="row mt-5 pt-4">                
+        <div class="col-lg-9 order-history">
+            <h3 class="h4 mb-5 pb-4 order-history__header">{{ 'customer.orders.title' | t }}</h3>
+  
+            {% if customer.orders.size != 0 %}
+              <div class="row d-none d-lg-flex account-header">
+                <div class="col"><h4 class="h6 mb-0 "><b>{{ 'customer.orders.order_number' | t }}</b></h4></div>
+                <div class="col"><h4 class="h6 mb-0 "><b>{{ 'customer.orders.date' | t }}</b></h4></div>
+                <div class="col"><h4 class="h6 mb-0 "><b>Payment</b></h4></div>
+                <div class="col"><h4 class="h6 mb-0 "><b>Fulfillment</b></h4></div>
+                <div class="col"><h4 class="h6 mb-0"><b>{{ 'customer.orders.total' | t }}</b></h4></div>
+              </div>
+              {% for order in customer.orders %}
+                <div class="order-details row" id="order-number-{{forloop.index}}">
+                    <dl class="col">
+                      <dt class="d-lg-none h6 mt-3"><b>{{ 'customer.orders.order_number' | t }}</b></dt>
+                      <dd>{{ order.name | link_to: order.customer_url }}</dd>
+                    </dl>
+                    <dl class="col">
+                      <dt class="d-lg-none h6 mt-3"><b>{{ 'customer.orders.date' | t }}</b></dt>
+                      <dd>{{ order.created_at | date: "%b %d, %Y" }}</dd>
+                    </dl>
+                    <dl class="col">
+                      <dt class="d-lg-none h6 mt-3"><b>Payment</b></dt>
+                      <dd>{{ order.financial_status_label }}</dd>
+                    </dl>
+                    <dl class="col">
+                      <dt class="d-lg-none h6 mt-3"><b>Fulfillment</b></dt>
+                      <dd>{{ order.fulfillment_status_label }}</dd>
+                    </dl>
+                    <dl class="col">
+                      <dt class="d-lg-none h6 mt-3"><b>{{ 'customer.orders.total' | t }}</b></dt>
+                      <dd>{{ order.total_price | money }}</dd>
+                    </dl>
+                </div>
+              {% endfor %}
+            {% else %}
+              <p>{{ 'customer.orders.none' | t }}</p>
+            {% endif %}
+        </div>
+  
+        <div class="col-lg-3 ">
+          
+          <div id="customer_detail" class="group">
+            <h3 class="h4 mb-5 pb-4">{{ 'customer.orders.address' | t }}</h3>
+            <h4 class="h6 account-header"><b>Default Address</b></h4>
+            <address >
+              {% if customer.default_address != nil %}
+                  {{ customer.default_address.name }}<br/>
+                  {{ customer.default_address.address1 }}{% if customer.default_address.address2 != blank %}, {{ customer.default_address.address2 }}{% endif %}<br/>
+                  {% if customer.default_address.province_code != blank and customer.default_address.city != blank %}
+                    {{ customer.default_address.city}}, {{ customer.default_address.province_code}}<br/>
+                  {% elsif customer.default_address.province_code == blank and customer.default_address.city != blank %}
+                    {{ customer.default_address.city}}<br/>
+                  {% elsif customer.default_address.province_code != blank and customer.default_address.city == blank %}
+                    {{ customer.default_address.province_code}}<br/>
+                  {% endif %}
+                {{customer.default_address.country}} {{ customer.default_address.zip}}</p>
+              {% endif %}
+                <a class="action-button" href="/account/addresses">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a>
+            </address>
+          </div>
+        </div>  
+
+      </div>
+    </div>
+
+  </div>
+</div>

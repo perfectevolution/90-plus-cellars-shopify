@@ -1,0 +1,128 @@
+{% liquid
+	assign product = all_products[section.settings.product]
+	assign product_image = product.featured_image
+%}
+
+<section id="section-{{ section.id }}" class="featured-product-single padding--{{section.settings.padding }}">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				{% if section.settings.heading != blank or section.settings.subheading != blank %}
+					<h class="h3 d-flex align-items-center d-lg-block">
+						<span>
+							{% if section.settings.heading != blank %}
+								<b>{{ section.settings.heading }}</b>
+							{% endif %}
+							{% if section.settings.subheading != blank %}
+								<i>{{ section.settings.subheading }}</i>
+							{% endif %}
+						</span>
+					</h>
+				{% endif %}
+
+				{% if section.settings.description != blank %}
+					<div class="content">
+						{{ section.settings.description }}
+					</div>
+				{% endif %}
+			</div>
+			{% render 'featured-product-item', product: product %}
+		</div>
+	</div>
+</section>
+
+{% schema %}
+{
+	"name": "Featured product",
+	"settings": [
+		{
+			"type": "header",
+			"content": "Featured product"
+		},
+		{
+			"type": "product",
+			"id": "product",
+			"label": "Select a featured product"
+		},
+		{
+			"type": "text",
+			"id": "heading",
+			"label": "Heading",
+			"default": "Featured"
+		},
+		{
+			"type": "text",
+			"id": "subheading",
+			"label": "Subheading",
+			"default": "Product Headline"
+		},
+		{
+			"type": "richtext",
+			"id": "description",
+			"label": "Description",
+			"default": "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptatibus eligendi, veritatis non modi sapiente aliquam molestias provident quaerat eos?</p>"
+		},
+		{
+			"type": "text",
+			"id": "button_text",
+			"label": "Button Text",
+			"default": "View product"
+		},
+		{
+			"type": "url",
+			"id": "button_link",
+			"label": "Button Link"
+		},
+    {
+      "type": "select",
+      "id": "button_target",
+      "label": "Open in New Tab",
+      "default": "_self",
+      "options": [
+        {
+          "value": "_self",
+          "label": "No"
+        },
+        {
+          "value": "_blank",
+          "label": "Yes"
+        }
+      ]
+    },
+		{
+			"type": "select",
+			"id": "padding",
+			"label": "Padding",
+			"default": "md",
+			"options": [
+				{
+					"value": "none",
+					"label": "None"
+				},
+				{
+					"value": "sm",
+					"label": "Small"
+				},
+				{
+					"value": "md",
+					"label": "Medium"
+				},
+				{
+					"value": "lg",
+					"label": "Large"
+				},
+				{
+					"value": "xl",
+					"label": "X-Large"
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "Featured Single Product",
+			"category": "Product"
+		}
+	]
+}
+{% endschema %}

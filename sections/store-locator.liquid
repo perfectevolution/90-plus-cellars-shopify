@@ -1,0 +1,34 @@
+<section class="store-locator" id="{{section.settings.section_id | default : section.id}}">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- Start Stockist.co widget -->
+                    <div data-stockist-widget-tag="u14669">Loading store locator
+                    from <a href="https://stockist.co">Stockist store locator</a>...</div>
+                    <script>
+                    (function(s,t,o,c,k){c=s.createElement(t);c.src=o;c.async=1;
+                    k=s.getElementsByTagName(t)[0];k.parentNode.insertBefore(c,k);
+                    })(document,'script','//stockist.co/embed/v1/widget.min.js');
+                    </script>
+                <!-- End Stockist.co widget -->            
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    {% schema %}
+{
+    "name": "Store Locator",
+    "settings": [
+
+
+    ],
+    "presets": [
+        {
+            "name": "Store Locator",
+            "settings" : {}
+        }
+    ]
+}
+{% endschema %}

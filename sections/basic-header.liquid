@@ -1,0 +1,53 @@
+<section class="basic-header bg-{{section.settings.background}}" id="{{section.settings.section_id | default : section.id }}">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="h1">{{section.settings.header}}</h1>
+            </div>        
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name": "Basic Header",
+        "settings": [
+            {
+                "type": "text",
+                "id": "section_id",
+                "label": "Section ID",
+                "info" : "Enter a url friendly id to link directly to this section."
+            },
+            {
+                "type": "text",
+                "id": "header",
+                "label": "Header"
+            },
+            {
+                "type" :"select",
+                "id": "background",
+                "label": "Background Color",
+                "default": "gray-light",
+                "options": [
+                    {
+                        "value": "light",
+                        "label": "White"
+                    },
+                    {
+                        "value": "gray-light",
+                        "label": "Gray"
+                    }
+                ]
+            }
+
+        ],
+        "presets": [
+            {
+                "name": "Basic Header",
+                "settings" : {
+                    "header" : "Basic Header"
+                }
+            }
+        ]
+    }
+{% endschema %}

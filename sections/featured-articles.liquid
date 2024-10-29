@@ -1,0 +1,214 @@
+<section class="featured-articles theme--{{section.settings.theme}}"
+    id="{{section.settings.section_id | default : section.id }}"
+    {% if section.settings.mode ==  'tag' %}
+        data-tags="{{section.settings.tag | handleize}}" 
+        data-url = "/blogs/{{section.settings.blog}}/tagged/tags/?view={{section.settings.blog}}-tag-search&type=card"
+        related-articles-swiper 
+    {% endif %} >
+    {% if section.settings.background_image %}    
+        <picture class="background-image img-fluid"> 
+            <img src="{{ section.settings.background_image | img_url: 'master' }}" 
+                alt="{{ section.settings.background_image.alt | default : section.settings.header }}"
+                width="{{ section.settings.background_image.width | default: 'auto' }}"
+                height="{{ section.settings.background_image.height | default: 'auto' }}" 
+            >
+        </picture>
+    {% endif %}
+    {% if section.settings.script != blank %}
+        <p class=" script">{{ section.settings.script  }}</p>
+    {% endif %}
+    <div class=" content-wrapper ">
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    {% if section.settings.header  %}
+                        <h2 class="h1">{{ section.settings.header }}</h2>
+                    {% endif %}    
+                </div>
+                <div class="col-3 text-end d-none d-lg-block">
+                    {% render 'button', 
+                        label: section.settings.link_label, 
+                        url: section.settings.link_url 
+                        external: section.settings.link_external 
+                        btn_class: 'btn btn-outline-light'
+                    %}
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="d-none d-lg-flex swiper-buttons">
+                        <div class="swiper-button-prev px-2">{% render 'icon-circle-caret' direction:'prev'%}</div>
+                        <div class="swiper-button-next">{% render 'icon-circle-caret' direction: 'next'%} </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        
+    
+        <div class="offset-wrapper">
+            <div class="row">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        {% if section.settings.mode == 'blog' and section.settings.blog != blank  %}
+                            {% for article in blogs[section.settings.blog].articles %}
+                                {% if forloop.index <= section.settings.limit%}
+                                    <div class="swiper-slide">
+                                        {% render 'article-card-item', article: article %}
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                        {% if section.settings.mode == 'blocks' and section.blocks %}
+                            {% for block in section.blocks %}
+                                {% if forloop.index <= section.settings.limit%}
+                                    <div class="swiper-slide">
+                                    {% render 'article-card-item', article: block.settings.article %}
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col d-block d-lg-none mt-4">
+                    {% render 'button', 
+                        label: section.settings.link_label, 
+                        url: section.settings.link_url 
+                        external: section.settings.link_external 
+                        btn_class: 'btn btn-outline-light'
+                    %}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+{% schema %}
+{
+    "name": "Featured Articles",
+    "settings": [
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "Section ID",
+            "info": "Enter a url friendly id to link directly to this section."
+        },
+        {
+            "type": "text",
+            "id": "header",
+            "label": "Header"
+        },
+        {
+            "type": "text",
+            "id": "script",
+            "label": "Script"
+        },
+        {
+            "type" : "image_picker",
+            "id" : "background_image",
+            "label" : "Background Image"
+            
+        },
+        {
+            "type": "select",
+            "id": "theme",
+            "label": "Color Theme",
+            "options": [
+                {
+                    "value": "light",
+                    "label": "Light Text"
+                },
+                {
+                    "value": "dark",
+                    "label": "Dark Text"
+                }
+            ],
+            "default": "light"
+        },        {
+            "type" : "select",
+            "id" : "mode",
+            "label" : "Mode",
+            "options" : [
+                {
+                    "value" : "blog",
+                    "label" : "Blog"
+                },
+                {
+                    "value" : "blocks",
+                    "label" : "Blocks"
+                },
+                {
+                    "value" : "tag",
+                    "label" : "Tag"
+                }
+            ],
+            "default" : "blog"
+        },
+        {
+            "type" : "blog",
+            "id" : "blog",
+            "label" : "Blog",
+            "info" : "Choose the blog to display articles from."
+        },
+        {
+            "type" : "text",
+            "id" : "tag",
+            "label" : "Tag",
+            "info" : "Filter articles by tag."
+        },
+        {
+            "type" : "number",
+            "id" : "limit",
+            "label" : "Limit",
+            "default" : 2
+        },
+        {
+            "type": "text",
+            "id": "link_label",
+            "label": "Link Label"
+        },
+        {
+            "type": "url",
+            "id": "link_url",
+            "label": "Link URL"
+        },
+        {
+            "id": "link_external",
+            "type": "checkbox",
+            "label": "Open link in a new window",
+            "default": false
+        }
+
+    ],
+    "blocks": [
+        {
+          "name": "Article",
+          "type": "article",
+          "settings": [
+            {
+              "type": "article",
+              "id": "article",
+              "label": "Article"
+            }
+          ]
+        }
+     ],   
+    "presets": [
+        {
+            "name": "Featured Articles",
+            "category": "Content",
+            "settings": {
+                "header": "Wine Articles"
+            }
+        }
+    ]
+}
+
+{% endschema %}

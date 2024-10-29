@@ -1,0 +1,211 @@
+<section class="pricing-columns" id="{{section.settings.section_id | default : section.id }}">
+    <div class="container relative">
+        <div class="row">
+            {% for block in section.blocks %}
+                <div class="col-md-8 offset-md-2 offset-lg-0 col-lg-4 pricing-column ">
+                    <div class="pricing-column__inner text-center">
+                        <div class="eyebrow">
+                            {{ block.settings.label }}
+                        </div>
+                        <div class="pricing-column__header">
+                            <h2 class="h4 mb-0 pb-0"><b>{{block.settings.header}}</b></h2>
+                            <h3 class="h6 mb-0 pb-0">{{block.settings.sub_header}}</h3>
+                        </div>
+                        <p class="pricing-column__body">{{block.settings.body}}</p>
+                        {% if block.settings.list != blank %}
+                          <div class="pricing-column__collapse d-md-none" 
+                              data-bs-toggle="collapse" 
+                              data-bs-target="#pricing-column__list--{{forloop.index}}" 
+                              aria-expanded="false" 
+                              aria-controls="#pricing-column__list--{{forloop.index}}">
+                              <span class = 'more-details'>More Details</span>
+                              <span class = 'less-details'>Less Details</span>
+                              <span class = 'icon-caret'>{% render 'icon-caret-down' %}</span>
+                          </div>
+                          <div class="pricing-column__list collapse" id="pricing-column__list--{{forloop.index}}">
+                              {{ block.settings.list}}
+                          </div>
+                        {% endif %}
+                      
+                        <!-- Bloom button and preferences -->
+                          {% if block.settings.to_join == true %}
+                            {%  if block.settings.to_join %}
+                              {% assign checkout_option =  block.settings.to_join_url%}
+                            {% endif %}
+                            <div class="bloom-preferences-container">
+                             {%- render 'bloom-element', type: 'clubform', level_ids: block.settings.level_variant_id, id: block.id, action: checkout_option -%}
+                              {% if block.settings.dropdown_label != '' %}
+                                <p class="uk-text-bold uk-margin-small-bottom">{{ block.settings.dropdown_label }}</p>
+                              {% endif %}
+                              {% liquid
+                                 if block.settings.option_select
+                                  render 'bloom-element', type: 'clubform-field', name: 'option', class: 'uk-select uk-margin-bottom'
+                                 endif
+                                render 'bloom-element', type: 'clubform-button', label: block.settings.link_label, class: 'btn btn-primary'
+                                render 'bloom-element', type: 'endclubform', id: block.id
+                              %}
+                          </div>
+                        {% else %}
+                          {% render "button" url:block.settings.link_url label:block.settings.link_label external:block.settings.link_external  %}
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</section>
+
+{% schema %}
+{
+	"name": "Pricing Columns",
+	"settings": [{
+		"type": "text",
+		"id": "section_id",
+		"label": "Section ID",
+		"info": "Enter a url friendly id to link directly to this section."
+	}],
+	"blocks": [{
+		"type": "pricing-column",
+		"name": "Pricing Column",
+		"settings": [
+            {
+				"type": "text",
+				"id": "label",
+				"label": "Label"
+			},
+			{
+				"type": "text",
+				"id": "header",
+				"label": "Header"
+			},
+			{
+				"type": "text",
+				"id": "sub_header",
+				"label": "Sub Header"
+			},
+			{
+				"type": "textarea",
+				"id": "body",
+				"label": "Body"
+			},
+			{
+				"type": "richtext",
+				"id": "list",
+				"label": "List"
+			},
+            {
+                "type": "text",
+                "id": "link_label",
+                "label": "Link Label"
+            },
+            {
+                "type": "url",
+                "id": "link_url",
+                "label": "Link URL"
+            },
+            {
+                "id": "link_external",
+                "type": "checkbox",
+                "label": "Open link in a new window"
+            }, 
+            {
+              "type": "header",
+              "content": "Club preferences"
+            },
+            {
+              "id": "level_variant_id",
+              "type": "text",
+              "label": "Level ID"
+            },
+              {
+              "id": "release_id",
+              "type": "text",
+              "label": "Release ID"
+            },
+            {
+              "id": "to_join",
+              "type": "checkbox",
+              "label": "Use the bloom sign up form",
+              "default": false,
+              "info": "Note: This will only work if the level ID field is filled out"
+            },
+            {
+              "id": "to_join_url",
+              "type": "text",
+              "label": "URL to join page",
+              "default": "/pages/join-club/"
+            },
+            {
+              "id": "dropdown_label",
+              "type": "text",
+              "label": "Selection label"
+            },
+            {
+              "id": "level_select",
+              "type": "checkbox",
+              "label": "Show level selection",
+              "default": false
+            },
+            {
+              "id": "release_select",
+              "type": "checkbox",
+              "label": "Show release selection",
+              "default": false
+            },
+            {
+              "id": "option_select",
+              "type": "checkbox",
+              "label": "Show option selection",
+              "default": false
+            }
+		]
+	}],
+	"max_blocks": 3,
+	"presets": [{
+		"name": "Pricing Columns",
+		"settings": {},
+		"blocks": [{
+				"type": "pricing-column",
+				"settings": {
+					"label": "2 Bottles",
+					"header": "Starter Club",
+					"sub_header": "$50 per shipment",
+					"body": "Our Starter Club is our introductory 3-bottle option for just $50/shipment. Wines include a mix of red, white and the occasional sparkling and/or rosé wine. Every shipment has at least one reserve selection.",
+					"list": "<ul><li>Save up to 15% off retail</li><li>Free shipping</li><li>Change or cancel anytime</li></ul>",
+                    "link_label": "Get Started",
+                    "link_url" : "/pages/wine-club",
+                    "link_external" : false
+				}
+			},
+			{
+				"type": "pricing-column",
+				"settings": {
+					"label": "6 or 12 bottles",
+					"header": "Mixed Club",
+					"sub_header": "$95/$180 per shipment",
+					"body": "For the ultimate wanderlust who desires making new wine discoveries. Choose 6 or 12 bottles of world class reds, whites and the occasional sparkling and/or rosé wine, including our Reserve and Collector series wines. NOTE: 12-bottle club includes two bottles of each wine.",
+					"list": "<ul><li>Save up to 30% off retail</li><li>Free shipping</li><li>Change or cancel anytime</li></ul>",
+                    "link_label": "Get Started",
+                    "link_url" : "/pages/wine-club",
+                    "link_external" : false
+				}
+			},
+			{
+				"type": "pricing-column",
+				"settings": {
+					"label": "6 or 12 bottles",
+					"header": "Red Club",
+					"sub_header": "$95/$180 per shipment",
+					"body": "For the adventurer who knows what they’re in search for: red wines… and red wines only. Choose 6 or 12 bottles of world class red wines including our Reserve and Collector Series wines. NOTE: 12-bottle club includes two bottles of each wine.",
+					"list": "<ul><li>Save up to 30% off retail</li><li>Free shipping</li><li>Change or cancel anytime</li></ul>",
+                    "link_label": "Get Started",
+                    "link_url" : "/pages/wine-club",
+                    "link_external" : false
+
+				}
+			}
+		]
+	}]
+}
+{% endschema %}

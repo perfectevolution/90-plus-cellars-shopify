@@ -1,0 +1,531 @@
+<!-- /section/bloom_club-section.liquid -->
+
+<style>
+  .membership-cards ul {
+    list-style-position: outside;
+  }
+  .inner-padding {
+    padding: 0px 30px;
+  }
+  @media screen only and (min-width:1200px) {
+    .inner-padding {
+      padding: 0px 40px;
+    }
+  }
+  /* ==== Custom Sticker ==== */
+  .membership-grid .sticker-wrapper {
+  	width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: -26px;
+    right: -10px;
+    z-index: 2;
+  }
+
+  .membership-grid .sticker p {
+    display: table-cell;
+    vertical-align: middle;
+    cursor: default;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.43;
+    letter-spacing: 2.5px;
+    text-align: center;
+  }
+
+  .membership-grid .sticker{
+    width: 100%;
+    height: 100%;
+    display: table;
+  }
+</style>
+
+<!-- Club Header -->
+{% if section.settings.header_image %}
+  {% assign header_image_height = section.settings.header_height %}
+  <header class="club-image-header">
+    <div class="uk-cover-container">
+      <canvas width="" height="{{ header_image_height }}"></canvas>
+      <img
+        src="{{ section.settings.header_image | image_url: master }}"
+        alt="{{ image.alt }}"
+        loading="lazy"
+        width=""
+        height=""
+        class=""
+        uk-cover
+      >
+    </div>
+  </header>
+{% endif %}
+
+<section style="background-color:{{ section.settings.bg_color }}">
+  <div
+    class="uk-container uk-width-1-1 uk-margin-auto"
+    {% unless section.settings.full_width %}
+      style="max-width:{{ section.settings.section_max_width }}px"
+    {% endunless %}
+  >
+    <div class="membership-grid uk-margin-large-top uk-margin-large-bottom">
+      <div class="uk-margin-large-bottom uk-text-center uk-margin-auto uk-width-2-3@m">
+        {% if section.settings.heading_text %}
+          <h1 class="u-h1 font-heading heading-base">{{ section.settings.heading_text }}</h1>
+        {%- endif %}
+        {% if section.settings.intro_text %}
+          <p>{{ section.settings.intro_text }}</p>
+        {% endif %}
+      </div>
+
+      <!-- Level description -->
+      <div class="uk-grid-match uk-flex-wrap uk-flex-center membership-cards" uk-grid>
+        {% if section.settings.card_color_bg != "rgba(0,0,0,0)" %}
+          {% assign card_color = section.settings.card_color_bg %}
+        {% endif %}
+
+        {% for block in section.blocks %}
+          {% liquid
+            if block.settings.to_join
+              assign checkout_option =  block.settings.to_join_url
+            else
+              assign checkout_option = "checkout"
+            endif
+
+            assign card_width = 'uk-width-1-1 uk-width-1-2@m uk-width-1-3@l'
+            case block.settings.card_width
+              when 'w-full'
+                assign card_width = 'uk-width-1-1'
+              when 'w-1/2'
+                assign card_width = 'uk-width-1-1 uk-width-1-2@m'
+              when 'w-1/3'
+                assign card_width = 'uk-width-1-1 uk-width-1-2@m uk-width-1-3@l'
+              when 'w-1/4'
+                assign card_width = 'uk-width-1-1 uk-width-1-2@m uk-width-1-4@l'
+              else
+                assign card_width = 'uk-width-1-1 uk-width-1-2@m uk-width-1-3@l'
+            endcase
+
+            assign text_align = 'uk-text-center'
+            case block.settings.text_align
+              when 'center'
+                assign text_align = 'uk-text-center'
+              when 'left'
+                assign text_align = 'uk-text-left'
+              when 'right'
+                assign text_align = 'uk-text-right'
+              when 'justify'
+                assign text_align = 'uk-text-justify'
+              else
+                assign text_align = 'uk-text-center'
+            endcase
+
+            assign promoSticker = false
+            if block.settings.promo_sticker
+              assign promoSticker = true
+            endif
+
+            if block.settings.card_padding == true
+              assign card-padding = true
+            else
+              assign card-padding = false
+            endif
+          %}
+          <div class="{{ card_width }} uk-text-center" style="max-width:{{ block.settings.card_max_width }}px" data-club-signup="">
+            <div
+              class="uk-card uk-card-default uk-height-1-1 {% if card-padding %}uk-card-body{% endif %}"
+              style="background-color: {{ card_color }};"
+            >
+              <div class="uk-height-1-1 uk-flex uk-flex-column uk-flex-between uk-flex-wrap-between">
+                {% if promoSticker == true %}
+                  <div class="sticker-wrapper">
+                    <aside class="sticker" style="background-color:{{ block.settings.sticker_bg }}">
+                      <p style="color:{{ block.settings.sticker_text_color }}">{{ block.settings.sticker_label }}</p>
+                    </aside>
+                  </div>
+                {% endif %}
+                <div class="club-card-body">
+                  {% if block.settings.image %}
+                    <img
+                      src="{{ block.settings.image | image_url: width: 880 }}"
+                      alt="{{ image.alt }}"
+                      width="440"
+                      height=""
+                      class="uk-width-1-1 uk-margin-bottom"
+                    >
+                  {% endif %}
+                  <div
+                    {% unless card-padding %}
+                      class="inner-padding"
+                    {% endunless %}
+                  >
+                    {% if block.settings.club_level_name %}
+                      <h3 class="uk-margin-small-bottom font-heading heading-secondary">{{ block.settings.club_level_name }}</h3>
+                    {% endif %}
+
+                    {% if block.settings.club_price %}
+                      <h4 class="uk-text-bold uk-margin-bottom">
+                        {{ block.settings.club_price }}
+                      </h4>
+                    {% endif %}
+
+                    <div class="uk-margin-auto {{ text_align }}">
+                      {% if block.settings.level_description %}
+                        <div class="{% if block.settings.level_benefits %}uk-margin-small-bottom {% endif %}">
+                          {{ block.settings.level_description }}
+                        </div>
+                      {% endif %}
+
+                      {% if block.settings.level_benefits %}
+                        <div class="rte uk-margin-medium-bottom ">{{ block.settings.level_benefits }}</div>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Options -->
+                <div
+                  {% unless card-padding %}
+                    class="inner-padding uk-margin-medium-bottom"
+                  {% endunless %}
+                >
+                  {% if block.type == "club_card" %}
+                    {%- render 'bloom-element', type: 'clubform', level_ids: block.settings.level_variant_id, release_ids: block.settings.release_id, id: block.id, action: checkout_option -%}
+                    {% if block.settings.dropdown_label != '' %}
+                      <p class="uk-text-bold uk-margin-small-bottom">{{ block.settings.dropdown_label }}</p>
+                    {% endif %}
+                    {% liquid
+                      if block.settings.level_select
+                        render 'bloom-element', type: 'clubform-field', name: 'level', class: 'uk-select uk-margin-bottom'
+                       endif
+                       if block.settings.release_select
+                        render 'bloom-element', type: 'clubform-field', name: 'release', class: 'uk-select uk-margin-bottom'
+                       endif
+                       if block.settings.option_select
+                        render 'bloom-element', type: 'clubform-field', name: 'option', class: 'uk-select uk-margin-bottom'
+                       endif
+                      render 'bloom-element', type: 'clubform-button', label: block.settings.join_button_label, class: 'Button Button--primary btn btn--primary uk-width-1-1'
+                      render 'bloom-element', type: 'endclubform', id: block.id
+                    %}
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Membership tiers",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Header image"
+    },
+    {
+      "type": "image_picker",
+      "id": "header_image",
+      "label": "Image",
+      "info": "1400px wide recommended"
+    },
+    {
+      "type": "select",
+      "id": "header_height",
+      "label": "Image height",
+      "default": "400",
+      "options": [
+        {
+          "value": "200",
+          "label": "Small"
+        },
+        {
+          "value": "400",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Large"
+        },
+        {
+          "value": "800",
+          "label": "Extra large"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Header content"
+    },
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Header title"
+    },
+    {
+      "type": "richtext",
+      "id": "intro_text",
+      "label": "Header text"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Section background color"
+    },
+    {
+      "type": "color",
+      "id": "card_color_bg",
+      "label": "Card background color"
+    },
+    {
+      "type": "header",
+      "content": "Section layout"
+    },
+    {
+      "id": "full_width",
+      "type": "checkbox",
+      "label": "Page full width",
+      "default": false
+    }, 
+    {
+      "type": "range",
+      "id": "section_max_width",
+      "min": 500,
+      "max": 2000,
+      "step": 100,
+      "unit": "px",
+      "label": "Section max width",
+      "default": 1400
+    }
+  ],
+  "blocks": [
+    {
+      "type": "club_card",
+      "name": "Club card",
+      "settings": [
+        {
+          "id": "level_variant_id",
+          "type": "text",
+          "label": "Level id"
+        },
+        {
+          "id": "release_id",
+          "type": "text",
+          "label": "Release id",
+          "info": "Leave this blank to show all releases"
+        },
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "type": "checkbox",
+          "id": "card_padding",
+          "label": "Add padding to card",
+          "default": true
+        },
+        {
+          "id": "text_align",
+          "type": "select",
+          "label": "Text alignment",
+          "default": "center",
+          "options": [
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "justify",
+              "label": "Justify"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "card_width",
+          "label": "Width",
+          "default": "w-1/3",
+          "options": [
+            {
+              "value": "w-full",
+              "label": "100%"
+            },
+            {
+              "value": "w-1/2",
+              "label": "50%"
+            },
+            {
+              "value": "w-1/3",
+              "label": "33%"
+            },
+            {
+              "value": "w-1/4",
+              "label": "25%"
+            }
+          ]
+        },
+        {
+          "type": "range",
+          "id": "card_max_width",
+          "min": 300,
+          "max": 2000,
+          "step": 100,
+          "unit": "px",
+          "label": "Card max width",
+          "default": 500
+        }, 
+        {
+          "type": "header",
+          "content": "Content"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1000px wide recommended"
+        },
+        {
+          "id": "club_level_name",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "id": "level_description",
+          "type": "richtext",
+          "label": "Description"
+        },
+        {
+          "id": "level_benefits",
+          "type": "html",
+          "label": "Benefits",
+          "info": "Enter as HTML"
+        },
+        {
+          "id": "club_price",
+          "type": "text",
+          "label": "Price"
+        },
+        {
+          "id": "join_button_label",
+          "type": "text",
+          "label": "Join button label",
+          "default": "Join the club"
+        },
+        {
+          "type": "header",
+          "content": "Selections"
+        },
+        {
+          "id": "dropdown_label",
+          "type": "text",
+          "label": "Selection label"
+        },
+        {
+          "id": "level_select",
+          "type": "checkbox",
+          "label": "Show level selection",
+          "default": false
+        },
+        {
+          "id": "release_select",
+          "type": "checkbox",
+          "label": "Show release selection",
+          "default": false
+        },
+        {
+          "id": "option_select",
+          "type": "checkbox",
+          "label": "Show option selection",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "Sign up page"
+        },
+        {
+          "id": "to_join_url",
+          "type": "text",
+          "label": "URL to join page",
+          "default": "/pages/join-club/"
+        },
+        {
+          "id": "to_join",
+          "type": "checkbox",
+          "label": "Use the bloom sign up form",
+          "default": true,
+          "info": "Note: This is the standard sign up flow for Bloom."
+        },
+        {
+          "type": "header",
+          "content": "Promotional sticker"
+        },
+        {
+          "id": "promo_sticker",
+          "type": "checkbox",
+          "label": "Add a promotional sticker",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "sticker_bg",
+          "label": "Sticker background",
+          "default": "#000"
+        },
+        {
+          "type": "text",
+          "id": "sticker_label",
+          "label": "Sticker label",
+          "default": "Sticker text"
+        },
+        {
+          "type": "color",
+          "id": "sticker_text_color",
+          "label": "Sticker text color",
+          "default": "#fff"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Club",
+      "blocks": [
+        
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% comment %}
+  Legacy join flow options
+    {
+            "id": "to_checkout",
+            "type": "checkbox",
+            "label": "Send customer directly to checkout",
+            "info": "Requires a product to be created and use the Variant ID below",
+            "default": false
+          },
+          {
+            "id": "to_cart",
+            "type": "checkbox",
+            "label": "Add membership to the shopping cart",
+            "info": "Requires a product to be created and use the Variant ID below",
+            "default": false
+          }
+{% endcomment %}

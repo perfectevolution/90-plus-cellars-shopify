@@ -1,0 +1,166 @@
+<section class="testimonials testimonials-swiper ">
+    <div class="container">
+        <div class="row ">
+            <div class="col-12 col-md-7">
+                {% if section.settings.header != blank %}
+                    <h2 class="h3 mobile-sm mb-4">{{section.settings.header}}</h2>
+                {% endif %}
+            </div>   
+            <div class="col-5  theme--dark d-none d-md-flex align-items-end align-items-end flex-column">
+                <div class="swiper-buttons text-end d-flex justify-content-end">
+                    <div class="swiper-button-prev px-2">{% render 'icon-circle-caret' direction:'prev'%}</div>
+                    <div class="swiper-button-next">{% render 'icon-circle-caret' direction: 'next'%} </div>
+                </div>
+                {% liquid
+                    if section.settings.link_label and section.settings.link_url
+                        render 'button', label: section.settings.link_label, url: section.settings.link_url external: section.settings.link_external btn_class:"btn btn-dark d-block my-3"
+                    endif
+                %}
+            </div>     
+        </div>
+    
+    </div>
+    <div class=" content-wrapper offset-wrapper">
+
+        <div class="swiper">
+            <div class="swiper-wrapper">            
+                {% if section.blocks %}
+                    {% for block in section.blocks %}                            
+                        <div class="swiper-slide col-5">
+                            <div class = 'testimonial-card '>
+                                <div class="testimonial-card__header d-block d-md-flex mb-3">
+                                    {% if block.settings.image %}
+                                            <img src="{{ block.settings.image | img_url: '170x120', crop: 'center' }}" 
+                                                class="img-fluid"
+                                                alt="{{block.settings.image.alt | default : block.settings.header}}"
+                                                width="{{block.settings.image.width}}"
+                                                height="{{block.settings.image.height}}"
+                                            />                                
+                                    {% endif %}
+                                    <div class="labels">
+                                        {% if block.settings.header %}
+                                            <h3 class="label"><b class="label d-block">{{block.settings.header}}</b>
+                                                {% if block.settings.sub_header %}
+                                                    <div class="mt-1 light">{{ block.settings.sub_header}}</div>
+                                                {% endif %}
+                                            </h3>
+                                        {% endif %}        
+
+                                    </div>
+                                    <div class = 'ratings ms-md-4'>
+                                        <h3 class="label"><b class="label d-none d-md-block">&nbsp;</b>
+                                            <div class="mt-1 light">
+                                                <span style="margin-top:-1px">Ratings</span>                                                 
+                                                <span class="ms-3">
+                                                    <i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+                                                    <i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+                                                    <i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+                                                    <i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+                                                    <i class="stamped-fa stamped-fa-star" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        {% if block.settings.body %}
+                                            <div class="col-12">
+                                                <p class="body-2">{{block.settings.body }}</p>
+                                            </div>
+                                        {% endif %}                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+    </div>
+</section>
+
+
+{% schema %}
+{
+    "name": "Testimonials",
+    "settings": [
+        {
+            "type": "text",
+            "id": "header",
+            "label": "Header"
+        }
+    ],
+    "blocks": [
+        {
+          "name": "Card",
+          "type": "card",
+          "settings": [
+            {
+                "type": "text",
+                "id": "header",
+                "label": "Header"
+            },
+            {
+                "type": "text",
+                "id": "sub_header",
+                "label": "Sub Header"
+            },
+            {
+                "type": "textarea",
+                "id": "body",
+                "label": "Body"
+            }
+          ]
+        }
+     ],   
+    "presets": [
+        {
+            "name": "Testimonials",
+            "category": "Content",
+            "settings": {
+                "header": "5 Star Reviews"
+            },
+            "blocks" : [
+                {
+                    "type": "card",
+                    "settings": {
+                        "header": "Testimonial 1",
+                        "sub_header": "Sub Header",
+                        "body": "Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut."
+                    }
+                },
+                {
+                    "type": "card",
+                    "settings": {
+                        "header": "Testimonial 2",
+                        "sub_header": "Sub Header",
+                        "body": "Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut."
+                    }
+                },
+                {
+                    "type": "card",
+                    "settings": {
+                        "header": "Testimonial 3",
+                        "sub_header": "Sub Header",
+                        "body": "Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut."
+                    }
+                },
+                {
+                    "type": "card",
+                    "settings": {
+                        "header": "Testimonial 3",
+                        "sub_header": "Sub Header",
+                        "body": "Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut."
+                    }
+                }
+
+            ]
+        }
+    ]
+}
+
+{% endschema %}

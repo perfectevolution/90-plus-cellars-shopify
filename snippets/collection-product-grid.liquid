@@ -1,0 +1,149 @@
+{% liquid
+    assign filters_active = false
+    for filter in collection.filters
+      if filter.type == "price_range"
+        if filter.min_value.value != nil or filter.max_value.value != nil
+          assign filters_active = true
+        endif
+      else
+        for filter_value in filter.active_values
+          assign filters_active = true
+        endfor
+      endif
+    endfor
+  %}
+
+
+  <collection-product-grid data-url="{{canonical_url}}">
+    <div class="container collection-product-grid-filters" collection-product-grid-filters>
+      <div class="collection-product-grid-filters-inner">
+        <div class="filter-form-header ">
+          <div class="h4">Filters</div>
+          <button type="button" collection-product-grid-filter-close >{% render 'icon-close' %}</button>
+        </div>
+        <div class="row active-filters" collection-product-grid-active-filters>
+            {% if filters_active  == true %}
+              <div class="col-12  mb-3 active-filter-header d-flex align-items-center justify-content-between">
+                <h6 class="mb-0"><i>Active Filters</i></h6>
+                {% comment %}
+                {% if filters_active == true %}
+                  <a href="{{ canonical_url }}?" class="text-dark">Clear all</a>      
+                {% endif %}
+              {% endcomment %}
+  
+              </div>
+            {% endif %}
+            <div class="col-12 col-md-10">
+              {%- for filter in collection.filters -%}
+                {%- if filter.type == "price_range" -%}
+                  {%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
+                    <a class="active-filters__remove-filter btn btn-outline-light btn-sm" href="{{ filter.url_to_remove }}">
+                      {%- assign min_value = filter.min_value.value | default: 0 -%}
+                      {%- assign max_value = filter.max_value.value | default: filter.range_max -%}
+                      {{ min_value | money }} - {{ max_value | money }} X
+                    </a>
+                  {%- endif -%}
+                {%- else -%}
+                  {%- for filter_value in filter.active_values -%}
+                    <a class="active-filters__remove-filter btn btn-outline-light btn-sm me-2 mb-2 "  collection-product-grid-remove-filter 
+                      href="https://{{shop.domain}}{{ filter_value.url_to_remove  | replace : 'view=ajax' , ''}}">
+                      {{ filter.label }}: {{ filter_value.label }} <span class = 'icon-remove'>X</span>
+                    </a>
+                  {%- endfor -%}
+                {%- endif- %}
+              {%- endfor -%}
+            </div>
+            <div class="col-3 col-md-2  text-end">
+              {% if filters_active == true %}
+                <a href="{{ canonical_url }}?" class="active-filters__clear btn btn-primary btn-sm">Clear all</a>      
+              {% endif %}
+            </div>
+        </div>
+        <form class="filter-form row " collection-product-grid-filters-form >
+          <div class="col d-flex filter-form-column">
+            {%- for filter in collection.filters -%}
+              <div class="filter-group " data-filter-group="{{filter.label | handleize | downcase }}">
+                <div class="dropdown">
+                  <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"  aria-expanded="false">
+                    <span>
+                      {{ filter.label }}
+                      {%- if filter.active_values.size > 0 -%}
+                        <sup>({{ filter.active_values.size }})</sup>
+                      {%- endif -%}  
+                    </span>
+                    <span class = 'icon-caret'>{% render 'icon-circle-caret' %}</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                      {%- for filter_value in filter.values -%}
+                        {% unless collection.title contains filter_value.label %}
+                        <li class="filter-group-display__list-item {% if filter_value.count == 0 and filter_value.active == false -%}d-none{%- endif %} ">
+                            <input type="checkbox"
+                              name="{{ filter_value.param_name }}"
+                              value="{{ filter_value.value }}"
+                              id="Filter-{{ filter.param_name }}-{{ forloop.index }}"
+                              {% if filter_value.active -%}checked{%- endif %}
+                              {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
+                            >
+                            <label for="Filter-{{ filter.param_name }}-{{ forloop.index }}">{{ filter_value.label }}</label>
+                          </li>
+                        {% endunless %}
+                      {%- endfor -%}
+                    </ul>    
+    
+                </div>
+              </div>
+    
+            {%- endfor -%}
+          </div>        
+          <div class = 'mobile-submit'>
+            {% if filters_active == true %}
+              <a href="{{ canonical_url }}?" class="btn btn-outline-light w-100 me-2">Clear all</a>      
+            {% endif %}
+            <button class="btn btn-primary w-100" type = 'submit'  collection-product-grid-filter-close>
+              Apply
+            </button>
+          </div>  
+          
+        </form>      
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class = 'filter-border-top d-block d-md-none'></div>
+          <button type = 'button' class = 'btn btn-primary w-100 d-md-none btn-toggle-filters mb-5' collection-product-grid-filter-toggle >
+            <span>filters</span>
+            {% render 'icon-filters'%}
+          </button>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  
+    <section class='collection-product-grid' collection-product-grid-items>
+      <div class='container'>
+          <div class='row' id="products-container" collection-product-grid-results>
+              {% paginate collection.products by 500 %}
+                  {% for product in collection.products %}                    
+                      <div class="col-6 col-md-4 col-lg-3 collection-product-grid__col mb-4 {% if product.title contains 'Test' %} d-none {% endif %}">
+                        {% render 'product-grid-item' product: product %}
+                      </div>
+                  {% else %}
+                      <div class="col-sm-4">
+                          <h2>There were no matches found for your search </h2>
+                      </div>
+                  {% endfor %}
+  
+                  </div>
+              {%- if paginate.pages > 1 -%}
+                  <div class="page-pagination">
+                      {% render 'pagination' paginate: paginate %}
+                  </div>
+              {%- endif -%}
+          {% endpaginate %}
+      </div> 
+    </section> 
+  </collection-product-grid>
+  

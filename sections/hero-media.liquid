@@ -1,0 +1,141 @@
+{% liquid
+    assign section_id = section.settings.section_id | default: section.id
+%}
+
+<section class="hero-media " id="{{section_id}}">
+    {% if section.settings.script != blank %}
+        <p class="hero-media__script script">{{ section.settings.script  }}</p>
+    {% endif %}
+    {% if section.settings.background_video_url != blank %}
+        <div class="hero-media__video {% unless section.settings.show_mobile %}d-none d-md-block{% endunless %}">
+            <video src="{{ section.settings.background_video_url }}" autoplay muted loop="true"></video>
+        </div>
+    {% endif %}
+    {% if section.settings.image %}    
+        <picture class="hero-media__image img-fluid mt-3 mb-4 {% if section.settings.background_video_url != blank %} d-block d-md-none {% endif%}"> 
+            {% if section.settings.mobile_image != blank %}
+                <source media="(max-width: 768px)" srcset="{{section.settings.mobile_image | img_url: 'master'}}" />
+            {% endif %}
+
+            <img src="{{ section.settings.image | img_url: 'master' }}" {% if section.settings.image.alt %} alt="{{ section.settings.image.alt }}" {% else %} alt="Acme Smoked Fish" {% endif %}>
+        </picture>
+    {% endif %}
+
+    {% if section.settings.has_modal_video %}
+        <button type="button" 
+            class="hero-media__button btn-play" 
+            data-bs-toggle="modal" 
+            data-bs-target="#modal-{{section_id}}"
+            aria-label="play video">
+            {% render 'icon-play' %}
+        </button>
+    {% endif %}
+
+
+</section>
+
+
+{% if section.settings.has_modal_video %}
+
+    <!-- Modal -->
+    <div class="modal modal-xl fade hero-media-modal" 
+        id="modal-{{ section_id }}" 
+        tabindex="-1" 
+        aria-labelledby="{{section_id}}Label" aria-hidden="true"
+        video-modal >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    X
+                </button>
+                <div class="modal-body">
+                    {% if section.settings.modal_video_type == 'video' %}
+                        <video autoplay muted controls src="{{ section.settings.modal_video_url }}"></video>
+                    {% endif %} 
+                    {% if section.settings.modal_video_type == 'iframe' %}
+                        <iframe src="{{ section.settings.modal_video_url }}" 
+                            width="640" 
+                            height="360" 
+                            frameborder="0" 
+                            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    {% endif %} 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+{% endif %}
+
+{% schema %}
+    {
+        "name": "Hero Media",
+        "settings": [
+            {
+                "type": "text",
+                "id": "section_id",
+                "label": "Section ID"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Desktop Background Image"
+            },
+            {
+                "type": "image_picker",
+                "id": "mobile_image",
+                "label": "Mobile Background Image"
+            },
+            {
+                "type": "text",
+                "id": "background_video_url",
+                "label": "Background Video URL "
+            },
+            {
+                "type": "checkbox",
+                "id": "show_mobile",
+                "label": "Show Video on Mobile Devices",
+                "default": false
+            },
+            {
+                "type": "checkbox",
+                "id": "has_modal_video",
+                "label": "Show Modal Video"
+            },
+            { 
+                "type": "text",
+                "id": "script",
+                "label": "Script"
+            },
+            {
+                "type": "select",
+                "id": "modal_video_type",
+                "label": "Modal Video Type",
+                "options": [
+                    {
+                        "value": "iframe",
+                        "label": "Iframe ( Youtube or Vimeo ) "
+                    },
+                    {
+                        "value": "video",
+                        "label": "Direct Link ( CDN or upload to Shopify ) "
+                    }
+                ],
+                "default": "video"
+            },
+            {
+                "type": "text",
+                "id": "modal_video_url",
+                "label": "Modal Video URL"
+            }
+
+        ],
+        "presets": [
+            {
+                "name": "Hero Media",
+                "settings" : {}
+            }
+        ]
+    }
+{% endschema %}
+
+

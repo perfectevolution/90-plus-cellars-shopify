@@ -1,0 +1,98 @@
+
+
+<section id="{{ section.settings.anchor_id | default : section.id }}" 
+    class="list-with-images">
+
+    {% if section.blocks %}
+        <div class="list-with-images__images">
+            <img src="{{section.settings.image | image_url : width:1000 }}"
+                class=" active" 
+                alt="{{section.settings.image.alt | default : block.settings.header}}"
+                width="{{section.settings.image.width | default : 'auto'}}"
+                height="{{section.settings.image.height | default : 'auto'}}"                
+                loading='lazy'>
+            {% if section.settings.script != blank %}
+                <p class="script d-inline d-lg-none">{{section.settings.script}}</p>
+            {% endif %}
+        </div>
+        <div class="list-with-images__items">
+        {% for block in section.blocks %}
+            <a class="list-with-images__item text-center"
+                href="{{block.settings.url}}" 
+                data-index="{{forloop.index0}}"
+                data-image="{{block.settings.image | image_url }}">
+                    {% if block.settings.label %}
+                        <p class="eyebrow relative mb-lg-1">{{block.settings.label}}</p >
+                    {% endif %}
+                    {% if block.settings.header %}
+                        <h3 class="h4-plus relative mb-0">{{block.settings.header}}</h3>
+                    {% endif %}
+            </a>        
+        {% endfor %}
+        </div>
+    {% endif %}
+
+</section>
+
+{% schema%}
+    {
+        "name": "List With Images",
+        "tag" : "section",
+        "class" : "section-list-with-images",
+        "settings" : [
+            {
+                "type":"text",
+                "id":"id",
+                "label":"Section ID"
+            },
+            {
+                "type" :"text",
+                "id" : "script",
+                "label" : "Script"
+            },
+            {
+                "type" : "image_picker",
+                "id" : "image",
+                "label" : "Image"
+            }
+
+        ],
+        "blocks": [
+            {
+                "name":"List Item",
+                "type" : "list-item",
+                "settings":[
+                    {
+                        "type":"text",
+                        "id":"label",
+                        "label":"Label"
+                    },
+                    {
+                        "type":"text",
+                        "id":"header",
+                        "label":"Header"
+                    },
+                    {
+                        "type":"url",
+                        "id":"url",
+                        "label":"URL"                      
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"                        
+                    }
+                ]
+            }
+        ],        
+        "presets": [
+            {
+              "name": "List With Images",
+              "settings": {
+              }
+            }
+          ]
+        
+    }
+
+{% endschema %}

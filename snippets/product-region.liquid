@@ -1,0 +1,12 @@
+{%- capture region -%}
+{%- if product.metafields.product.sub_region  != blank -%}
+    {{-product.metafields.product.sub_region -}}
+    {%- for region in product.metafields.product.region.value -%}
+      {%- if forloop.first %},&nbsp;{%- endif -%}
+    {%- endfor -%}
+    {%- endif -%}
+  {%- for region in product.metafields.product.region.value -%}
+    {{-region-}}{%- if forloop.last != true  -%},{%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{{- region -}}

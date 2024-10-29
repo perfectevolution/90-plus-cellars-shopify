@@ -1,0 +1,10 @@
+<script>
+var options = ((bloom.storage().getItem('membership')||{}).selectionsAttributes||[]).flatMap(function(sA) {
+  return Bloom.storefront.data.clubs
+    .flatMap(function(c) { return c.levels})
+    .flatMap(function(l) { return l.releases })
+    .flatMap(function(r) { return r.options })
+    .filter(function(o) { return o.id == sA.productOptionId })
+    .map(function(o) { return (sA.quantity > 1 ? (sA.quantity + "x ") : "") + o.name })
+  }).join(", ")
+</script>

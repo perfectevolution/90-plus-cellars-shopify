@@ -1,0 +1,254 @@
+{% liquid
+    assign position = section.settings.image_position 
+    assign layout = section.settings.layout | default : 'rows'
+    assign is_swiper = false
+    if section.blocks.size > 1 and layout == 'swiper'
+        assign is_swiper = true
+    endif
+    if product
+        assign position = 'right'
+    endif 
+%}
+{% if section.blocks.size > 0 and section.blocks[0].settings.image != blank %}
+    <section class="two-column-rows {% if is_swiper %} has-swiper {% endif %}" id="{{ section.settings.section_id | default : section.id}}">
+            {% if is_swiper %}
+            <div class="swiper">
+                <div class="swiper-wrapper">
+            {% endif %}
+                {% for block in section.blocks %}
+                    {% liquid 
+                        if is_swiper or section.blocks.size == 1 
+                            assign image_class = 'col-lg-6'
+                            assign content_class = 'col-lg-5 offset-lg-1'
+                            if position == 'right'
+                                assign content_class = 'col-lg-5'
+                                assign image_class = 'col-lg-6 offset-lg-1 order-lg-last'
+                            endif
+                        endif 
+                        if is_swiper == false and section.blocks.size > 1
+                            assign modulo = forloop.index0 | modulo: 2 
+                            if modulo == 0 
+                                if position == 'left'
+                                    assign image_class = 'col-lg-6'
+                                    assign content_class = 'col-lg-5 offset-lg-1'
+                                endif 
+                                if position == 'right'
+                                    assign content_class = 'col-lg-5'
+                                    assign image_class = 'col-lg-6 offset-lg-1 order-lg-last'
+                                endif
+                            endif
+                            if modulo == 1 
+                                if position == 'right'
+                                    assign image_class = 'col-lg-6'
+                                    assign content_class = 'col-lg-5 offset-lg-1'
+                                endif 
+                                if position == 'left'
+                                    assign content_class = 'col-lg-5'
+                                    assign image_class = 'col-lg-6 offset-lg-1 order-lg-last'
+                                endif
+                            endif
+
+                        endif
+                    %}
+                    {% if is_swiper %}
+                    <div class="swiper-slide" > 
+                    {% endif %}
+                        <div class="container {% if is_swiper == false and forloop.index0 > 0 %}{% endif %}" {{block.shopify_attributes}} >
+                            {% if block.settings.anchor_id != blank %}
+                                <div id="{{ block.settings.anchor_id }}" ></div>
+                            {% endif %}
+                            <div class="row {% if is_swiper == false and forloop.last == false %} {% endif %}{% if block.settings.header == blank %}align-items-start{% else %}align-items-center{% endif %} {% if is_swiper == false %}mb-lg-5 {% endif %}">
+                                {% if block.settings.image %}
+                                    <div class="{{image_class}}">
+                                        <div class="image-col  {% if block.settings.show_decoration %} show-decoration {% endif %} ">
+                                            <picture>
+                                                {% if block.settings.show_decoration == true %}
+                                                    <div class="decoration" >{% render 'icon-starburst-large' %}</div>
+                                                {% endif %}
+                                                {{ block.settings.image | image_url: width:500  | image_tag: class: 'img-fluid', loading: 'lazy' }}
+                                            </picture>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                                <div class="{{content_class}}">
+                                    {% if block.settings.header != blank %}
+                                        <h2 class="h1 pb-3 pb-lg-4 mt-3 mt-lg-0">
+                                            <b>{{ block.settings.header }}</b>
+                                            {% if block.settings.sub_header != blank %}
+                                                <i >{{ block.settings.sub_header }}</i>
+                                            {% endif%}
+                                        </h2>
+                                    {% endif%}
+                                    <div class="content">
+                                        {% if block.settings.body != blank %}
+                                            <div class="body-1 pb-3 pb-lg-4">{{ block.settings.body }}</div>
+                                        {% endif %}
+
+                                        {% render 'button', label: block.settings.link_label, url: block.settings.link_url, external: block.settings.link_external, btn_class: 'btn btn-dark'%}    
+                                    </div>                    
+                                </div>
+                            </div>
+                        </div>     
+                    {% if is_swiper %}       
+                    </div>
+                    {% endif %}
+                {% endfor %}
+        {% if is_swiper %}
+            </div><!-- // swiper-wrapper -->
+        </div><!-- // swiper --> 
+        {% endif %}
+
+        {% if is_swiper %}
+            {% liquid
+            if position == 'left'
+                assign content_class = 'col-lg-6 offset-lg-6'
+            endif 
+            if position == 'right'
+                assign content_class = 'col-lg-6'
+            endif
+            %} 
+            <div class="container mt-2 mt-lg-3">
+                {% if block.settings.anchor_id != blank %}
+                    <div id="{{ block.settings.anchor_id }}" class="anchor-fix"></div>
+                {% endif %}
+                <div class="row">
+                    <div class="col-lg-5 offset-lg-7 d-flex align-items-center">
+                        <div class="swiper-buttons d-none d-lg-flex">
+                            <div class="swiper-button-prev me-3 {% if forloop.first %} swiper-button-disabled {% endif%}">
+                                Next
+                            </div> 
+                            <div class="swiper-button-next  {% if forloop.last %} swiper-button-disabled {% endif%}">
+                                PREV
+                            </div>
+                        </div>
+                        <div class="swiper-pagination ms-lg-4 {% if section.settings.color == 'dark' %}theme--dark{% endif %}"></div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+    </section>
+{% endif %}
+
+{% schema %}
+{
+    "name": "Two Column Rows",
+    "settings": [
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "Section ID"
+        },
+
+
+        {
+            "type": "select",
+            "id": "image_position",
+            "label": "Image Position",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "Left"
+                },
+                {
+                    "value": "right",
+                    "label": "Right"
+                }
+            ],
+            "default": "left"
+        }
+
+    ],
+    "blocks": [
+        {
+            "type" : "Slide",
+            "name" : "Slide",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "header",
+                    "label": "Header"
+                },
+                {
+                    "type": "text",
+                    "id": "sub_header",
+                    "label": "Sub Header ( Italics ) "
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Choose an Image"
+                },
+                {
+                    "type": "select",
+                    "id": "image_size",
+                    "label": "Image Size",
+                    "options": [
+                        {
+                            "value": "contain",
+                            "label": "Contain Image to Bounds"
+                        },
+                        {
+                            "value": "cover",
+                            "label": "Fill Image to Fit"
+                        }
+                    ],
+                    "default": "cover"
+                },
+                {
+                    "type": "richtext",
+                    "id": "body",
+                    "label": "Body"
+                },
+                {
+                    "type": "text",
+                    "id": "link_label",
+                    "label": "Link Label"
+                },
+                {
+                    "type": "url",
+                    "id": "link_url",
+                    "label": "Link URL"
+                },
+                {
+                    "id": "link_external",
+                    "type": "checkbox",
+                    "label": "Open link in a new window",
+                    "default": false
+                }
+                ,
+                {
+                    "type" : "checkbox",
+                    "id"   : "show_decoration",
+                    "label" : "Show Starbust",
+                    "default" : false
+                }
+            ]
+        }
+
+    ],
+    "presets": [
+        {
+            "name": "Two Column Rows",
+            "settings" : {}
+        }
+    ]
+}
+{% endschema %}
+
+{% comment %} {
+    "type": "select",
+    "id": "layout",
+    "label": "Layout",
+    "options": [
+        {
+            "value": "swiper",
+            "label": "Show as Swiper"
+        },
+        {
+            "value": "rows",
+            "label": "Show As alternating rows"
+        }
+    ],
+    "default": "swiper"
+}, {% endcomment %}

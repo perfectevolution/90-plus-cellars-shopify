@@ -1,0 +1,30 @@
+<a href="{{ article.url }}"  class="article-card-item d-block "  >
+    <div class="content">
+        <h3 class="h4 mb-4">{{article.title | truncate : 70 }}</h3>
+        <p class="label">
+            {%- liquid
+                for tag in article.tags
+                    if forloop.index <= 3
+                        echo tag
+                        if forloop.last == false
+                            echo ', '
+                        endif
+                    endif
+                endfor
+                if article.tags.size > 3
+                    echo '...' 
+                endif
+            -%}
+        </p>
+    </div>
+        {% comment %} <a href="{{ article.url }}" class="d-flex"> {% endcomment %}
+            <picture class="d-block">
+                <img src="{{ article.image | img_url: '260x260', crop: 'center' }}" 
+                    class="img-fluid"
+                    alt="{{article.image.alt | default : article.title}}"
+                    width="{{article.image.width}}"
+                    height="{{article.image.height}}"
+                />
+            </picture>
+        {% comment %} </a> {% endcomment %}
+</a>

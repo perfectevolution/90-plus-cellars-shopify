@@ -1,0 +1,113 @@
+{% paginate search.results by 10 %}
+
+{% assign header_image = 'https://cdn.shopify.com/s/files/1/0059/1111/7922/files/hops-2.jpg' %}
+
+<!--==================== mx-slider-sec Section ====================-->
+<section class="mx-intro-sec mx-intro-sec--basic mx-intro-sec--search "  style="background-image:url({{ header_image }});">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8">
+                  <span class = 'h2'>{{search.results_count}} Results for </span>
+                <h1 class = 'xl'>{{search.terms }}</h1>
+            </div><!-- .col -->
+        </div><!-- .row -->
+        <div class="row">
+            <div class="col">
+                <form role="search" action="/" method="get" class="sub-nav-search ng-pristine ng-valid">
+                  <div class="form-group row">
+                    <div class="col-md-9 col-lg-10">
+                      <input type="search" id="SearchInput" class="form-control" name="q"
+                        value="{{ search.terms | escape }}"
+                        placeholder="{{ 'general.search.placeholder' | t }}"
+                        aria-label="{{ 'general.search.placeholder' | t }}" />
+                    </div>
+                      <div class="col-md-3 col-lg-2">
+                        <button type="submit" class="btn btn-default btn-block">Search</button>
+                      </div>
+                  </div>
+                </form>
+              </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container --> 
+</section><!-- .mx-intro-sec -->
+
+
+
+
+{% comment %} 
+<div class="container">
+  {% if search.performed == false %}
+    <div class="text-center">
+      <h1 class="h2">{{ 'general.search.title' | t }}</h1>
+  {% else %}
+    <div class="section-header text-center">
+      <h1 class="h2">
+        <span class="visually-hidden">{{ 'general.search.heading' | t: count: search.results_count }}:</span>
+        {{ 'general.search.results_with_count' | t: terms: search.terms, count: search.results_count }}
+      </h1>
+  {% endif %}
+      <div class="row">
+        <div class="col-12">
+          <form action="/search" method="get" role="search" class="search">
+            <div aria-live="polite" class="form-message form-message--error search-result-error-message hide" data-search-error-message>
+              <ul id="error-search-form">
+                <li>{{ 'general.search.empty_search_message' | t }}</li>
+              </ul>
+            </div>
+
+            <div class="input-group">
+              <input type="search"
+                id="SearchInput"
+                class="input-group__field search__input"
+                name="q"
+                value="{{ search.terms | escape }}"
+                placeholder="{{ 'general.search.placeholder' | t }}"
+                aria-label="{{ 'general.search.placeholder' | t }}"
+                >
+              <span class="input-group__btn">
+                <button id="SearchResultSubmit" class="btn search__submit" type="submit">{{ 'general.search.submit' | t }}</button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      {% if search.performed and search.results_count == 0 %}
+        <hr class="hr--small hr--invisible" aria-hidden="true" />
+        <div class="rte">
+          <p>{{ 'general.search.no_results_html' | t: terms: search.terms }}</p>
+        </div>
+      {% endif %}
+  </div>
+</div> {% endcomment %}
+
+
+{% if search.results_count > 0 %}
+  <section class = 'mx-beers'>
+      <div class = 'container-fluid'>
+          <div class = 'row'>
+            {% for product in search.results %}
+              <div class = 'mx-beer-col type--beer'>
+                {% render 'product-grid-item' product:product  %}
+              </div>
+            {% endfor %}
+          </div>
+      </div> 
+  </section>    
+  {% else %}
+    <section >
+        <div class = 'container-fluid'>
+            <div class = 'row'>
+                <h1>No results found for {{search.terms }}</h1>
+            </div>
+        </div> 
+    </section>    
+  {% endif %}
+
+
+{% if paginate.pages > 1 %}
+                  {% include 'pagination' %}
+
+{% endif %}
+
+{% endpaginate %}

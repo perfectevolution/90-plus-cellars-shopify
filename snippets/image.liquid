@@ -1,0 +1,11 @@
+{% liquid
+    assign size = 'master'
+    assign className = className | default : 'img-fluid'
+%}
+<img src="{{ image | img_url : size }}" 
+    class="{{ className }}"
+    alt="{{image.alt | default : default_title}}"
+    width="{{image.width}}"
+    height="{{image.width}}"
+    loading="lazy"
+/>

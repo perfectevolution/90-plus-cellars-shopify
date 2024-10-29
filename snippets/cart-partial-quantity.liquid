@@ -1,0 +1,9 @@
+<div class="cart__qty " >
+	{% render "product-form__qty" product:item index:forloop.index%}
+</div>
+<a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" 
+	class="label cart__remove " 
+	aria-label="{{ 'cart.buttons.remove' | t: product: item.title }}" 
+	data-cart-remove>
+	remove
+	</a>

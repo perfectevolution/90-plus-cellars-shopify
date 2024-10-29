@@ -1,0 +1,70 @@
+<section class="newsletter-callout ">
+    {% if section.settings.header %}
+        <h3 class="bg-text text-warning">{{section.settings.header}}</h3>
+    {% endif %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="form p-4 mx-auto">
+                    {% if section.settings.form_header %}
+                        <h3 class="h4 text-transform-none pe-2 pe-md-0">{{section.settings.form_header}}</h3>
+                    {% endif%}
+                    {% if section.settings.form_sub_header %}
+                        <p class="label d-block my-3 pe-2 pe-md-0">{{section.settings.form_sub_header}}</p>
+                    {% endif%}
+                    <div class="{{section.settings.klaviyo_newsletter_id}}"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Newsletter Callout",
+    "settings": [        
+        {
+            "type": "text",
+            "id": "id",
+            "label": "Section ID"
+        },
+        {
+            "type": "text",
+            "id": "header",
+            "label": "Background Text"
+        },
+        {
+            "type": "text",
+            "id": "form_header",
+            "label": "Form Header"
+        },
+        {
+            "type": "text",
+            "id": "form_sub_header",
+            "label": "Form Sub Header"
+        },
+		{
+			"type"  :"text",
+			"id"    :"klaviyo_newsletter_id",
+			"label" :"Klaviyo Newsletter ID",
+            "default" : "klaviyo-form-SNxMx5"
+		}
+
+    ],
+    "presets": [
+        {
+            "name": "Newsetter Callout",
+            "category": "Content",
+            "settings": {
+                "id" : "newsletter-callout",
+                "header" : "newsletter",
+                "form_header" : "<b>Sign up for our </b><i>newsletter!</i>",
+                "form_sub_header" : "Be the first to know about our newest releases, upcoming events, and everything we’re up to on the wine trail. ",
+                "klaviyo_newsletter_id" : "klaviyo-form-SNxMx5"
+
+            }
+        }
+    ]
+
+}
+{% endschema %}

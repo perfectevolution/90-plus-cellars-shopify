@@ -1,0 +1,6 @@
+{% if url != blank and label != blank %}
+    <a href="{{url}}" 
+        class="{{ btn_class | default : 'btn btn-primary'}}" 
+        target="{% if external == true %}_blank{%else%}_self{% endif %}">
+        {{label}}</a>			
+{% endif %}

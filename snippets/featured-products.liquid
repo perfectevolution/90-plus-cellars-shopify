@@ -1,0 +1,90 @@
+{% liquid
+  assign link_label = section.settings.link_label
+  assign link_url = section.settings.link_url
+  if collection != blank 
+    if link_label == blank and link_url == blank
+      assign link_label = 'View All'
+      assign link_url = collection.url
+    endif 
+  endif 
+  if columns == blank
+    assign columns = 6
+  endif
+  assign columns = 12 | divided_by: columns
+
+%}
+<div class="container featured-products__header ">
+    <div class="row align-items-center">
+        <div class="col-md-7">
+            {% if section.settings.header != blank %}
+                <h2 class="h3 ">{{section.settings.header}}</h2>
+            {% endif %}
+        </div>   
+        <div class="col-md-5  theme--dark d-none d-md-flex align-items-end  flex-column">
+          
+            <div class="swiper-buttons text-end d-flex justify-content-end">
+                {% render 'button', 
+                  label: link_label, 
+                  url: link_url 
+                  external: section.settings.link_external 
+                  btn_class:"btn btn-dark d-block me-2 align-self-center"
+              %}
+              {% if layout == 'swiper' %}
+                <div class="swiper-button-prev me-2">{% render 'icon-circle-caret' direction:'prev'%}</div>
+                <div class="swiper-button-next ">{% render 'icon-circle-caret' direction: 'next'%} </div>
+              {% endif  %}
+            </div>
+        </div>     
+    </div>
+  </div>
+
+  
+
+  {% if layout == 'swiper'%}
+    <div class="offset-wrapper">
+        <div class="row">
+          {% comment %} This block gets replaced dynamically by product-recommendations.js on load {% endcomment %}
+          <div class="swiper">
+            <div class="swiper-wrapper ">
+              {%- for product in products limit: limit -%}
+                {% if product_id != product.id %}
+                  <div class="swiper-slide">
+                    {% render 'product-grid-item' product: product recommended:false %}
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>        
+{% endif %}
+
+
+{% if layout == 'grid' %}
+    <div class="container">
+        <div class="row">                
+            {%- for product in products limit: limit -%}
+                {% if product_id != product.id %}
+                    <div class="col-md-6 col-lg-4 col-xl-{{ columns }}">
+                        {% render 'product-grid-item' with product as product %}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+{% endif %}
+
+<div class="container d-md-none">
+  <div class="row">
+    <div class="col">
+      {% render 'button', 
+        label: link_label, 
+        url: link_url 
+        external: section.settings.link_external 
+        btn_class:"btn btn-dark "
+    %}
+
+    </div>
+  </div>
+</div>
+

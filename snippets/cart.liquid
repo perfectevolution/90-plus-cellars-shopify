@@ -1,0 +1,46 @@
+<div class="container cart-template {% if cart.item_count == 0 %} empty{% endif %}" sh-cart-wrapper>
+    <div class="cart row">
+  
+      <div class="cart-partial-form-ajax-container">
+        <div class="cart-partial-form">
+          <div class="row cart-title__wrapper">
+              <div class="col">
+                <div  class="cart-title h1">
+                  Cart <sup>(<span sh-cart-count>({{ cart.item_count }})</span>)</sup>
+                  <span data-cart-count class="d-none"></span>
+                </div>
+              </div>
+          </div>
+
+          {% if settings.cart_free_shipping_enabled %}
+            {% render 'cart-partial-free-shipping-notice' %}
+          {% endif %}
+
+          <form action="{{ routes.cart_url }}" method="post" novalidate class="cart cart-form">
+            <div class="cart__table">
+              <div class="row cart__row cart__row--heading">
+                <div class='col-5 col-md-3 col-lg-2 text-center' ><h5></h5></div>
+                <div class="col-7 col-md-5 col-lg-7 text-right" ><h5></h5></div>
+                <div class="col-md-4 col-lg-3 text-right " ><h5></h5></div>
+                <div class="col-sm-3 text-right  d-none" ><h5>{{ 'cart.labels.total' | t }}</h5></div>
+              </div>
+
+              <div data-cart-line-items-ajax-container >
+                {% render 'cart-partial-line-items', from_drawer: from_drawer %}
+              </div>
+            </div>
+
+            {% render 'cart-partial-footer' %}
+          </form>
+        </div>
+      </div> 
+    </div>
+    
+    <div class="empty-page-content text-center mt-5 py-5" data-empty-page-content>
+      <div class = 'h1'>{{ 'cart.headers.title' | t }}</div>
+      <p class="cart--empty-message">{{ 'cart.messages.empty' | t }}</p>
+      <a href="{{ routes.root_url }}" class="btn btn-primary cart__continue-btn">{{ 'general.buttons.continue_shopping' | t }}</a>
+    </div>
+  </div>
+  
+  

@@ -1,0 +1,103 @@
+<section class="icon-cards" id="{{section.settings.id | default : section.id}}">
+    <div class="container relative">
+        {% if section.settings.header %}
+            <div class="row">
+                <div class="col">
+                    <h2>{{section.settings.header}}</h2>
+                </div>
+            </div>
+        {% endif %}
+        <div class="row row-cols-2 row-cols-lg-4">
+            {% if section.blocks %}
+                {% for block in section.blocks %}
+                    <div class="col relative">
+                        {% render 'icon-card' block:block %}
+                    </div>
+                {% endfor %}
+            {% endif%}
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+    "name": "Icon Cards",
+    "settings": [
+        {
+            "type": "text",
+            "id": "header",
+            "label": "Header"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "card",
+            "name": "Card",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "header",
+                    "label": "Header"
+                },
+                {
+                    "type": "url",
+                    "id": "link_url",
+                    "label": "Link URL"
+                },
+                {
+                    "id": "link_external",
+                    "type": "checkbox",
+                    "label": "Open link in a new window",
+                    "default": false
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                }
+            ]
+        }
+    ],
+    "max_blocks" : 4,
+    "presets": [
+        {
+            "name": "Icon Cards",
+            "category": "Content",
+            "settings": {
+                "header" : "Explore our shared knolwedge"
+            },
+            "blocks" : [
+                {
+                    "type" : "card",
+                    "settings" : {
+                        "header" : "Lorum Ipsum",
+                        "image": "shopify:\/\/shop_images\/beach-sunset-thailand.jpg",
+                        "link_url" : "https:\/\/www.google.com\/"
+                    }
+                },
+                {
+                    "type" : "card",
+                    "settings" : {
+                        "header" : "Lorum Ipsum",
+                        "image": "shopify:\/\/shop_images\/beach-sunset-thailand.jpg",
+                        "link_url" : "https:\/\/www.google.com\/"
+                    }
+                },
+                {
+                    "type" : "card",
+                    "settings" : {
+                        "header" : "Lorum Ipsum",
+                        "image": "shopify:\/\/shop_images\/beach-sunset-thailand.jpg",
+                        "link_url" : "https:\/\/www.google.com\/"
+                    }
+                }
+
+            ]
+
+        }
+    ]
+
+}
+{% endschema %}
+

@@ -1,0 +1,178 @@
+{% liquid
+    assign tag = section.settings.tag
+    assign mode = section.settings.mode
+    if section.settings.blog != blank
+        assign selected_blog = blogs[section.settings.blog]
+    endif
+    if article != blank 
+        assign tag = article.tags[0]
+    endif
+    if blog != blank 
+        assign selected_blog = blog
+    endif
+%}
+<section class="article-grid {% if section.settings.mode == 'tag' %}d-none{% endif %}"
+    id="{{section.settings.section_id | default : section.id }}"
+    {% if section.settings.mode == 'tag' %}
+        data-tags="{{tag | handleize}}" 
+        data-url = "/blogs/{{selected_blog.handle}}/tagged/tags/?view={{selected_blog.handle}}-tag-search&limit={{section.settings.limit }}{% if article %}&handle={{article.handle}}{% endif %}"
+        data-container=".tag-articles"
+        related-articles 
+    {% endif %}
+>
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-lg-9">
+                {% if section.settings.header  %}
+                <h2 class="h3 mobile-sm pb-4">{{ section.settings.header }}</h2>
+                {% endif %}
+            </div>
+            <div class="col-lg-3 text-end d-none d-lg-block ">
+                {% render 'button', 
+                    label: section.settings.link_label, 
+                    url: section.settings.link_url 
+                    external: section.settings.
+                    link_external btn_class:'btn btn-outline-light'%}
+            </div>
+        </div>
+        {% comment%}
+            If the section has a blog selected, display the articles from that blog.
+        {% endcomment %}
+        {% if section.settings.mode == 'blog' %}
+            <div class="row">
+                {% for article in blogs[selected_blog.handle].articles %}
+                    {% if forloop.index <= section.settings.limit%}
+                        <div class="col-lg-6" >
+                            {% render 'article-grid-item', article: article %}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% comment%}
+            If the section has blocks, display the articles from those blocks.
+        {% endcomment %}
+        {% if section.settings.mode == 'blocks' %}
+            <div class="row">
+                {% for block in section.blocks %}
+                    <div class="col-lg-6" {{ block.shopify_attributes }} >
+                        {% render 'article-grid-item', article: block.settings.article %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% comment%}
+            If the section has tags, populate via javascript.
+        {% endcomment %}
+        {% if section.settings.mode ==  'tag' %}
+            <div class="tag-articles row" >
+            </div>
+        {% endif %}
+        <div class="d-block d-lg-none">
+            {% render 'button', 
+                label: section.settings.link_label, 
+                url: section.settings.link_url 
+                external: section.settings.
+                link_external btn_class:'btn btn-outline-light '%}
+        </div>        
+    </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Article Grid",
+  "settings": [
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "Section ID",
+            "info": "Enter a url friendly id to link directly to this section."
+        },
+        {
+            "type": "text",
+            "id": "header",
+            "label": "Header"
+        },
+
+        {
+            "type" : "select",
+            "id" : "mode",
+            "label" : "Mode",
+            "options" : [
+                {
+                    "value" : "blog",
+                    "label" : "Blog"
+                },
+                {
+                    "value" : "blocks",
+                    "label" : "Blocks"
+                },
+                {
+                    "value" : "tag",
+                    "label" : "Tag"
+                }
+            ],
+            "default" : "blog"
+        },
+        {
+            "type" : "blog",
+            "id" : "blog",
+            "label" : "Blog",
+            "info" : "Choose the blog to display articles from."
+        },
+        {
+            "type" : "text",
+            "id" : "tag",
+            "label" : "Tag",
+            "info" : "Filter articles by tag."
+        },
+        {
+            "type" : "number",
+            "id" : "limit",
+            "label" : "Limit",
+            "default" : 2
+        },
+        {
+            "type": "text",
+            "id": "link_label",
+            "label": "Link Label"
+        },
+        {
+            "type": "url",
+            "id": "link_url",
+            "label": "Link URL"
+        },
+        {
+            "id": "link_external",
+            "type": "checkbox",
+            "label": "Open link in a new window",
+            "default": false
+        }
+
+    ],
+    "blocks": [
+        {
+          "name": "Article",
+          "type": "article",
+          "settings": [
+            {
+              "type": "article",
+              "id": "article",
+              "label": "Article"
+            }
+          ]
+        }
+     ],   
+    "presets": [
+        {
+            "name": "Article Grid",
+            "category": "Content",
+            "settings": {
+                "header": "Wine Articles"
+            }
+        }
+    ]
+}
+
+{% endschema %}

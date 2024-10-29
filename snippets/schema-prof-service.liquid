@@ -1,0 +1,44 @@
+<!---JSON SCHEMA ProfessionalService--->
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "ProfessionalService",
+      "name": "90+ Cellars",
+      "image": "https:{{ section.settings.logo | img_url }}",
+      "url": "{{ shop.url }}",
+      "description": "{{ page_description | escape }}",
+      "telephone": "855-879-8466",
+      "priceRange": "$",
+      "hasMap": "https://www.google.com/maps/place/90%2B+Cellars/@42.3568057,-71.1486679,16.99z/data=!4m5!3m4!1s0x89e378329f086635:0xdc7d0d9e4b55350d!8m2!3d42.3568253!4d-71.1465226",
+      "sameAs": [
+        "http://www.pinterest.com/90pluscellars/",
+        "https://www.facebook.com/ninetypluscellars",
+        "https://twitter.com/90pluscellars",
+        "http://instagram.com/90pluscellars",
+        "http://www.youtube.com/user/90PlusCellars"
+      ],
+      "openingHours": [
+        "M-F 8:00am - 6:00pm EST"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "20 Guest St",
+        "addressLocality": "Boston",
+        "postalCode": "02135",
+        "addressCountry": "US",
+        "addressRegion": "MA"
+      },
+      "location": {
+        "@type": "Place",
+        "geo": {
+          "@type": "GeoCircle",
+          "geoRadius": "50",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "42.3574626",
+            "longitude": "-71.1480098"
+          }
+        }
+      }
+    }
+  </script>

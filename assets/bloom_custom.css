@@ -1,0 +1,56 @@
+/* CUSTOM PREFERENCE TEXT SECTION */
+.Bloom__PreferenceSection__Container .preference-value {
+  color: #f36e4e;
+}
+
+/* CLUB PAGE */
+.bloom-preferences-container select {
+  border:1px solid #f36e4e;
+  color: var(--bs-body-color);
+}
+/* SIGNUP PAGES */
+.Bloom__Signup__Container {
+  margin-bottom: 70px;
+}
+.Bloom__Signup__Container input, 
+.Bloom__Signup__Container select {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #231f20;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+.Bloom__Signup__Container h3, 
+.Bloom__Signup__Container h2 {
+  font-size: 2.3125rem;
+  line-height: 1;
+}
+.Bloom__Signup__Heading--billing {
+  margin-top: 20px;
+}
+.Bloom__Signup__Fields .Bloom__Signup__Fieldset:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+/* ACCOUNT APP */
+.Bloom__MyAccount__Container .navbar {
+  display: block;
+}
+#headlessui-dialog-4 {
+  z-index: 2000 !important;
+}
+#headlessui-portal-root .py-3, 
+.tailwind .py-3 {
+  padding-bottom: 0.75em !important;
+  padding-top: 0.75em !important;
+}
+#headlessui-portal-root .pt-16 {
+  padding-top: 4em !important;
+}
+.Bloom__MyAccount__Container img {
+  max-width:100%;
+}

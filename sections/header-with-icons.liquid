@@ -1,0 +1,135 @@
+{% liquid 
+    assign first_section = false
+    if section.settings.header_tag == 'h1'
+        assign first_section = true
+    endif
+    assign col_class = 'col-6'
+    if section.blocks.size == 3
+        assign col_class = 'col-4'
+    endif
+%}
+
+
+<section class="header-with-icons first-section--{{first_section}} " id="{{section.settings.section_id | default : section.id }}">
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-6 mb-4 ">
+            {% if section.settings.header %}
+                <{{section.settings.header_tag}}>{{section.settings.header}}</{{section.settings.header_tag}}>
+            {% endif %}
+            </div>
+            {% if section.blocks %}
+                <div class="col-lg-6">
+                    <div class="row icons">
+                        {% for block in section.blocks %}
+                            <div class="{{col_class}}">
+                                {% render 'icon-card' block:block %}
+                            </div>
+                        {% endfor %}                    
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+</section>
+
+{% schema %}
+    {
+        "name": "Header With Icons",
+        "settings": [
+            {
+                "type": "text",
+                "id": "section_id",
+                "label": "Section ID",
+                "info" : "Enter a url friendly id to link directly to this section."
+            },
+            {
+                "type" : "text",
+                "id" : "header",
+                "label" : "Header"
+            },
+            {
+                "type": "select",
+                "id": "header_tag",
+                "label": "Header Tag",
+                "default": "h1",
+                "options": [{
+                        "value": "h1",
+                        "label": "H1"
+                    },
+                    {
+                        "value": "h2",
+                        "label": "H2"
+                    }
+                ]
+            }            
+
+        ],
+        "blocks": [
+            {
+                "type": "card",
+                "name": "Card",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "header",
+                        "label": "Header"
+                    },
+                    {
+                        "type": "url",
+                        "id": "link_url",
+                        "label": "Link URL"
+                    },
+                    {
+                        "id": "link_external",
+                        "type": "checkbox",
+                        "label": "Open link in a new window",
+                        "default": false
+                    },    
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"
+                    }
+                ]
+            }
+        ],        
+        "presets": [
+            {
+                "name": "Header With Icons",
+                "settings": {
+                    "header" : "Lorem Ipsum"
+                },
+                "blocks" : [
+                    {
+                        "type" : "card",
+                        "settings" : {
+                            "header" : "Lorum Ipsum",
+                            "image": "shopify:\/\/shop_images\/beach-sunset-thailand.jpg",
+                            "link_url" : "https:\/\/www.google.com\/"
+                        }
+                    },
+                    {
+                        "type" : "card",
+                        "settings" : {
+                            "header" : "Lorum Ipsum",
+                            "image": "shopify:\/\/shop_images\/beach-sunset-thailand.jpg",
+                            "link_url" : "https:\/\/www.google.com\/"
+                        }
+                    },
+                    {
+                        "type" : "card",
+                        "settings" : {
+                            "header" : "Lorum Ipsum",
+                            "image": "shopify:\/\/shop_images\/beach-sunset-thailand.jpg",
+                            "link_url" : "https:\/\/www.google.com\/"
+                        }
+                    }
+    
+                ]
+    
+            }
+        ]
+        }
+{% endschema %}

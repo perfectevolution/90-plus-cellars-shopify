@@ -1,0 +1,146 @@
+<div class="row">
+    <div class="col-lg-10 col-xl-8">
+        <div class="form-group">
+            <label for="AddressFirstName{{form.id}}" class="form-label">{{ 'customer.addresses.first_name' | t }}</label>
+            <input type="text"
+                id="AddressFirstName{{form.id}}"
+                name="address[first_name]"
+                value="{{ form.first_name }}"
+                placeholder=" Enter Your {{ 'customer.addresses.first_name' | t }}"
+                class="form-control"
+            >
+        </div>
+        <div class="form-group">
+            <label for="AddressLastName{{form.id}}" class="form-label">{{ 'customer.addresses.last_name' | t }}</label>
+            <input
+                type="text"
+                id="AddressLastName{{form.id}}"
+                name="address[last_name]"
+                value="{{ form.last_name }}"
+                placeholder=" Enter Your {{ 'customer.addresses.last_name' | t }}"
+                class="form-control"
+            >
+        </div>
+    
+        <div class="form-group">
+            <label for="AddressCompany{{form.id}}" class="form-label">{{ 'customer.addresses.company' | t }}</label>
+            <input
+                type="text"
+                id="AddressCompany{{form.id}}"
+                name="address[company]"
+                value="{{ form.company }}"
+                placeholder=" Enter Your {{ 'customer.addresses.company' | t }}"
+                class="form-control"
+            >
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="AddressCountry{{form.id}}" class="form-label">{{ 'customer.addresses.country' | t }}</label>
+                    <input
+                        type="text"
+                        id="AddressCountry{{form.id}}"
+                        name="address[country]"
+                        value="{{ form.country }}"
+                        placeholder=" Enter Your {{ 'customer.addresses.country' | t }}"
+                        class="form-control"
+                    >
+
+                </div>                        
+            </div>
+            <div class="col-md-6">
+                <div id="AddressProvinceContainer{{form.id}}"  class="form-group">
+                    <label for="AddressProvince{{form.id}}" class="form-label">{{ 'customer.addresses.province' | t }}</label>
+                    <input
+                        type="text"
+                        id="AddressProvince{{form.id}}"
+                        name="address[province]"
+                        value="{{ form.province }}"
+                        placeholder=" Enter Your {{ 'customer.addresses.province' | t }}"
+                        class="form-control"
+                    >
+                </div>                                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="AddressCity{{form.id}}" class="form-label">{{ 'customer.addresses.city' | t }}</label>
+                    <input
+                        type="text"
+                        id="AddressCity{{form.id}}"
+                        name="address[city]"
+                        value="{{ form.city }}"
+                        placeholder=" Enter Your {{ 'customer.addresses.city' | t }}"
+                        class="form-control"
+                    >
+                </div>                        
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="AddressZip{{form.id}}" class="form-label">{{ 'customer.addresses.zip' | t }}</label>
+                    <input
+                        type="text"
+                        id="AddressZip{{form.id}}"
+                        name="address[zip]"
+                        value="{{ form.zip }}"
+                        placeholder=" Enter Your {{ 'customer.addresses.zip' | t }}"
+                        class="form-control"
+                    >
+                </div>                        
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="AddressAddress1{{form.id}}" class="form-label">{{ 'customer.addresses.address1' | t }}</label>
+                    <input
+                        type="text"
+                        id="AddressAddress1{{form.id}}"
+                        name="address[address1]"
+                        value="{{ form.address1 }}"
+                        placeholder=" Enter Your {{ 'customer.addresses.address1' | t }}"
+                        class="form-control"
+                    >
+                </div>                        
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="AddressAddress2{{form.id}}" class="form-label">{{ 'customer.addresses.address2' | t }}</label>
+                    <input
+                        type="text"
+                        id="AddressAddress2{{form.id}}"
+                        name="address[address2]"
+                        value="{{ form.address2 }}"
+                        placeholder=" Enter Your {{ 'customer.addresses.address2' | t }}"
+                        class="form-control"
+                    >
+                </div>                        
+            </div>
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="col-6">
+                {{ form.set_as_default_checkbox }}
+                <label>{{ 'customer.addresses.set_default' | t }}</label>
+            </div>
+            <div class="col-6 text-end">
+                {% if address %}
+                    <button class="btn btn-outline-light" 
+                        type="reset" 
+                        data-bs-target="#edit-address-{{address.id}}-modal" data-bs-toggle="collapse">{{ 'customer.addresses.cancel' | t }}</button>
+                    {% else %}
+                        <button class="btn btn-outline-light" type="reset" data-bs-target="#add-address-modal" data-bs-toggle="collapse">{{ 'customer.addresses.cancel' | t }}</button>
+                {% endif %}
+                <button class="btn btn-primary">{{ 'customer.addresses.add' | t }}</button>
+            </div>
+        </div>
+
+    </div>
+</div>

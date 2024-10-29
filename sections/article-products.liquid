@@ -1,0 +1,42 @@
+<section class = 'featured-products article-products layout--swiper ' id="{{ section.settings.anchor_id | default : section.id}}">
+
+    {% render 'featured-products' section:section layout:'swiper' current_product_id:false %}
+
+    
+
+</section>
+
+
+{% schema %}
+{
+    "name": "Article Products",
+    "settings": [
+        {
+            "type": "header",
+            "content": "Article Products"
+        },
+        {
+            "type": "text",
+            "id": "header",
+            "label": "Header",
+            "default": "Wines Featured In This Article"
+        },
+        {
+            "type": "text",
+            "id": "section_id",
+            "label": "Section ID",
+            "default": "article-products"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Article Products",
+            "category": "Article"
+        }
+    ],
+    "enabled_on" : {
+        "templates" : ["article"]
+    }
+}
+{% endschema %}
+

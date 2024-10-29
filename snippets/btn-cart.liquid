@@ -1,0 +1,14 @@
+
+<a class="nav-cart {{ classes}} {% if cart.item_count == 0 %} empty{% endif %}" 		
+	sh-nav-cart 
+	href="/cart/"  
+	sh-cart-drawer-trigger
+	tabindex="0"
+	href="/cart/" 
+	aria-label="My Cart Button">
+	Cart
+	<span class = 'cart-count count'> 
+	(<span sh-cart-count>{%- if cart.item_count > 0  -%}{{cart.item_count}}{%- endif -%}</span>)
+</span>
+</a>
+

@@ -1,0 +1,33 @@
+<div class="cart__footer">
+	{% if settings.cart_free_shipping_enabled %}
+		<div class="cart__footer--shipping">
+			{% render 'cart-partial-free-shipping-notice' %}
+		</div>
+	{% endif %}
+
+	<div class="cart__footer--inner">
+		<div class="row">
+			<div class="col">
+				{% render 'cart-discounts' %}
+				{% render 'cart-subtotal' %}
+				{% render 'cart-taxes' %}
+				{% if settings.cart_shipping_delay_message %}
+					{% render 'cart-shipping-delay' %}
+				{% endif %}
+			</div>
+		</div>
+		
+
+		<div class="row">
+			<div class="col" >
+				<div class="cart__buttons-container text-end">
+					<a href="/collections/90-wines" class="btn btn-outline-light me-3 mb-3">Keep Shopping</a>
+					<input type="submit" name="checkout"
+					class="btn btn-primary cart__submit mb-3"
+					value="{{ 'cart.buttons.checkout' | t }}"
+					data-btn-cart-submit>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

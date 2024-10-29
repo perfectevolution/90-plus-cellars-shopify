@@ -1,0 +1,97 @@
+{% if product.metafields.custom.recommended_products == blank %}
+  {% liquid
+    assign product_recommendations = recommendations.products
+    if recommendations.products_count <= section.settings.min_recommendations
+      assign product_recommendations = section.settings.custom_collection.products
+    endif
+    assign limit = section.settings.limit
+    assign products = product_recommendations
+    assign current_product_id = product.id
+  %}
+
+  <section class="featured-products layout--swiper product-section-recommendations" animated="{{ section.settings.animated  }}" >
+    <div 
+      class=" product-section-recommendations__inner"
+      data-product-id="{{ product.id }}" 
+      data-limit="{{ section.settings.limit }}" 
+      data-minrecommendations="{{ section.settings.min_recommendations }}">      
+        {% render 'featured-products' section:section products:products current_product_id:current_product_id layout:'swiper'  %}        
+    </div>
+  </section>
+{% endif %}
+{% if product.metafields.custom.recommended_products.value  %}
+  {% assign layout ='swiper'%}
+  {% assign products = product.metafields.custom.recommended_products.value %}
+  
+  <section class = 'featured-products layout--{{layout }}  theme--gray-light' animated="{{ section.settings.animated  }}"  
+    id="{{ section.settings.anchor_id | default : section.id}}">
+      {% render 'featured-products' products:products recommeded:false product:false layout:'swiper'  %}
+  </section>
+{% endif %}
+
+
+
+
+{% schema %}
+{
+  "name": "Product Recommendations",
+  "tag": "section",
+  "templates": [
+    "product"
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header",
+      "default": "You May Also Like..."
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Link Text",
+      "default": "Shop All Products"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Button URL",
+      "default" : "/collections/all"
+    },
+    {
+      "type": "collection",
+      "id": "custom_collection",
+      "label": "Fallback Collection",
+      "info": "If the Shopify algorithm returns too few results, it will show products from this collection."
+    },
+    {
+      "type": "number",
+      "id": "limit",
+      "label": "Max Recommendations",
+      "default": 8
+    },
+    {
+      "type": "number",
+      "id": "min_recommendations",
+      "label": "Min Before Fallback",
+      "default": 3,
+      "info": "Point at which the fallback collection is used."
+    },
+		{
+			"type": "checkbox",
+			"id": "animated",
+			"label": "Animated",
+			"info": "Animate the products in from the right",
+			"default": true
+		}
+
+  ],
+  "presets": [
+    {
+      "name": "Product Recommendations",
+      "settings": {
+      }
+    }
+  ]
+}
+{% endschema %}

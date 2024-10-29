@@ -1,0 +1,63 @@
+
+
+  <div class="container account-container addresses" id="customer-addresses" data-customer-addresses>
+    <div class="row account-container__header-row">
+      <div class="col ">
+        <h1 class="h3 account-container__header-title">{{ 'customer.addresses.title' | t }}</h1>
+        <a class="btn btn-primary me-4" href="{{ routes.account_url }}">
+          {{ 'customer.account.return' | t }}
+        </a>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-outline-light" data-bs-toggle="collapse" data-bs-target="#add-address-modal">
+            {{ 'customer.addresses.add_new' | t }}
+          </button>
+  
+      </div>
+    </div>
+      
+      {% render 'customer-new-address-form' %}
+      {% for address in customer.addresses %}
+        {% render 'customer-edit-address-form' form:form address:address %}
+      {% endfor %}
+
+      <div class="row ">
+        {%- for address in customer.addresses -%}
+          <div data-address class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="address-col">
+              <h4 class="h6 address-name account-header">
+                <b>
+                  {{address.last_name | default : 'Undefined'}}, {{address.first_name | default : 'Undefined'}}
+                  {%- if address == customer.default_address -%}
+                    <b >{{ 'customer.addresses.default' | t }}</b>
+                  {%- endif -%}
+                </b>
+              </h4>
+              {{ address | format_address }}
+              <!-- Button trigger modal -->
+                <button 
+                  class="action-button me-4 d-inline-block" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#edit-address-{{address.id}}-modal">
+                  {{'customer.addresses.edit_address' | t}}
+                </button>
+                <form class="address-delete-form d-inline-block" method="post" action="/account/addresses/{{ address.id }}">
+                  <input type="hidden" name="_method" value="delete">
+                  <button type="submit" class="action-button">{{ 'customer.addresses.delete' | t }}</button>
+                </form>
+              
+
+            </div>
+
+          </div>
+        {%- endfor -%}
+      </div>
+  
+      
+
+    </div>
+  </div>
+
+
+
+
+

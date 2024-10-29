@@ -1,0 +1,23 @@
+{% layout none %}
+{% paginate blog.articles by 8 %}
+  {% for article in blog.articles %}
+    <div class="swiper-slide recipe-related__swiper-slide">
+      <a class="recipe-related__swiper-slide--url" 
+        href="{{ article.url  }}" 
+        aria-label="{{ article.title }}">
+          <div class="image-wrap">
+              <div class="filter"></div>
+              <img 
+                  src="{{ article.image | img_url : '270x' }}" 
+                  alt="{{ article.title }}" 
+                  loading="lazy" 
+                  width="270"
+                  height="270"
+              />
+          </div>
+        </a>
+      <p class="recipe-related__swiper-slide--handle font-itc text-blue mt-3">{{ article.title }}</p>
+    </div>
+
+  {% endfor %}
+{% endpaginate %}

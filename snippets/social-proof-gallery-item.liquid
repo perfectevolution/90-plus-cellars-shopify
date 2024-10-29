@@ -1,0 +1,38 @@
+{% liquid 
+    if dataType == 'section'
+        assign blockData = block.settings
+    endif
+    if dataType == 'meta'
+        assign blockData = block
+    endif
+%}
+<div class = 'swiper-slide' {{ block.shopify_attributes }} >
+    <div class="image-wrapper">
+        <picture>
+            <div class="starburst-before">
+                {% render 'icon-starburst-large' %}
+            </div>
+            <div class="starburst-after">
+                {{ 'icon-instagram-after.png' | asset_url | img_tag }}
+            </div>
+            {% if blockData.link_url %}
+                <a href="{{blockData.link_url}}" target="_blank">
+            {% endif %}
+            <img src="{{ blockData.image | image_url: width:300 , height:350,  crop:'center' }}" 
+                class="img-fluid"
+                alt="{{image.alt | default : default_title}}"
+                width="150"
+                height="250"
+                loading="lazy"
+            />
+            {% if blockData.link_url %}
+                </a>
+            {% endif %}
+            
+        </picture>
+        {% comment %} <div class="content mt-4">
+            <h5><div><b>{{blockData.header}}</b></div>
+            {{blockData.sub_header}}</h5>
+        </div> {% endcomment %}
+    </div>
+</div>

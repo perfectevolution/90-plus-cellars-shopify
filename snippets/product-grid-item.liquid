@@ -1,0 +1,58 @@
+{% liquid
+	assign current_variant = product.selected_or_first_available_variant
+	capture "form_classes"
+		echo 'product-add-form product-form product-form-' | append : product.handle | handleize
+		if product.has_only_default_variant
+			echo ' product-form--no-variants'
+		endif
+		if current_variant.available == false
+			echo ' product-form--variant-sold-out'
+		endif
+	endcapture
+
+	assign primary_collection = false
+	for collection in product.collections
+	  if collection.metafields.collection.primary_collection == true
+		assign primary_collection = collection
+	  endif
+	endfor
+	assign product_image = product.featured_image
+	assign custom_grid_iamge = false
+	if product.metafields.product.grid_image != blank
+		assign custom_grid_iamge = product.metafields.product.grid_image
+		assign product_image = custom_grid_iamge
+	endif
+  %}
+
+  
+
+
+<div class="product-grid-item {{ product_flags }}  mb-4 {% if product.metafields.product.show_in_background == true  %} custom-grid-image {% endif %}" >
+	{% if product.metafields.product.highlight != blank %}
+		<div class="product-grid-item__flag bg-gray-light">
+			{{ product.metafields.product.highlight }}
+		</div>
+	{% endif %}
+	<!-- Image --> 
+		<a href="{{ product.url }}" class="product-grid-item__image d-flex justify-content-center align-items-center">
+			<img class="img-fluid d-block" 
+				src="{{ product_image | image_url: width: 200 }}" 
+				width="{{product_image.width}}" 
+				height="{{product_image.height}}" 
+				alt="{{ product_image.alt | default : product.title }}" 
+				loading="lazy"/> 
+		</a>
+		<div class="product-grid-item__content pt-2">
+			<a href="{{ product.url }}" class="product-grid-item__content d-block mb-3"> 
+				{% if product.metafields.data.lot != blank %}
+					<h3 class="label">LOT {{product.metafields.data.lot }}</h3>
+				{% endif %}
+				<h3 class="h6 font-sans mb-2">{% render 'product-title' product:product %} </h3>
+				<div class="label">{% render 'product-region' product:product %}</div>
+				<div class="label">{{product.metafields.data.year}}</div>
+			</a>
+			<div class="label">
+				{% render 'product-price', variant: current_variant, show_vendor: false %}	
+			</div>
+		</div>
+</div>

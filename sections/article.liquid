@@ -1,0 +1,26 @@
+<article class="my-5 py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <a href="/blogs/news/" class="h5 breadcrumb pt-5">All Articles</a>
+                <h1 class="pt-4 h2 pb-3">{{article.title}}</h1>
+                {% if article.tags %}
+                    <div class="article-tags pt-3 pb-5">
+                        {% for tag in article.tags %}
+                        <a class="btn btn-sm btn-outline-light mr-1 mb-1 d-inline-block" href="/blog/news/tagged/{{tag | handelize}}">{{ tag }}</a>
+                        {% endfor %}
+                    </div>
+                {% endif%}
+                {% if article.image %}
+                    <div class="article-image">
+                        {% render 'image' image:article.image%}
+                    </div>
+                {% endif %}
+                <div class="rte article-content">
+                    {{article.content}}
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</article>

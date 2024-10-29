@@ -1,0 +1,74 @@
+<section class="hero-curved">
+    {% if section.settings.image != blank %}
+        <picture > 
+        {% if section.settings.mobile_image != blank %}
+            <source media="(max-width: 768px)" srcset="{{section.settings.mobile_image | img_url: 'master'}}" />
+        {% endif %}
+
+            <img src="{{ section.settings.image | img_url : 'master'}}" 
+                class="img-fluid w-100"
+                alt="{{section.settings.image.alt | default : section.settings.title}}"
+                width="{{section.settings.image.width}}"
+                height="{{section.settings.image.width}}"
+            />
+        </picture>
+    {% endif %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                {% if section.settings.header %}
+                   <h1 class="display-2 hero-curved-title text-center">{{section.settings.header}}</h1>
+                {% endif %}
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        {% if section.settings.body %}
+                            <div class="body">
+                                {{section.settings.body }}
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Hero Curved",
+    "settings": [
+        {
+            "id" : "image",
+            "type": "image_picker",
+            "label": "Desktop Image"
+        },
+        {
+            "id" : "mobile_image",
+            "type": "image_picker",
+            "label": "Mobile Image"
+        },
+        {
+            "type": "text",
+            "id": "header",
+            "label": "Header"
+        },
+        {
+            "id" : "body",
+            "type": "textarea",
+            "label": "Body"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Hero Curved",
+            "category": "Content",
+            "settings": {
+                "header" : "Explore our shared knowledge",
+                "image": "shopify:\/\/shop_images\/beach-sunset-thailand.jpg"
+            }
+        }
+    ]
+
+}
+{% endschema %}
