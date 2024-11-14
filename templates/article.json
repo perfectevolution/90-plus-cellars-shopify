@@ -1,1 +1,74 @@
-{"sections":{"article":{"type":"article","settings":{}},"testimonial-callout":{"type":"testimonial-callout","disabled":true,"settings":{"metaobject_handle":"fpo-testimonial","layout":"Offset Quote","header":"","sub_header":"","sub_header_2":"","body":"","citation":"","link_label":"","link_url":"","link_external":false}},"article-products":{"type":"article-products","settings":{"header":"Wines Featured In This Article","section_id":"article-products"}},"article-grid":{"type":"article-grid","settings":{"section_id":"","header":"You may also like to read...","mode":"tag","blog":"","tag":"","limit":2,"link_label":"","link_url":"","link_external":false}},"bfc5f5c2-4486-482f-9928-78fbdcd2c9be":{"type":"footer-fix","settings":{"section_id":""}}},"order":["article","testimonial-callout","article-products","article-grid","bfc5f5c2-4486-482f-9928-78fbdcd2c9be"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "article": {
+      "type": "article",
+      "settings": {
+        "show_featured_wines": true,
+        "show_newsletter": true,
+        "klaviyo_newsletter_id": "klaviyo-form-SNxMx5",
+        "show_store_locators": true,
+        "store_locator_link": "shopify://pages/shop-90-cellars-wines",
+        "store_locator_label": "Find Nearby"
+      }
+    },
+    "testimonial-callout": {
+      "type": "testimonial-callout",
+      "disabled": true,
+      "settings": {
+        "metaobject_handle": "fpo-testimonial",
+        "layout": "Offset Quote",
+        "header": "",
+        "sub_header": "",
+        "sub_header_2": "",
+        "body": "",
+        "citation": "",
+        "link_label": "",
+        "link_url": "",
+        "link_external": false
+      }
+    },
+    "article-products": {
+      "type": "article-products",
+      "settings": {
+        "header": "Wines Featured In This Article",
+        "section_id": "article-products"
+      }
+    },
+    "article-grid": {
+      "type": "article-grid",
+      "settings": {
+        "section_id": "",
+        "header": "You may also like to read...",
+        "mode": "tag",
+        "blog": "",
+        "tag": "",
+        "limit": 2,
+        "link_label": "",
+        "link_url": "",
+        "link_external": false
+      }
+    },
+    "bfc5f5c2-4486-482f-9928-78fbdcd2c9be": {
+      "type": "footer-fix",
+      "settings": {
+        "section_id": ""
+      }
+    }
+  },
+  "order": [
+    "article",
+    "testimonial-callout",
+    "article-products",
+    "article-grid",
+    "bfc5f5c2-4486-482f-9928-78fbdcd2c9be"
+  ]
+}
