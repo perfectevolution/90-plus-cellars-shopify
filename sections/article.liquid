@@ -3,15 +3,11 @@
         padding-top: 28px;
         position: relative;
     }
-    .article-right-column .right-col-wrapper{
-
-    }
     @media only screen and (min-width: 992px){
         .article-right-column .right-col-wrapper{
             position: sticky;
             top: 100px;
             left: 0;
-            overflow: scroll;
             max-height: 80vh;
         }
     }
@@ -19,7 +15,7 @@
         display: flex;
         align-items: center;
         gap: 8px;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
     .article-right-column .section-title svg{
         width: 25px;
@@ -32,10 +28,18 @@
         font-size: 14px;
         font-weight: 700;
         margin: 0;
+        line-height: 21px;
+        letter-spacing: 0.14px;
     }
     .article-right-column p{
         margin: 0;
-        font-size: 14px;
+        font-size: 16px;
+        letter-spacing: 0.16px;
+        opacity: 0.92;
+        color: #231F20;
+    }
+    .article-right-column .featured-wines-list{
+        margin-top: 20px;
     }
     .article-right-column .featured-product {
         display: flex;
@@ -54,22 +58,18 @@
         background: #F5F5F5;
         padding: 10px 0;
     }
-    .article-right-column .featured-product .product-image .img-container img{
-
-    }
     .article-right-column .featured-product .product-info{
         display: flex;
         flex-direction: column;
     }
     .article-right-column .featured-product .product-info .product-title{
         font-family: QueensCondensed, serif;
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 500;
         text-transform: none;
         margin: 0;
-    }
-    .article-right-column .featured-product .product-info .product-region{
-
+        line-height: 22px;
+        letter-spacing: 0.24px;
     }
     .article-right-column .featured-product .product-info .product-price{
         margin: 10px 0 0;
@@ -82,7 +82,8 @@
         min-height: auto !important;
         margin-top: 10px !important;
     }
-    .article-right-column .klaviyo-form [data-testid="form-component"]:last-of-type{
+
+    .article-right-column .klaviyo-form [data-testid="form-row"] div:nth-child(2){
         position: absolute !important;
         right: 12px;
         padding: 0 !important;
@@ -105,7 +106,7 @@
         height: 34px !important;
         padding: 0 !important;
     }
-    .article-right-column .klaviyo-form [data-testid="form-component"]:last-of-type:hover{
+    .article-right-column .klaviyo-form [data-testid="form-row"] div:nth-child(2):hover{
         transition: all .2s ease-in-out;
         transform: scale(1.2) rotate(25deg);
     }
@@ -198,14 +199,12 @@
                     return true;
                 }
                 return false;
-            })
-            .slice(0, 3); // Selecciona hasta los primeros 3 enlaces únicos
+            }).slice(0, 3); // Selecciona hasta los primeros 3 enlaces únicos
 
         links.forEach(link => {
             let url = link.getAttribute("href").split("/").pop();
             if (url.indexOf("?") > -1) url = url.substring(0, url.indexOf("?"));
             url = `${window.Shopify.routes.root}products/${url}?view=data-json`;
-
             // Realiza el fetch para obtener datos del producto
             fetch(url)
                 .then(res => res.ok ? res.json() : false)
@@ -223,11 +222,8 @@
                         }
                     }
 
+                    regionText += regions.join(', ');
 
-                        regionText += regions.join(', ');
-
-
-                    // Crea el HTML para el producto
                     const productHTML = `
                   <div class="featured-product">
                     <div class="product-image">
@@ -243,7 +239,6 @@
                   </div>
                 `;
 
-                    // Inserta el HTML al inicio del contenedor "featured-wines-list"
                     featuredWinesList.insertAdjacentHTML("afterbegin", productHTML);
                 })
                 .catch(error => console.error("Error fetching product data:", error));
