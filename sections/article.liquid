@@ -44,6 +44,7 @@
     .article-right-column .featured-product {
         display: flex;
         gap: 16px;
+        text-decoration: none;
     }
     .article-right-column .featured-product .product-image{
         flex: 0 0 50px;
@@ -70,6 +71,8 @@
         margin: 0;
         line-height: 22px;
         letter-spacing: 0.24px;
+        color: #231F20;
+        text-decoration: none;
     }
     .article-right-column .featured-product .product-info .product-price{
         margin: 10px 0 0;
@@ -204,6 +207,7 @@
         links.forEach(link => {
             let url = link.getAttribute("href").split("/").pop();
             if (url.indexOf("?") > -1) url = url.substring(0, url.indexOf("?"));
+            const productLink = link.getAttribute("href");
             url = `${window.Shopify.routes.root}products/${url}?view=data-json`;
             // Realiza el fetch para obtener datos del producto
             fetch(url)
@@ -225,7 +229,7 @@
                     regionText += regions.join(', ');
 
                     const productHTML = `
-                  <div class="featured-product">
+                  <a href="${productLink}" class="featured-product" target="_blank">
                     <div class="product-image">
                         <div class="img-container">
                             <img src="${product.img}" alt="${product.title}" class="img-fluid" />
@@ -236,7 +240,7 @@
                       <p class="product-region">${regionText}, ${product.year}</p>
                       <p class="product-price">${product.price}</p>
                     </div>
-                  </div>
+                  </a>
                 `;
 
                     featuredWinesList.insertAdjacentHTML("afterbegin", productHTML);
