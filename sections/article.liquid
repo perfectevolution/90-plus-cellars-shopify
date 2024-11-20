@@ -81,6 +81,11 @@
         border-bottom: 1px solid #cccccc;
         padding: 20px 0;
     }
+    @media only screen and (max-width: 991px){
+        .article-right-column .featured-wines-container{
+            display: none;
+        }
+    }
     .article-right-column .klaviyo-form>div{
         min-height: auto !important;
         margin-top: 10px !important;
@@ -126,7 +131,7 @@
 <article class="my-5 py-5">
     <div class="container">
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-9 relative ">
                 <a href="/blogs/news/" class="h5 breadcrumb pt-5">All Articles</a>
                 <h1 class="pt-4 h2 pb-3">{{article.title}}</h1>
                 {% if article.tags %}
@@ -146,7 +151,7 @@
                 </div>
 
             </div>
-            <div class="col-lg-3 article-right-column">
+            <div class="col-lg-3 article-right-column" style="display: none">
                 <div class="right-col-wrapper">
                     {% if section.settings.show_featured_wines %}
                         <div class="featured-wines-container">
@@ -187,6 +192,17 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {
+
+        const articleRightColumn = document.querySelector('.article-right-column');
+        if (window.innerWidth >= 992) {
+            const articleImage = document.querySelector('.article-image');
+            const distanceFromParentTop = articleImage.offsetTop;
+            articleRightColumn.style.paddingTop = `${distanceFromParentTop}px`;
+            articleRightColumn.style.display = 'block';
+        } else {
+            articleRightColumn.style.display = 'block';
+        }
+
         const articleContent = document.querySelector(".rte.article-content");
         const featuredWinesList = document.querySelector(".featured-wines-list");
 
