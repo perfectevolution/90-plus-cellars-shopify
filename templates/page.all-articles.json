@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "blank": {
@@ -7,8 +16,8 @@
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab": {
       "type": "hero-curved",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Lot_75_Hero_Image_a56dd5af-9a1f-4241-9514-dc15ab8c3795.png",
-        "mobile_image": "shopify:\/\/shop_images\/Fall_Mobile_6bf5bdb1-19b3-4e83-84b2-fdc8b5b16d5a.png",
+        "image": "shopify://shop_images/Lot_75_Hero_Image_a56dd5af-9a1f-4241-9514-dc15ab8c3795.png",
+        "mobile_image": "shopify://shop_images/Fall_Mobile_6bf5bdb1-19b3-4e83-84b2-fdc8b5b16d5a.png",
         "header": "We've got you covered.",
         "body": "Looking to learn more about wine, find the perfect food pairing, or get a wine recommendation for a certain occasion? You came to the right place."
       }
@@ -20,36 +29,36 @@
           "type": "card",
           "settings": {
             "header": "Pairings",
-            "link_url": "https:\/\/www.ninetypluscellars.com\/blogs\/news\/tagged\/pairings",
+            "link_url": "https://www.ninetypluscellars.com/blogs/news/tagged/pairings",
             "link_external": false,
-            "image": "shopify:\/\/shop_images\/002-Pairings-Illustration.png"
+            "image": "shopify://shop_images/002-Pairings-Illustration.png"
           }
         },
         "template--16776599077083__70ec04dc-582e-4c6d-a2d5-ac861004450b-card-3": {
           "type": "card",
           "settings": {
             "header": "Occasions",
-            "link_url": "https:\/\/www.ninetypluscellars.com\/blogs\/news\/tagged\/occasions",
+            "link_url": "https://www.ninetypluscellars.com/blogs/news/tagged/occasions",
             "link_external": false,
-            "image": "shopify:\/\/shop_images\/002-Occassions-Illustration.png"
+            "image": "shopify://shop_images/002-Occassions-Illustration.png"
           }
         },
         "e8e4c5be-d677-4f6b-a722-e188c3c43231": {
           "type": "card",
           "settings": {
             "header": "Wine Education",
-            "link_url": "https:\/\/www.ninetypluscellars.com\/blogs\/news\/tagged\/education",
+            "link_url": "https://www.ninetypluscellars.com/blogs/news/tagged/education",
             "link_external": false,
-            "image": "shopify:\/\/shop_images\/002-WineEducation-Illustration.png"
+            "image": "shopify://shop_images/002-WineEducation-Illustration.png"
           }
         },
         "template--16776599077083__70ec04dc-582e-4c6d-a2d5-ac861004450b-card-1": {
           "type": "card",
           "settings": {
             "header": "Recipes",
-            "link_url": "https:\/\/www.ninetypluscellars.com\/blogs\/news\/tagged\/recipes",
+            "link_url": "https://www.ninetypluscellars.com/blogs/news/tagged/recipes",
             "link_external": false,
-            "image": "shopify:\/\/shop_images\/002-Recipes-Illustration.png"
+            "image": "shopify://shop_images/002-Recipes-Illustration.png"
           }
         }
       },
@@ -69,25 +78,25 @@
         "11e1ef49-ad2a-4ea9-a04d-91fcb19283da": {
           "type": "article",
           "settings": {
-            "article": "news\/everything-you-need-to-know-about-non-alcoholic-wines"
+            "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
           }
         },
         "61165c89-5b23-498d-93c5-bfbc3ad6d199": {
           "type": "article",
           "settings": {
-            "article": "news\/cremant-dalsace"
+            "article": "news/cremant-dalsace"
           }
         },
         "5024da33-e236-41d4-b63c-b48a97513a95": {
           "type": "article",
           "settings": {
-            "article": "news\/exploring-the-world-of-pinot-noir"
+            "article": "news/exploring-the-world-of-pinot-noir"
           }
         },
         "b07df93e-18da-4b27-a874-d015ab195de0": {
           "type": "article",
           "settings": {
-            "article": "news\/chillable-reds"
+            "article": "news/chillable-reds"
           }
         }
       },
@@ -105,7 +114,7 @@
         "tag": "Wine Education",
         "limit": 4,
         "link_label": "View All",
-        "link_url": "\/blogs\/news\/tagged\/education",
+        "link_url": "/blogs/news/tagged/education",
         "link_external": false
       }
     },
@@ -115,47 +124,75 @@
         "article_pEtnDC": {
           "type": "article",
           "settings": {
-            "article": "news\/wine-thanksgiving-the-perfect-pairing"
+            "article": "news/wine-thanksgiving-the-perfect-pairing"
+          }
+        },
+        "article_haNYzt": {
+          "type": "article",
+          "settings": {
+            "article": "news/holiday-gift-guide-for-every-type-of-wine-lover"
+          }
+        },
+        "article_ChENRG": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-best-wines-for-the-holidays-make-it-sparkling"
           }
         },
         "article_8pDDwn": {
           "type": "article",
           "settings": {
-            "article": "news\/the-flavors-of-fall"
+            "article": "news/the-flavors-of-fall"
           }
         },
         "article_fnqU6M": {
           "type": "article",
           "settings": {
-            "article": "news\/3-cozy-fall-recipes-you-need-to-add-to-your-repertoire"
+            "article": "news/3-cozy-fall-recipes-you-need-to-add-to-your-repertoire"
+          }
+        },
+        "article_EArNCR": {
+          "type": "article",
+          "settings": {
+            "article": "news/wine-for-the-holidays"
+          }
+        },
+        "article_CjzPAU": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-best-pinot-noir-for-the-holidays"
           }
         },
         "article_aTfwBC": {
           "type": "article",
           "disabled": true,
           "settings": {
-            "article": "news\/chillable-reds"
+            "article": "news/chillable-reds"
           }
         }
       },
       "block_order": [
         "article_pEtnDC",
+        "article_haNYzt",
+        "article_ChENRG",
         "article_8pDDwn",
         "article_fnqU6M",
+        "article_EArNCR",
+        "article_CjzPAU",
         "article_aTfwBC"
       ],
       "settings": {
         "section_id": "occasion-articles",
         "header": "Occasions & Holidays",
         "script": "",
-        "background_image": "shopify:\/\/shop_images\/ABC_Latitude_90_-Fall-2_121ff7eb-56c8-4a0d-adea-cf0b4632a526.jpg",
+        "background_image": "shopify://shop_images/ABC_Latitude_90_-Fall-2_121ff7eb-56c8-4a0d-adea-cf0b4632a526.jpg",
         "theme": "light",
         "mode": "blocks",
         "blog": "news",
         "tag": "Occasions",
         "limit": 5,
         "link_label": "View All",
-        "link_url": "https:\/\/www.ninetypluscellars.com\/blogs\/news\/tagged\/occasions",
+        "link_url": "https://www.ninetypluscellars.com/blogs/news/tagged/occasions",
         "link_external": false
       }
     },
@@ -165,25 +202,25 @@
         "311e2e11-723f-4c98-8804-9c36b60728ff": {
           "type": "article",
           "settings": {
-            "article": "news\/3-sparkling-cocktails-under-100-calories"
+            "article": "news/3-sparkling-cocktails-under-100-calories"
           }
         },
         "f4498887-cbf7-40f5-9632-c0fc20f64856": {
           "type": "article",
           "settings": {
-            "article": "news\/hamersleys-rack-of-lamb-recipe-paired-with-pauillac-bordeaux"
+            "article": "news/hamersleys-rack-of-lamb-recipe-paired-with-pauillac-bordeaux"
           }
         },
         "49af0e3f-72fa-4983-8b44-b9417422bbc2": {
           "type": "article",
           "settings": {
-            "article": "news\/drunken-spanish-octopus-paired-with-sancerre"
+            "article": "news/drunken-spanish-octopus-paired-with-sancerre"
           }
         },
         "article_VmFykk": {
           "type": "article",
           "settings": {
-            "article": "news\/roasted-cauliflower-salad-recipe-and-bordeaux-pairing"
+            "article": "news/roasted-cauliflower-salad-recipe-and-bordeaux-pairing"
           }
         }
       },
@@ -201,7 +238,7 @@
         "tag": "Recipe",
         "limit": 4,
         "link_label": "View All",
-        "link_url": "\/blogs\/news\/tagged\/recipes",
+        "link_url": "/blogs/news/tagged/recipes",
         "link_external": false
       }
     },
@@ -211,25 +248,25 @@
         "article_BcTqyn": {
           "type": "article",
           "settings": {
-            "article": "news\/the-best-lower-alcohol-wines"
+            "article": "news/the-best-lower-alcohol-wines"
           }
         },
         "article_BPCL6p": {
           "type": "article",
           "settings": {
-            "article": "news\/10-things-you-should-know-about-prosecco"
+            "article": "news/10-things-you-should-know-about-prosecco"
           }
         },
         "article_6mdWLU": {
           "type": "article",
           "settings": {
-            "article": "news\/introducing-picpoul-de-pinet"
+            "article": "news/introducing-picpoul-de-pinet"
           }
         },
         "article_BppqkY": {
           "type": "article",
           "settings": {
-            "article": "news\/beyond-the-glass-pinot-grigio"
+            "article": "news/beyond-the-glass-pinot-grigio"
           }
         }
       },
@@ -243,14 +280,14 @@
         "section_id": "",
         "header": "Most Popular Articles",
         "script": "",
-        "background_image": "shopify:\/\/shop_images\/90__2022-10-19_Social_Outdoor_Seconds_109_915b8d06-ccc3-4087-80ab-a3145dc03639.jpg",
+        "background_image": "shopify://shop_images/90__2022-10-19_Social_Outdoor_Seconds_109_915b8d06-ccc3-4087-80ab-a3145dc03639.jpg",
         "theme": "light",
         "mode": "blocks",
         "blog": "news",
         "tag": "",
         "limit": 4,
         "link_label": "",
-        "link_url": "shopify:\/\/pages\/all-articles",
+        "link_url": "shopify://pages/all-articles",
         "link_external": false
       }
     },
@@ -260,32 +297,32 @@
         "746f2adf-fc73-4c14-9074-5139fc9d23b3": {
           "type": "article",
           "settings": {
-            "article": "news\/wine-and-cheese-pairings-with-cabot-cheese"
+            "article": "news/wine-and-cheese-pairings-with-cabot-cheese"
           }
         },
         "ece50542-f37a-4236-98e9-8d18f4adbccd": {
           "type": "article",
           "settings": {
-            "article": "news\/non-traditional-holiday-food-and-wine-pairings"
+            "article": "news/non-traditional-holiday-food-and-wine-pairings"
           }
         },
         "abf36b2a-ebe7-4260-9c01-0bea9f5fb848": {
           "type": "article",
           "settings": {
-            "article": "news\/takeout-try-out-the-best-greek-food-wine-pairings"
+            "article": "news/takeout-try-out-the-best-greek-food-wine-pairings"
           }
         },
         "06a3ce71-ab32-43ed-8336-75fc51950ce0": {
           "type": "article",
           "disabled": true,
           "settings": {
-            "article": "news\/the-perfect-pairing-the-queens-cups-and-90-cellars"
+            "article": "news/the-perfect-pairing-the-queens-cups-and-90-cellars"
           }
         },
         "article_nMnFfE": {
           "type": "article",
           "settings": {
-            "article": "news\/lambrusco-the-best-sparkling-red-wine"
+            "article": "news/lambrusco-the-best-sparkling-red-wine"
           }
         }
       },
@@ -304,7 +341,7 @@
         "tag": "Pairings",
         "limit": 4,
         "link_label": "View All",
-        "link_url": "https:\/\/www.ninetypluscellars.com\/blogs\/news\/tagged\/pairings",
+        "link_url": "https://www.ninetypluscellars.com/blogs/news/tagged/pairings",
         "link_external": false
       }
     },
@@ -313,7 +350,7 @@
       "settings": {
         "id": "newsletter-callout",
         "header": "Newsletter",
-        "form_header": "<b>Sign up for our<\/b> <i>newsletter<\/i>",
+        "form_header": "<b>Sign up for our</b> <i>newsletter</i>",
         "form_sub_header": "Be the first to know about our newest releases, upcoming events, and everything we’re up to on the wine trail. ",
         "klaviyo_newsletter_id": "klaviyo-form-SNxMx5"
       }
@@ -325,7 +362,7 @@
         "metaobject_handle": "social-proof-gallery-main",
         "footer_header": "Tag us on Instagram",
         "footer_sub_header": "@90cellars",
-        "footer_sub_header_link": "https:\/\/www.instagram.com\/90pluscellars\/"
+        "footer_sub_header_link": "https://www.instagram.com/90pluscellars/"
       }
     }
   },
