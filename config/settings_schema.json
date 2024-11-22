@@ -96,11 +96,11 @@
     "name": "Retailers",
     "settings": [
       {
-        "type" :"header",
+        "type": "header",
         "content": "Buy Online Locations"
       },
       {
-        "type" :"paragraph",
+        "type": "paragraph",
         "content": "This setting manages the url for the buy local option. All other online Locations can be managed in the Online Vendors Metaobject"
       },
       {

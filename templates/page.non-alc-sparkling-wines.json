@@ -1,0 +1,113 @@
+{
+  "sections": {
+    "1f1b37aa-db83-4929-ae29-bd88a549b2ab": {
+      "type": "hero-curved",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/90__Website_CurvedHero_NonAlc_Desktop.png",
+        "mobile_image": "shopify:\/\/shop_images\/90__Website_CurvedHero_NonAlc_Mobile.png",
+        "header": "Raise A Glass, Skip the Alcohol",
+        "body": "Say hello to our new Non-Alcoholic \nSparkling Brut and Rosé wines from the South of France! If you're skipping the alcohol or just cutting back, these dealcoholized bubblies bring all the fun and flavor you love—no buzz needed."
+      }
+    },
+    "blank": {
+      "type": "blank",
+      "disabled": true,
+      "settings": {}
+    },
+    "featured_products_4R8bMe": {
+      "type": "featured-products",
+      "disabled": true,
+      "settings": {
+        "layout": "grid",
+        "animated": true,
+        "columns": "3",
+        "header": "Bubblies Without the Buzz",
+        "collection": "non-alcoholic-wines",
+        "link_label": "View All",
+        "link_url": "https:\/\/www.ninetypluscellars.com\/collections\/non-alcoholic-wines",
+        "link_external": false
+      }
+    },
+    "featured_product_single_Pwy6dx": {
+      "type": "featured-product-single",
+      "settings": {
+        "product": "lot-229-non-alcoholic-sparkling-rose-france",
+        "heading": "Lot 229",
+        "subheading": "Sparkling Rosé",
+        "description": "<p>Delicately pink in color with fine bubbles, this Non-Alcoholic Sparkling Rosé captures all the delightful notes of a classic rosé, without the alcohol and artificial flavors.<\/p>",
+        "button_text": "View product",
+        "button_link": "shopify:\/\/products\/boston-rose-3",
+        "button_target": "_self",
+        "padding": "md"
+      }
+    },
+    "featured_product_single_yAJUnp": {
+      "type": "featured-product-single",
+      "settings": {
+        "product": "lot-230-non-alc-sparkling-brut-france",
+        "heading": "Lot 230",
+        "subheading": "Sparkling Brut",
+        "description": "<p>Our Non-Alcoholic Sparkling Brut is brilliant yellow in color with a beautiful effervescence. Notes of lemon and honeysuckle entice, while on the palate hints of citrus and stone fruits steal the show.<\/p>",
+        "button_text": "View product",
+        "button_link": "shopify:\/\/products\/boston-rose-3",
+        "button_target": "_self",
+        "padding": "md"
+      }
+    },
+    "content_callout_large_jqf94z": {
+      "type": "content-callout-large",
+      "settings": {
+        "anchor_id": "",
+        "header": "Crafted at a fourth-generation winery leading the non-alcoholic movement for over 20 years!",
+        "link_label": "",
+        "link_url": "",
+        "link_external": false
+      }
+    },
+    "split_hero_A7QXQA": {
+      "type": "split-hero",
+      "settings": {
+        "section_id": "",
+        "image_position": "right",
+        "header": "Everything You Need To Know About Non-Alcoholic Wines",
+        "body": "<p>Wondering about the differences between “non-alcoholic,” “dealcoholized,” and “alcohol-removed” wine? Or maybe you’re curious about the unique flavors these wines offer? Check out the blog for answers and to see why these sparkling beauties are becoming so popular!<\/p>",
+        "link_text": "Read the Article",
+        "link_url": "https:\/\/www.ninetypluscellars.com\/blogs\/news\/everything-you-need-to-know-about-non-alcoholic-wines",
+        "link_target": "_self",
+        "script": "",
+        "image": "shopify:\/\/shop_images\/LAT-BEV-NOV24-1_2_9c946a76-64bd-4141-9128-3a54c69dc61e.jpg"
+      }
+    },
+    "cb9e57de-fa26-4fe7-b949-9f1cb02b117a": {
+      "type": "newsletter-callout",
+      "settings": {
+        "id": "newsletter-callout",
+        "header": "Newsletter",
+        "form_header": "Sign up for our newsletter",
+        "form_sub_header": "Be the first to know about our newest releases, upcoming events, and everything we’re up to on the wine trail. ",
+        "klaviyo_newsletter_id": "klaviyo-form-SNxMx5"
+      }
+    },
+    "social-proof-gallery": {
+      "type": "social-proof-gallery",
+      "settings": {
+        "id": "social-proof-gallery",
+        "metaobject_handle": "social-proof-gallery-main",
+        "footer_header": "Tag us on Instagram",
+        "footer_sub_header": "@90cellars",
+        "footer_sub_header_link": "https:\/\/www.instagram.com\/90pluscellars\/"
+      }
+    }
+  },
+  "order": [
+    "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
+    "blank",
+    "featured_products_4R8bMe",
+    "featured_product_single_Pwy6dx",
+    "featured_product_single_yAJUnp",
+    "content_callout_large_jqf94z",
+    "split_hero_A7QXQA",
+    "cb9e57de-fa26-4fe7-b949-9f1cb02b117a",
+    "social-proof-gallery"
+  ]
+}
