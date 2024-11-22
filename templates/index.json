@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "a239a0f0-357c-435a-a06a-0ce4251a7354": {
@@ -42,10 +51,10 @@
         "mobile_layout": "bottom-left",
         "header": "Great Wine For All",
         "body": "",
-        "image": "shopify:\/\/shop_images\/24_90__HeroImage_Holiday.png",
-        "mobile_image": "shopify:\/\/shop_images\/24_90__HeroImage_Holiday_Mobile.png",
+        "image": "shopify://shop_images/24_90__HeroImage_Holiday.png",
+        "mobile_image": "shopify://shop_images/24_90__HeroImage_Holiday_Mobile.png",
         "link_label": "Let's Bubbly",
-        "link_url": "https:\/\/www.ninetypluscellars.com\/pages\/lets-bubbly",
+        "link_url": "https://www.ninetypluscellars.com/pages/lets-bubbly",
         "link_external": false
       }
     },
@@ -56,7 +65,7 @@
         "anchor_id": "",
         "header": "We’re uncorking the world of wine, one great bottle at a time.",
         "link_label": "Our Story",
-        "link_url": "shopify:\/\/pages\/about-us",
+        "link_url": "shopify://pages/about-us",
         "link_external": false
       }
     },
@@ -69,7 +78,7 @@
         "header": "Explore Our Wines",
         "collection": "featured-homepage-wines",
         "link_label": "View All",
-        "link_url": "shopify:\/\/collections\/90-wines",
+        "link_url": "shopify://collections/90-wines",
         "link_external": false
       }
     },
@@ -81,8 +90,8 @@
           "settings": {
             "label": "Everyday buys",
             "header": "Core Wines",
-            "url": "shopify:\/\/collections\/core-wines",
-            "image": "shopify:\/\/shop_images\/Sustainable_Wines_2500x2500_0ec629b8-003e-4e58-9769-15ae6a6cd110.png"
+            "url": "shopify://collections/core-wines",
+            "image": "shopify://shop_images/Sustainable_Wines_2500x2500_0ec629b8-003e-4e58-9769-15ae6a6cd110.png"
           }
         },
         "452d145f-7003-4f80-bc00-7393af268f24": {
@@ -90,8 +99,8 @@
           "settings": {
             "label": "Wines from classic wine regions",
             "header": "Classic Series",
-            "url": "shopify:\/\/collections\/classic-wines",
-            "image": "shopify:\/\/shop_images\/Vineyard_2500x2500_2b2783af-4c0c-4ad7-a175-d1037fce17ff.png"
+            "url": "shopify://collections/classic-wines",
+            "image": "shopify://shop_images/Vineyard_2500x2500_2b2783af-4c0c-4ad7-a175-d1037fce17ff.png"
           }
         },
         "35a29a9e-620d-4800-92b2-3ff37f4ef902": {
@@ -99,8 +108,8 @@
           "settings": {
             "label": "Premium Selections",
             "header": "Reserve Series",
-            "url": "shopify:\/\/collections\/reserve-wines",
-            "image": "shopify:\/\/shop_images\/Vineyard_2500x2500_2b2783af-4c0c-4ad7-a175-d1037fce17ff.png"
+            "url": "shopify://collections/reserve-wines",
+            "image": "shopify://shop_images/Vineyard_2500x2500_2b2783af-4c0c-4ad7-a175-d1037fce17ff.png"
           }
         },
         "fa1b828f-d2f4-4d6c-97f1-edb1b1114073": {
@@ -108,8 +117,8 @@
           "settings": {
             "label": "Lighter Sips",
             "header": "Low & Non-Alcoholic Wines",
-            "url": "shopify:\/\/collections\/low-calorie-low-alcohol-wines",
-            "image": "shopify:\/\/shop_images\/Get-our-wines_1200x1200_cd3e34d2-2330-46f2-98bb-a617b3570fa8.png"
+            "url": "shopify://collections/low-calorie-low-alcohol-wines",
+            "image": "shopify://shop_images/Get-our-wines_1200x1200_cd3e34d2-2330-46f2-98bb-a617b3570fa8.png"
           }
         },
         "58f9024a-5e0f-4a69-8ae2-5d4566525baf": {
@@ -117,8 +126,8 @@
           "settings": {
             "label": "In Search Of More?",
             "header": "Explore All",
-            "url": "shopify:\/\/collections\/90-wines",
-            "image": "shopify:\/\/shop_images\/Summer_hero_mobile_1200x1200_1e7cbbf4-9723-4a09-9492-d7f02389adb7.png"
+            "url": "shopify://collections/90-wines",
+            "image": "shopify://shop_images/Summer_hero_mobile_1200x1200_1e7cbbf4-9723-4a09-9492-d7f02389adb7.png"
           }
         }
       },
@@ -132,7 +141,7 @@
       "settings": {
         "id": "",
         "script": "Our Collections",
-        "image": "shopify:\/\/shop_images\/Latitude-DSC_6365.jpg"
+        "image": "shopify://shop_images/Latitude-DSC_6365.jpg"
       }
     },
     "basic_header_PaytBC": {
@@ -156,12 +165,12 @@
         "section_id": "",
         "image_position": "right",
         "header": "NEW Non-Alcoholic Sparkling Wines",
-        "body": "<p>Just in time for the holidays, we’re thrilled to introduce our new non-alcoholic sparkling wines from the South of France! Crafted to capture real wine flavor, these alcohol-removed bubblies are perfect for buzz-free celebrations.<\/p>",
+        "body": "<p>Just in time for the holidays, we’re thrilled to introduce our new non-alcoholic sparkling wines from the South of France! Crafted to capture real wine flavor, these alcohol-removed bubblies are perfect for buzz-free celebrations.</p>",
         "link_text": "Non-Alcoholic Wines",
-        "link_url": "https:\/\/www.ninetypluscellars.com\/pages\/non-alcoholic-sparkling-wines",
+        "link_url": "https://www.ninetypluscellars.com/pages/non-alcoholic-sparkling-wines",
         "link_target": "_self",
         "script": "25 calories per pour!",
-        "image": "shopify:\/\/shop_images\/LAT-BEV-NOV24-1_2_9c946a76-64bd-4141-9128-3a54c69dc61e.jpg"
+        "image": "shopify://shop_images/LAT-BEV-NOV24-1_2_9c946a76-64bd-4141-9128-3a54c69dc61e.jpg"
       }
     },
     "featured_product_single_ChdV6k": {
@@ -171,7 +180,7 @@
         "product": "",
         "heading": "NEW",
         "subheading": "Non-Alcoholic Sparkling Wines",
-        "description": "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptatibus eligendi, veritatis non modi sapiente aliquam molestias provident quaerat eos?<\/p>",
+        "description": "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptatibus eligendi, veritatis non modi sapiente aliquam molestias provident quaerat eos?</p>",
         "button_text": "View product",
         "button_link": "",
         "button_target": "_self",
@@ -184,36 +193,36 @@
         "b573ed92-7796-42df-90b5-26316f704e22": {
           "type": "content",
           "settings": {
-            "image": "shopify:\/\/shop_images\/002-StoreLocator-Illustration.jpg",
+            "image": "shopify://shop_images/002-StoreLocator-Illustration.jpg",
             "label": "Pick up a bottle",
             "title": "Get Our Wines",
             "sub_header": "in your area",
             "link_label": "Find a Store",
-            "link_url": "shopify:\/\/pages\/shop-90-cellars-wines",
+            "link_url": "shopify://pages/shop-90-cellars-wines",
             "link_external": false
           }
         },
         "eafec4d3-f21c-4a5c-b310-8b78b4db6d70": {
           "type": "content",
           "settings": {
-            "image": "shopify:\/\/shop_images\/002-Events-Illustration.jpg",
+            "image": "shopify://shop_images/002-Events-Illustration.jpg",
             "label": "Wine truck events & more",
             "title": "Check Out",
             "sub_header": "Our Events Schedule",
             "link_label": "Events",
-            "link_url": "shopify:\/\/pages\/events",
+            "link_url": "shopify://pages/events",
             "link_external": false
           }
         },
         "32ee8efe-6e2f-48b6-afb7-52ae9644499c": {
           "type": "content",
           "settings": {
-            "image": "shopify:\/\/shop_images\/003-Events-Illustration.jpg",
+            "image": "shopify://shop_images/003-Events-Illustration.jpg",
             "label": "Drink Better",
             "title": "Explore Our",
             "sub_header": "Sustainable Wines",
             "link_label": "Shop Wines",
-            "link_url": "shopify:\/\/pages\/sustainability",
+            "link_url": "shopify://pages/sustainability",
             "link_external": false
           }
         }
@@ -238,15 +247,15 @@
       "settings": {
         "metaobject_handle": "",
         "layout": "Centered Headline",
-        "image": "shopify:\/\/shop_images\/WineClub-4.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/wine_club.png",
+        "image": "shopify://shop_images/WineClub-4.jpg",
+        "mobile_image": "shopify://shop_images/wine_club.png",
         "header": "Wine Club",
         "sub_header": "",
         "sub_header_2": "",
-        "body": "<p>Get ready to explore the world of wine! <\/p><p>Discover new favorites, limited releases and seasonal selections. Our Wine Club delivers right to your door, four times per year. Just select 3, 6 or 12 bottles, and your choice of red or mixed wines. We’ll take it from there!<\/p>",
+        "body": "<p>Get ready to explore the world of wine! </p><p>Discover new favorites, limited releases and seasonal selections. Our Wine Club delivers right to your door, four times per year. Just select 3, 6 or 12 bottles, and your choice of red or mixed wines. We’ll take it from there!</p>",
         "citation": "",
         "link_label": "Explore Wine Club",
-        "link_url": "shopify:\/\/pages\/wine-club",
+        "link_url": "shopify://pages/wine-club",
         "link_external": false
       }
     },
@@ -300,15 +309,15 @@
       "settings": {
         "metaobject_handle": "",
         "layout": "Centered Headline",
-        "image": "shopify:\/\/shop_images\/BOSTON-ROSE-90PLUS-1.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Boston_Rose_mobile.png",
+        "image": "shopify://shop_images/BOSTON-ROSE-90PLUS-1.jpg",
+        "mobile_image": "shopify://shop_images/Boston_Rose_mobile.png",
         "header": "Hey, Boston!",
         "sub_header": "",
         "sub_header_2": "",
-        "body": "<p>Join us June 22nd for our 10th Annual Rosé Cruise, shop the 5th Edition of our Boston Rosé, and more!<\/p>",
+        "body": "<p>Join us June 22nd for our 10th Annual Rosé Cruise, shop the 5th Edition of our Boston Rosé, and more!</p>",
         "citation": "",
         "link_label": "Celebrate Boston",
-        "link_url": "https:\/\/www.ninetypluscellars.com\/pages\/boston",
+        "link_url": "https://www.ninetypluscellars.com/pages/boston",
         "link_external": false
       }
     },
@@ -318,31 +327,39 @@
         "article_AnCEby": {
           "type": "article",
           "settings": {
-            "article": "news\/everything-you-need-to-know-about-non-alcoholic-wines"
+            "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
           }
         },
         "article_nR7FDK": {
           "type": "article",
           "settings": {
-            "article": "news\/wine-thanksgiving-the-perfect-pairing"
+            "article": "news/wine-thanksgiving-the-perfect-pairing"
+          }
+        },
+        "article_j3XPci": {
+          "type": "article",
+          "settings": {
+            "article": "news/holiday-gift-guide-for-every-type-of-wine-lover"
           }
         },
         "article_dm9jhU": {
           "type": "article",
+          "disabled": true,
           "settings": {
-            "article": "news\/chillable-reds"
+            "article": "news/chillable-reds"
           }
         },
         "2d7c7acc-53fb-40ce-a29a-f903884dc5b9": {
           "type": "article",
           "settings": {
-            "article": "news\/cremant-dalsace"
+            "article": "news/cremant-dalsace"
           }
         }
       },
       "block_order": [
         "article_AnCEby",
         "article_nR7FDK",
+        "article_j3XPci",
         "article_dm9jhU",
         "2d7c7acc-53fb-40ce-a29a-f903884dc5b9"
       ],
@@ -354,7 +371,7 @@
         "tag": "",
         "limit": 4,
         "link_label": "View All",
-        "link_url": "shopify:\/\/pages\/all-articles",
+        "link_url": "shopify://pages/all-articles",
         "link_external": false
       }
     },
@@ -363,7 +380,7 @@
       "settings": {
         "id": "newsletter-callout",
         "header": "Newsletter",
-        "form_header": "<b>Sign up for our<\/b><i> newsletter!<\/i>",
+        "form_header": "<b>Sign up for our</b><i> newsletter!</i>",
         "form_sub_header": "Be the first to know about our newest releases, upcoming events, and everything we’re up to on the wine trail. ",
         "klaviyo_newsletter_id": "klaviyo-form-SNxMx5"
       }
@@ -375,7 +392,7 @@
         "metaobject_handle": "social-proof-gallery-main",
         "footer_header": "TAG US ON INSTAGRAM",
         "footer_sub_header": "@90PLUSCELLARS",
-        "footer_sub_header_link": "https:\/\/www.instagram.com\/90pluscellars\/"
+        "footer_sub_header_link": "https://www.instagram.com/90pluscellars/"
       }
     }
   },
