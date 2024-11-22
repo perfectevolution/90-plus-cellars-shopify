@@ -34,16 +34,22 @@
     "featured_articles_Mq3GKN": {
       "type": "featured-articles",
       "blocks": {
-        "article_dF6tyf": {
+        "article_X7gUjz": {
           "type": "article",
           "settings": {
-            "article": "news/non-traditional-holiday-food-and-wine-pairings"
+            "article": "news/holiday-gift-guide-for-every-type-of-wine-lover"
           }
         },
         "article_9xfHE4": {
           "type": "article",
           "settings": {
             "article": "news/the-best-wines-for-the-holidays-make-it-sparkling"
+          }
+        },
+        "article_dF6tyf": {
+          "type": "article",
+          "settings": {
+            "article": "news/non-traditional-holiday-food-and-wine-pairings"
           }
         },
         "article_HdcVnL": {
@@ -60,8 +66,9 @@
         }
       },
       "block_order": [
-        "article_dF6tyf",
+        "article_X7gUjz",
         "article_9xfHE4",
+        "article_dF6tyf",
         "article_HdcVnL",
         "article_xY8RWE"
       ],
