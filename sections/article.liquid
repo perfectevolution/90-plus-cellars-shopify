@@ -1,13 +1,143 @@
+<style>
+    .article-right-column{
+        padding-top: 28px;
+        position: relative;
+    }
+    @media only screen and (min-width: 992px){
+        .article-right-column .right-col-wrapper{
+            position: sticky;
+            top: 100px;
+            left: 0;
+            max-height: 80vh;
+        }
+    }
+    .article-right-column .section-title{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 5px;
+    }
+    .article-right-column .section-title svg{
+        width: 25px;
+        transform: rotate(-90deg);
+        height: 25px;
+    }
+    .article-right-column .section-title h3{
+        font-family: GTAmerica, sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0;
+        line-height: 21px;
+        letter-spacing: 0.14px;
+    }
+    .article-right-column p{
+        margin: 0;
+        font-size: 16px;
+        letter-spacing: 0.16px;
+        opacity: 0.92;
+        color: #231F20;
+    }
+    .article-right-column .featured-wines-list{
+        margin-top: 20px;
+    }
+    .article-right-column .featured-product {
+        display: flex;
+        gap: 16px;
+        text-decoration: none;
+    }
+    .article-right-column .featured-product .product-image{
+        flex: 0 0 50px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .article-right-column .featured-product .product-image .img-container{
+        max-height: 75%;
+        display: flex;
+        justify-content: center;
+        background: #F5F5F5;
+        padding: 10px 0;
+    }
+    .article-right-column .featured-product .product-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .article-right-column .featured-product .product-info .product-title{
+        font-family: QueensCondensed, serif;
+        font-size: 24px;
+        font-weight: 500;
+        text-transform: none;
+        margin: 0;
+        line-height: 22px;
+        letter-spacing: 0.24px;
+        color: #231F20;
+        text-decoration: none;
+    }
+    .article-right-column .featured-product .product-info .product-price{
+        margin: 10px 0 0;
+    }
+    .article-right-column .featured-wines-container, .newsletter-container, .find-our-wines-container{
+        border-bottom: 1px solid #cccccc;
+        padding: 20px 0;
+    }
+    @media only screen and (max-width: 991px){
+        .article-right-column .featured-wines-container{
+            display: none;
+        }
+    }
+    .article-right-column .klaviyo-form>div{
+        min-height: auto !important;
+        margin-top: 10px !important;
+    }
+
+    .article-right-column .klaviyo-form [data-testid="form-row"] div:nth-child(2){
+        position: absolute !important;
+        right: 12px;
+        padding: 0 !important;
+        top: 6px;
+    }
+    .article-right-column .klaviyo-form [data-testid="form-component"]{
+        padding: 0 !important;
+    }
+    .article-right-column .klaviyo-form [data-testid="form-component"]:last-of-type button{
+        transition: all .2s ease-in-out;
+        width: 34px !important;
+        background-color: #f36e4e !important;
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAdCAYAAAA+YOU3AAAABHNCSVQICAgIfAhkiAAAAr1JREFUWEft1tmLTnEcx/EZW/Z9icLIEqK4sJYshZK4kOEG5U65oFz5A9y4o+SSpMiF5Q7JXooLa8huZCzZ9937nd/hGR4zv3NmnjNNPadePWeezpzf5/f9bU9lRQu8Kltg5opy6LxGrVzpUOlefHbHO7zAp6YegVJUugsh+2AApqAbruNGYEe+N6YjpQid5GnDzTSsDx24zedhHAydyJy7lKGTUFZ6KRZgfKjyHj534DI+p02fR2gz9cAELMYc9MZV7MI+3MG32PB5hTaPbQ3FSqxAV9TiELaGqkflzjN0Esg2J2IdZqAdTmIjTsVUvNShW4UKFw592xDMKbIaS9AXzu1t2IwH9ZW8qUJbLbe5V+iJMeiAl+iIwXDvNtg1PIEdGoTZmAvnvc+7u+zEWbwuFj5r6E687EdodDqf/TAQLja3Og8WQ3pv+K/hOw8ag/v/7tX38RR2eiRG4C3OYTcOwELUuWJD+5yVGYJJIeCsENrvDeChYeMOrVuZQfUQHiydYdUN7rPPYMeq8AWPMQ/LYNUfwUV7Ahbo99VQ6PY86cnWHwsxFlbU763AXZzGc1i1i7DKVvc9PoaW7JgNFzZu2/7tLjIV82FoA/u9p6gH09E/cX/dFQvtdxqNmZiMcbBSl3Ae93AMVtFnDZjlaHYdrMEitIajsB/u27ZxHP8cPn+Hdrh8kS9xrlbBvfQWXBzeO2wukDpDxt9pLgOOwga4dzuH3a/3IlkT/z1sCkNbTStbjeE4AofePfQCslSyWEecKq6LtfAX4XY4BWpie52EXsU/OJ+GweN1E9yaXNnRx2tko1bW/TkJfIZ710H0ZegtcCdwxftbwH3yTfQb0j+4PBTH6eauknoEDX0FvsBfXs7d1C9JmdspeBNujZnWhaF9iUP0IWXjzfZ4Q/t0swWrr+Fy6LyGpVzpvCr9ExQblh7a3ZdhAAAAAElFTkSuQmCC") !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 70% !important;
+        border-radius: 100% !important;
+        font-size: 0 !important;
+        display: block !important;
+        height: 34px !important;
+        padding: 0 !important;
+    }
+    .article-right-column .klaviyo-form [data-testid="form-row"] div:nth-child(2):hover{
+        transition: all .2s ease-in-out;
+        transform: scale(1.2) rotate(25deg);
+    }
+    .article-right-column .klaviyo-form input[type="email"]{
+        height: 45px !important;
+        border-color: #ccc !important;
+        border-radius: 16px !important;
+        font-family: GTAmerica, sans-serif !important;
+        font-size: 14px !important;
+        color: #C3c3c3 !important;
+    }
+</style>
+
 <article class="my-5 py-5">
     <div class="container">
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-9 relative ">
                 <a href="/blogs/news/" class="h5 breadcrumb pt-5">All Articles</a>
                 <h1 class="pt-4 h2 pb-3">{{article.title}}</h1>
                 {% if article.tags %}
                     <div class="article-tags pt-3 pb-5">
                         {% for tag in article.tags %}
-                        <a class="btn btn-sm btn-outline-light mr-1 mb-1 d-inline-block" href="/blog/news/tagged/{{tag | handelize}}">{{ tag }}</a>
+                            <a class="btn btn-sm btn-outline-light mr-1 mb-1 d-inline-block" href="/blog/news/tagged/{{tag | handelize}}">{{ tag }}</a>
                         {% endfor %}
                     </div>
                 {% endif%}
@@ -19,8 +149,168 @@
                 <div class="rte article-content">
                     {{article.content}}
                 </div>
-                
+
+            </div>
+            <div class="col-lg-3 article-right-column" style="display: none">
+                <div class="right-col-wrapper">
+                    {% if section.settings.show_featured_wines %}
+                        <div class="featured-wines-container">
+                            <div class="section-title">
+                                {% render 'icon-circle-caret', fill: '#000', stroke: '#fff' %}
+                                <h3>Featured Wines</h3>
+                            </div>
+                            <div class="featured-wines-list"></div>
+                        </div>
+                    {% endif %}
+                    {% if section.settings.show_newsletter %}
+                        <div class="newsletter-container">
+                            <div class="section-title">
+                                {% render 'icon-circle-caret', fill: '#000', stroke: '#fff' %}
+                                <h3>Get our Newsletter</h3>
+                            </div>
+                            <p>Save 15% on your first purchase when you sign up for our newsletter.</p>
+                            <div class="{{ section.settings.klaviyo_newsletter_id }}"></div>
+                        </div>
+                    {% endif %}
+                    {% if section.settings.show_store_locators %}
+                        <div class="find-our-wines-container">
+                            <div class="section-title">
+                                {% render 'icon-circle-caret', fill: '#000', stroke: '#fff' %}
+                                <h3>Find our wines Near you</h3>
+                            </div>
+                            <div>
+                                <p>Search our store locator.</p>
+                                <a class="btn btn-dark my-3 d-inline-block" href="{{ section.settings.store_locator_link }}" title="{{ section.settings.store_locator_label }}">{{ section.settings.store_locator_label }}</a>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
             </div>
         </div>
     </div>
 </article>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+        const articleRightColumn = document.querySelector('.article-right-column');
+        if (window.innerWidth >= 992) {
+            const articleImage = document.querySelector('.article-image');
+            const distanceFromParentTop = articleImage.offsetTop;
+            articleRightColumn.style.paddingTop = `${distanceFromParentTop}px`;
+            articleRightColumn.style.display = 'block';
+        } else {
+            articleRightColumn.style.display = 'block';
+        }
+
+        const articleContent = document.querySelector(".rte.article-content");
+        const featuredWinesList = document.querySelector(".featured-wines-list");
+
+        if (!articleContent || !featuredWinesList) return;
+
+        const uniqueLinks = new Set(); // Almacena URLs únicas
+        const links = Array.from(articleContent.querySelectorAll("a[href*='/products/']"))
+            .filter(link => {
+                const url = link.getAttribute("href");
+                // Solo agrega el enlace si no está ya en el Set
+                if (!uniqueLinks.has(url)) {
+                    uniqueLinks.add(url); // Agrega la URL al Set
+                    return true;
+                }
+                return false;
+            }).slice(0, 3); // Selecciona hasta los primeros 3 enlaces únicos
+
+        links.forEach(link => {
+            let url = link.getAttribute("href").split("/").pop();
+            if (url.indexOf("?") > -1) url = url.substring(0, url.indexOf("?"));
+            const productLink = link.getAttribute("href");
+            url = `${window.Shopify.routes.root}products/${url}?view=data-json`;
+            // Realiza el fetch para obtener datos del producto
+            fetch(url)
+                .then(res => res.ok ? res.json() : false)
+                .then(product => {
+                    if (!product) return;
+
+                    let regionText = '';
+                    const subRegion = product.sub_region;
+                    const regions = product.region || [];
+
+                    if (subRegion) {
+                        regionText += `${subRegion}`;
+                        if (regions.length > 0) {
+                            regionText += ',&nbsp;';
+                        }
+                    }
+
+                    regionText += regions.join(', ');
+
+                    const productHTML = `
+                  <a href="${productLink}" class="featured-product" target="_blank">
+                    <div class="product-image">
+                        <div class="img-container">
+                            <img src="${product.img}" alt="${product.title}" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="product-info">
+                      <h3 class="product-title">${product.title}</h3>
+                      <p class="product-region">${regionText}, ${product.year}</p>
+                      <p class="product-price">${product.price}</p>
+                    </div>
+                  </a>
+                `;
+
+                    featuredWinesList.insertAdjacentHTML("afterbegin", productHTML);
+                })
+                .catch(error => console.error("Error fetching product data:", error));
+        });
+    });
+</script>
+
+{% schema %}
+{
+  "name": "Article",
+  "class": "article",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_featured_wines",
+      "label": "Show Featured Wines",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_newsletter",
+      "label": "Show Newsletter",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "klaviyo_newsletter_id",
+      "label": "Klaviyo Newsletter Id",
+      "default" : "klaviyo-form-SNxMx5"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_store_locators",
+      "label": "Show Store Locator",
+      "default": true
+    },
+    {
+      "type": "url",
+      "id": "store_locator_link",
+      "label": "Store Locator Link"
+    },
+    {
+      "type": "text",
+      "id": "store_locator_label",
+      "label": "Store Locator Button Label",
+      "default": "Find Nearby"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Article"
+    }
+  ]
+}
+{% endschema %}
