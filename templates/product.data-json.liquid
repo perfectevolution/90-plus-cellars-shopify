@@ -1,0 +1,9 @@
+{%- layout none -%}
+{
+"title": "{{ product.title }}",
+"img": "{{ product.featured_image | img_url }}",
+"year": "{{ product.metafields.data.year }}",
+"region": {{ product.metafields.product.region }},
+"sub_region": "{{ product.metafields.product.sub_region }}",
+"price": "{{ product.price | money }}"
+}
