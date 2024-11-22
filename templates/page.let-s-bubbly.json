@@ -1,10 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab": {
       "type": "hero-curved",
       "settings": {
-        "image": "shopify:\/\/shop_images\/90__Website_CurvedHero_Let_sBubbly_Desktop.png",
-        "mobile_image": "shopify:\/\/shop_images\/90__Website_CurvedHero_Let_sBubbly_Mobile.png",
+        "image": "shopify://shop_images/90__Website_CurvedHero_Let_sBubbly_Desktop.png",
+        "mobile_image": "shopify://shop_images/90__Website_CurvedHero_Let_sBubbly_Mobile.png",
         "header": "Let's Bubbly!",
         "body": "Nothing says holiday fun like the pop of a bottle! Whether it’s as an aperitif, a holiday cocktail, a great food pairing, or as a perfect gift for wine lovers in your life, sparkling wine makes the holiday season so much better."
       }
@@ -18,7 +27,7 @@
         "header": "The Best Sparkling Wines for the Holidays",
         "collection": "lets-bubbly",
         "link_label": "Shop All Sparkling",
-        "link_url": "shopify:\/\/collections\/lets-bubbly",
+        "link_url": "shopify://collections/lets-bubbly",
         "link_external": false
       }
     },
@@ -28,25 +37,25 @@
         "article_dF6tyf": {
           "type": "article",
           "settings": {
-            "article": "news\/non-traditional-holiday-food-and-wine-pairings"
+            "article": "news/non-traditional-holiday-food-and-wine-pairings"
           }
         },
         "article_9xfHE4": {
           "type": "article",
           "settings": {
-            "article": "news\/the-best-wines-for-the-holidays-make-it-sparkling"
+            "article": "news/the-best-wines-for-the-holidays-make-it-sparkling"
           }
         },
         "article_HdcVnL": {
           "type": "article",
           "settings": {
-            "article": "news\/wine-for-the-holidays"
+            "article": "news/wine-for-the-holidays"
           }
         },
         "article_xY8RWE": {
           "type": "article",
           "settings": {
-            "article": "news\/the-best-pinot-noir-for-the-holidays"
+            "article": "news/the-best-pinot-noir-for-the-holidays"
           }
         }
       },
@@ -60,7 +69,7 @@
         "section_id": "",
         "header": "Get Inspired",
         "script": "Bring the Bubbly",
-        "background_image": "shopify:\/\/shop_images\/Prosecco-1.jpg",
+        "background_image": "shopify://shop_images/Prosecco-1.jpg",
         "theme": "light",
         "mode": "blocks",
         "blog": "press",
@@ -77,9 +86,9 @@
         "product": "lot-230-non-alc-sparkling-brut-france",
         "heading": "NEW Non-Alcoholic",
         "subheading": "Sparkling Brut",
-        "description": "<p>Our Non-Alcoholic Sparkling Brut is brilliant yellow in color with a beautiful effervescence. Notes of lemon and honeysuckle entice, while on the palate hints of citrus and stone fruits steal the show.<\/p>",
+        "description": "<p>Our Non-Alcoholic Sparkling Brut is brilliant yellow in color with a beautiful effervescence. Notes of lemon and honeysuckle entice, while on the palate hints of citrus and stone fruits steal the show.</p>",
         "button_text": "Shop Now",
-        "button_link": "shopify:\/\/products\/lot-230-non-alc-sparkling-brut-france",
+        "button_link": "shopify://products/lot-230-non-alc-sparkling-brut-france",
         "button_target": "_self",
         "padding": "md"
       }
@@ -90,9 +99,9 @@
         "product": "lot-229-non-alcoholic-sparkling-rose-france",
         "heading": "NEW Non-Alcoholic",
         "subheading": "Sparkling Rosé",
-        "description": "<p>Delicately pink in color with fine bubbles, this Non-Alcoholic Sparkling Rosé captures all the delightful notes of a classic rosé, without the alcohol and artificial flavors.<\/p>",
+        "description": "<p>Delicately pink in color with fine bubbles, this Non-Alcoholic Sparkling Rosé captures all the delightful notes of a classic rosé, without the alcohol and artificial flavors.</p>",
         "button_text": "Shop Now",
-        "button_link": "shopify:\/\/products\/lot-229-non-alcoholic-sparkling-rose-france",
+        "button_link": "shopify://products/lot-229-non-alcoholic-sparkling-rose-france",
         "button_target": "_self",
         "padding": "md"
       }
@@ -123,24 +132,24 @@
         "section_id": "",
         "image_position": "right",
         "header": "The Gift That Keeps On Pouring",
-        "body": "<p>Treat someone special (or yourself) to a 90+ Cellars wine club membership! Every season, you can expect <\/p><p>seasonal selection of wines every 3 months for the next year! We offer a 3-bottle Starter Club or a 6 or 12-bottle Red or Mix Club—the perfect way to explore the world of wine, delivered to your door.<\/p>",
+        "body": "<p>Treat someone special (or yourself) to a 90+ Cellars wine club membership! Every season, you can expect </p><p>seasonal selection of wines every 3 months for the next year! We offer a 3-bottle Starter Club or a 6 or 12-bottle Red or Mix Club—the perfect way to explore the world of wine, delivered to your door.</p>",
         "link_text": "Learn More About Wine Club",
-        "link_url": "https:\/\/www.ninetypluscellars.com\/pages\/wine-club",
+        "link_url": "https://www.ninetypluscellars.com/pages/wine-club",
         "link_target": "_self",
         "script": "",
-        "image": "shopify:\/\/shop_images\/WineClub-5.jpg"
+        "image": "shopify://shop_images/WineClub-5.jpg"
       }
     },
     "featured_product_single_NArXRp": {
       "type": "featured-product-single",
       "disabled": true,
       "settings": {
-        "product": "trial-pack",
+        "product": "explorer-pack",
         "heading": "NEW Non-Alcoholic",
         "subheading": "Sparkling Rosé",
-        "description": "<p>Delicately pink in color with fine bubbles, this Non-Alcoholic Sparkling Rosé captures all the delightful notes of a classic rosé, without the alcohol and artificial flavors.<\/p>",
+        "description": "<p>Delicately pink in color with fine bubbles, this Non-Alcoholic Sparkling Rosé captures all the delightful notes of a classic rosé, without the alcohol and artificial flavors.</p>",
         "button_text": "Shop Now",
-        "button_link": "shopify:\/\/products\/lot-229-non-alcoholic-sparkling-rose-france",
+        "button_link": "shopify://products/lot-229-non-alcoholic-sparkling-rose-france",
         "button_target": "_self",
         "padding": "md"
       }
@@ -162,7 +171,7 @@
         "metaobject_handle": "social-proof-gallery-main",
         "footer_header": "Tag us on Instagram",
         "footer_sub_header": "@90cellars",
-        "footer_sub_header_link": "https:\/\/www.instagram.com\/90pluscellars\/"
+        "footer_sub_header_link": "https://www.instagram.com/90pluscellars/"
       }
     }
   },

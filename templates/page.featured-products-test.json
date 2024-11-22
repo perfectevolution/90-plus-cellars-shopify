@@ -1,1 +1,48 @@
-{"sections":{"blank":{"type":"blank","settings":{}},"7dc548d7-5e33-49d4-9ffa-80b12a323b40":{"type":"hero-main","settings":{"anchor_id":"","theme":"light","btn_color":"btn-primary","layout":"bottom-left","mobile_layout":"top-left","header":"Great Wine For All","body":"","image":"shopify:\/\/shop_images\/beach-sunset-thailand.jpg","link_label":"Shop All","link_url":"shopify:\/\/collections\/all","link_external":false}},"def8686f-eb19-4971-b55e-99c567fee4d9":{"type":"featured-product-single","settings":{"product":"trial-pack","heading":"Featured","subheading":"Product Headline","description":"<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptatibus eligendi, veritatis non modi sapiente aliquam molestias provident quaerat eos?<\/p>","padding":"xl"}}},"order":["blank","7dc548d7-5e33-49d4-9ffa-80b12a323b40","def8686f-eb19-4971-b55e-99c567fee4d9"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blank": {
+      "type": "blank",
+      "settings": {}
+    },
+    "7dc548d7-5e33-49d4-9ffa-80b12a323b40": {
+      "type": "hero-main",
+      "settings": {
+        "anchor_id": "",
+        "theme": "light",
+        "btn_color": "btn-primary",
+        "layout": "bottom-left",
+        "mobile_layout": "top-left",
+        "header": "Great Wine For All",
+        "body": "",
+        "image": "shopify://shop_images/beach-sunset-thailand.jpg",
+        "link_label": "Shop All",
+        "link_url": "shopify://collections/all",
+        "link_external": false
+      }
+    },
+    "def8686f-eb19-4971-b55e-99c567fee4d9": {
+      "type": "featured-product-single",
+      "settings": {
+        "product": "explorer-pack",
+        "heading": "Featured",
+        "subheading": "Product Headline",
+        "description": "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptatibus eligendi, veritatis non modi sapiente aliquam molestias provident quaerat eos?</p>",
+        "padding": "xl"
+      }
+    }
+  },
+  "order": [
+    "blank",
+    "7dc548d7-5e33-49d4-9ffa-80b12a323b40",
+    "def8686f-eb19-4971-b55e-99c567fee4d9"
+  ]
+}
