@@ -14,24 +14,28 @@
       "blocks": {
         "word_mHRCXJ": {
           "type": "word",
+          "disabled": true,
           "settings": {
             "word": "Ocassions"
           }
         },
         "7b6633c1-27b2-4564-bf5f-4b2283846a1f": {
           "type": "word",
+          "disabled": true,
           "settings": {
             "word": "Get Togethers"
           }
         },
         "7bee8437-0cc7-472a-a996-4c5ac1905d97": {
           "type": "word",
+          "disabled": true,
           "settings": {
             "word": "Seasons"
           }
         },
         "word_9kaVnT": {
           "type": "word",
+          "disabled": true,
           "settings": {
             "word": "Celebrations"
           }
@@ -47,13 +51,13 @@
         "anchor_id": "",
         "theme": "light",
         "btn_color": "btn-outline-light",
-        "layout": "bottom-left",
+        "layout": "center-left",
         "mobile_layout": "bottom-left",
-        "header": "Great Wine For All",
+        "header": "Let's Bubbly",
         "body": "",
         "image": "shopify://shop_images/24_90__HeroImage_Holiday.png",
         "mobile_image": "shopify://shop_images/24_90__HeroImage_Holiday_Mobile.png",
-        "link_label": "Let's Bubbly",
+        "link_label": "Shop Sparkling",
         "link_url": "https://www.ninetypluscellars.com/pages/lets-bubbly",
         "link_external": false
       }
