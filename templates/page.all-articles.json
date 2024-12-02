@@ -121,12 +121,6 @@
     "featured-articles-test": {
       "type": "featured-articles",
       "blocks": {
-        "article_pEtnDC": {
-          "type": "article",
-          "settings": {
-            "article": "news/wine-thanksgiving-the-perfect-pairing"
-          }
-        },
         "article_haNYzt": {
           "type": "article",
           "settings": {
@@ -137,18 +131,6 @@
           "type": "article",
           "settings": {
             "article": "news/the-best-wines-for-the-holidays-make-it-sparkling"
-          }
-        },
-        "article_8pDDwn": {
-          "type": "article",
-          "settings": {
-            "article": "news/the-flavors-of-fall"
-          }
-        },
-        "article_fnqU6M": {
-          "type": "article",
-          "settings": {
-            "article": "news/3-cozy-fall-recipes-you-need-to-add-to-your-repertoire"
           }
         },
         "article_EArNCR": {
@@ -169,17 +151,38 @@
           "settings": {
             "article": "news/chillable-reds"
           }
+        },
+        "article_pEtnDC": {
+          "type": "article",
+          "disabled": true,
+          "settings": {
+            "article": "news/wine-thanksgiving-the-perfect-pairing"
+          }
+        },
+        "article_8pDDwn": {
+          "type": "article",
+          "disabled": true,
+          "settings": {
+            "article": "news/the-flavors-of-fall"
+          }
+        },
+        "article_fnqU6M": {
+          "type": "article",
+          "disabled": true,
+          "settings": {
+            "article": "news/3-cozy-fall-recipes-you-need-to-add-to-your-repertoire"
+          }
         }
       },
       "block_order": [
-        "article_pEtnDC",
         "article_haNYzt",
         "article_ChENRG",
-        "article_8pDDwn",
-        "article_fnqU6M",
         "article_EArNCR",
         "article_CjzPAU",
-        "article_aTfwBC"
+        "article_aTfwBC",
+        "article_pEtnDC",
+        "article_8pDDwn",
+        "article_fnqU6M"
       ],
       "settings": {
         "section_id": "occasion-articles",
