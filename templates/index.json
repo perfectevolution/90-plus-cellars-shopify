@@ -340,6 +340,18 @@
             "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
           }
         },
+        "article_He7tNp": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-best-wines-for-the-holidays-make-it-sparkling"
+          }
+        },
+        "article_pjKrDX": {
+          "type": "article",
+          "settings": {
+            "article": "news/3-festive-sparkling-wine-cocktails-for-the-holidays"
+          }
+        },
         "article_nR7FDK": {
           "type": "article",
           "disabled": true,
@@ -356,24 +368,27 @@
         },
         "2d7c7acc-53fb-40ce-a29a-f903884dc5b9": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/cremant-dalsace"
           }
         },
-        "article_He7tNp": {
+        "article_JrCXUw": {
           "type": "article",
           "settings": {
-            "article": "news/the-best-wines-for-the-holidays-make-it-sparkling"
+            "article": ""
           }
         }
       },
       "block_order": [
         "article_j3XPci",
         "article_AnCEby",
+        "article_He7tNp",
+        "article_pjKrDX",
         "article_nR7FDK",
         "article_dm9jhU",
         "2d7c7acc-53fb-40ce-a29a-f903884dc5b9",
-        "article_He7tNp"
+        "article_JrCXUw"
       ],
       "settings": {
         "section_id": "",
