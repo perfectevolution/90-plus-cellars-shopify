@@ -121,6 +121,12 @@
     "featured-articles-test": {
       "type": "featured-articles",
       "blocks": {
+        "article_6M4K3q": {
+          "type": "article",
+          "settings": {
+            "article": "news/3-festive-sparkling-wine-cocktails-for-the-holidays"
+          }
+        },
         "article_haNYzt": {
           "type": "article",
           "settings": {
@@ -175,6 +181,7 @@
         }
       },
       "block_order": [
+        "article_6M4K3q",
         "article_haNYzt",
         "article_ChENRG",
         "article_EArNCR",
@@ -202,6 +209,12 @@
     "1ed7e9e7-7bc3-4fb7-a908-75b2df075e6b": {
       "type": "article-grid",
       "blocks": {
+        "49af0e3f-72fa-4983-8b44-b9417422bbc2": {
+          "type": "article",
+          "settings": {
+            "article": "news/3-festive-sparkling-wine-cocktails-for-the-holidays"
+          }
+        },
         "311e2e11-723f-4c98-8804-9c36b60728ff": {
           "type": "article",
           "settings": {
@@ -214,12 +227,6 @@
             "article": "news/hamersleys-rack-of-lamb-recipe-paired-with-pauillac-bordeaux"
           }
         },
-        "49af0e3f-72fa-4983-8b44-b9417422bbc2": {
-          "type": "article",
-          "settings": {
-            "article": "news/drunken-spanish-octopus-paired-with-sancerre"
-          }
-        },
         "article_VmFykk": {
           "type": "article",
           "settings": {
@@ -228,9 +235,9 @@
         }
       },
       "block_order": [
+        "49af0e3f-72fa-4983-8b44-b9417422bbc2",
         "311e2e11-723f-4c98-8804-9c36b60728ff",
         "f4498887-cbf7-40f5-9632-c0fc20f64856",
-        "49af0e3f-72fa-4983-8b44-b9417422bbc2",
         "article_VmFykk"
       ],
       "settings": {
