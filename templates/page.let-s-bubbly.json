@@ -34,6 +34,12 @@
     "featured_articles_Mq3GKN": {
       "type": "featured-articles",
       "blocks": {
+        "article_kGkfTL": {
+          "type": "article",
+          "settings": {
+            "article": "news/3-festive-sparkling-wine-cocktails-for-the-holidays"
+          }
+        },
         "article_X7gUjz": {
           "type": "article",
           "settings": {
@@ -66,6 +72,7 @@
         }
       },
       "block_order": [
+        "article_kGkfTL",
         "article_X7gUjz",
         "article_9xfHE4",
         "article_dF6tyf",
