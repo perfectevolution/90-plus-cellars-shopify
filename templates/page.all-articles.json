@@ -215,6 +215,12 @@
             "article": "news/3-festive-sparkling-wine-cocktails-for-the-holidays"
           }
         },
+        "article_VmFykk": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-ultimate-holiday-seafood-wine-pairing-with-taylor-shellfish"
+          }
+        },
         "311e2e11-723f-4c98-8804-9c36b60728ff": {
           "type": "article",
           "settings": {
@@ -226,19 +232,13 @@
           "settings": {
             "article": "news/hamersleys-rack-of-lamb-recipe-paired-with-pauillac-bordeaux"
           }
-        },
-        "article_VmFykk": {
-          "type": "article",
-          "settings": {
-            "article": "news/roasted-cauliflower-salad-recipe-and-bordeaux-pairing"
-          }
         }
       },
       "block_order": [
         "49af0e3f-72fa-4983-8b44-b9417422bbc2",
+        "article_VmFykk",
         "311e2e11-723f-4c98-8804-9c36b60728ff",
-        "f4498887-cbf7-40f5-9632-c0fc20f64856",
-        "article_VmFykk"
+        "f4498887-cbf7-40f5-9632-c0fc20f64856"
       ],
       "settings": {
         "section_id": "recipe-articles",
