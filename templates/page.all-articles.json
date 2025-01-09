@@ -96,7 +96,7 @@
         "5024da33-e236-41d4-b63c-b48a97513a95": {
           "type": "article",
           "settings": {
-            "article": "news/exploring-the-world-of-pinot-noir"
+            "article": "news/33-qs-with-alex-shaughnessy-90-cellars-wine-director"
           }
         }
       },
@@ -121,32 +121,34 @@
     "featured-articles-test": {
       "type": "featured-articles",
       "blocks": {
-        "article_6M4K3q": {
-          "type": "article",
-          "settings": {
-            "article": "news/3-festive-sparkling-wine-cocktails-for-the-holidays"
-          }
-        },
         "article_haNYzt": {
           "type": "article",
           "settings": {
-            "article": "news/holiday-gift-guide-for-every-type-of-wine-lover"
+            "article": "news/the-best-lower-alcohol-wines"
           }
         },
         "article_ChENRG": {
           "type": "article",
           "settings": {
-            "article": "news/the-best-wines-for-the-holidays-make-it-sparkling"
+            "article": "news/our-favorite-naturally-low-calorie-wines"
+          }
+        },
+        "article_6M4K3q": {
+          "type": "article",
+          "settings": {
+            "article": "news/best-wines-for-valentines-day"
           }
         },
         "article_EArNCR": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/wine-for-the-holidays"
           }
         },
         "article_CjzPAU": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/the-best-pinot-noir-for-the-holidays"
           }
@@ -181,9 +183,9 @@
         }
       },
       "block_order": [
-        "article_6M4K3q",
         "article_haNYzt",
         "article_ChENRG",
+        "article_6M4K3q",
         "article_EArNCR",
         "article_CjzPAU",
         "article_aTfwBC",
@@ -195,7 +197,7 @@
         "section_id": "occasion-articles",
         "header": "Occasions & Holidays",
         "script": "",
-        "background_image": "shopify://shop_images/Holiday_-_blog.png",
+        "background_image": "shopify://shop_images/Ski.png",
         "theme": "light",
         "mode": "blocks",
         "blog": "news",
@@ -257,6 +259,7 @@
       "blocks": {
         "article_BcTqyn": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/the-best-lower-alcohol-wines"
           }
@@ -276,6 +279,24 @@
         "article_BppqkY": {
           "type": "article",
           "settings": {
+            "article": "news/5-things-to-know-about-prosecco-rose"
+          }
+        },
+        "article_FJtP6k": {
+          "type": "article",
+          "settings": {
+            "article": "news/wines-of-burgundy"
+          }
+        },
+        "article_BJmmf8": {
+          "type": "article",
+          "settings": {
+            "article": "news/lambrusco-the-best-sparkling-red-wine"
+          }
+        },
+        "article_NWJzUN": {
+          "type": "article",
+          "settings": {
             "article": "news/beyond-the-glass-pinot-grigio"
           }
         }
@@ -284,7 +305,10 @@
         "article_BcTqyn",
         "article_BPCL6p",
         "article_6mdWLU",
-        "article_BppqkY"
+        "article_BppqkY",
+        "article_FJtP6k",
+        "article_BJmmf8",
+        "article_NWJzUN"
       ],
       "settings": {
         "section_id": "",
