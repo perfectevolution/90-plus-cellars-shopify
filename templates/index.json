@@ -328,35 +328,28 @@
     "cca4bf33-9b2d-4410-83a9-fc13c47690e3": {
       "type": "article-grid",
       "blocks": {
-        "article_j3XPci": {
-          "type": "article",
-          "settings": {
-            "article": "news/holiday-gift-guide-for-every-type-of-wine-lover"
-          }
-        },
         "article_AnCEby": {
           "type": "article",
           "settings": {
             "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
           }
         },
-        "article_He7tNp": {
+        "article_JrCXUw": {
           "type": "article",
           "settings": {
-            "article": "news/the-best-wines-for-the-holidays-make-it-sparkling"
-          }
-        },
-        "article_pjKrDX": {
-          "type": "article",
-          "settings": {
-            "article": "news/3-festive-sparkling-wine-cocktails-for-the-holidays"
+            "article": "news/our-favorite-naturally-low-calorie-wines"
           }
         },
         "article_nR7FDK": {
           "type": "article",
-          "disabled": true,
           "settings": {
-            "article": "news/wine-thanksgiving-the-perfect-pairing"
+            "article": "news/3-sparkling-cocktails-under-100-calories"
+          }
+        },
+        "article_rGVjqf": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-best-lower-alcohol-wines"
           }
         },
         "article_dm9jhU": {
@@ -373,22 +366,38 @@
             "article": "news/cremant-dalsace"
           }
         },
-        "article_JrCXUw": {
+        "article_j3XPci": {
           "type": "article",
+          "disabled": true,
           "settings": {
-            "article": ""
+            "article": "news/holiday-gift-guide-for-every-type-of-wine-lover"
+          }
+        },
+        "article_He7tNp": {
+          "type": "article",
+          "disabled": true,
+          "settings": {
+            "article": "news/the-best-wines-for-the-holidays-make-it-sparkling"
+          }
+        },
+        "article_pjKrDX": {
+          "type": "article",
+          "disabled": true,
+          "settings": {
+            "article": "news/3-festive-sparkling-wine-cocktails-for-the-holidays"
           }
         }
       },
       "block_order": [
-        "article_j3XPci",
         "article_AnCEby",
-        "article_He7tNp",
-        "article_pjKrDX",
+        "article_JrCXUw",
         "article_nR7FDK",
+        "article_rGVjqf",
         "article_dm9jhU",
         "2d7c7acc-53fb-40ce-a29a-f903884dc5b9",
-        "article_JrCXUw"
+        "article_j3XPci",
+        "article_He7tNp",
+        "article_pjKrDX"
       ],
       "settings": {
         "section_id": "",
