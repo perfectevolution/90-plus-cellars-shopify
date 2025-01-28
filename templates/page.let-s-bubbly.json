@@ -58,6 +58,12 @@
             "article": "news/5-things-to-know-about-prosecco-rose"
           }
         },
+        "article_C3kiGR": {
+          "type": "article",
+          "settings": {
+            "article": "news/lambrusco-the-best-sparkling-red-wine"
+          }
+        },
         "article_AiPyki": {
           "type": "article",
           "settings": {
@@ -68,12 +74,6 @@
           "type": "article",
           "settings": {
             "article": "news/10-things-you-should-know-about-prosecco"
-          }
-        },
-        "article_C3kiGR": {
-          "type": "article",
-          "settings": {
-            "article": "news/lambrusco-the-best-sparkling-red-wine"
           }
         },
         "article_kGkfTL": {
@@ -124,9 +124,9 @@
         "article_M3BVw8",
         "article_wkfHHU",
         "article_t9Wz7Y",
+        "article_C3kiGR",
         "article_AiPyki",
         "article_fhYdPY",
-        "article_C3kiGR",
         "article_kGkfTL",
         "article_X7gUjz",
         "article_9xfHE4",
