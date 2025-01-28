@@ -24,7 +24,7 @@
         "layout": "swiper",
         "animated": true,
         "columns": "6",
-        "header": "The Best Sparkling Wines for the Holidays",
+        "header": "The Best Sparkling Wines",
         "collection": "lets-bubbly",
         "link_label": "Shop All Sparkling",
         "link_url": "shopify://collections/lets-bubbly",
