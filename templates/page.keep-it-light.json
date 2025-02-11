@@ -34,6 +34,12 @@
     "featured_articles_Mq3GKN": {
       "type": "featured-articles",
       "blocks": {
+        "article_pMCnPg": {
+          "type": "article",
+          "settings": {
+            "article": "news/our-favorite-naturally-low-calorie-wines"
+          }
+        },
         "article_8L4htj": {
           "type": "article",
           "settings": {
@@ -69,22 +75,16 @@
           "settings": {
             "article": "news/10-things-you-should-know-about-prosecco"
           }
-        },
-        "article_pMCnPg": {
-          "type": "article",
-          "settings": {
-            "article": "news/the-best-lower-alcohol-wines"
-          }
         }
       },
       "block_order": [
+        "article_pMCnPg",
         "article_8L4htj",
         "article_wkfHHU",
         "article_t9Wz7Y",
         "article_C3kiGR",
         "article_AiPyki",
-        "article_fhYdPY",
-        "article_pMCnPg"
+        "article_fhYdPY"
       ],
       "settings": {
         "section_id": "",
