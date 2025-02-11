@@ -14,7 +14,7 @@
       "settings": {
         "image": "shopify://shop_images/90__Website_CurvedHero_Let_sBubbly_Desktop.png",
         "mobile_image": "shopify://shop_images/90__Website_CurvedHero_Let_sBubbly_Mobile.png",
-        "header": "Let's Bubbly!",
+        "header": "Keep It Light",
         "body": "Nothing says celebration like the pop of a bottle! Whether enjoyed as an aperitif, in a signature cocktail, paired with a delicious meal, or given as a thoughtful gift, sparkling wine adds a special touch to any occasion."
       }
     },
@@ -24,10 +24,10 @@
         "layout": "swiper",
         "animated": true,
         "columns": "6",
-        "header": "The Best Sparkling Wines",
-        "collection": "lets-bubbly",
-        "link_label": "Shop All Sparkling",
-        "link_url": "shopify://collections/lets-bubbly",
+        "header": "Enjoy the Lighter Side of Wine",
+        "collection": "low-calorie-low-alcohol-wines",
+        "link_label": "Shop All",
+        "link_url": "shopify://collections/low-calorie-low-alcohol-wines",
         "link_external": false
       }
     },
