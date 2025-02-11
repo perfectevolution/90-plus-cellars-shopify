@@ -58,6 +58,12 @@
             "article": "news/our-favorite-naturally-low-calorie-wines"
           }
         },
+        "article_fhYdPY": {
+          "type": "article",
+          "settings": {
+            "article": "news/10-things-you-should-know-about-prosecco"
+          }
+        },
         "article_t9Wz7Y": {
           "type": "article",
           "settings": {
@@ -70,22 +76,22 @@
             "article": "news/lambrusco-the-best-sparkling-red-wine"
           }
         },
+        "article_kxeD7i": {
+          "type": "article",
+          "settings": {
+            "article": "news/beyond-the-glass-vinho-verde"
+          }
+        },
         "article_AiPyki": {
           "type": "article",
           "settings": {
             "article": "news/everything-you-need-to-know-about-prosecco"
           }
         },
-        "article_fhYdPY": {
+        "article_rLnGET": {
           "type": "article",
           "settings": {
-            "article": "news/10-things-you-should-know-about-prosecco"
-          }
-        },
-        "article_kxeD7i": {
-          "type": "article",
-          "settings": {
-            "article": "news/beyond-the-glass-vinho-verde"
+            "article": "news/beyond-the-glass-riesling"
           }
         }
       },
@@ -94,11 +100,12 @@
         "article_K99P4y",
         "article_wkfHHU",
         "article_pMCnPg",
+        "article_fhYdPY",
         "article_t9Wz7Y",
         "article_C3kiGR",
+        "article_kxeD7i",
         "article_AiPyki",
-        "article_fhYdPY",
-        "article_kxeD7i"
+        "article_rLnGET"
       ],
       "settings": {
         "section_id": "",
