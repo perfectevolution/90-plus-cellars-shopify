@@ -34,6 +34,12 @@
     "featured_articles_Mq3GKN": {
       "type": "featured-articles",
       "blocks": {
+        "article_K99P4y": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-best-lower-alcohol-wines"
+          }
+        },
         "article_pMCnPg": {
           "type": "article",
           "settings": {
@@ -78,6 +84,7 @@
         }
       },
       "block_order": [
+        "article_K99P4y",
         "article_pMCnPg",
         "article_8L4htj",
         "article_wkfHHU",
