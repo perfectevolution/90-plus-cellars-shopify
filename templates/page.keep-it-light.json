@@ -93,6 +93,12 @@
           "settings": {
             "article": "news/beyond-the-glass-riesling"
           }
+        },
+        "article_79MPB6": {
+          "type": "article",
+          "settings": {
+            "article": "news/beyond-the-glass-pinot-grigio"
+          }
         }
       },
       "block_order": [
@@ -105,7 +111,8 @@
         "article_C3kiGR",
         "article_kxeD7i",
         "article_AiPyki",
-        "article_rLnGET"
+        "article_rLnGET",
+        "article_79MPB6"
       ],
       "settings": {
         "section_id": "",
