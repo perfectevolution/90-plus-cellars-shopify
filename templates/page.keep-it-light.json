@@ -34,28 +34,28 @@
     "featured_articles_Mq3GKN": {
       "type": "featured-articles",
       "blocks": {
-        "article_K99P4y": {
-          "type": "article",
-          "settings": {
-            "article": "news/the-best-lower-alcohol-wines"
-          }
-        },
-        "article_pMCnPg": {
-          "type": "article",
-          "settings": {
-            "article": "news/our-favorite-naturally-low-calorie-wines"
-          }
-        },
         "article_8L4htj": {
           "type": "article",
           "settings": {
             "article": "news/3-sparkling-cocktails-under-100-calories"
           }
         },
+        "article_K99P4y": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-best-lower-alcohol-wines"
+          }
+        },
         "article_wkfHHU": {
           "type": "article",
           "settings": {
             "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
+          }
+        },
+        "article_pMCnPg": {
+          "type": "article",
+          "settings": {
+            "article": "news/our-favorite-naturally-low-calorie-wines"
           }
         },
         "article_t9Wz7Y": {
@@ -81,17 +81,24 @@
           "settings": {
             "article": "news/10-things-you-should-know-about-prosecco"
           }
+        },
+        "article_kxeD7i": {
+          "type": "article",
+          "settings": {
+            "article": "news/beyond-the-glass-vinho-verde"
+          }
         }
       },
       "block_order": [
-        "article_K99P4y",
-        "article_pMCnPg",
         "article_8L4htj",
+        "article_K99P4y",
         "article_wkfHHU",
+        "article_pMCnPg",
         "article_t9Wz7Y",
         "article_C3kiGR",
         "article_AiPyki",
-        "article_fhYdPY"
+        "article_fhYdPY",
+        "article_kxeD7i"
       ],
       "settings": {
         "section_id": "",
