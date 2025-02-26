@@ -24,7 +24,7 @@
         "layout": "swiper",
         "animated": true,
         "columns": "6",
-        "header": "The Best Sparkling Wines",
+        "header": "Rosé For Every Occasion",
         "collection": "rose-ready",
         "link_label": "Shop Rosé",
         "link_url": "shopify://collections/lets-bubbly",
