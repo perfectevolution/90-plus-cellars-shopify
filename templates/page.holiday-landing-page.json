@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "blank": {
@@ -7,8 +16,8 @@
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab": {
       "type": "hero-curved",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Boston_Rose_-_final_5bc2868e-c3cd-48aa-9e83-c52acc29c171.png",
-        "mobile_image": "shopify:\/\/shop_images\/Boston_rose_mobile_-_final_v2.png",
+        "image": "shopify://shop_images/Boston_Rose_-_final_5bc2868e-c3cd-48aa-9e83-c52acc29c171.png",
+        "mobile_image": "shopify://shop_images/Boston_rose_mobile_-_final_v2.png",
         "header": "It's time to celebrate, Boston.",
         "body": "90+ Cellars was launched in Boston in 2009 and we've been Massachusetts based ever since. Join us this summer to celebrate the city we call home with great wine and events. Cheers!"
       }
@@ -19,26 +28,25 @@
         "product": "boston-rose-3",
         "heading": "Boston Rosé",
         "subheading": "5th Edition",
-        "description": "<p>For our 5th release of Boston Rosé, we're showcasing a quintessential Southern French rosé from Languedoc, France.<\/p>",
+        "description": "<p>For our 5th release of Boston Rosé, we're showcasing a quintessential Southern French rosé from Languedoc, France.</p>",
         "button_text": "View product",
-        "button_link": "shopify:\/\/products\/boston-rose-3",
+        "button_link": "shopify://products/boston-rose-3",
         "button_target": "_self",
         "padding": "md"
       }
     },
     "split_hero_CbDEg8": {
       "type": "split-hero",
-      "disabled": true,
       "settings": {
         "section_id": "",
         "image_position": "left",
         "header": "Cruise the Boston Harbor With Us!",
-        "body": "<p>Join us for the 10th annual Rosé on the Water Cruise June 22nd from 1:15 - 3:45 PM.<\/p>",
-        "link_text": "Get Tickets",
-        "link_url": "https:\/\/www.eventbrite.com\/e\/881508645087?aff=oddtdtcreator",
+        "body": "<p>Mark your calendars—the <strong>11th Annual Rosé on the Water Cruise </strong>sets sail on <strong>June 21, 2025</strong>! Tickets drop <strong>May 1st</strong>, so be sure to follow us on Eventbrite to get the heads-up. We can’t wait to cruise with you—see you there!</p>",
+        "link_text": "Follow Us",
+        "link_url": "https://www.eventbrite.com/e/881508645087?aff=oddtdtcreator",
         "link_target": "_self",
         "script": "",
-        "image": "shopify:\/\/shop_images\/Rose_Cruise_b21b4e06-abba-4484-8e00-bd62014b7755.png"
+        "image": "shopify://shop_images/Rose_Cruise_b21b4e06-abba-4484-8e00-bd62014b7755.png"
       }
     },
     "content_cards_WAPxGK": {
@@ -47,60 +55,60 @@
         "content_EpbhFz": {
           "type": "content",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Boston_Rose_2023.png",
+            "image": "shopify://shop_images/Boston_Rose_2023.png",
             "label": "",
             "title": "Boston Rosé",
             "sub_header": "2023",
             "link_label": "Shop Now",
-            "link_url": "https:\/\/www.shoprevelrevel.com\/bostonrose",
+            "link_url": "https://www.shoprevelrevel.com/bostonrose",
             "link_external": false
           }
         },
         "content_Km9Axk": {
           "type": "content",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Boston_Rose_-_2020.png",
+            "image": "shopify://shop_images/Boston_Rose_-_2020.png",
             "label": "",
             "title": "Boston Rosé",
             "sub_header": "2020",
             "link_label": "Shop Now",
-            "link_url": "https:\/\/www.shoprevelrevel.com\/bostonrose",
+            "link_url": "https://www.shoprevelrevel.com/bostonrose",
             "link_external": false
           }
         },
         "content_bddkbi": {
           "type": "content",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Boston_Rose_2019_-_3.png",
+            "image": "shopify://shop_images/Boston_Rose_2019_-_3.png",
             "label": "",
             "title": "Boston Rosé",
             "sub_header": "2019",
             "link_label": "Shop Now",
-            "link_url": "https:\/\/www.shoprevelrevel.com\/bostonrose",
+            "link_url": "https://www.shoprevelrevel.com/bostonrose",
             "link_external": false
           }
         },
         "content_XrmDDQ": {
           "type": "content",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Boston_Rose_2018.png",
+            "image": "shopify://shop_images/Boston_Rose_2018.png",
             "label": "",
             "title": "Boston Rosé",
             "sub_header": "2018",
             "link_label": "Shop Now",
-            "link_url": "https:\/\/www.shoprevelrevel.com\/bostonrose",
+            "link_url": "https://www.shoprevelrevel.com/bostonrose",
             "link_external": false
           }
         },
         "content_cDaJCj": {
           "type": "content",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Boston_Rose_2017.png",
+            "image": "shopify://shop_images/Boston_Rose_2017.png",
             "label": "",
             "title": "Boston Rosé",
             "sub_header": "2017",
             "link_label": "Shop Now",
-            "link_url": "https:\/\/www.shoprevelrevel.com\/bostonrose",
+            "link_url": "https://www.shoprevelrevel.com/bostonrose",
             "link_external": false
           }
         }
@@ -128,12 +136,12 @@
         "section_id": "",
         "image_position": "right",
         "header": "Lisa Donovan's Wines of the Summer",
-        "body": "<p>Looking for the ultimate summer wine and book pairings? Lisa's got you covered. Check out her book club series and her favorite 90+ Cellars wines below.<\/p>",
+        "body": "<p>Looking for the ultimate summer wine and book pairings? Lisa's got you covered. Check out her book club series and her favorite 90+ Cellars wines below.</p>",
         "link_text": "Lisa's Book Club Events",
-        "link_url": "https:\/\/kiss108.iheart.com\/featured\/lisas-book-club\/",
+        "link_url": "https://kiss108.iheart.com/featured/lisas-book-club/",
         "link_target": "_self",
         "script": "",
-        "image": "shopify:\/\/shop_images\/Lisa_3291be97-3f4e-4e97-952a-0778c2928c18.png"
+        "image": "shopify://shop_images/Lisa_3291be97-3f4e-4e97-952a-0778c2928c18.png"
       }
     },
     "split_hero_DiFj6p": {
@@ -142,12 +150,12 @@
         "section_id": "",
         "image_position": "left",
         "header": "The Perfect Summer Wine & Book Pairings",
-        "body": "<p>Grab your sunscreen, a comfy chair, and dive into Lisa's guide to  enjoying the summer with the perfect blend of literature and libations!<\/p>",
+        "body": "<p>Grab your sunscreen, a comfy chair, and dive into Lisa's guide to  enjoying the summer with the perfect blend of literature and libations!</p>",
         "link_text": "Read the Article",
-        "link_url": "https:\/\/www.ninetypluscellars.com\/blogs\/news\/the-perfect-summer-wine-and-book-pairings",
+        "link_url": "https://www.ninetypluscellars.com/blogs/news/the-perfect-summer-wine-and-book-pairings",
         "link_target": "_self",
         "script": "",
-        "image": "shopify:\/\/shop_images\/90__Website_BlogHeader_Lisa_sBookClub.webp"
+        "image": "shopify://shop_images/90__Website_BlogHeader_Lisa_sBookClub.webp"
       }
     },
     "featured_product_single_kB6QnT": {
@@ -156,9 +164,9 @@
         "product": "lisa-donovans-summer-wines-6-pack",
         "heading": "Lisa's",
         "subheading": "Ultimate Summer Pack",
-        "description": "<p>Picture yourself lounging under the sun, book in hand, and a glass of great wine in the other. This 6 pack is the perfect pairing for relaxing, summer days.<\/p>",
+        "description": "<p>Picture yourself lounging under the sun, book in hand, and a glass of great wine in the other. This 6 pack is the perfect pairing for relaxing, summer days.</p>",
         "button_text": "View product",
-        "button_link": "shopify:\/\/products\/lisa-donovans-summer-wines-6-pack",
+        "button_link": "shopify://products/lisa-donovans-summer-wines-6-pack",
         "button_target": "_self",
         "padding": "md"
       }
@@ -171,10 +179,10 @@
         "header": "Check Out Our Wine Truck & Pop-Up Events",
         "body": "",
         "link_text": "Visit Event Schedule",
-        "link_url": "https:\/\/www.ninetypluscellars.com\/pages\/events",
+        "link_url": "https://www.ninetypluscellars.com/pages/events",
         "link_target": "_self",
         "script": "",
-        "image": "shopify:\/\/shop_images\/Wine_Truck_1000x1000_4735ad9d-8441-4540-b201-60e357dc59d1.png"
+        "image": "shopify://shop_images/Wine_Truck_1000x1000_4735ad9d-8441-4540-b201-60e357dc59d1.png"
       }
     },
     "content_callout_large_qFXWhG": {
@@ -184,7 +192,7 @@
         "anchor_id": "",
         "header": "Check Out Our Wine Truck & Pop-Up Events",
         "link_label": "Events",
-        "link_url": "https:\/\/www.ninetypluscellars.com\/pages\/events",
+        "link_url": "https://www.ninetypluscellars.com/pages/events",
         "link_external": false
       }
     },
@@ -205,7 +213,7 @@
         "metaobject_handle": "social-proof-gallery-main",
         "footer_header": "Tag us on Instagram",
         "footer_sub_header": "@90cellars",
-        "footer_sub_header_link": "https:\/\/www.instagram.com\/90pluscellars\/"
+        "footer_sub_header_link": "https://www.instagram.com/90pluscellars/"
       }
     }
   },
