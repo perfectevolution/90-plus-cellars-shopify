@@ -24,6 +24,7 @@
     },
     "featured_product_single_Pwy6dx": {
       "type": "featured-product-single",
+      "disabled": true,
       "settings": {
         "product": "boston-rose-3",
         "heading": "Boston Rosé",
@@ -132,6 +133,7 @@
     },
     "split_hero_A7QXQA": {
       "type": "split-hero",
+      "disabled": true,
       "settings": {
         "section_id": "",
         "image_position": "right",
@@ -146,6 +148,7 @@
     },
     "split_hero_DiFj6p": {
       "type": "split-hero",
+      "disabled": true,
       "settings": {
         "section_id": "",
         "image_position": "left",
@@ -160,6 +163,7 @@
     },
     "featured_product_single_kB6QnT": {
       "type": "featured-product-single",
+      "disabled": true,
       "settings": {
         "product": "lisa-donovans-summer-wines-6-pack",
         "heading": "Lisa's",
@@ -173,6 +177,7 @@
     },
     "split_hero_fpYnNr": {
       "type": "split-hero",
+      "disabled": true,
       "settings": {
         "section_id": "",
         "image_position": "right",
