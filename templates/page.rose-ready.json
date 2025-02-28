@@ -12,8 +12,8 @@
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab": {
       "type": "hero-curved",
       "settings": {
-        "image": "shopify://shop_images/Rose_Ready.png",
-        "mobile_image": "shopify://shop_images/Rose_Ready_-_mobile.png",
+        "image": "shopify://shop_images/RoseReady_CurvedHero_Desktop.png",
+        "mobile_image": "shopify://shop_images/RoseReady_CurvedHero_Mobile.png",
         "header": "Rosé Ready",
         "body": "Spring is just around the corner, which means longer days, warmer weather, and the perfect excuse to enjoy something crisp and refreshing. Whether you're enjoying a sunny afternoon or celebrating the weekend with friends, our rosé is ready to be your go-to sip this spring."
       }
