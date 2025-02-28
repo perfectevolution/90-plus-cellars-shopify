@@ -75,6 +75,7 @@
     },
     "featured_product_single_hrgeNn": {
       "type": "featured-product-single",
+      "disabled": true,
       "settings": {
         "product": "lot-229-non-alcoholic-sparkling-rose-france",
         "heading": "NEW Non-Alcoholic",
