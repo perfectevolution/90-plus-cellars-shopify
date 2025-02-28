@@ -27,7 +27,7 @@
         "header": "Rosé For Every Occasion",
         "collection": "rose-ready",
         "link_label": "Shop All Rosé",
-        "link_url": "shopify://pages/rose-ready",
+        "link_url": "shopify://collections/rose-ready",
         "link_external": false
       }
     },
