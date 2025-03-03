@@ -46,6 +46,18 @@
             "article": "news/5-things-to-know-about-prosecco-rose"
           }
         },
+        "article_XmY67b": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-ultimate-easter-wine-food-pairings-from-master-sommelier-michael-meagher"
+          }
+        },
+        "article_pzL3t6": {
+          "type": "article",
+          "settings": {
+            "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
+          }
+        },
         "article_mrgpLy": {
           "type": "article",
           "settings": {
@@ -56,6 +68,8 @@
       "block_order": [
         "article_8L4htj",
         "article_t9Wz7Y",
+        "article_XmY67b",
+        "article_pzL3t6",
         "article_mrgpLy"
       ],
       "settings": {
