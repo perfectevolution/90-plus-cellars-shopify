@@ -328,26 +328,35 @@
     "c84a0e2e-3469-4cb4-aa01-8531eee9a6dd": {
       "type": "article-grid",
       "blocks": {
+        "abf36b2a-ebe7-4260-9c01-0bea9f5fb848": {
+          "type": "article",
+          "settings": {
+            "article": "news/perfect-pairings-for-national-cheese-day"
+          }
+        },
+        "article_zW6b9K": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-ultimate-grilling-wines-guide"
+          }
+        },
         "746f2adf-fc73-4c14-9074-5139fc9d23b3": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/wine-and-cheese-pairings-with-cabot-cheese"
           }
         },
         "article_nMnFfE": {
           "type": "article",
-          "settings": {
-            "article": "news/takeout-try-out-the-best-greek-food-wine-pairings"
-          }
-        },
-        "abf36b2a-ebe7-4260-9c01-0bea9f5fb848": {
-          "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/takeout-try-out-the-best-greek-food-wine-pairings"
           }
         },
         "06a3ce71-ab32-43ed-8336-75fc51950ce0": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/the-perfect-pairing-the-queens-cups-and-90-cellars"
           }
@@ -361,9 +370,10 @@
         }
       },
       "block_order": [
+        "abf36b2a-ebe7-4260-9c01-0bea9f5fb848",
+        "article_zW6b9K",
         "746f2adf-fc73-4c14-9074-5139fc9d23b3",
         "article_nMnFfE",
-        "abf36b2a-ebe7-4260-9c01-0bea9f5fb848",
         "06a3ce71-ab32-43ed-8336-75fc51950ce0",
         "ece50542-f37a-4236-98e9-8d18f4adbccd"
       ],
@@ -373,7 +383,7 @@
         "mode": "blocks",
         "blog": "news",
         "tag": "Pairings",
-        "limit": 4,
+        "limit": 2,
         "link_label": "View All",
         "link_url": "https://www.ninetypluscellars.com/blogs/news/tagged/pairings",
         "link_external": false
