@@ -84,11 +84,11 @@
         "template--16791832395995__a99e0e12-d087-485f-9adb-bf50eabf7360-content-2": {
           "type": "content",
           "settings": {
-            "header": "Levitate Backyard",
-            "body": "<p>1871 Ocean Street Marshfield, MA<br/>MAY - OCTOBER 2024</p><p><em>Check out our wines at this year's summer music series. We'll be there all summer long! </em></p>",
-            "image": "shopify://shop_images/Levitate.webp",
+            "header": "Food Trucks of America",
+            "body": "<p>Various locations throughout MA<br/>APRIL - OCTOBER 2025</p><p><em>90+ Cellars is a proud sponsor of this year's Food Trucks of America tour. Check out our wines at all their events this spring and summer as they make their way through Massachusetts. </em></p>",
+            "image": "shopify://shop_images/FTOA.png",
             "link_label": "2024 Lineup",
-            "link_url": "https://www.levitatebackyard.com/",
+            "link_url": "https://www.foodtruckfestivalsofamerica.com/",
             "link_external": false
           }
         },
