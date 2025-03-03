@@ -39,7 +39,7 @@
             "type": "card",
             "settings": {
               "header": "Seasonal Favorites",
-              "link_url": "shopify://collections/spring-wines",
+              "link_url": "https://www.ninetypluscellars.com/collections/rose-ready",
               "image": "shopify://shop_images/003-WineReccomender-Illustration.png"
             }
           },
