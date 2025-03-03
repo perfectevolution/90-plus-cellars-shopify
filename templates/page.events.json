@@ -85,7 +85,7 @@
           "type": "content",
           "settings": {
             "header": "Food Trucks of America",
-            "body": "<p>Various locations throughout MA<br/>APRIL - OCTOBER 2025</p><p><em>90+ Cellars is a proud sponsor of this year's Food Trucks of America tour. Check out our wines at all their events this spring and summer as they make their way through Massachusetts. </em></p>",
+            "body": "<p>Various locations throughout MA<br/>APRIL - OCTOBER </p><p><em>90+ Cellars is a proud sponsor of this year's Food Trucks of America tour. Check out our wines at all their events this spring and summer as they make their way through Massachusetts. </em></p>",
             "image": "shopify://shop_images/FTOA.png",
             "link_label": "2024 Lineup",
             "link_url": "https://www.foodtruckfestivalsofamerica.com/",
@@ -146,7 +146,7 @@
       "settings": {
         "id": "newsletter-callout",
         "header": "Newsletter",
-        "form_header": "<b>Sign up for </b><i>our newsletter</i>",
+        "form_header": "Sign up for our newsletter",
         "form_sub_header": "Be the first to know about our newest releases, upcoming events, and everything we’re up to on the wine trail. ",
         "klaviyo_newsletter_id": "klaviyo-form-SNxMx5"
       }
