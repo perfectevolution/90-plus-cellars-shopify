@@ -118,10 +118,32 @@
           "type": "content",
           "settings": {
             "header": "Rosé on the Water Cruise",
-            "body": "<p>Boston, MA<br/>JUNE 21, 2025</p><p>Our 11th Annual Rosé on the Water cruise returns to the Boston Harbor. Details coming soon!</p>",
+            "body": "<p>Boston, MA<br/>JUNE 21, 2025</p><p>Our 11th Annual Rosé on the Water cruise returns to the Boston Harbor this summer. Details coming soon!</p>",
             "image": "shopify://shop_images/Rose_Cruise_mobile.png",
             "link_label": "",
             "link_url": "https://www.centralparknyc.org/activities/events/taste-of-summer",
+            "link_external": false
+          }
+        },
+        "content_QbDrXT": {
+          "type": "content",
+          "settings": {
+            "header": "Newport Folk Fest",
+            "body": "<p>Newport, RI<br/>JULY 25-27, 2025</p><p>We're excited to be back at Newport Folk Festival this year. See you at Fort Adams this summer! </p>",
+            "image": "shopify://shop_images/IMG_9889.jpg",
+            "link_label": "2025 LINEUP",
+            "link_url": "https://newportfolk.org/",
+            "link_external": false
+          }
+        },
+        "content_HJaTDh": {
+          "type": "content",
+          "settings": {
+            "header": "Newport Jazz Fest",
+            "body": "<p>Newport, RI<br/>AUGUST 1-3, 2025</p><p>We're also making our return to Newport Jazz Festival. </p>",
+            "image": "shopify://shop_images/jazz.jpg",
+            "link_label": "2025 LINEUP",
+            "link_url": "https://newportjazz.org/",
             "link_external": false
           }
         }
@@ -131,7 +153,9 @@
         "template--16791832395995__a99e0e12-d087-485f-9adb-bf50eabf7360-content-2",
         "content_gk8MmU",
         "content_tjr4ff",
-        "content_Krh4CY"
+        "content_Krh4CY",
+        "content_QbDrXT",
+        "content_HJaTDh"
       ],
       "settings": {
         "section_id": "",
