@@ -16,8 +16,8 @@
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab": {
       "type": "hero-curved",
       "settings": {
-        "image": "shopify://shop_images/Lot_75_Hero_Image_a56dd5af-9a1f-4241-9514-dc15ab8c3795.png",
-        "mobile_image": "shopify://shop_images/Fall_Mobile_6bf5bdb1-19b3-4e83-84b2-fdc8b5b16d5a.png",
+        "image": "shopify://shop_images/Articles.png",
+        "mobile_image": "shopify://shop_images/Article_-_mobile.png",
         "header": "We've got you covered.",
         "body": "Looking to learn more about wine, find the perfect food pairing, or get a wine recommendation for a certain occasion? You came to the right place."
       }
@@ -81,6 +81,12 @@
             "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
           }
         },
+        "5024da33-e236-41d4-b63c-b48a97513a95": {
+          "type": "article",
+          "settings": {
+            "article": "news/33-qs-with-alex-shaughnessy-90-cellars-wine-director"
+          }
+        },
         "61165c89-5b23-498d-93c5-bfbc3ad6d199": {
           "type": "article",
           "settings": {
@@ -92,19 +98,13 @@
           "settings": {
             "article": "news/chillable-reds"
           }
-        },
-        "5024da33-e236-41d4-b63c-b48a97513a95": {
-          "type": "article",
-          "settings": {
-            "article": "news/33-qs-with-alex-shaughnessy-90-cellars-wine-director"
-          }
         }
       },
       "block_order": [
         "11e1ef49-ad2a-4ea9-a04d-91fcb19283da",
+        "5024da33-e236-41d4-b63c-b48a97513a95",
         "61165c89-5b23-498d-93c5-bfbc3ad6d199",
-        "b07df93e-18da-4b27-a874-d015ab195de0",
-        "5024da33-e236-41d4-b63c-b48a97513a95"
+        "b07df93e-18da-4b27-a874-d015ab195de0"
       ],
       "settings": {
         "section_id": "education-articles",
@@ -121,10 +121,10 @@
     "featured-articles-test": {
       "type": "featured-articles",
       "blocks": {
-        "article_haNYzt": {
+        "article_MMNcWg": {
           "type": "article",
           "settings": {
-            "article": "news/the-best-lower-alcohol-wines"
+            "article": "news/the-ultimate-easter-wine-food-pairings-from-master-sommelier-michael-meagher"
           }
         },
         "article_ChENRG": {
@@ -133,8 +133,28 @@
             "article": "news/our-favorite-naturally-low-calorie-wines"
           }
         },
+        "article_q46tfD": {
+          "type": "article",
+          "settings": {
+            "article": "news/women-in-wine-q-a-the-world-is-justine-osillas-wine-bar"
+          }
+        },
+        "article_XLJUfc": {
+          "type": "article",
+          "settings": {
+            "article": "news/mothers-day-wine-guide"
+          }
+        },
+        "article_haNYzt": {
+          "type": "article",
+          "disabled": true,
+          "settings": {
+            "article": "news/the-best-lower-alcohol-wines"
+          }
+        },
         "article_6M4K3q": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/best-wines-for-valentines-day"
           }
@@ -183,8 +203,11 @@
         }
       },
       "block_order": [
-        "article_haNYzt",
+        "article_MMNcWg",
         "article_ChENRG",
+        "article_q46tfD",
+        "article_XLJUfc",
+        "article_haNYzt",
         "article_6M4K3q",
         "article_EArNCR",
         "article_CjzPAU",
@@ -197,7 +220,7 @@
         "section_id": "occasion-articles",
         "header": "Occasions & Holidays",
         "script": "",
-        "background_image": "shopify://shop_images/Ski.png",
+        "background_image": "shopify://shop_images/Rose-23.jpg",
         "theme": "light",
         "mode": "blocks",
         "blog": "news",
@@ -217,30 +240,32 @@
             "article": "news/3-sparkling-cocktails-under-100-calories"
           }
         },
+        "article_zCqPmW": {
+          "type": "article",
+          "settings": {
+            "article": "news/easter-brunch-quiche-recipe-prosecco-rose-pairing"
+          }
+        },
         "49af0e3f-72fa-4983-8b44-b9417422bbc2": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/3-cozy-fall-recipes-you-need-to-add-to-your-repertoire"
           }
         },
         "article_VmFykk": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/the-ultimate-holiday-seafood-wine-pairing-with-taylor-shellfish"
-          }
-        },
-        "f4498887-cbf7-40f5-9632-c0fc20f64856": {
-          "type": "article",
-          "settings": {
-            "article": "news/hamersleys-rack-of-lamb-recipe-paired-with-pauillac-bordeaux"
           }
         }
       },
       "block_order": [
         "311e2e11-723f-4c98-8804-9c36b60728ff",
+        "article_zCqPmW",
         "49af0e3f-72fa-4983-8b44-b9417422bbc2",
-        "article_VmFykk",
-        "f4498887-cbf7-40f5-9632-c0fc20f64856"
+        "article_VmFykk"
       ],
       "settings": {
         "section_id": "recipe-articles",
@@ -259,9 +284,14 @@
       "blocks": {
         "article_BcTqyn": {
           "type": "article",
-          "disabled": true,
           "settings": {
             "article": "news/the-best-lower-alcohol-wines"
+          }
+        },
+        "article_Ad4mBG": {
+          "type": "article",
+          "settings": {
+            "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
           }
         },
         "article_BPCL6p": {
@@ -270,10 +300,16 @@
             "article": "news/10-things-you-should-know-about-prosecco"
           }
         },
-        "article_6mdWLU": {
+        "article_BJmmf8": {
           "type": "article",
           "settings": {
-            "article": "news/introducing-picpoul-de-pinet"
+            "article": "news/lambrusco-the-best-sparkling-red-wine"
+          }
+        },
+        "article_FJtP6k": {
+          "type": "article",
+          "settings": {
+            "article": "news/discover-the-classics-chianti-and-montepulciano-d-abruzzo"
           }
         },
         "article_BppqkY": {
@@ -281,40 +317,21 @@
           "settings": {
             "article": "news/5-things-to-know-about-prosecco-rose"
           }
-        },
-        "article_FJtP6k": {
-          "type": "article",
-          "settings": {
-            "article": "news/wines-of-burgundy"
-          }
-        },
-        "article_BJmmf8": {
-          "type": "article",
-          "settings": {
-            "article": "news/lambrusco-the-best-sparkling-red-wine"
-          }
-        },
-        "article_NWJzUN": {
-          "type": "article",
-          "settings": {
-            "article": "news/beyond-the-glass-pinot-grigio"
-          }
         }
       },
       "block_order": [
         "article_BcTqyn",
+        "article_Ad4mBG",
         "article_BPCL6p",
-        "article_6mdWLU",
-        "article_BppqkY",
-        "article_FJtP6k",
         "article_BJmmf8",
-        "article_NWJzUN"
+        "article_FJtP6k",
+        "article_BppqkY"
       ],
       "settings": {
         "section_id": "",
         "header": "Most Popular Articles",
         "script": "",
-        "background_image": "shopify://shop_images/90__2022-10-19_Social_Outdoor_Seconds_109_915b8d06-ccc3-4087-80ab-a3145dc03639.jpg",
+        "background_image": "shopify://shop_images/90PLUS-NOV24-7_03d95333-1f33-4395-b564-266fb5085219.jpg",
         "theme": "light",
         "mode": "blocks",
         "blog": "news",
