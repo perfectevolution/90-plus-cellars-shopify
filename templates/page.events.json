@@ -118,17 +118,6 @@
     "7cb9e45d-a180-45ee-9e7a-edd4de11f12e": {
       "type": "image-text-grid",
       "blocks": {
-        "template--16791832395995__7cb9e45d-a180-45ee-9e7a-edd4de11f12e-card-1": {
-          "type": "card",
-          "settings": {
-            "image": "shopify://shop_images/wood-sox.jpg",
-            "header": "WOO Sox",
-            "body": "<p>WORCESTER, MA<br/>MARCH - SEPTEMBER</p>",
-            "link_label": "",
-            "link_url": "",
-            "link_external": false
-          }
-        },
         "template--16791832395995__7cb9e45d-a180-45ee-9e7a-edd4de11f12e-card-2": {
           "type": "card",
           "settings": {
@@ -142,7 +131,6 @@
         }
       },
       "block_order": [
-        "template--16791832395995__7cb9e45d-a180-45ee-9e7a-edd4de11f12e-card-1",
         "template--16791832395995__7cb9e45d-a180-45ee-9e7a-edd4de11f12e-card-2"
       ],
       "settings": {
