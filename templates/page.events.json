@@ -118,9 +118,9 @@
           "type": "content",
           "settings": {
             "header": "Rosé on the Water Cruise",
-            "body": "<p>Boston, MA<br/>June 11, 2025</p><p>We'll be back at the Central Park Conservancy's annual Taste of Summer event this year! </p>",
-            "image": "shopify://shop_images/taste-of-summer_a248edec-a718-4667-bf41-cb3156668aca.jpg",
-            "link_label": "Tickets & Information",
+            "body": "<p>Boston, MA<br/>JUNE 21, 2025</p><p>Our 11th Annual Rosé on the Water cruise returns to the Boston Harbor. Details coming soon!</p>",
+            "image": "shopify://shop_images/Rose_Cruise_mobile.png",
+            "link_label": "",
             "link_url": "https://www.centralparknyc.org/activities/events/taste-of-summer",
             "link_external": false
           }
