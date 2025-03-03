@@ -123,7 +123,18 @@
           "settings": {
             "image": "shopify://shop_images/co-switchbacks.jpg",
             "header": "CO Switchbacks",
-            "body": "<p>MARCH - OCTOBER</p>",
+            "body": "",
+            "link_label": "",
+            "link_url": "",
+            "link_external": false
+          }
+        },
+        "card_MyfKqc": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Kiss108_Logo.webp",
+            "header": "Kiss 108",
+            "body": "",
             "link_label": "",
             "link_url": "",
             "link_external": false
@@ -131,7 +142,8 @@
         }
       },
       "block_order": [
-        "template--16791832395995__7cb9e45d-a180-45ee-9e7a-edd4de11f12e-card-2"
+        "template--16791832395995__7cb9e45d-a180-45ee-9e7a-edd4de11f12e-card-2",
+        "card_MyfKqc"
       ],
       "settings": {
         "section_id": "",
