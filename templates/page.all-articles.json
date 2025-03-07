@@ -121,6 +121,12 @@
     "featured-articles-test": {
       "type": "featured-articles",
       "blocks": {
+        "article_hhRmyW": {
+          "type": "article",
+          "settings": {
+            "article": "news/celebrating-women-winemakers"
+          }
+        },
         "article_MMNcWg": {
           "type": "article",
           "settings": {
@@ -203,6 +209,7 @@
         }
       },
       "block_order": [
+        "article_hhRmyW",
         "article_MMNcWg",
         "article_ChENRG",
         "article_q46tfD",
