@@ -135,20 +135,21 @@
         },
         "article_ChENRG": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/our-favorite-naturally-low-calorie-wines"
-          }
-        },
-        "article_q46tfD": {
-          "type": "article",
-          "settings": {
-            "article": "news/women-in-wine-q-a-the-world-is-justine-osillas-wine-bar"
           }
         },
         "article_XLJUfc": {
           "type": "article",
           "settings": {
             "article": "news/mothers-day-wine-guide"
+          }
+        },
+        "article_q46tfD": {
+          "type": "article",
+          "settings": {
+            "article": "news/women-in-wine-q-a-the-world-is-justine-osillas-wine-bar"
           }
         },
         "article_haNYzt": {
@@ -212,8 +213,8 @@
         "article_hhRmyW",
         "article_MMNcWg",
         "article_ChENRG",
-        "article_q46tfD",
         "article_XLJUfc",
+        "article_q46tfD",
         "article_haNYzt",
         "article_6M4K3q",
         "article_EArNCR",
