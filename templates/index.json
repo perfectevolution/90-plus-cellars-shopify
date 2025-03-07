@@ -328,28 +328,28 @@
     "cca4bf33-9b2d-4410-83a9-fc13c47690e3": {
       "type": "article-grid",
       "blocks": {
+        "article_nR7FDK": {
+          "type": "article",
+          "settings": {
+            "article": "news/celebrating-women-winemakers"
+          }
+        },
         "article_AnCEby": {
           "type": "article",
           "settings": {
             "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
           }
         },
-        "article_JrCXUw": {
-          "type": "article",
-          "settings": {
-            "article": "news/our-favorite-naturally-low-calorie-wines"
-          }
-        },
-        "article_nR7FDK": {
-          "type": "article",
-          "settings": {
-            "article": "news/3-sparkling-cocktails-under-100-calories"
-          }
-        },
         "article_rGVjqf": {
           "type": "article",
           "settings": {
             "article": "news/the-best-lower-alcohol-wines"
+          }
+        },
+        "article_JrCXUw": {
+          "type": "article",
+          "settings": {
+            "article": "news/our-favorite-naturally-low-calorie-wines"
           }
         },
         "article_dm9jhU": {
@@ -389,10 +389,10 @@
         }
       },
       "block_order": [
-        "article_AnCEby",
-        "article_JrCXUw",
         "article_nR7FDK",
+        "article_AnCEby",
         "article_rGVjqf",
+        "article_JrCXUw",
         "article_dm9jhU",
         "2d7c7acc-53fb-40ce-a29a-f903884dc5b9",
         "article_j3XPci",
