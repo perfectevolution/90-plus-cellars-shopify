@@ -44,6 +44,7 @@
       "blocks": {
         "sitevibes_product_reviews_block_R6hiGw": {
           "type": "shopify://apps/sitevibes/blocks/product_reviews_block/00e6a151-1c96-468f-808d-103c6fffd498",
+          "disabled": true,
           "settings": {}
         }
       },
@@ -54,7 +55,6 @@
     },
     "product-reviews": {
       "type": "product-reviews",
-      "disabled": true,
       "settings": {}
     },
     "product-recommendations": {
