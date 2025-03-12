@@ -97,6 +97,13 @@
         "type": "shopify://apps/sc-easy-redirects/blocks/app/be3f8dbd-5d43-46b4-ba43-2d65046054c2",
         "disabled": false,
         "settings": {}
+      },
+      "7170469049868216344": {
+        "type": "shopify://apps/sitevibes/blocks/main_scripts_block/00e6a151-1c96-468f-808d-103c6fffd498",
+        "disabled": false,
+        "settings": {
+          "pixel_url": "Enter URL here"
+        }
       }
     }
   }
