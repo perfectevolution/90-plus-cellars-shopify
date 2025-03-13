@@ -251,6 +251,29 @@
         "image": "shopify://shop_images/Wine_Truck_1000x1000_4735ad9d-8441-4540-b201-60e357dc59d1.png"
       }
     },
+    "social_proof_gallery_PzwNyq": {
+      "type": "social-proof-gallery",
+      "blocks": {
+        "card_teUnHL": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rose_Cruise_1154126a-02ff-4c9c-8195-a3a0eb429072.png",
+            "header": "Default Header",
+            "sub_header": "Default Sub Header"
+          }
+        }
+      },
+      "block_order": [
+        "card_teUnHL"
+      ],
+      "settings": {
+        "id": "social-proof-gallery",
+        "metaobject_handle": "social-proof-gallery-main",
+        "footer_header": "Tag us on Instagram",
+        "footer_sub_header": "@90cellars",
+        "footer_sub_header_link": ""
+      }
+    },
     "content_callout_large_qFXWhG": {
       "type": "content-callout-large",
       "disabled": true,
@@ -294,6 +317,7 @@
     "split_hero_DiFj6p",
     "featured_product_single_kB6QnT",
     "split_hero_fpYnNr",
+    "social_proof_gallery_PzwNyq",
     "content_callout_large_qFXWhG",
     "cb9e57de-fa26-4fe7-b949-9f1cb02b117a",
     "social-proof-gallery"
