@@ -298,12 +298,20 @@
         "footer_sub_header": "@90cellars",
         "footer_sub_header_link": "https://www.instagram.com/90pluscellars/"
       }
+    },
+    "rotating_banner_8yLzgp": {
+      "type": "rotating-banner",
+      "settings": {
+        "link": "",
+        "type": "words"
+      }
     }
   },
   "order": [
     "blank",
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
     "split_hero_CbDEg8",
+    "rotating_banner_8yLzgp",
     "robin_pro_image_gallery_app_pQLcQi",
     "image_text_panels_YWPBYL",
     "content_cards_WAPxGK",
