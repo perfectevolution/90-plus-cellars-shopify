@@ -36,6 +36,22 @@
         "image": "shopify://shop_images/Rose_Cruise_b21b4e06-abba-4484-8e00-bd62014b7755.png"
       }
     },
+    "robin_pro_image_gallery_app_pQLcQi": {
+      "type": "robin-pro-image-gallery-app",
+      "blocks": {
+        "gallery_f63KNc": {
+          "type": "gallery",
+          "settings": {
+            "gallery_id": "30aadcc7-6cf5-4c1d-be42-eef82c53456e",
+            "width": "full"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_f63KNc"
+      ],
+      "settings": {}
+    },
     "image_text_panels_YWPBYL": {
       "type": "image-text-panels",
       "blocks": {
@@ -288,6 +304,7 @@
     "blank",
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
     "split_hero_CbDEg8",
+    "robin_pro_image_gallery_app_pQLcQi",
     "image_text_panels_YWPBYL",
     "content_cards_WAPxGK",
     "featured_product_single_Pwy6dx",
