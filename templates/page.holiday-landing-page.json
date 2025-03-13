@@ -13,6 +13,15 @@
       "type": "blank",
       "settings": {}
     },
+    "1f1b37aa-db83-4929-ae29-bd88a549b2ab": {
+      "type": "hero-curved",
+      "settings": {
+        "image": "shopify://shop_images/Boston_Rose_-_final_5bc2868e-c3cd-48aa-9e83-c52acc29c171.png",
+        "mobile_image": "shopify://shop_images/Boston_rose_mobile_-_final_v2.png",
+        "header": "It's time to celebrate, Boston.",
+        "body": "90+ Cellars was launched in Boston in 2009 and we've been Massachusetts based ever since. Join us this summer to celebrate the city we call home with great wine and events. Cheers!"
+      }
+    },
     "split_hero_CbDEg8": {
       "type": "split-hero",
       "settings": {
@@ -27,13 +36,65 @@
         "image": "shopify://shop_images/Rose_Cruise_b21b4e06-abba-4484-8e00-bd62014b7755.png"
       }
     },
-    "1f1b37aa-db83-4929-ae29-bd88a549b2ab": {
-      "type": "hero-curved",
+    "image_text_panels_YWPBYL": {
+      "type": "image-text-panels",
+      "blocks": {
+        "content_XTzbEg": {
+          "type": "content",
+          "settings": {
+            "header": "",
+            "body": "",
+            "image": "shopify://shop_images/Rose_Cruise_1154126a-02ff-4c9c-8195-a3a0eb429072.png",
+            "link_label": "",
+            "link_url": "/",
+            "link_external": false
+          }
+        },
+        "content_yHmTYf": {
+          "type": "content",
+          "settings": {
+            "header": "",
+            "body": "",
+            "image": "shopify://shop_images/Spirit_of_Boston.png",
+            "link_label": "",
+            "link_url": "/",
+            "link_external": false
+          }
+        },
+        "content_zgzK3X": {
+          "type": "content",
+          "settings": {
+            "header": "",
+            "body": "",
+            "image": "shopify://shop_images/Rose_cruise_V3.png",
+            "link_label": "",
+            "link_url": "/",
+            "link_external": false
+          }
+        },
+        "content_HdLQzX": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "header": "Lorum Ipsum",
+            "body": "",
+            "image": "shopify://shop_images/beach-sunset-thailand.jpg",
+            "link_label": "Link Label",
+            "link_url": "/",
+            "link_external": false
+          }
+        }
+      },
+      "block_order": [
+        "content_XTzbEg",
+        "content_yHmTYf",
+        "content_zgzK3X",
+        "content_HdLQzX"
+      ],
       "settings": {
-        "image": "shopify://shop_images/Boston_Rose_-_final_5bc2868e-c3cd-48aa-9e83-c52acc29c171.png",
-        "mobile_image": "shopify://shop_images/Boston_rose_mobile_-_final_v2.png",
-        "header": "It's time to celebrate, Boston.",
-        "body": "90+ Cellars was launched in Boston in 2009 and we've been Massachusetts based ever since. Join us this summer to celebrate the city we call home with great wine and events. Cheers!"
+        "section_id": "",
+        "header": "",
+        "layout": "three-column"
       }
     },
     "content_cards_WAPxGK": {
@@ -226,6 +287,7 @@
     "blank",
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
     "split_hero_CbDEg8",
+    "image_text_panels_YWPBYL",
     "content_cards_WAPxGK",
     "featured_product_single_Pwy6dx",
     "split_hero_A7QXQA",
