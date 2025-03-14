@@ -36,6 +36,13 @@
         "image": "shopify://shop_images/Rose_Cruise_b21b4e06-abba-4484-8e00-bd62014b7755.png"
       }
     },
+    "rotating_banner_8yLzgp": {
+      "type": "rotating-banner",
+      "settings": {
+        "link": "",
+        "type": "words"
+      }
+    },
     "robin_pro_image_gallery_app_pQLcQi": {
       "type": "robin-pro-image-gallery-app",
       "blocks": {
@@ -112,6 +119,40 @@
         "section_id": "",
         "header": "",
         "layout": "three-column"
+      }
+    },
+    "rich_text_wiFnbX": {
+      "type": "rich-text",
+      "blocks": {
+        "header_TBc8Ki": {
+          "type": "header",
+          "settings": {
+            "header": "Our Boston",
+            "header_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "header_TBc8Ki"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "section_width": "col-lg-9",
+        "text_alignment": "text-start",
+        "padding-top": "pt-5",
+        "padding-bottom": "pb-0",
+        "margin-top": "mt-0",
+        "margin-bottom": "mb-0",
+        "background": "gray-light"
+      }
+    },
+    "basic_header_FFbf7r": {
+      "type": "basic-header",
+      "settings": {
+        "section_id": "",
+        "header": "Our Boston Rosé labels over the years...",
+        "background": "gray-light"
       }
     },
     "content_cards_WAPxGK": {
@@ -298,13 +339,6 @@
         "footer_sub_header": "@90cellars",
         "footer_sub_header_link": "https://www.instagram.com/90pluscellars/"
       }
-    },
-    "rotating_banner_8yLzgp": {
-      "type": "rotating-banner",
-      "settings": {
-        "link": "",
-        "type": "words"
-      }
     }
   },
   "order": [
@@ -314,6 +348,8 @@
     "rotating_banner_8yLzgp",
     "robin_pro_image_gallery_app_pQLcQi",
     "image_text_panels_YWPBYL",
+    "rich_text_wiFnbX",
+    "basic_header_FFbf7r",
     "content_cards_WAPxGK",
     "featured_product_single_Pwy6dx",
     "split_hero_A7QXQA",
