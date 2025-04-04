@@ -121,20 +121,40 @@
     "featured-articles-test": {
       "type": "featured-articles",
       "blocks": {
-        "article_HNFJ7P": {
-          "type": "article",
-          "settings": {
-            "article": "news/spring-dinner-idea-citrus-roasted-salmon-with-provence-rose"
-          }
-        },
         "article_MMNcWg": {
           "type": "article",
           "settings": {
             "article": "news/the-ultimate-easter-wine-food-pairings-from-master-sommelier-michael-meagher"
           }
         },
+        "article_HNFJ7P": {
+          "type": "article",
+          "settings": {
+            "article": "news/spring-dinner-idea-citrus-roasted-salmon-with-provence-rose"
+          }
+        },
+        "article_ULqLKF": {
+          "type": "article",
+          "settings": {
+            "article": "news/wine-pairings-for-springtime"
+          }
+        },
+        "article_xD7nHt": {
+          "type": "article",
+          "disabled": true,
+          "settings": {
+            "article": "news/easter-brunch-quiche-recipe-prosecco-rose-pairing"
+          }
+        },
+        "article_XLJUfc": {
+          "type": "article",
+          "settings": {
+            "article": "news/mothers-day-wine-guide"
+          }
+        },
         "article_hhRmyW": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/celebrating-women-winemakers"
           }
@@ -146,14 +166,9 @@
             "article": "news/our-favorite-naturally-low-calorie-wines"
           }
         },
-        "article_XLJUfc": {
-          "type": "article",
-          "settings": {
-            "article": "news/mothers-day-wine-guide"
-          }
-        },
         "article_q46tfD": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/women-in-wine-q-a-the-world-is-justine-osillas-wine-bar"
           }
@@ -216,11 +231,13 @@
         }
       },
       "block_order": [
-        "article_HNFJ7P",
         "article_MMNcWg",
+        "article_HNFJ7P",
+        "article_ULqLKF",
+        "article_xD7nHt",
+        "article_XLJUfc",
         "article_hhRmyW",
         "article_ChENRG",
-        "article_XLJUfc",
         "article_q46tfD",
         "article_haNYzt",
         "article_6M4K3q",
