@@ -34,10 +34,34 @@
     "featured_articles_Mq3GKN": {
       "type": "featured-articles",
       "blocks": {
+        "article_XmY67b": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-ultimate-easter-wine-food-pairings-from-master-sommelier-michael-meagher"
+          }
+        },
         "article_8L4htj": {
           "type": "article",
           "settings": {
             "article": "news/beyond-the-glass-french-rose-wine-regions"
+          }
+        },
+        "article_BbGMVR": {
+          "type": "article",
+          "settings": {
+            "article": "news/spring-dinner-idea-citrus-roasted-salmon-with-provence-rose"
+          }
+        },
+        "article_4Xdnby": {
+          "type": "article",
+          "settings": {
+            "article": "news/wine-pairings-for-springtime"
+          }
+        },
+        "article_mrgpLy": {
+          "type": "article",
+          "settings": {
+            "article": "news/easter-brunch-quiche-recipe-prosecco-rose-pairing"
           }
         },
         "article_t9Wz7Y": {
@@ -46,31 +70,21 @@
             "article": "news/5-things-to-know-about-prosecco-rose"
           }
         },
-        "article_XmY67b": {
-          "type": "article",
-          "settings": {
-            "article": "news/the-ultimate-easter-wine-food-pairings-from-master-sommelier-michael-meagher"
-          }
-        },
         "article_pzL3t6": {
           "type": "article",
           "settings": {
             "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
           }
-        },
-        "article_mrgpLy": {
-          "type": "article",
-          "settings": {
-            "article": "news/easter-brunch-quiche-recipe-prosecco-rose-pairing"
-          }
         }
       },
       "block_order": [
-        "article_8L4htj",
-        "article_t9Wz7Y",
         "article_XmY67b",
-        "article_pzL3t6",
-        "article_mrgpLy"
+        "article_8L4htj",
+        "article_BbGMVR",
+        "article_4Xdnby",
+        "article_mrgpLy",
+        "article_t9Wz7Y",
+        "article_pzL3t6"
       ],
       "settings": {
         "section_id": "",
