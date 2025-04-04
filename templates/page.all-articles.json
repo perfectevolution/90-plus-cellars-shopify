@@ -326,6 +326,12 @@
             "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
           }
         },
+        "article_BPCL6p": {
+          "type": "article",
+          "settings": {
+            "article": "news/10-things-you-should-know-about-prosecco"
+          }
+        },
         "article_BJmmf8": {
           "type": "article",
           "settings": {
@@ -343,21 +349,15 @@
           "settings": {
             "article": "news/5-things-to-know-about-prosecco-rose"
           }
-        },
-        "article_BPCL6p": {
-          "type": "article",
-          "settings": {
-            "article": "news/10-things-you-should-know-about-prosecco"
-          }
         }
       },
       "block_order": [
         "article_BcTqyn",
         "article_Ad4mBG",
+        "article_BPCL6p",
         "article_BJmmf8",
         "article_FJtP6k",
-        "article_BppqkY",
-        "article_BPCL6p"
+        "article_BppqkY"
       ],
       "settings": {
         "section_id": "",
