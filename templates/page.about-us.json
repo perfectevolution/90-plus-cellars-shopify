@@ -1,1 +1,198 @@
-{"sections":{"blank":{"type":"blank","settings":{}},"31563458-11b7-456e-8f0a-9e79ace0926f":{"type":"hero-offset","settings":{"section_id":"","label":"Established","sub_label":"2009","header":"Everyone deserves a great glass of wine","body":"<p>When we launched 90+ Cellars, we set out on a mission to make <em>great<\/em> wine more accessible to everyone. By partnering with highly rated wineries, avoiding the expenses of owning vineyards, and curating a global collection of top-notch wines, we make it easier to find, buy, and enjoy the best bottle, every time. <\/p>","image":"shopify:\/\/shop_images\/20230401-90_CELLARS-NIKICRAM-044.jpg","link_label":"Shop All","link_url":"shopify:\/\/collections\/90-wines","link_external":false}},"f79cb562-c10c-4539-901e-e25bdacefdcf":{"type":"hero-media","settings":{"section_id":"","image":"shopify:\/\/shop_images\/about-us-hero.jpg","background_video_url":"","show_mobile":false,"has_modal_video":false,"script":"Great wine for all","modal_video_type":"video","modal_video_url":""}},"033500b6-7f6a-4074-acc1-279694f4a98d":{"type":"alternating-offset-rows","blocks":{"4b34395c-6344-47ee-b461-4128d579209f":{"type":"Slide","settings":{"header":"The Secret","sub_header":"that started it all","image":"shopify:\/\/shop_images\/20220506-90_CELLARS-SUMMER-1070.jpg","image_size":"cover","body":"<p>Believe it or not, even the most celebrated wineries in the world often have the ability to produce more than they can sell under their own top labels. <\/p><p>With this idea in mind, Kevin Mehra launched 90+ Cellars. His concept was simple: allow great wineries to sell more wine through a new brand. By offering to not disclose the source, Kevin found that many wineries were happy to offer him their top wines at lower costs in order to sell more. And in doing so, 90+ Cellars was able to bring these world class wines to more people at better prices. <\/p>","link_label":"","link_url":"","link_external":false}},"75eec827-6b4d-46dc-ad65-56c12de9f49b":{"type":"Slide","settings":{"header":"Uncorking","sub_header":"the world of wine","image":"shopify:\/\/shop_images\/90_CELLARS-REDWHITESPARKLING-47.jpg","image_size":"cover","body":"<p>Our global selection is a result of these partnerships with wineries all over the world. The producers we work with all have a history of scoring 90+ point ratings on their wines. Without the overhead and geographical constraints of managing our own vineyards and wineries, we can focus on bringing you remarkable bottles. No need to wander the aisles searching for a great buy—we’ve done the work for you. <\/p>","link_label":"","link_url":"","link_external":false}},"dd7dc576-5c9b-471d-a2ef-25a41c66c63c":{"type":"Slide","settings":{"header":"From Napa to Piedmont","sub_header":"(and everywhere in between)","image":"shopify:\/\/shop_images\/Latitude-DSC_6170_2.jpg","image_size":"cover","body":"<p>Since 2009, we’ve released over 200 wines and counting from all over the world. You'll find great, go-to \"everyday\" wines in our CORE SERIES. Or, explore wines from famous old world regions with our CLASSIC SERIES. And if you're looking for something on the more premium end, find smaller production, higher-end wines in our RESERVE and COLLECTOR SERIES. No matter what, you’ll uncork an excellent bottle that has passed our rigorous quality test to earn its unique Lot Number—and the 90+ stamp of approval. <\/p>","link_label":"","link_url":"","link_external":false}}},"block_order":["4b34395c-6344-47ee-b461-4128d579209f","75eec827-6b4d-46dc-ad65-56c12de9f49b","dd7dc576-5c9b-471d-a2ef-25a41c66c63c"],"settings":{"section_id":"","header":"Our","sub_header":"story","image_position":"left"}},"2d5eea33-873c-4dd6-986c-0b1a59bc781d":{"type":"rotating-banner","blocks":{"fce3d0e3-f934-44a1-b10f-899b7f556278":{"type":"words","settings":{"label":"Core","url":""}},"03da4509-32ff-46bd-a2db-b52c1c33be67":{"type":"words","settings":{"label":"Classic","url":""}},"07ccd2bb-ff9d-4661-9515-338f256c351d":{"type":"words","settings":{"label":"Reserve","url":""}},"469db004-1028-48e3-8232-5f9362358339":{"type":"words","settings":{"label":"Collector","url":""}}},"block_order":["fce3d0e3-f934-44a1-b10f-899b7f556278","03da4509-32ff-46bd-a2db-b52c1c33be67","07ccd2bb-ff9d-4661-9515-338f256c351d","469db004-1028-48e3-8232-5f9362358339"],"settings":{"link":"","type":"words"}},"c96a411e-155d-4ed3-98ce-8e747ccd5be8":{"type":"two-column-rows","blocks":{"51f29116-7b44-467f-a9ee-6eca31a12486":{"type":"Slide","settings":{"header":"Made for a","sub_header":"greener glass","image":"shopify:\/\/shop_images\/Latitude-DSC_6215.jpg","image_size":"cover","body":"<p>In winemaking, sustainability is more than a buzzword. It's an everyday effort. By employing sustainable farming methods and increasing efficiency, today's best wine makers are cultivating a healthier industry and planet. We go out of our way to partner with eco-conscious wineries, but the glass can always be greener. Every year we offer a growing selection of sustainable and organic wines. <\/p>","link_label":"Learn More","link_url":"shopify:\/\/pages\/sustainability","link_external":false,"show_decoration":false}}},"block_order":["51f29116-7b44-467f-a9ee-6eca31a12486"],"settings":{"section_id":"","image_position":"right"}},"9897cdcc-48b1-43ce-9961-fa93f6195cc5":{"type":"newsletter-callout","settings":{"id":"newsletter-callout","header":"Newsletter","form_header":"<b>Sign up for our<\/b> <i>newsletter<\/i>","form_sub_header":"Be the first to know about our newest releases, upcoming events, and everything we’re up to on the wine trail. ","klaviyo_newsletter_id":"klaviyo-form-SNxMx5"}},"778d369d-4255-45a4-8514-ea057c3f3214":{"type":"social-proof-gallery","settings":{"id":"social-proof-gallery","metaobject_handle":"social-proof-gallery-main","footer_header":"Tag us on Instagram","footer_sub_header":"@90cellars","footer_sub_header_link":"https:\/\/www.instagram.com\/90pluscellars\/"}}},"order":["blank","31563458-11b7-456e-8f0a-9e79ace0926f","f79cb562-c10c-4539-901e-e25bdacefdcf","033500b6-7f6a-4074-acc1-279694f4a98d","2d5eea33-873c-4dd6-986c-0b1a59bc781d","c96a411e-155d-4ed3-98ce-8e747ccd5be8","9897cdcc-48b1-43ce-9961-fa93f6195cc5","778d369d-4255-45a4-8514-ea057c3f3214"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blank": {
+      "type": "blank",
+      "settings": {}
+    },
+    "31563458-11b7-456e-8f0a-9e79ace0926f": {
+      "type": "hero-offset",
+      "settings": {
+        "section_id": "",
+        "label": "Established",
+        "sub_label": "2009",
+        "header": "Everyone deserves a great glass of wine.",
+        "body": "<p>When we launched 90+ Cellars, we set out on a mission to make <em>great</em> wine more accessible to everyone. By partnering with highly rated wineries, avoiding the expenses of owning vineyards, and curating a global collection of top-notch wines, we make it easier to find, buy, and enjoy the best bottle, every time. </p>",
+        "image": "shopify://shop_images/20230401-90_CELLARS-NIKICRAM-044.jpg",
+        "link_label": "Shop All",
+        "link_url": "shopify://collections/90-wines",
+        "link_external": false
+      }
+    },
+    "f79cb562-c10c-4539-901e-e25bdacefdcf": {
+      "type": "hero-media",
+      "settings": {
+        "section_id": "",
+        "image": "shopify://shop_images/about-us-hero.jpg",
+        "background_video_url": "",
+        "show_mobile": false,
+        "has_modal_video": false,
+        "script": "Great wine for all",
+        "modal_video_type": "video",
+        "modal_video_url": ""
+      }
+    },
+    "033500b6-7f6a-4074-acc1-279694f4a98d": {
+      "type": "alternating-offset-rows",
+      "blocks": {
+        "4b34395c-6344-47ee-b461-4128d579209f": {
+          "type": "Slide",
+          "settings": {
+            "header": "The Secret",
+            "sub_header": "that started it all",
+            "image": "shopify://shop_images/20220506-90_CELLARS-SUMMER-1070.jpg",
+            "image_size": "cover",
+            "body": "<p>Believe it or not, even the most celebrated wineries in the world often have the ability to produce more than they can sell under their own top labels. </p><p>With this idea in mind, Kevin Mehra launched 90+ Cellars. His concept was simple: allow great wineries to sell more wine through a new brand. By offering to not disclose the source, Kevin found that many wineries were happy to offer him their top wines at lower costs in order to sell more. And in doing so, 90+ Cellars was able to bring these world class wines to more people at better prices. </p>",
+            "link_label": "",
+            "link_url": "",
+            "link_external": false
+          }
+        },
+        "75eec827-6b4d-46dc-ad65-56c12de9f49b": {
+          "type": "Slide",
+          "settings": {
+            "header": "Uncorking",
+            "sub_header": "the world of wine",
+            "image": "shopify://shop_images/90_CELLARS-REDWHITESPARKLING-47.jpg",
+            "image_size": "cover",
+            "body": "<p>Our global selection is a result of these partnerships with wineries all over the world. The producers we work with all have a history of scoring 90+ point ratings on their wines. Without the overhead and geographical constraints of managing our own vineyards and wineries, we can focus on bringing you remarkable bottles. No need to wander the aisles searching for a great buy—we’ve done the work for you. </p>",
+            "link_label": "",
+            "link_url": "",
+            "link_external": false
+          }
+        },
+        "dd7dc576-5c9b-471d-a2ef-25a41c66c63c": {
+          "type": "Slide",
+          "settings": {
+            "header": "From Napa to Piedmont",
+            "sub_header": "(and everywhere in between)",
+            "image": "shopify://shop_images/Latitude-DSC_6170_2.jpg",
+            "image_size": "cover",
+            "body": "<p>Since 2009, we’ve released over 200 wines and counting from all over the world. You'll find great, go-to \"everyday\" wines in our CORE SERIES. Or, explore wines from famous old world regions with our CLASSIC SERIES. And if you're looking for something on the more premium end, find smaller production, higher-end wines in our RESERVE and COLLECTOR SERIES. No matter what, you’ll uncork an excellent bottle that has passed our rigorous quality test to earn its unique Lot Number—and the 90+ stamp of approval. </p>",
+            "link_label": "",
+            "link_url": "",
+            "link_external": false
+          }
+        }
+      },
+      "block_order": [
+        "4b34395c-6344-47ee-b461-4128d579209f",
+        "75eec827-6b4d-46dc-ad65-56c12de9f49b",
+        "dd7dc576-5c9b-471d-a2ef-25a41c66c63c"
+      ],
+      "settings": {
+        "section_id": "",
+        "header": "Our",
+        "sub_header": "story",
+        "image_position": "left"
+      }
+    },
+    "2d5eea33-873c-4dd6-986c-0b1a59bc781d": {
+      "type": "rotating-banner",
+      "blocks": {
+        "fce3d0e3-f934-44a1-b10f-899b7f556278": {
+          "type": "words",
+          "settings": {
+            "label": "Core",
+            "url": ""
+          }
+        },
+        "03da4509-32ff-46bd-a2db-b52c1c33be67": {
+          "type": "words",
+          "settings": {
+            "label": "Classic",
+            "url": ""
+          }
+        },
+        "07ccd2bb-ff9d-4661-9515-338f256c351d": {
+          "type": "words",
+          "settings": {
+            "label": "Reserve",
+            "url": ""
+          }
+        },
+        "469db004-1028-48e3-8232-5f9362358339": {
+          "type": "words",
+          "settings": {
+            "label": "Collector",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "fce3d0e3-f934-44a1-b10f-899b7f556278",
+        "03da4509-32ff-46bd-a2db-b52c1c33be67",
+        "07ccd2bb-ff9d-4661-9515-338f256c351d",
+        "469db004-1028-48e3-8232-5f9362358339"
+      ],
+      "settings": {
+        "link": "",
+        "type": "words"
+      }
+    },
+    "c96a411e-155d-4ed3-98ce-8e747ccd5be8": {
+      "type": "two-column-rows",
+      "blocks": {
+        "51f29116-7b44-467f-a9ee-6eca31a12486": {
+          "type": "Slide",
+          "settings": {
+            "header": "Made for a",
+            "sub_header": "greener glass",
+            "image": "shopify://shop_images/Latitude-DSC_6215.jpg",
+            "image_size": "cover",
+            "body": "<p>In winemaking, sustainability is more than a buzzword. It's an everyday effort. By employing sustainable farming methods and increasing efficiency, today's best wine makers are cultivating a healthier industry and planet. We go out of our way to partner with eco-conscious wineries, but the glass can always be greener. Every year we offer a growing selection of sustainable and organic wines. </p>",
+            "link_label": "Learn More",
+            "link_url": "shopify://pages/sustainability",
+            "link_external": false,
+            "show_decoration": false
+          }
+        }
+      },
+      "block_order": [
+        "51f29116-7b44-467f-a9ee-6eca31a12486"
+      ],
+      "settings": {
+        "section_id": "",
+        "image_position": "right"
+      }
+    },
+    "9897cdcc-48b1-43ce-9961-fa93f6195cc5": {
+      "type": "newsletter-callout",
+      "settings": {
+        "id": "newsletter-callout",
+        "header": "Newsletter",
+        "form_header": "<b>Sign up for our</b> <i>newsletter</i>",
+        "form_sub_header": "Be the first to know about our newest releases, upcoming events, and everything we’re up to on the wine trail. ",
+        "klaviyo_newsletter_id": "klaviyo-form-SNxMx5"
+      }
+    },
+    "778d369d-4255-45a4-8514-ea057c3f3214": {
+      "type": "social-proof-gallery",
+      "settings": {
+        "id": "social-proof-gallery",
+        "metaobject_handle": "social-proof-gallery-main",
+        "footer_header": "Tag us on Instagram",
+        "footer_sub_header": "@90cellars",
+        "footer_sub_header_link": "https://www.instagram.com/90pluscellars/"
+      }
+    }
+  },
+  "order": [
+    "blank",
+    "31563458-11b7-456e-8f0a-9e79ace0926f",
+    "f79cb562-c10c-4539-901e-e25bdacefdcf",
+    "033500b6-7f6a-4074-acc1-279694f4a98d",
+    "2d5eea33-873c-4dd6-986c-0b1a59bc781d",
+    "c96a411e-155d-4ed3-98ce-8e747ccd5be8",
+    "9897cdcc-48b1-43ce-9961-fa93f6195cc5",
+    "778d369d-4255-45a4-8514-ea057c3f3214"
+  ]
+}
