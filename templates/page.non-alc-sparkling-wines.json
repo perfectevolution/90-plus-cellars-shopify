@@ -1,10 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab": {
       "type": "hero-curved",
       "settings": {
-        "image": "shopify:\/\/shop_images\/90__Website_CurvedHero_NonAlc_Desktop.png",
-        "mobile_image": "shopify:\/\/shop_images\/90__Website_CurvedHero_NonAlc_Mobile.png",
+        "image": "shopify://shop_images/90__Website_CurvedHero_NonAlc_Desktop.png",
+        "mobile_image": "shopify://shop_images/90__Website_CurvedHero_NonAlc_Mobile.png",
         "header": "Raise A Glass, Skip the Alcohol",
         "body": "Say hello to our new Non-Alcoholic \nSparkling Brut and Rosé wines from the South of France! If you're skipping the alcohol or just cutting back, these dealcoholized bubblies bring all the fun and flavor you love—no buzz needed."
       }
@@ -24,7 +33,7 @@
         "header": "Bubblies Without the Buzz",
         "collection": "non-alcoholic-wines",
         "link_label": "View All",
-        "link_url": "https:\/\/www.ninetypluscellars.com\/collections\/non-alcoholic-wines",
+        "link_url": "https://www.ninetypluscellars.com/collections/non-alcoholic-wines",
         "link_external": false
       }
     },
@@ -34,9 +43,9 @@
         "product": "lot-229-non-alcoholic-sparkling-rose-france",
         "heading": "Lot 229",
         "subheading": "Sparkling Rosé",
-        "description": "<p>Delicately pink in color with fine bubbles, this Non-Alcoholic Sparkling Rosé captures all the delightful notes of a classic rosé, without the alcohol and artificial flavors.<\/p>",
+        "description": "<p>Delicately pink in color with fine bubbles, this Non-Alcoholic Sparkling Rosé captures all the delightful notes of a classic rosé, without the alcohol and artificial flavors.</p>",
         "button_text": "View product",
-        "button_link": "shopify:\/\/products\/boston-rose-3",
+        "button_link": "shopify://products/lot-229-non-alcoholic-sparkling-rose-france",
         "button_target": "_self",
         "padding": "md"
       }
@@ -47,9 +56,9 @@
         "product": "lot-230-non-alc-sparkling-brut-france",
         "heading": "Lot 230",
         "subheading": "Sparkling Brut",
-        "description": "<p>Our Non-Alcoholic Sparkling Brut is brilliant yellow in color with a beautiful effervescence. Notes of lemon and honeysuckle entice, while on the palate hints of citrus and stone fruits steal the show.<\/p>",
+        "description": "<p>Our Non-Alcoholic Sparkling Brut is brilliant yellow in color with a beautiful effervescence. Notes of lemon and honeysuckle entice, while on the palate hints of citrus and stone fruits steal the show.</p>",
         "button_text": "View product",
-        "button_link": "shopify:\/\/products\/boston-rose-3",
+        "button_link": "shopify://products/boston-rose-3",
         "button_target": "_self",
         "padding": "md"
       }
@@ -70,12 +79,12 @@
         "section_id": "",
         "image_position": "right",
         "header": "Everything You Need To Know About Non-Alcoholic Wines",
-        "body": "<p>Wondering about the differences between “non-alcoholic,” “dealcoholized,” and “alcohol-removed” wine? Or maybe you’re curious about the unique flavors these wines offer? Check out the blog for answers and to see why these sparkling beauties are becoming so popular!<\/p>",
+        "body": "<p>Wondering about the differences between “non-alcoholic,” “dealcoholized,” and “alcohol-removed” wine? Or maybe you’re curious about the unique flavors these wines offer? Check out the blog for answers and to see why these sparkling beauties are becoming so popular!</p>",
         "link_text": "Read the Article",
-        "link_url": "https:\/\/www.ninetypluscellars.com\/blogs\/news\/everything-you-need-to-know-about-non-alcoholic-wines",
+        "link_url": "https://www.ninetypluscellars.com/blogs/news/everything-you-need-to-know-about-non-alcoholic-wines",
         "link_target": "_self",
         "script": "",
-        "image": "shopify:\/\/shop_images\/LAT-BEV-NOV24-1_2_9c946a76-64bd-4141-9128-3a54c69dc61e.jpg"
+        "image": "shopify://shop_images/LAT-BEV-NOV24-1_2_9c946a76-64bd-4141-9128-3a54c69dc61e.jpg"
       }
     },
     "cb9e57de-fa26-4fe7-b949-9f1cb02b117a": {
@@ -95,7 +104,7 @@
         "metaobject_handle": "social-proof-gallery-main",
         "footer_header": "Tag us on Instagram",
         "footer_sub_header": "@90cellars",
-        "footer_sub_header_link": "https:\/\/www.instagram.com\/90pluscellars\/"
+        "footer_sub_header_link": "https://www.instagram.com/90pluscellars/"
       }
     }
   },
