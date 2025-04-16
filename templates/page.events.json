@@ -95,6 +95,17 @@
         "content_gk8MmU": {
           "type": "content",
           "settings": {
+            "header": "World Ocean School",
+            "body": "<p>Boston, MA <br/>June 2025 </p><p><em>Enjoy 90+ Cellars wines on board the Denis Sullivan this summer as it sails the Boston Harbor for a selection of specialty wine & sailing events. </em></p>",
+            "image": "shopify://shop_images/Wold_Ocean_School.jpg",
+            "link_label": "Sail Dates & Tickets",
+            "link_url": "https://www.worldoceanschool.org/boston-sails",
+            "link_external": false
+          }
+        },
+        "content_m3JcYa": {
+          "type": "content",
+          "settings": {
             "header": "King Richard's Faire",
             "body": "<p>Carver, MA <br/>AUGUST 30 - OCTOBER 19</p><p><em>90+ Cellars is making it's return to the annual King Richard's Faire, THE New England Renaissance Festival. </em></p>",
             "image": "shopify://shop_images/web_event_images_8_83c6050e-3fcf-49d6-a398-c914408b6e81.png",
@@ -152,6 +163,7 @@
         "content_ca7knT",
         "template--16791832395995__a99e0e12-d087-485f-9adb-bf50eabf7360-content-2",
         "content_gk8MmU",
+        "content_m3JcYa",
         "content_tjr4ff",
         "content_Krh4CY",
         "content_QbDrXT",
