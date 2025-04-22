@@ -246,7 +246,7 @@
         "hide_pagination_desktop": true,
         "navigation": "true",
         "hide_navigation_mobile": true,
-        "hide_navigation_desktop": false
+        "hide_navigation_desktop": true
       }
     },
     "split_hero_A7QXQA": {
