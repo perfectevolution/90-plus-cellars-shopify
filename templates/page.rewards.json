@@ -42,10 +42,27 @@
         "footer_sub_header": "@90cellars",
         "footer_sub_header_link": "https://www.instagram.com/90pluscellars/"
       }
+    },
+    "1745347747c09a4998": {
+      "type": "apps",
+      "blocks": {
+        "sitevibes_trigger_tag_block_P4Wjcf": {
+          "type": "shopify://apps/sitevibes/blocks/trigger_tag_block/00e6a151-1c96-468f-808d-103c6fffd498",
+          "settings": {
+            "tag_id": "",
+            "description": "A description of the tag used."
+          }
+        }
+      },
+      "block_order": [
+        "sitevibes_trigger_tag_block_P4Wjcf"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
+    "1745347747c09a4998",
     "blank",
     "cb9e57de-fa26-4fe7-b949-9f1cb02b117a",
     "social-proof-gallery"
