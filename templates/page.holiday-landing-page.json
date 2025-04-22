@@ -22,6 +22,19 @@
         "body": "90+ Cellars was launched in Boston in 2009 and we've been Massachusetts based ever since. Join us this summer to celebrate the city we call home with great wine and events. Cheers!"
       }
     },
+    "featured_product_single_Pwy6dx": {
+      "type": "featured-product-single",
+      "settings": {
+        "product": "boston-rose-3",
+        "heading": "Boston Rosé",
+        "subheading": "6th Edition",
+        "description": "<p>For our 6th release of Boston Rosé, we're showcasing a quintessential Southern French rosé from Languedoc, France.</p>",
+        "button_text": "View product",
+        "button_link": "shopify://products/boston-rose-3",
+        "button_target": "_self",
+        "padding": "md"
+      }
+    },
     "split_hero_CbDEg8": {
       "type": "split-hero",
       "settings": {
@@ -236,20 +249,6 @@
         "hide_navigation_desktop": false
       }
     },
-    "featured_product_single_Pwy6dx": {
-      "type": "featured-product-single",
-      "disabled": true,
-      "settings": {
-        "product": "boston-rose-3",
-        "heading": "Boston Rosé",
-        "subheading": "5th Edition",
-        "description": "<p>For our 5th release of Boston Rosé, we're showcasing a quintessential Southern French rosé from Languedoc, France.</p>",
-        "button_text": "View product",
-        "button_link": "shopify://products/boston-rose-3",
-        "button_target": "_self",
-        "padding": "md"
-      }
-    },
     "split_hero_A7QXQA": {
       "type": "split-hero",
       "disabled": true,
@@ -344,6 +343,7 @@
   "order": [
     "blank",
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
+    "featured_product_single_Pwy6dx",
     "split_hero_CbDEg8",
     "rotating_banner_8yLzgp",
     "robin_pro_image_gallery_app_pQLcQi",
@@ -351,7 +351,6 @@
     "rich_text_wiFnbX",
     "basic_header_FFbf7r",
     "content_cards_WAPxGK",
-    "featured_product_single_Pwy6dx",
     "split_hero_A7QXQA",
     "split_hero_DiFj6p",
     "featured_product_single_kB6QnT",
