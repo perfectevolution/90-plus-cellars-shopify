@@ -307,24 +307,6 @@
         "type": "words"
       }
     },
-    "testimonial_callout_k7xM6P": {
-      "type": "testimonial-callout",
-      "disabled": true,
-      "settings": {
-        "metaobject_handle": "",
-        "layout": "Centered Headline",
-        "image": "shopify://shop_images/BOSTON-ROSE-90PLUS-1.jpg",
-        "mobile_image": "shopify://shop_images/Boston_Rose_mobile.png",
-        "header": "Hey, Boston!",
-        "sub_header": "",
-        "sub_header_2": "",
-        "body": "<p>Join us June 22nd for our 10th Annual Rosé Cruise, shop the 5th Edition of our Boston Rosé, and more!</p>",
-        "citation": "",
-        "link_label": "Celebrate Boston",
-        "link_url": "https://www.ninetypluscellars.com/pages/boston",
-        "link_external": false
-      }
-    },
     "cca4bf33-9b2d-4410-83a9-fc13c47690e3": {
       "type": "article-grid",
       "blocks": {
@@ -427,6 +409,23 @@
         "link_external": false
       }
     },
+    "testimonial_callout_k7xM6P": {
+      "type": "testimonial-callout",
+      "settings": {
+        "metaobject_handle": "",
+        "layout": "Centered Headline",
+        "image": "shopify://shop_images/BOS-ROSE-LATBEV-APRIL25-9.jpg",
+        "mobile_image": "shopify://shop_images/Boston_Rose_mobile_aa59c664-a659-4a7a-ae5a-8ab422d11f23.png",
+        "header": "Hey, Boston!",
+        "sub_header": "",
+        "sub_header_2": "",
+        "body": "<p>Join us June 21st for our 11th Annual Rosé Cruise, shop the 6th Edition of our Boston Rosé, and more!</p>",
+        "citation": "",
+        "link_label": "Celebrate Boston",
+        "link_url": "https://www.ninetypluscellars.com/boston",
+        "link_external": false
+      }
+    },
     "14478863-7547-4979-8267-29a379a0df9e": {
       "type": "newsletter-callout",
       "settings": {
@@ -460,8 +459,8 @@
     "5d7a7700-d0f4-4048-adc4-3133b3806803",
     "c6a59e56-dde2-41d4-a242-b5dae166610c",
     "8426ec98-5b73-4c13-bd3c-d3daffaee686",
-    "testimonial_callout_k7xM6P",
     "cca4bf33-9b2d-4410-83a9-fc13c47690e3",
+    "testimonial_callout_k7xM6P",
     "14478863-7547-4979-8267-29a379a0df9e",
     "d40c38bf-3422-4258-a1e4-4df69ec7ead5"
   ]
