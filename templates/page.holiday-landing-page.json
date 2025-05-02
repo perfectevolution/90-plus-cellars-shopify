@@ -171,6 +171,18 @@
     "content_cards_WAPxGK": {
       "type": "content-cards",
       "blocks": {
+        "content_UKKTQ4": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/2024-Boston-Rose-Front-Label-Reference-020625.jpg",
+            "label": "",
+            "title": "Boston Rosé",
+            "sub_header": "2024",
+            "link_label": "Shop Now",
+            "link_url": "https://www.shoprevelrevel.com/product-page/2024-rose-frame",
+            "link_external": false
+          }
+        },
         "content_EpbhFz": {
           "type": "content",
           "settings": {
@@ -233,6 +245,7 @@
         }
       },
       "block_order": [
+        "content_UKKTQ4",
         "content_EpbhFz",
         "content_Km9Axk",
         "content_bddkbi",
