@@ -209,6 +209,7 @@
         },
         "content_bddkbi": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Boston_Rose_2019_-_3.png",
             "label": "",
@@ -221,6 +222,7 @@
         },
         "content_XrmDDQ": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Boston_Rose_2018.png",
             "label": "",
@@ -233,6 +235,7 @@
         },
         "content_cDaJCj": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Boston_Rose_2017.png",
             "label": "",
@@ -255,10 +258,66 @@
       "settings": {
         "anchor_id": "",
         "pagination": "true",
-        "hide_pagination_mobile": false,
-        "hide_pagination_desktop": true,
+        "hide_pagination_mobile": true,
+        "hide_pagination_desktop": false,
         "navigation": "true",
         "hide_navigation_mobile": true,
+        "hide_navigation_desktop": true
+      }
+    },
+    "content_cards_kGMFKn": {
+      "type": "content-cards",
+      "blocks": {
+        "content_HGyGRD": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/Boston_Rose_2019_-_3_32c88527-6333-437b-8594-6dccbcfa6b27.png",
+            "label": "",
+            "title": "Boston Rosé",
+            "sub_header": "2019",
+            "link_label": "Shop Now",
+            "link_url": "https://www.shoprevelrevel.com/product-page/2019-boston-ros%C3%A9-ltd-ed-framed-print",
+            "link_external": false
+          }
+        },
+        "content_nWrr69": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/Boston_Rose_2018_1b089620-169a-461c-86a1-a7f9ef88b5da.png",
+            "label": "",
+            "title": "Boston Rosé",
+            "sub_header": "2018",
+            "link_label": "Shop Now",
+            "link_url": "https://www.shoprevelrevel.com/product-page/2018-boston-ros%C3%A9-ltd-ed-framed-print",
+            "link_external": false
+          }
+        },
+        "content_FABxCq": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/Boston_Rose_2017_f66f5b47-f4ca-429b-8658-e432e8a49621.png",
+            "label": "",
+            "title": "Boston Rosé",
+            "sub_header": "2017",
+            "link_label": "Shop Now",
+            "link_url": "https://www.shoprevelrevel.com/product-page/2018-boston-ros%C3%A9-ltd-ed-framed-print-1",
+            "link_external": false
+          }
+        }
+      },
+      "block_order": [
+        "content_HGyGRD",
+        "content_nWrr69",
+        "content_FABxCq"
+      ],
+      "name": "Content Cards",
+      "settings": {
+        "anchor_id": "",
+        "pagination": "false",
+        "hide_pagination_mobile": true,
+        "hide_pagination_desktop": false,
+        "navigation": "false",
+        "hide_navigation_mobile": false,
         "hide_navigation_desktop": true
       }
     },
@@ -364,6 +423,7 @@
     "rich_text_wiFnbX",
     "basic_header_FFbf7r",
     "content_cards_WAPxGK",
+    "content_cards_kGMFKn",
     "split_hero_A7QXQA",
     "split_hero_DiFj6p",
     "featured_product_single_kB6QnT",
