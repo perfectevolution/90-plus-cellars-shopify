@@ -15,7 +15,7 @@
         "image": "shopify://shop_images/Low_Cal_1.png",
         "mobile_image": "shopify://shop_images/mobile.png",
         "header": "Keep It Light",
-        "body": "Why settle for less, when you can have it all? Keep it light with guilt-free sips that don't compromise on flavor. Whether you're choosing a refreshing non-alcoholic sparkling wine, a crisp low alcohol wine, or a bold low calorie pour, we have the perfect bottle for you."
+        "body": "Whether you're counting calories, watching sugar, or just looking for something easy and refreshing, our collection of lighter-styled wines is here to help you keep it light—without losing what you love.\nFrom low-calorie wines that don’t skimp on flavor to zero sugar reds and whites that are clean and crisp, every bottle in this collection is carefully selected for balance, approachability, and modern-day drinkability. You’ll also find lower alcohol options perfect for long lunches, slow sips, and easy evenings.\nLess is more—and in this case, it tastes better too."
       }
     },
     "9cb040ee-0588-43ac-b7e0-85580e654bbe": {
@@ -24,7 +24,7 @@
         "layout": "swiper",
         "animated": true,
         "columns": "6",
-        "header": "No Compromise, Just Great Wine",
+        "header": "Low Calorie & Low Alcohol Sips",
         "collection": "low-calorie-low-alcohol-wines",
         "link_label": "Shop All",
         "link_url": "shopify://collections/low-calorie-low-alcohol-wines",
@@ -129,6 +129,17 @@
         "link_external": false
       }
     },
+    "content_callout_large_GffAJH": {
+      "type": "content-callout-large",
+      "name": "Large Callout",
+      "settings": {
+        "anchor_id": "",
+        "header": "\"The Best Non-Alcoholic Sparkling Wines\" - VinePair",
+        "link_label": "",
+        "link_url": "",
+        "link_external": false
+      }
+    },
     "featured_product_single_kB6QnT": {
       "type": "featured-product-single",
       "settings": {
@@ -228,6 +239,7 @@
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
     "9cb040ee-0588-43ac-b7e0-85580e654bbe",
     "featured_articles_Mq3GKN",
+    "content_callout_large_GffAJH",
     "featured_product_single_kB6QnT",
     "featured_product_single_hrgeNn",
     "blank",
