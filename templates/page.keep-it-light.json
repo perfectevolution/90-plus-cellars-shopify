@@ -46,12 +46,6 @@
             "article": "news/the-best-lower-alcohol-wines"
           }
         },
-        "article_wkfHHU": {
-          "type": "article",
-          "settings": {
-            "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
-          }
-        },
         "article_pMCnPg": {
           "type": "article",
           "settings": {
@@ -104,7 +98,6 @@
       "block_order": [
         "article_8L4htj",
         "article_K99P4y",
-        "article_wkfHHU",
         "article_pMCnPg",
         "article_fhYdPY",
         "article_t9Wz7Y",
@@ -166,6 +159,20 @@
         "padding": "md"
       }
     },
+    "split_hero_DiFj6p": {
+      "type": "split-hero",
+      "settings": {
+        "section_id": "",
+        "image_position": "right",
+        "header": "Everything You Need to Know About Non-Alcoholic Wines",
+        "body": "<p>Wondering about the differences between “non-alcoholic,” “dealcoholized,” and “alcohol-removed” wine? Or maybe you’re curious about the unique flavors these wines offer? Check out the blog for answers and to see why these sparkling beauties are becoming so popular!</p>",
+        "link_text": "Read the Article",
+        "link_url": "https://www.ninetypluscellars.com/blogs/news/everything-you-need-to-know-about-non-alcoholic-wines",
+        "link_target": "_self",
+        "script": "",
+        "image": "shopify://shop_images/LAT-BEV-NOV24-1_2_bc737caa-d44e-4557-bc19-84d0efbf3ddd.jpg"
+      }
+    },
     "blank": {
       "type": "blank",
       "disabled": true,
@@ -183,21 +190,6 @@
         "link_label": "",
         "link_url": "",
         "link_external": false
-      }
-    },
-    "split_hero_DiFj6p": {
-      "type": "split-hero",
-      "disabled": true,
-      "settings": {
-        "section_id": "",
-        "image_position": "right",
-        "header": "The Gift That Keeps On Pouring",
-        "body": "<p>Treat someone special (or yourself) to a 90+ Cellars wine club membership! Every season, you can expect </p><p>seasonal selection of wines every 3 months for the next year! We offer a 3-bottle Starter Club or a 6 or 12-bottle Red or Mix Club—the perfect way to explore the world of wine, delivered to your door.</p>",
-        "link_text": "Learn More About Wine Club",
-        "link_url": "https://www.ninetypluscellars.com/pages/wine-club",
-        "link_target": "_self",
-        "script": "",
-        "image": "shopify://shop_images/WineClub-5.jpg"
       }
     },
     "featured_product_single_NArXRp": {
@@ -242,9 +234,9 @@
     "content_callout_large_GffAJH",
     "featured_product_single_kB6QnT",
     "featured_product_single_hrgeNn",
+    "split_hero_DiFj6p",
     "blank",
     "featured_products_Te9aGq",
-    "split_hero_DiFj6p",
     "featured_product_single_NArXRp",
     "cb9e57de-fa26-4fe7-b949-9f1cb02b117a",
     "social-proof-gallery"
