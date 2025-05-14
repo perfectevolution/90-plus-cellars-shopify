@@ -31,6 +31,20 @@
         "link_external": false
       }
     },
+    "featured_products_MU36d6": {
+      "type": "featured-products",
+      "name": "Featured Products",
+      "settings": {
+        "layout": "swiper",
+        "animated": true,
+        "columns": "6",
+        "header": "Zero Sugar Wines",
+        "collection": "zero-sugar-wines-full-of-flavor-no-sugar",
+        "link_label": "",
+        "link_url": "",
+        "link_external": false
+      }
+    },
     "featured_articles_Mq3GKN": {
       "type": "featured-articles",
       "blocks": {
@@ -117,20 +131,6 @@
         "blog": "press",
         "tag": "",
         "limit": 6,
-        "link_label": "",
-        "link_url": "",
-        "link_external": false
-      }
-    },
-    "featured_products_MU36d6": {
-      "type": "featured-products",
-      "name": "Featured Products",
-      "settings": {
-        "layout": "swiper",
-        "animated": true,
-        "columns": "6",
-        "header": "Zero Sugar Wines – Full Flavor",
-        "collection": "zero-sugar-wines-full-of-flavor-no-sugar",
         "link_label": "",
         "link_url": "",
         "link_external": false
@@ -244,8 +244,8 @@
   "order": [
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
     "9cb040ee-0588-43ac-b7e0-85580e654bbe",
-    "featured_articles_Mq3GKN",
     "featured_products_MU36d6",
+    "featured_articles_Mq3GKN",
     "content_callout_large_GffAJH",
     "featured_product_single_kB6QnT",
     "featured_product_single_hrgeNn",
