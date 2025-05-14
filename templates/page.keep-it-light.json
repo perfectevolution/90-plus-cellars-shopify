@@ -126,7 +126,7 @@
       "type": "featured-products",
       "name": "Featured Products",
       "settings": {
-        "layout": "grid",
+        "layout": "swiper",
         "animated": true,
         "columns": "6",
         "header": "Zero Sugar Wines – Full Flavor, No Sugar",
