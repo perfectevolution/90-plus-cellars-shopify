@@ -310,10 +310,23 @@
     "cca4bf33-9b2d-4410-83a9-fc13c47690e3": {
       "type": "article-grid",
       "blocks": {
-        "article_nR7FDK": {
+        "article_PTPDjf": {
           "type": "article",
           "settings": {
+            "article": "news/memorial-day-weekend-wine-guide"
+          }
+        },
+        "article_nR7FDK": {
+          "type": "article",
+          "disabled": true,
+          "settings": {
             "article": "news/spring-dinner-idea-citrus-roasted-salmon-with-provence-rose"
+          }
+        },
+        "article_7n3zhG": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-ultimate-grilling-wines-guide"
           }
         },
         "article_AnCEby": {
@@ -324,6 +337,7 @@
         },
         "article_rGVjqf": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/the-best-lower-alcohol-wines"
           }
@@ -349,8 +363,15 @@
             "article": "news/chillable-reds"
           }
         },
+        "article_LxdKj9": {
+          "type": "article",
+          "settings": {
+            "article": "news/3-festive-sparkling-wine-cocktails-for-the-holidays"
+          }
+        },
         "article_pH7cLR": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/wine-pairings-for-springtime"
           }
@@ -385,12 +406,15 @@
         }
       },
       "block_order": [
+        "article_PTPDjf",
         "article_nR7FDK",
+        "article_7n3zhG",
         "article_AnCEby",
         "article_rGVjqf",
         "article_9TqVWf",
         "article_JrCXUw",
         "article_dm9jhU",
+        "article_LxdKj9",
         "article_pH7cLR",
         "2d7c7acc-53fb-40ce-a29a-f903884dc5b9",
         "article_j3XPci",
