@@ -159,6 +159,7 @@
         },
         "article_48Gpza": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/celebrate-mimosa-day-with-these-easy-low-calorie-twists-on-the-classic"
           }
