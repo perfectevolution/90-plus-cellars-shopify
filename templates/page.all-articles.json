@@ -16,8 +16,8 @@
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab": {
       "type": "hero-curved",
       "settings": {
-        "image": "shopify://shop_images/Articles.png",
-        "mobile_image": "shopify://shop_images/Article_-_mobile.png",
+        "image": "shopify://shop_images/articles_page_-_hero.png",
+        "mobile_image": "shopify://shop_images/mobile_hero_articles.png",
         "header": "We've got you covered.",
         "body": "Looking to learn more about wine, find the perfect food pairing, or get a wine recommendation for a certain occasion? You came to the right place."
       }
