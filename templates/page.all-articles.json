@@ -75,10 +75,10 @@
     "0df19425-055f-4186-a616-f974ce70d52e": {
       "type": "article-grid",
       "blocks": {
-        "11e1ef49-ad2a-4ea9-a04d-91fcb19283da": {
+        "article_enYYUq": {
           "type": "article",
           "settings": {
-            "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
+            "article": "news/exploring-italy-s-piedmont-wines"
           }
         },
         "5024da33-e236-41d4-b63c-b48a97513a95": {
@@ -87,22 +87,46 @@
             "article": "news/33-qs-with-alex-shaughnessy-90-cellars-wine-director"
           }
         },
+        "article_M4cTQz": {
+          "type": "article",
+          "settings": {
+            "article": "news/beyond-the-glass-french-rose-wine-regions"
+          }
+        },
+        "article_ayzBye": {
+          "type": "article",
+          "settings": {
+            "article": "news/our-favorite-naturally-low-calorie-wines"
+          }
+        },
+        "11e1ef49-ad2a-4ea9-a04d-91fcb19283da": {
+          "type": "article",
+          "disabled": true,
+          "settings": {
+            "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
+          }
+        },
         "61165c89-5b23-498d-93c5-bfbc3ad6d199": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/cremant-dalsace"
           }
         },
         "b07df93e-18da-4b27-a874-d015ab195de0": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/chillable-reds"
           }
         }
       },
       "block_order": [
-        "11e1ef49-ad2a-4ea9-a04d-91fcb19283da",
+        "article_enYYUq",
         "5024da33-e236-41d4-b63c-b48a97513a95",
+        "article_M4cTQz",
+        "article_ayzBye",
+        "11e1ef49-ad2a-4ea9-a04d-91fcb19283da",
         "61165c89-5b23-498d-93c5-bfbc3ad6d199",
         "b07df93e-18da-4b27-a874-d015ab195de0"
       ],
@@ -121,12 +145,6 @@
     "featured-articles-test": {
       "type": "featured-articles",
       "blocks": {
-        "article_MMNcWg": {
-          "type": "article",
-          "settings": {
-            "article": "news/the-ultimate-easter-wine-food-pairings-from-master-sommelier-michael-meagher"
-          }
-        },
         "article_HNFJ7P": {
           "type": "article",
           "settings": {
@@ -139,6 +157,19 @@
             "article": "news/wine-pairings-for-springtime"
           }
         },
+        "article_XLJUfc": {
+          "type": "article",
+          "settings": {
+            "article": "news/mothers-day-wine-guide"
+          }
+        },
+        "article_bYTkRR": {
+          "type": "article",
+          "disabled": true,
+          "settings": {
+            "article": "news/celebrate-mimosa-day-with-these-easy-low-calorie-twists-on-the-classic"
+          }
+        },
         "article_xD7nHt": {
           "type": "article",
           "disabled": true,
@@ -146,10 +177,11 @@
             "article": "news/easter-brunch-quiche-recipe-prosecco-rose-pairing"
           }
         },
-        "article_XLJUfc": {
+        "article_MMNcWg": {
           "type": "article",
+          "disabled": true,
           "settings": {
-            "article": "news/mothers-day-wine-guide"
+            "article": "news/the-ultimate-easter-wine-food-pairings-from-master-sommelier-michael-meagher"
           }
         },
         "article_hhRmyW": {
@@ -228,14 +260,21 @@
           "settings": {
             "article": "news/3-cozy-fall-recipes-you-need-to-add-to-your-repertoire"
           }
+        },
+        "article_3cznke": {
+          "type": "article",
+          "settings": {
+            "article": "news/memorial-day-weekend-wine-guide"
+          }
         }
       },
       "block_order": [
-        "article_MMNcWg",
         "article_HNFJ7P",
         "article_ULqLKF",
-        "article_xD7nHt",
         "article_XLJUfc",
+        "article_bYTkRR",
+        "article_xD7nHt",
+        "article_MMNcWg",
         "article_hhRmyW",
         "article_ChENRG",
         "article_q46tfD",
@@ -246,7 +285,8 @@
         "article_aTfwBC",
         "article_pEtnDC",
         "article_8pDDwn",
-        "article_fnqU6M"
+        "article_fnqU6M",
+        "article_3cznke"
       ],
       "settings": {
         "section_id": "occasion-articles",
@@ -274,8 +314,15 @@
         },
         "article_zCqPmW": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/easter-brunch-quiche-recipe-prosecco-rose-pairing"
+          }
+        },
+        "article_CcCBfN": {
+          "type": "article",
+          "settings": {
+            "article": "news/celebrate-mimosa-day-with-these-easy-low-calorie-twists-on-the-classic"
           }
         },
         "49af0e3f-72fa-4983-8b44-b9417422bbc2": {
@@ -296,6 +343,7 @@
       "block_order": [
         "311e2e11-723f-4c98-8804-9c36b60728ff",
         "article_zCqPmW",
+        "article_CcCBfN",
         "49af0e3f-72fa-4983-8b44-b9417422bbc2",
         "article_VmFykk"
       ],
@@ -377,16 +425,16 @@
     "c84a0e2e-3469-4cb4-aa01-8531eee9a6dd": {
       "type": "article-grid",
       "blocks": {
-        "abf36b2a-ebe7-4260-9c01-0bea9f5fb848": {
-          "type": "article",
-          "settings": {
-            "article": "news/perfect-pairings-for-national-cheese-day"
-          }
-        },
         "article_zW6b9K": {
           "type": "article",
           "settings": {
             "article": "news/the-ultimate-grilling-wines-guide"
+          }
+        },
+        "abf36b2a-ebe7-4260-9c01-0bea9f5fb848": {
+          "type": "article",
+          "settings": {
+            "article": "news/perfect-pairings-for-national-cheese-day"
           }
         },
         "746f2adf-fc73-4c14-9074-5139fc9d23b3": {
@@ -419,8 +467,8 @@
         }
       },
       "block_order": [
-        "abf36b2a-ebe7-4260-9c01-0bea9f5fb848",
         "article_zW6b9K",
+        "abf36b2a-ebe7-4260-9c01-0bea9f5fb848",
         "746f2adf-fc73-4c14-9074-5139fc9d23b3",
         "article_nMnFfE",
         "06a3ce71-ab32-43ed-8336-75fc51950ce0",
