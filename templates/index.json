@@ -53,12 +53,12 @@
         "btn_color": "btn-outline-light",
         "layout": "center-left",
         "mobile_layout": "bottom-right",
-        "header": "Rosé Ready",
+        "header": "Keep It Light",
         "body": "",
-        "image": "shopify://shop_images/LAT-BEV-FEB25-7-desktop_90dedbb8-0661-4d5f-9539-a6207e2a6632.jpg",
-        "mobile_image": "shopify://shop_images/LAT-BEV-FEB25-7-Mobile_1ff66715-dce7-4fb8-b4b2-51853a67e76b.jpg",
-        "link_label": "Shop Rosé",
-        "link_url": "shopify://pages/rose-ready",
+        "image": "shopify://shop_images/keep_it_light_-_hero_desktop_6251643a-245e-4aa7-bc9f-d01b108ba78e.png",
+        "mobile_image": "shopify://shop_images/Keep_it_light_-_hero_mobile_70d21bd1-89b6-483a-a2c9-182b4c862090.png",
+        "link_label": "Shop Light Wines",
+        "link_url": "shopify://pages/keep-it-light",
         "link_external": false
       }
     },
