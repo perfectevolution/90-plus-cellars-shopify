@@ -145,16 +145,23 @@
     "featured-articles-test": {
       "type": "featured-articles",
       "blocks": {
-        "article_3cznke": {
-          "type": "article",
-          "settings": {
-            "article": "news/memorial-day-weekend-wine-guide"
-          }
-        },
         "article_HNFJ7P": {
           "type": "article",
           "settings": {
             "article": "news/spring-dinner-idea-citrus-roasted-salmon-with-provence-rose"
+          }
+        },
+        "article_ULqLKF": {
+          "type": "article",
+          "settings": {
+            "article": "news/wine-pairings-for-springtime"
+          }
+        },
+        "article_3cznke": {
+          "type": "article",
+          "disabled": true,
+          "settings": {
+            "article": "news/memorial-day-weekend-wine-guide"
           }
         },
         "article_48Gpza": {
@@ -162,12 +169,6 @@
           "disabled": true,
           "settings": {
             "article": "news/celebrate-mimosa-day-with-these-easy-low-calorie-twists-on-the-classic"
-          }
-        },
-        "article_ULqLKF": {
-          "type": "article",
-          "settings": {
-            "article": "news/wine-pairings-for-springtime"
           }
         },
         "article_XLJUfc": {
@@ -274,13 +275,19 @@
           "settings": {
             "article": "news/3-cozy-fall-recipes-you-need-to-add-to-your-repertoire"
           }
+        },
+        "article_6gmXki": {
+          "type": "article",
+          "settings": {
+            "article": "news/perfect-pairings-for-national-cheese-day"
+          }
         }
       },
       "block_order": [
-        "article_3cznke",
         "article_HNFJ7P",
-        "article_48Gpza",
         "article_ULqLKF",
+        "article_3cznke",
+        "article_48Gpza",
         "article_XLJUfc",
         "article_bYTkRR",
         "article_xD7nHt",
@@ -295,7 +302,8 @@
         "article_aTfwBC",
         "article_pEtnDC",
         "article_8pDDwn",
-        "article_fnqU6M"
+        "article_fnqU6M",
+        "article_6gmXki"
       ],
       "settings": {
         "section_id": "occasion-articles",
