@@ -310,17 +310,10 @@
     "cca4bf33-9b2d-4410-83a9-fc13c47690e3": {
       "type": "article-grid",
       "blocks": {
-        "article_PTPDjf": {
+        "article_9eKGW9": {
           "type": "article",
           "settings": {
-            "article": "news/memorial-day-weekend-wine-guide"
-          }
-        },
-        "article_nR7FDK": {
-          "type": "article",
-          "disabled": true,
-          "settings": {
-            "article": "news/spring-dinner-idea-citrus-roasted-salmon-with-provence-rose"
+            "article": "news/sugar-in-wine-everything-you-need-to-know"
           }
         },
         "article_7n3zhG": {
@@ -333,6 +326,19 @@
           "type": "article",
           "settings": {
             "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
+          }
+        },
+        "article_U89XMm": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-best-lower-alcohol-wines"
+          }
+        },
+        "article_nR7FDK": {
+          "type": "article",
+          "disabled": true,
+          "settings": {
+            "article": "news/spring-dinner-idea-citrus-roasted-salmon-with-provence-rose"
           }
         },
         "article_rGVjqf": {
@@ -365,6 +371,7 @@
         },
         "article_LxdKj9": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/3-festive-sparkling-wine-cocktails-for-the-holidays"
           }
@@ -406,10 +413,11 @@
         }
       },
       "block_order": [
-        "article_PTPDjf",
-        "article_nR7FDK",
+        "article_9eKGW9",
         "article_7n3zhG",
         "article_AnCEby",
+        "article_U89XMm",
+        "article_nR7FDK",
         "article_rGVjqf",
         "article_9TqVWf",
         "article_JrCXUw",
