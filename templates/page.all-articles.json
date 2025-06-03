@@ -75,14 +75,22 @@
     "0df19425-055f-4186-a616-f974ce70d52e": {
       "type": "article-grid",
       "blocks": {
+        "article_iYPcJD": {
+          "type": "article",
+          "settings": {
+            "article": "news/sugar-in-wine-everything-you-need-to-know"
+          }
+        },
         "article_enYYUq": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/exploring-italy-s-piedmont-wines"
           }
         },
         "5024da33-e236-41d4-b63c-b48a97513a95": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/33-qs-with-alex-shaughnessy-90-cellars-wine-director"
           }
@@ -101,7 +109,6 @@
         },
         "11e1ef49-ad2a-4ea9-a04d-91fcb19283da": {
           "type": "article",
-          "disabled": true,
           "settings": {
             "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
           }
@@ -122,6 +129,7 @@
         }
       },
       "block_order": [
+        "article_iYPcJD",
         "article_enYYUq",
         "5024da33-e236-41d4-b63c-b48a97513a95",
         "article_M4cTQz",
