@@ -428,6 +428,12 @@
           "settings": {
             "article": "news/introducing-picpoul-de-pinet"
           }
+        },
+        "article_mk7Lpg": {
+          "type": "article",
+          "settings": {
+            "article": "news/beyond-the-glass-pinot-grigio"
+          }
         }
       },
       "block_order": [
@@ -437,7 +443,8 @@
         "article_BJmmf8",
         "article_FJtP6k",
         "article_BppqkY",
-        "article_gYBrme"
+        "article_gYBrme",
+        "article_mk7Lpg"
       ],
       "settings": {
         "section_id": "",
