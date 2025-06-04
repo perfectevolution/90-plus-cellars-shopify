@@ -422,6 +422,12 @@
           "settings": {
             "article": "news/5-things-to-know-about-prosecco-rose"
           }
+        },
+        "article_gYBrme": {
+          "type": "article",
+          "settings": {
+            "article": "news/introducing-picpoul-de-pinet"
+          }
         }
       },
       "block_order": [
@@ -430,7 +436,8 @@
         "article_BPCL6p",
         "article_BJmmf8",
         "article_FJtP6k",
-        "article_BppqkY"
+        "article_BppqkY",
+        "article_gYBrme"
       ],
       "settings": {
         "section_id": "",
