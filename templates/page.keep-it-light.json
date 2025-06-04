@@ -48,6 +48,12 @@
     "featured_articles_Mq3GKN": {
       "type": "featured-articles",
       "blocks": {
+        "article_WVi8PC": {
+          "type": "article",
+          "settings": {
+            "article": "news/sugar-in-wine-everything-you-need-to-know"
+          }
+        },
         "article_8L4htj": {
           "type": "article",
           "settings": {
@@ -110,6 +116,7 @@
         }
       },
       "block_order": [
+        "article_WVi8PC",
         "article_8L4htj",
         "article_K99P4y",
         "article_pMCnPg",
