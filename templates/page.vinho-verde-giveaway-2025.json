@@ -58,13 +58,40 @@
       ],
       "settings": {}
     },
-    "content_callout_large_GffAJH": {
-      "type": "content-callout-large",
-      "disabled": true,
-      "name": "Large Callout",
+    "featured_product_single_NArXRp": {
+      "type": "featured-product-single",
       "settings": {
-        "anchor_id": "",
-        "header": "\"The Best Non-Alcoholic Sparkling Wines\" - VinePair",
+        "product": "lot-205-vinho-verde-portugal",
+        "heading": "NEW Non-Alcoholic",
+        "subheading": "Sparkling Rosé",
+        "description": "<p>Delicately pink in color with fine bubbles, this Non-Alcoholic Sparkling Rosé captures all the delightful notes of a classic rosé, without the alcohol and artificial flavors.</p>",
+        "button_text": "Shop Now",
+        "button_link": "shopify://products/lot-229-non-alcoholic-sparkling-rose-france",
+        "button_target": "_self",
+        "padding": "md"
+      }
+    },
+    "article_grid_TVqEBD": {
+      "type": "article-grid",
+      "blocks": {
+        "article_KHUCBb": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-best-lower-alcohol-wines"
+          }
+        }
+      },
+      "block_order": [
+        "article_KHUCBb"
+      ],
+      "name": "Article Grid",
+      "settings": {
+        "section_id": "",
+        "header": "Learn more about Vinho Verde",
+        "mode": "blog",
+        "blog": "",
+        "tag": "",
+        "limit": 2,
         "link_label": "",
         "link_url": "",
         "link_external": false
@@ -74,34 +101,6 @@
       "type": "blank",
       "disabled": true,
       "settings": {}
-    },
-    "featured_products_Te9aGq": {
-      "type": "featured-products",
-      "disabled": true,
-      "settings": {
-        "layout": "swiper",
-        "animated": true,
-        "columns": "4",
-        "header": "Explore the world of wine",
-        "collection": "unique-wines-for-holiday-pairings",
-        "link_label": "",
-        "link_url": "",
-        "link_external": false
-      }
-    },
-    "featured_product_single_NArXRp": {
-      "type": "featured-product-single",
-      "disabled": true,
-      "settings": {
-        "product": "explorer-pack",
-        "heading": "NEW Non-Alcoholic",
-        "subheading": "Sparkling Rosé",
-        "description": "<p>Delicately pink in color with fine bubbles, this Non-Alcoholic Sparkling Rosé captures all the delightful notes of a classic rosé, without the alcohol and artificial flavors.</p>",
-        "button_text": "Shop Now",
-        "button_link": "shopify://products/lot-229-non-alcoholic-sparkling-rose-france",
-        "button_target": "_self",
-        "padding": "md"
-      }
     },
     "cb9e57de-fa26-4fe7-b949-9f1cb02b117a": {
       "type": "newsletter-callout",
@@ -128,10 +127,9 @@
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
     "rich_text_UKyU7Y",
     "174965711594f669a4",
-    "content_callout_large_GffAJH",
-    "blank",
-    "featured_products_Te9aGq",
     "featured_product_single_NArXRp",
+    "article_grid_TVqEBD",
+    "blank",
     "cb9e57de-fa26-4fe7-b949-9f1cb02b117a",
     "social-proof-gallery"
   ]
