@@ -79,10 +79,17 @@
           "settings": {
             "article": "news/the-best-lower-alcohol-wines"
           }
+        },
+        "article_yB4PFD": {
+          "type": "article",
+          "settings": {
+            "article": "news/beyond-the-glass-vinho-verde"
+          }
         }
       },
       "block_order": [
-        "article_KHUCBb"
+        "article_KHUCBb",
+        "article_yB4PFD"
       ],
       "name": "Article Grid",
       "settings": {
