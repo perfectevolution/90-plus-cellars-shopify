@@ -71,16 +71,10 @@
         "padding": "md"
       }
     },
-    "article_grid_TVqEBD": {
-      "type": "article-grid",
+    "featured_articles_fpJqHt": {
+      "type": "featured-articles",
       "blocks": {
-        "article_KHUCBb": {
-          "type": "article",
-          "settings": {
-            "article": "news/the-best-lower-alcohol-wines"
-          }
-        },
-        "article_yB4PFD": {
+        "article_H7mryQ": {
           "type": "article",
           "settings": {
             "article": "news/beyond-the-glass-vinho-verde"
@@ -88,13 +82,14 @@
         }
       },
       "block_order": [
-        "article_KHUCBb",
-        "article_yB4PFD"
+        "article_H7mryQ"
       ],
-      "name": "Article Grid",
+      "name": "Featured Articles",
       "settings": {
         "section_id": "",
         "header": "Learn more about Vinho Verde",
+        "script": "",
+        "theme": "light",
         "mode": "blog",
         "blog": "",
         "tag": "",
@@ -135,7 +130,7 @@
     "rich_text_UKyU7Y",
     "174965711594f669a4",
     "featured_product_single_NArXRp",
-    "article_grid_TVqEBD",
+    "featured_articles_fpJqHt",
     "blank",
     "cb9e57de-fa26-4fe7-b949-9f1cb02b117a",
     "social-proof-gallery"
