@@ -15,8 +15,23 @@
         "image": "shopify://shop_images/Portugal_-_Hero.png",
         "mobile_image": "shopify://shop_images/Portugal_-_mobile.png",
         "header": "Win A Wine Trip To Portugal",
-        "body": "We’re giving one lucky winner the chance to escape to Portugal’s stunning Douro Valley for a magical 2-night vineyard stay in 2026. Breakfast is included, plus you’ll get a $300 voucher to use for an unforgettable dinner or spa treatment. Travel to and from the vineyard is on us—just follow @90pluscellars on Instagram, enter your email and phone number, and you’re in. Must be 21+ to enter. No purchase necessary."
+        "body": "We’re giving one lucky winner the chance to escape to Portugal’s stunning Douro Valley for a magical 2-night vineyard stay in 2026. Breakfast is included, plus you’ll get a $300 voucher to use for an unforgettable dinner or spa treatment. Travel to and from the vineyard is on us—just follow @90pluscellars on Instagram, enter your email and phone number, and you’re in. Deadline to enter: July 20 @ 11:59 PM EST. Winners will be contacted by the 90+ Cellars Team and announced on Instagram stories on July 21st. Must be 21+ to enter. No purchase necessary. Official rules and regulations."
       }
+    },
+    "174965711594f669a4": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_Qa67xn": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "<div class=\"klaviyo-form-R7ieJV\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_Qa67xn"
+      ],
+      "settings": {}
     },
     "rich_text_UKyU7Y": {
       "type": "rich-text",
@@ -112,6 +127,7 @@
   },
   "order": [
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
+    "174965711594f669a4",
     "rich_text_UKyU7Y",
     "content_callout_large_GffAJH",
     "blank",
