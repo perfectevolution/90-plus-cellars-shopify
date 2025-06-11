@@ -12,139 +12,41 @@
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab": {
       "type": "hero-curved",
       "settings": {
-        "image": "shopify://shop_images/KeepItLight_CurvedHero_Desktop_aa4d4bec-23fa-44ae-946b-fa6e066f64be.png",
-        "mobile_image": "shopify://shop_images/KeepItLight_CurvedHero_Mobile_84a3849e-a16f-4824-9c78-425a39cadd3c.png",
+        "image": "shopify://shop_images/Portugal_-_Hero.png",
+        "mobile_image": "shopify://shop_images/Portugal_-_mobile.png",
         "header": "Win A Wine Trip To Portugal",
-        "body": "From low-calorie wines that don’t skimp on flavor to zero sugar reds and whites that are clean and crisp, every bottle in this collection helps you to keep it light this summer season. You’ll also find lower alcohol options perfect for long lunches, slow sips, and easy evenings."
+        "body": "We’re giving one lucky winner the chance to escape to Portugal’s stunning Douro Valley for a magical 2-night vineyard stay in 2026. Breakfast is included, plus you’ll get a $300 voucher to use for an unforgettable dinner or spa treatment. Travel to and from the vineyard is on us—just follow @90pluscellars on Instagram, enter your email and phone number, and you’re in. Must be 21+ to enter. No purchase necessary."
       }
     },
-    "9cb040ee-0588-43ac-b7e0-85580e654bbe": {
-      "type": "featured-products",
-      "settings": {
-        "layout": "swiper",
-        "animated": true,
-        "columns": "6",
-        "header": "Low Calorie & Low Alcohol Sips",
-        "collection": "low-calorie-low-alcohol-wines",
-        "link_label": "Shop All",
-        "link_url": "shopify://collections/low-calorie-low-alcohol-wines",
-        "link_external": false
-      }
-    },
-    "featured_products_MU36d6": {
-      "type": "featured-products",
-      "name": "Featured Products",
-      "settings": {
-        "layout": "swiper",
-        "animated": true,
-        "columns": "6",
-        "header": "Zero Sugar Wines",
-        "collection": "zero-sugar-wines-full-of-flavor-no-sugar",
-        "link_label": "",
-        "link_url": "",
-        "link_external": false
-      }
-    },
-    "featured_articles_Mq3GKN": {
-      "type": "featured-articles",
+    "rich_text_UKyU7Y": {
+      "type": "rich-text",
       "blocks": {
-        "article_WVi8PC": {
-          "type": "article",
+        "text_irWghW": {
+          "type": "text",
           "settings": {
-            "article": "news/sugar-in-wine-everything-you-need-to-know"
-          }
-        },
-        "article_8L4htj": {
-          "type": "article",
-          "settings": {
-            "article": "news/3-sparkling-cocktails-under-100-calories"
-          }
-        },
-        "article_K99P4y": {
-          "type": "article",
-          "settings": {
-            "article": "news/the-best-lower-alcohol-wines"
-          }
-        },
-        "article_pMCnPg": {
-          "type": "article",
-          "settings": {
-            "article": "news/our-favorite-naturally-low-calorie-wines"
-          }
-        },
-        "article_fhYdPY": {
-          "type": "article",
-          "settings": {
-            "article": "news/10-things-you-should-know-about-prosecco"
-          }
-        },
-        "article_t9Wz7Y": {
-          "type": "article",
-          "settings": {
-            "article": "news/5-things-to-know-about-prosecco-rose"
-          }
-        },
-        "article_C3kiGR": {
-          "type": "article",
-          "settings": {
-            "article": "news/lambrusco-the-best-sparkling-red-wine"
-          }
-        },
-        "article_kxeD7i": {
-          "type": "article",
-          "settings": {
-            "article": "news/beyond-the-glass-vinho-verde"
-          }
-        },
-        "article_AiPyki": {
-          "type": "article",
-          "settings": {
-            "article": "news/everything-you-need-to-know-about-prosecco"
-          }
-        },
-        "article_rLnGET": {
-          "type": "article",
-          "settings": {
-            "article": "news/beyond-the-glass-riesling"
-          }
-        },
-        "article_79MPB6": {
-          "type": "article",
-          "settings": {
-            "article": "news/beyond-the-glass-pinot-grigio"
+            "body": ""
           }
         }
       },
       "block_order": [
-        "article_WVi8PC",
-        "article_8L4htj",
-        "article_K99P4y",
-        "article_pMCnPg",
-        "article_fhYdPY",
-        "article_t9Wz7Y",
-        "article_C3kiGR",
-        "article_kxeD7i",
-        "article_AiPyki",
-        "article_rLnGET",
-        "article_79MPB6"
+        "text_irWghW"
       ],
+      "disabled": true,
+      "name": "Rich Text",
       "settings": {
         "section_id": "",
-        "header": "Get Inspired",
-        "script": "",
-        "background_image": "shopify://shop_images/90PLUS-NOV24-7_03d95333-1f33-4395-b564-266fb5085219.jpg",
-        "theme": "light",
-        "mode": "blocks",
-        "blog": "press",
-        "tag": "",
-        "limit": 6,
-        "link_label": "",
-        "link_url": "",
-        "link_external": false
+        "section_width": "col-lg-12",
+        "text_alignment": "text-center",
+        "padding-top": "pt-5",
+        "padding-bottom": "pb-0",
+        "margin-top": "mt-0",
+        "margin-bottom": "mb-0",
+        "background": "gray-light"
       }
     },
     "content_callout_large_GffAJH": {
       "type": "content-callout-large",
+      "disabled": true,
       "name": "Large Callout",
       "settings": {
         "anchor_id": "",
@@ -152,46 +54,6 @@
         "link_label": "",
         "link_url": "",
         "link_external": false
-      }
-    },
-    "featured_product_single_kB6QnT": {
-      "type": "featured-product-single",
-      "settings": {
-        "product": "lot-230-non-alc-sparkling-brut-france",
-        "heading": "NEW Non-Alcoholic",
-        "subheading": "Sparkling Brut",
-        "description": "<p>Our Non-Alcoholic Sparkling Brut is brilliant yellow in color with a beautiful effervescence. Notes of lemon and honeysuckle entice, while on the palate hints of citrus and stone fruits steal the show.</p>",
-        "button_text": "Shop Now",
-        "button_link": "shopify://products/lot-230-non-alc-sparkling-brut-france",
-        "button_target": "_self",
-        "padding": "md"
-      }
-    },
-    "featured_product_single_hrgeNn": {
-      "type": "featured-product-single",
-      "settings": {
-        "product": "lot-229-non-alcoholic-sparkling-rose-france",
-        "heading": "NEW Non-Alcoholic",
-        "subheading": "Sparkling Rosé",
-        "description": "<p>Delicately pink in color with fine bubbles, this Non-Alcoholic Sparkling Rosé captures all the delightful notes of a classic rosé, without the alcohol and artificial flavors.</p>",
-        "button_text": "Shop Now",
-        "button_link": "shopify://products/lot-229-non-alcoholic-sparkling-rose-france",
-        "button_target": "_self",
-        "padding": "md"
-      }
-    },
-    "split_hero_DiFj6p": {
-      "type": "split-hero",
-      "settings": {
-        "section_id": "",
-        "image_position": "right",
-        "header": "Everything You Need to Know About Non-Alcoholic Wines",
-        "body": "<p>Wondering about the differences between “non-alcoholic,” “dealcoholized,” and “alcohol-removed” wine? Or maybe you’re curious about the unique flavors these wines offer? Check out the blog for answers and to see why these sparkling beauties are becoming so popular!</p>",
-        "link_text": "Read the Article",
-        "link_url": "https://www.ninetypluscellars.com/blogs/news/everything-you-need-to-know-about-non-alcoholic-wines",
-        "link_target": "_self",
-        "script": "",
-        "image": "shopify://shop_images/LAT-BEV-NOV24-1_2_bc737caa-d44e-4557-bc19-84d0efbf3ddd.jpg"
       }
     },
     "blank": {
@@ -250,13 +112,8 @@
   },
   "order": [
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
-    "9cb040ee-0588-43ac-b7e0-85580e654bbe",
-    "featured_products_MU36d6",
-    "featured_articles_Mq3GKN",
+    "rich_text_UKyU7Y",
     "content_callout_large_GffAJH",
-    "featured_product_single_kB6QnT",
-    "featured_product_single_hrgeNn",
-    "split_hero_DiFj6p",
     "blank",
     "featured_products_Te9aGq",
     "featured_product_single_NArXRp",
