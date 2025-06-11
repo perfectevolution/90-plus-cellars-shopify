@@ -67,14 +67,15 @@
         "header_tag": "h1"
       }
     },
-    "57a81c86-f1dd-46d3-b7aa-477effd2579b": {
-      "type": "store-locator",
+    "find_nearby_cCcihG": {
+      "type": "find-nearby",
+      "name": "Find Nearby",
       "settings": {}
     }
   },
   "order": [
     "blank",
     "4668cbce-be94-4823-91d8-a46632bf53fc",
-    "57a81c86-f1dd-46d3-b7aa-477effd2579b"
+    "find_nearby_cCcihG"
   ]
 }
