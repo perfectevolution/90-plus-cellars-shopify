@@ -79,21 +79,36 @@
           "settings": {
             "article": "news/beyond-the-glass-vinho-verde"
           }
+        },
+        "article_WdXxt7": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-best-lower-alcohol-wines"
+          }
+        },
+        "article_G73Jjf": {
+          "type": "article",
+          "settings": {
+            "article": "news/our-favorite-naturally-low-calorie-wines"
+          }
         }
       },
       "block_order": [
-        "article_H7mryQ"
+        "article_H7mryQ",
+        "article_WdXxt7",
+        "article_G73Jjf"
       ],
       "name": "Featured Articles",
       "settings": {
         "section_id": "",
         "header": "Learn more about Vinho Verde",
-        "script": "",
+        "script": "Low Cal & Low Alc",
+        "background_image": "shopify://shop_images/LAT-BEV-FEB25-30.jpg",
         "theme": "light",
-        "mode": "blog",
+        "mode": "blocks",
         "blog": "",
         "tag": "",
-        "limit": 2,
+        "limit": 3,
         "link_label": "",
         "link_url": "",
         "link_external": false
