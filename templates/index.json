@@ -443,6 +443,7 @@
     },
     "testimonial_callout_k7xM6P": {
       "type": "testimonial-callout",
+      "disabled": true,
       "settings": {
         "metaobject_handle": "",
         "layout": "Centered Headline",
