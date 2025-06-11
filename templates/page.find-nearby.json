@@ -28,6 +28,7 @@
         },
         "template--16789623898331__4668cbce-be94-4823-91d8-a46632bf53fc-card-2": {
           "type": "card",
+          "disabled": true,
           "settings": {
             "header": "Instacart",
             "link_url": "https://www.instacart.com/store/s?k=90%2B+Cellars",
@@ -47,6 +48,7 @@
         },
         "card_Ww9UzU": {
           "type": "card",
+          "disabled": true,
           "settings": {
             "header": "Uber Eats",
             "link_url": "https://www.ubereats.com/search?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjMwMCUyMFdhc2hpbmd0b24lMjBTdCUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMjk4NWY5ZjhkLTc0ZTEtZTk0Ni1kZTk2LWM3YWEyNjE5YmRkMCUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJ1YmVyX3BsYWNlcyUyMiUyQyUyMmxhdGl0dWRlJTIyJTNBNDIuMzU2NCUyQyUyMmxvbmdpdHVkZSUyMiUzQS03MS4xODY2NyU3RA%3D%3D&q=90%2B%20Cellars&sc=SEARCH_SUGGESTION&searchType=GLOBAL_SEARCH&vertical=ALCOHOL",
