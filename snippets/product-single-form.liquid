@@ -102,7 +102,7 @@ product-add-form product-form-{{ product.id }}
 					<!-- <button type="button" class="btn btn-outline-light mb-3 mb-lg-0 " data-bs-toggle="modal" data-bs-target="#find-nearby-modal">
 						Find Nearby
 					</button>	 -->
-                    <a href="/pages/find-nearby" class="btn btn-outline-light mb-3 mb-lg-0">
+                    <a href="/pages/find-nearby?pournow_id={{ product.metafields.data.pournow_product_id }}" class="btn btn-outline-light mb-3 mb-lg-0">
                       Find Nearby
                     </a>
 				{% endif %}
