@@ -1,17 +1,33 @@
-<section class="find-nearby" id="{{section.settings.section_id | default : section.id}}">
-    <div class="container" style="padding: 0;">
-        <div class="row">
-            <iframe 
-              id="pournow-shelf"
-              src="https://find.pour.now/61eca7a0-681f-4883-b3dd-d2a92552cb3e" 
-              allow="geolocation"
-              style="border: none" 
-              width="100%" 
-            >
-            </iframe>          
-        </div>
+<section class="find-nearby" id="{{ section.settings.section_id | default: section.id }}">
+  <div class="container" style="padding: 0;">
+    <div class="row">
+      <!-- Loading text -->
+      <div id="iframe-loading-text" style="display: flex; align-items: center; justify-content: center; height: 300px;">Loading... Please wait</div>
+
+      <!-- iframe wrapper -->
+      <div id="iframe-container" style="display: none;">
+        <iframe 
+          id="pournow-shelf"
+          src="https://find.pour.now/61eca7a0-681f-4883-b3dd-d2a92552cb3e" 
+          allow="geolocation"
+          style="border: none;" 
+          width="100%" 
+        ></iframe>
+      </div>
     </div>
+  </div>
 </section>
+
+<script>
+  const iframe = document.getElementById('pournow-shelf');
+  const loadingText = document.getElementById('iframe-loading-text');
+  const iframeContainer = document.getElementById('iframe-container');
+
+  iframe.addEventListener('load', function () {
+    loadingText.style.display = 'none';
+    iframeContainer.style.display = 'block';
+  });
+</script>
 
 
     {% schema %}
