@@ -31,7 +31,6 @@
       "block_order": [
         "text_irWghW"
       ],
-      "name": "Rich Text",
       "settings": {
         "section_id": "",
         "section_width": "col-lg-12",
@@ -66,7 +65,7 @@
         "subheading": "from Portugal",
         "description": "<p>Literally meaning “green wine,” Vinho Verde, actually a white wine, is expressive, crisp, and delicious. The grapes are grown on coastal vineyards in northwest Portugal, producing wines with the slightest sparkle. Only 90 Calories per 5 oz.</p>",
         "button_text": "Shop Now",
-        "button_link": "shopify://products/lot-229-non-alcoholic-sparkling-rose-france",
+        "button_link": "shopify://products/lot-205-vinho-verde-portugal",
         "button_target": "_self",
         "padding": "md"
       }
@@ -98,7 +97,6 @@
         "article_WdXxt7",
         "article_G73Jjf"
       ],
-      "name": "Featured Articles",
       "settings": {
         "section_id": "",
         "header": "Learn more about Vinho Verde",
