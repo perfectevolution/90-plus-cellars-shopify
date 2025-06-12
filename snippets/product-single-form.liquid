@@ -98,88 +98,12 @@ product-add-form product-form-{{ product.id }}
 					<span class="d-none" data-loader></span>
 				</button>
 				{% if product.metafields.product.hide_find_nearby != true %}
-					<!-- Button trigger modal -->
-					<!-- <button type="button" class="btn btn-outline-light mb-3 mb-lg-0 " data-bs-toggle="modal" data-bs-target="#find-nearby-modal">
-						Find Nearby
-					</button>	 -->
                     <a href="/pages/find-nearby?productId={{ product.metafields.custom.pournow_product_id }}" class="btn btn-outline-light mb-3 mb-lg-0">
                       Find Nearby
                     </a>
 				{% endif %}
 			</div>
 		</div>
-
-		{% if product.metafields.product.hide_find_nearby != true %}
-
-			<!-- Modal -->
-			<div class="modal fade" id="find-nearby-modal" tabindex="-1" aria-labelledby="find-nearby-modals" aria-hidden="true">
-				<div class="modal-dialog modal-lg">
-					<div class="modal-content">
-						<div class="modal-body">
-							<div class="modal-header d-lg-none">
-								<h2 class="h4">Find Nearby</h2>
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-								{% render 'icon-close' %}
-								</button>
-							</div>
-					
-							<div class="container-fluid">
-								<div class="row mb-5 mt-3 mt-lg-0">
-									<div class="col-4 col-lg-3">
-										<div class="product-featured-image-wrapper">
-											<img src="{{product.featured_image | img_url: 'small' }}" 
-												alt="{{product.title}}" 
-												class="img-fluid"
-												loading="lazy">
-										</div>
-									</div>
-									<div class="col-8 col-lg-7 product-info">
-										<h2 class="h5">Lot {{product.metafields.data.lot}} {% render 'product-title' product:product %}</h2>
-										<h3 class="label region">{% render 'product-region'%}| {{product.metafields.data.year}}</h3>
-									</div>
-									<div class="col-2 d-none d-lg-flex align-self-baseline">
-										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-											{% render 'icon-close' %}
-											</button>
-									</div>
-								</div>
-								<div class="row">
-                                    {%  if settings.retailers_nearby != blank %}
-									<div class="col-lg-6 retailer-column">
-										<a class="row retailer-column__inner bordered" href="{{settings.retailers_nearby}}" >
-											<div class="col-3">
-												<img src="{{'icon-store-locator.png' | asset_url }}" class="img-fluid" loading="lazy">
-											</div>
-											<div class="col-9">
-												<p class="label">Store Locator</p>
-											</div>
-										</a>
-									</div>
-                                    {% endif %}
-
-                                  {% for vendor in shop.metaobjects.online_vendors.values %}
-									<div class="col-lg-6 retailer-column">
-										<a class="row retailer-column__inner bordered" href="{{vendor.link}}" target="_blank">
-											<div class="col-3">
-												<img src="{{ vendor.image | img_url  }}" class="img-fluid" loading="lazy">
-											</div>
-											<div class="col-9">
-												<p class="label">{{ vendor.title }}</p>
-											</div>
-										</a>
-									</div>
-                                  {% endfor %}                                  
-								</div>
-							</div>
-						</div>
-						<div class="modal-footer d-lg-none">
-							<button type="button" class="btn-minimal label" data-bs-dismiss="modal">Close</button>
-						</div>			  
-					</div>
-				</div>
-			</div>
-
-		{% endif %}
 
 	{% render 'product-json' proudct:product %}
 	
