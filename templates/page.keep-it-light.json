@@ -38,7 +38,7 @@
         "layout": "swiper",
         "animated": true,
         "columns": "6",
-        "header": "Zero Sugar Wines",
+        "header": "Wines under 1g of sugar",
         "collection": "zero-sugar-wines-full-of-flavor-no-sugar",
         "link_label": "",
         "link_url": "",
