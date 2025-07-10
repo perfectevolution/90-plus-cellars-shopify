@@ -153,14 +153,40 @@
     "featured-articles-test": {
       "type": "featured-articles",
       "blocks": {
+        "article_y9PhxV": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-perfect-summer-wine-and-book-pairings"
+          }
+        },
+        "article_nzWriQ": {
+          "type": "article",
+          "settings": {
+            "article": "news/3-ways-to-enjoy-our-low-calorie-summer-sipper-wines"
+          }
+        },
+        "article_hraEYL": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-ultimate-grilling-wines-guide"
+          }
+        },
+        "article_FhQWwG": {
+          "type": "article",
+          "settings": {
+            "article": "news/savor-summer-with-these-6-wine-based-cocktails"
+          }
+        },
         "article_HNFJ7P": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/spring-dinner-idea-citrus-roasted-salmon-with-provence-rose"
           }
         },
         "article_ULqLKF": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/wine-pairings-for-springtime"
           }
@@ -286,12 +312,17 @@
         },
         "article_6gmXki": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/perfect-pairings-for-national-cheese-day"
           }
         }
       },
       "block_order": [
+        "article_y9PhxV",
+        "article_nzWriQ",
+        "article_hraEYL",
+        "article_FhQWwG",
         "article_HNFJ7P",
         "article_ULqLKF",
         "article_3cznke",
@@ -315,7 +346,7 @@
       ],
       "settings": {
         "section_id": "occasion-articles",
-        "header": "Occasions & Holidays",
+        "header": "Occasions",
         "script": "",
         "background_image": "shopify://shop_images/Rose-23.jpg",
         "theme": "light",
