@@ -1,1 +1,208 @@
-{"sections":{"1f1b37aa-db83-4929-ae29-bd88a549b2ab":{"type":"hero-curved","settings":{"image":"shopify:\/\/shop_images\/PerfectSummerLineup_Desktop.png","mobile_image":"shopify:\/\/shop_images\/PerfectSummerLineup_Mobile_4c82bc26-5b5c-41e3-9282-e0f9976e0713.png","header":"The Perfect Summer Lineup","body":"It's official, summer is here! From party-worthy bubblies, to delicious reds, whites and rosés, we have you covered with the perfect lineup to enjoy all season long. Is your wine fridge ready?"}},"blank":{"type":"blank","disabled":true,"settings":{}},"split_hero_X9Vp74":{"type":"split-hero","disabled":true,"settings":{"section_id":"","image_position":"right","header":"90+ Cellars Ultimate Summer Giveaway","body":"<p>Enter to win a custom 90+ Cellars paddle board, beach chair and pool float! Here's how to enter:<\/p><p><\/p><ol><li>Follow @90pluscellars on Instagram <\/li><li>Like our Summer Giveaway post<\/li><li>Tag a friend<\/li><li>Sign up for our Newsletter below!<\/li><\/ol><p><\/p><p><em>*<\/em>This giveaway is not sponsored or endorsed by Instagram or any other brands. <em>You MUST be a US resident 21 years or older to enter. Giveaway ends on Thursday, August 22 at 11:59PM EST. Winner will be chosen at random and contacted by @90pluscellars directly and announced on Instagram Stories.<\/em><\/p>","link_text":"Go to Instagram","link_url":"https:\/\/www.instagram.com\/90pluscellars\/","link_target":"_self","script":"","image":"shopify:\/\/shop_images\/Giveaway.png"}},"1719512108047edc83":{"type":"apps","blocks":{"klaviyo_email_marketing_sms_form_embed_block_M3zYfE":{"type":"shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507","disabled":true,"settings":{"formId":"SLnwhZ"}}},"block_order":["klaviyo_email_marketing_sms_form_embed_block_M3zYfE"],"disabled":true,"settings":{}},"9cb040ee-0588-43ac-b7e0-85580e654bbe":{"type":"featured-products","settings":{"layout":"swiper","animated":true,"columns":"6","header":"Hottest Wines of the Summer","collection":"the-perfect-summer-lineup","link_label":"","link_url":"","link_external":false}},"featured_articles_WnQNKL":{"type":"featured-articles","blocks":{"article_3hqF4y":{"type":"article","disabled":true,"settings":{"article":"news\/memorial-day-weekend-wine-guide"}},"article_demdFg":{"type":"article","settings":{"article":"news\/the-perfect-summer-wine-and-book-pairings"}},"article_GALn9b":{"type":"article","settings":{"article":"news\/the-ultimate-grilling-wines-guide"}},"article_HPexQk":{"type":"article","settings":{"article":"news\/the-best-lower-alcohol-wines"}},"article_qCEnyF":{"type":"article","settings":{"article":"news\/3-ways-to-enjoy-our-low-calorie-summer-sipper-wines"}},"article_pMVKX7":{"type":"article","settings":{"article":"news\/the-perfect-summer-sip-orange-wine"}},"article_fmUHzE":{"type":"article","settings":{"article":"news\/savor-summer-with-these-6-wine-based-cocktails"}},"article_9hPeNm":{"type":"article","settings":{"article":"news\/our-favorite-naturally-low-calorie-wines"}},"article_g3zxkq":{"type":"article","settings":{"article":"news\/beyond-the-glass-vinho-verde"}},"article_mFf4ak":{"type":"article","settings":{"article":"news\/introducing-picpoul-de-pinet"}}},"block_order":["article_3hqF4y","article_demdFg","article_GALn9b","article_HPexQk","article_qCEnyF","article_pMVKX7","article_fmUHzE","article_9hPeNm","article_g3zxkq","article_mFf4ak"],"settings":{"section_id":"","header":"Get Wine Inspired","script":"","background_image":"shopify:\/\/shop_images\/20230401-90_CELLARS-NIKICRAM-094.jpg","theme":"light","mode":"blocks","blog":"news","tag":"","limit":10,"link_label":"More Articles","link_url":"https:\/\/www.ninetypluscellars.com\/pages\/all-articles","link_external":false}},"featured_products_JdeVqP":{"type":"featured-products","settings":{"layout":"swiper","animated":true,"columns":"6","header":"Low Cal Sips of the Summer","collection":"low-calorie-low-alcohol-wines","link_label":"View All","link_url":"shopify:\/\/collections\/low-calorie-low-alcohol-wines","link_external":false}},"cb9e57de-fa26-4fe7-b949-9f1cb02b117a":{"type":"newsletter-callout","settings":{"id":"newsletter-callout","header":"Newsletter","form_header":"Sign up for our newsletter","form_sub_header":"Be the first to know about our newest releases, upcoming events, and everything we’re up to on the wine trail. ","klaviyo_newsletter_id":"klaviyo-form-SNxMx5"}},"social-proof-gallery":{"type":"social-proof-gallery","settings":{"id":"social-proof-gallery","metaobject_handle":"social-proof-gallery-main","footer_header":"Tag us on Instagram","footer_sub_header":"@90cellars","footer_sub_header_link":"https:\/\/www.instagram.com\/90pluscellars\/"}}},"order":["1f1b37aa-db83-4929-ae29-bd88a549b2ab","blank","split_hero_X9Vp74","1719512108047edc83","9cb040ee-0588-43ac-b7e0-85580e654bbe","featured_articles_WnQNKL","featured_products_JdeVqP","cb9e57de-fa26-4fe7-b949-9f1cb02b117a","social-proof-gallery"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1f1b37aa-db83-4929-ae29-bd88a549b2ab": {
+      "type": "hero-curved",
+      "settings": {
+        "image": "shopify://shop_images/PerfectSummerLineup_Desktop.png",
+        "mobile_image": "shopify://shop_images/PerfectSummerLineup_Mobile_4c82bc26-5b5c-41e3-9282-e0f9976e0713.png",
+        "header": "The Perfect Summer Lineup",
+        "body": "It's official, summer is here! From party-worthy bubblies, to delicious reds, whites and rosés, we have you covered with the perfect lineup to enjoy all season long. Is your wine fridge ready?"
+      }
+    },
+    "blank": {
+      "type": "blank",
+      "disabled": true,
+      "settings": {}
+    },
+    "split_hero_X9Vp74": {
+      "type": "split-hero",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "image_position": "right",
+        "header": "90+ Cellars Ultimate Summer Giveaway",
+        "body": "<p>Enter to win a custom 90+ Cellars paddle board, beach chair and pool float! Here's how to enter:</p><p></p><ol><li>Follow @90pluscellars on Instagram </li><li>Like our Summer Giveaway post</li><li>Tag a friend</li><li>Sign up for our Newsletter below!</li></ol><p></p><p><em>*</em>This giveaway is not sponsored or endorsed by Instagram or any other brands. <em>You MUST be a US resident 21 years or older to enter. Giveaway ends on Thursday, August 22 at 11:59PM EST. Winner will be chosen at random and contacted by @90pluscellars directly and announced on Instagram Stories.</em></p>",
+        "link_text": "Go to Instagram",
+        "link_url": "https://www.instagram.com/90pluscellars/",
+        "link_target": "_self",
+        "script": "",
+        "image": "shopify://shop_images/Giveaway.png"
+      }
+    },
+    "1719512108047edc83": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_M3zYfE": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "disabled": true,
+          "settings": {
+            "formId": "SLnwhZ"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_M3zYfE"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "9cb040ee-0588-43ac-b7e0-85580e654bbe": {
+      "type": "featured-products",
+      "settings": {
+        "layout": "swiper",
+        "animated": true,
+        "columns": "6",
+        "header": "Hottest Wines of the Summer",
+        "collection": "the-perfect-summer-lineup",
+        "link_label": "",
+        "link_url": "",
+        "link_external": false
+      }
+    },
+    "featured_articles_WnQNKL": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_3hqF4y": {
+          "type": "article",
+          "disabled": true,
+          "settings": {
+            "article": "news/memorial-day-weekend-wine-guide"
+          }
+        },
+        "article_demdFg": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-perfect-summer-wine-and-book-pairings"
+          }
+        },
+        "article_GALn9b": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-ultimate-grilling-wines-guide"
+          }
+        },
+        "article_HPexQk": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-best-low-alcohol-wines"
+          }
+        },
+        "article_qCEnyF": {
+          "type": "article",
+          "settings": {
+            "article": "news/3-ways-to-enjoy-our-low-calorie-summer-sipper-wines"
+          }
+        },
+        "article_pMVKX7": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-perfect-summer-sip-orange-wine"
+          }
+        },
+        "article_fmUHzE": {
+          "type": "article",
+          "settings": {
+            "article": "news/savor-summer-with-these-6-wine-based-cocktails"
+          }
+        },
+        "article_9hPeNm": {
+          "type": "article",
+          "settings": {
+            "article": "news/our-favorite-naturally-low-calorie-wines"
+          }
+        },
+        "article_g3zxkq": {
+          "type": "article",
+          "settings": {
+            "article": "news/beyond-the-glass-vinho-verde"
+          }
+        },
+        "article_mFf4ak": {
+          "type": "article",
+          "settings": {
+            "article": "news/introducing-picpoul-de-pinet"
+          }
+        }
+      },
+      "block_order": [
+        "article_3hqF4y",
+        "article_demdFg",
+        "article_GALn9b",
+        "article_HPexQk",
+        "article_qCEnyF",
+        "article_pMVKX7",
+        "article_fmUHzE",
+        "article_9hPeNm",
+        "article_g3zxkq",
+        "article_mFf4ak"
+      ],
+      "settings": {
+        "section_id": "",
+        "header": "Get Wine Inspired",
+        "script": "",
+        "background_image": "shopify://shop_images/20230401-90_CELLARS-NIKICRAM-094.jpg",
+        "theme": "light",
+        "mode": "blocks",
+        "blog": "news",
+        "tag": "",
+        "limit": 10,
+        "link_label": "More Articles",
+        "link_url": "https://www.ninetypluscellars.com/pages/all-articles",
+        "link_external": false
+      }
+    },
+    "featured_products_JdeVqP": {
+      "type": "featured-products",
+      "settings": {
+        "layout": "swiper",
+        "animated": true,
+        "columns": "6",
+        "header": "Low Cal Sips of the Summer",
+        "collection": "low-calorie-low-alcohol-wines",
+        "link_label": "View All",
+        "link_url": "shopify://collections/low-calorie-low-alcohol-wines",
+        "link_external": false
+      }
+    },
+    "cb9e57de-fa26-4fe7-b949-9f1cb02b117a": {
+      "type": "newsletter-callout",
+      "settings": {
+        "id": "newsletter-callout",
+        "header": "Newsletter",
+        "form_header": "Sign up for our newsletter",
+        "form_sub_header": "Be the first to know about our newest releases, upcoming events, and everything we’re up to on the wine trail. ",
+        "klaviyo_newsletter_id": "klaviyo-form-SNxMx5"
+      }
+    },
+    "social-proof-gallery": {
+      "type": "social-proof-gallery",
+      "settings": {
+        "id": "social-proof-gallery",
+        "metaobject_handle": "social-proof-gallery-main",
+        "footer_header": "Tag us on Instagram",
+        "footer_sub_header": "@90cellars",
+        "footer_sub_header_link": "https://www.instagram.com/90pluscellars/"
+      }
+    }
+  },
+  "order": [
+    "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
+    "blank",
+    "split_hero_X9Vp74",
+    "1719512108047edc83",
+    "9cb040ee-0588-43ac-b7e0-85580e654bbe",
+    "featured_articles_WnQNKL",
+    "featured_products_JdeVqP",
+    "cb9e57de-fa26-4fe7-b949-9f1cb02b117a",
+    "social-proof-gallery"
+  ]
+}
