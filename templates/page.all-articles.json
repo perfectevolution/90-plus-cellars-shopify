@@ -363,10 +363,10 @@
     "1ed7e9e7-7bc3-4fb7-a908-75b2df075e6b": {
       "type": "article-grid",
       "blocks": {
-        "article_dhEnQc": {
+        "article_zWRb8N": {
           "type": "article",
           "settings": {
-            "article": "news/savor-summer-with-these-6-wine-based-cocktails"
+            "article": "news/the-ultimate-frose-recipe-for-summer-sipping"
           }
         },
         "311e2e11-723f-4c98-8804-9c36b60728ff": {
@@ -405,7 +405,7 @@
         }
       },
       "block_order": [
-        "article_dhEnQc",
+        "article_zWRb8N",
         "311e2e11-723f-4c98-8804-9c36b60728ff",
         "article_zCqPmW",
         "article_CcCBfN",
