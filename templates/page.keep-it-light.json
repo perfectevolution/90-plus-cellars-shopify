@@ -45,6 +45,15 @@
         "link_external": false
       }
     },
+    "basic_header_rxx6re": {
+      "type": "basic-header",
+      "name": "Basic Header",
+      "settings": {
+        "section_id": "",
+        "header": "Find Low Calorie & Low Sugar Near You",
+        "background": "gray-light"
+      }
+    },
     "custom_iframe_zNPqWL": {
       "type": "custom-iframe",
       "name": "Custom Embed",
@@ -259,6 +268,7 @@
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
     "9cb040ee-0588-43ac-b7e0-85580e654bbe",
     "featured_products_MU36d6",
+    "basic_header_rxx6re",
     "custom_iframe_zNPqWL",
     "featured_articles_Mq3GKN",
     "content_callout_large_GffAJH",
