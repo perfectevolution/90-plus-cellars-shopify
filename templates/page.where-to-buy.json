@@ -79,13 +79,22 @@
     },
     "57a81c86-f1dd-46d3-b7aa-477effd2579b": {
       "type": "store-locator",
+      "disabled": true,
       "settings": {}
+    },
+    "custom_iframe_9jgXjG": {
+      "type": "custom-iframe",
+      "name": "Custom Embed",
+      "settings": {
+        "embed_code": "<iframe id=\"pournow-shelf\" src=\"https://find.pour.now/61eca7a0-681f-4883-b3dd-d2a92552cb3e\" allow=\"geolocation\" style=\"border: none\" width=\"100%\" height=\"800\" loading=\"eager\" fetchpriority=\"high\">\n</iframe>"
+      }
     }
   },
   "order": [
     "blank",
     "basic_header_4HXWyw",
     "4668cbce-be94-4823-91d8-a46632bf53fc",
-    "57a81c86-f1dd-46d3-b7aa-477effd2579b"
+    "57a81c86-f1dd-46d3-b7aa-477effd2579b",
+    "custom_iframe_9jgXjG"
   ]
 }
