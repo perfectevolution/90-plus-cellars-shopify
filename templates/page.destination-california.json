@@ -14,8 +14,8 @@
       "settings": {
         "image": "shopify://shop_images/KeepItLight_CurvedHero_Desktop_07-25_9aa1d513-6490-43fb-ba46-b6b3002280de.png",
         "mobile_image": "shopify://shop_images/KeepItLight_CurvedHero_Mobile_07-25_aba2fb8e-45e7-4773-b571-5b2c3f31b7f0.png",
-        "header": "Keep It Light",
-        "body": "Some days call for something lighter. Whether you’re looking for low calorie wines with 100 calories or less, low alcohol wines for easy afternoons, or non alcoholic sparkling wines to keep the night going, we have you covered. Just grab a bottle, pour a glass, and keep it light."
+        "header": "Destination California",
+        "body": "Your ticket to California, poured. Explore our everyday and reserve wines from the Golden State."
       }
     },
     "9cb040ee-0588-43ac-b7e0-85580e654bbe": {
@@ -24,10 +24,10 @@
         "layout": "swiper",
         "animated": true,
         "columns": "6",
-        "header": "Low Calorie & Low Alcohol Sips",
-        "collection": "low-calorie-low-alcohol-wines",
+        "header": "Discover California's Best",
+        "collection": "california-wines-for-every-occasion",
         "link_label": "Shop All",
-        "link_url": "shopify://collections/low-calorie-low-alcohol-wines",
+        "link_url": "shopify://collections/california-wines-for-every-occasion",
         "link_external": false
       }
     },
