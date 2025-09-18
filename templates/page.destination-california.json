@@ -1,0 +1,275 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1f1b37aa-db83-4929-ae29-bd88a549b2ab": {
+      "type": "hero-curved",
+      "settings": {
+        "image": "shopify://shop_images/KeepItLight_CurvedHero_Desktop_07-25_9aa1d513-6490-43fb-ba46-b6b3002280de.png",
+        "mobile_image": "shopify://shop_images/KeepItLight_CurvedHero_Mobile_07-25_aba2fb8e-45e7-4773-b571-5b2c3f31b7f0.png",
+        "header": "Keep It Light",
+        "body": "Some days call for something lighter. Whether you’re looking for low calorie wines with 100 calories or less, low alcohol wines for easy afternoons, or non alcoholic sparkling wines to keep the night going, we have you covered. Just grab a bottle, pour a glass, and keep it light."
+      }
+    },
+    "9cb040ee-0588-43ac-b7e0-85580e654bbe": {
+      "type": "featured-products",
+      "settings": {
+        "layout": "swiper",
+        "animated": true,
+        "columns": "6",
+        "header": "Low Calorie & Low Alcohol Sips",
+        "collection": "low-calorie-low-alcohol-wines",
+        "link_label": "Shop All",
+        "link_url": "shopify://collections/low-calorie-low-alcohol-wines",
+        "link_external": false
+      }
+    },
+    "featured_products_MU36d6": {
+      "type": "featured-products",
+      "name": "Featured Products",
+      "settings": {
+        "layout": "swiper",
+        "animated": true,
+        "columns": "6",
+        "header": "Wines under 1g of sugar",
+        "collection": "wines-under-1g-of-sugar",
+        "link_label": "",
+        "link_url": "",
+        "link_external": false
+      }
+    },
+    "custom_iframe_zNPqWL": {
+      "type": "custom-iframe",
+      "disabled": true,
+      "name": "Custom Embed",
+      "settings": {
+        "embed_code": "<iframe id=\"pournow-shelf\" src=\"https://find.pour.now/aa125735-fa0a-405f-918f-f6fb5c2698de\" allow=\"geolocation\" style=\"border: none\" width=\"100%\" height=\"800\" loading=\"eager\" fetchpriority=\"high\">\n</iframe>"
+      }
+    },
+    "featured_articles_Mq3GKN": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_WVi8PC": {
+          "type": "article",
+          "settings": {
+            "article": "news/sugar-in-wine-everything-you-need-to-know"
+          }
+        },
+        "article_8L4htj": {
+          "type": "article",
+          "settings": {
+            "article": "news/3-sparkling-cocktails-under-100-calories"
+          }
+        },
+        "article_K99P4y": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-best-low-alcohol-wines"
+          }
+        },
+        "article_pMCnPg": {
+          "type": "article",
+          "settings": {
+            "article": "news/our-favorite-naturally-low-calorie-wines"
+          }
+        },
+        "article_fhYdPY": {
+          "type": "article",
+          "settings": {
+            "article": "news/10-things-you-should-know-about-prosecco"
+          }
+        },
+        "article_t9Wz7Y": {
+          "type": "article",
+          "settings": {
+            "article": "news/5-things-to-know-about-prosecco-rose"
+          }
+        },
+        "article_C3kiGR": {
+          "type": "article",
+          "settings": {
+            "article": "news/lambrusco-the-best-sparkling-red-wine"
+          }
+        },
+        "article_kxeD7i": {
+          "type": "article",
+          "settings": {
+            "article": "news/beyond-the-glass-vinho-verde"
+          }
+        },
+        "article_AiPyki": {
+          "type": "article",
+          "settings": {
+            "article": "news/everything-you-need-to-know-about-prosecco"
+          }
+        },
+        "article_rLnGET": {
+          "type": "article",
+          "settings": {
+            "article": "news/beyond-the-glass-riesling"
+          }
+        },
+        "article_79MPB6": {
+          "type": "article",
+          "settings": {
+            "article": "news/beyond-the-glass-pinot-grigio"
+          }
+        }
+      },
+      "block_order": [
+        "article_WVi8PC",
+        "article_8L4htj",
+        "article_K99P4y",
+        "article_pMCnPg",
+        "article_fhYdPY",
+        "article_t9Wz7Y",
+        "article_C3kiGR",
+        "article_kxeD7i",
+        "article_AiPyki",
+        "article_rLnGET",
+        "article_79MPB6"
+      ],
+      "settings": {
+        "section_id": "",
+        "header": "Get Inspired",
+        "script": "",
+        "background_image": "shopify://shop_images/90_Summer_Shoot_V1.jpg",
+        "theme": "light",
+        "mode": "blocks",
+        "blog": "press",
+        "tag": "",
+        "limit": 6,
+        "link_label": "",
+        "link_url": "",
+        "link_external": false
+      }
+    },
+    "content_callout_large_GffAJH": {
+      "type": "content-callout-large",
+      "name": "Large Callout",
+      "settings": {
+        "anchor_id": "",
+        "header": "\"The Best Non-Alcoholic Sparkling Wines\" - VinePair",
+        "link_label": "",
+        "link_url": "",
+        "link_external": false
+      }
+    },
+    "featured_product_single_kB6QnT": {
+      "type": "featured-product-single",
+      "settings": {
+        "product": "lot-230-non-alc-sparkling-brut-france",
+        "heading": "NEW Non-Alcoholic",
+        "subheading": "Sparkling Brut",
+        "description": "<p>Our Non-Alcoholic Sparkling Brut is brilliant yellow in color with a beautiful effervescence. Notes of lemon and honeysuckle entice, while on the palate hints of citrus and stone fruits steal the show.</p>",
+        "button_text": "Shop Now",
+        "button_link": "shopify://products/lot-230-non-alc-sparkling-brut-france",
+        "button_target": "_self",
+        "padding": "md"
+      }
+    },
+    "featured_product_single_hrgeNn": {
+      "type": "featured-product-single",
+      "settings": {
+        "product": "lot-229-non-alcoholic-sparkling-rose-france",
+        "heading": "NEW Non-Alcoholic",
+        "subheading": "Sparkling Rosé",
+        "description": "<p>Delicately pink in color with fine bubbles, this Non-Alcoholic Sparkling Rosé captures all the delightful notes of a classic rosé, without the alcohol and artificial flavors.</p>",
+        "button_text": "Shop Now",
+        "button_link": "shopify://products/lot-229-non-alcoholic-sparkling-rose-france",
+        "button_target": "_self",
+        "padding": "md"
+      }
+    },
+    "split_hero_DiFj6p": {
+      "type": "split-hero",
+      "settings": {
+        "section_id": "",
+        "image_position": "right",
+        "header": "Everything You Need to Know About Non-Alcoholic Wines",
+        "body": "<p>Wondering about the differences between “non-alcoholic,” “dealcoholized,” and “alcohol-removed” wine? Or maybe you’re curious about the unique flavors these wines offer? Check out the blog for answers and to see why these sparkling beauties are becoming so popular!</p>",
+        "link_text": "Read the Article",
+        "link_url": "https://www.ninetypluscellars.com/blogs/news/everything-you-need-to-know-about-non-alcoholic-wines",
+        "link_target": "_self",
+        "script": "",
+        "image": "shopify://shop_images/90_Summer_Shoot_V1-39.jpg"
+      }
+    },
+    "blank": {
+      "type": "blank",
+      "disabled": true,
+      "settings": {}
+    },
+    "featured_products_Te9aGq": {
+      "type": "featured-products",
+      "disabled": true,
+      "settings": {
+        "layout": "swiper",
+        "animated": true,
+        "columns": "4",
+        "header": "Explore the world of wine",
+        "collection": "unique-wines-for-holiday-pairings",
+        "link_label": "",
+        "link_url": "",
+        "link_external": false
+      }
+    },
+    "featured_product_single_NArXRp": {
+      "type": "featured-product-single",
+      "disabled": true,
+      "settings": {
+        "product": "explorer-pack",
+        "heading": "NEW Non-Alcoholic",
+        "subheading": "Sparkling Rosé",
+        "description": "<p>Delicately pink in color with fine bubbles, this Non-Alcoholic Sparkling Rosé captures all the delightful notes of a classic rosé, without the alcohol and artificial flavors.</p>",
+        "button_text": "Shop Now",
+        "button_link": "shopify://products/lot-229-non-alcoholic-sparkling-rose-france",
+        "button_target": "_self",
+        "padding": "md"
+      }
+    },
+    "cb9e57de-fa26-4fe7-b949-9f1cb02b117a": {
+      "type": "newsletter-callout",
+      "settings": {
+        "id": "newsletter-callout",
+        "header": "Newsletter",
+        "form_header": "Sign up for our newsletter",
+        "form_sub_header": "Be the first to know about our newest releases, upcoming events, and everything we’re up to on the wine trail. ",
+        "klaviyo_newsletter_id": "klaviyo-form-SNxMx5"
+      }
+    },
+    "social-proof-gallery": {
+      "type": "social-proof-gallery",
+      "settings": {
+        "id": "social-proof-gallery",
+        "metaobject_handle": "social-proof-gallery-main",
+        "footer_header": "Tag us on Instagram",
+        "footer_sub_header": "@90cellars",
+        "footer_sub_header_link": "https://www.instagram.com/90pluscellars/"
+      }
+    }
+  },
+  "order": [
+    "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
+    "9cb040ee-0588-43ac-b7e0-85580e654bbe",
+    "featured_products_MU36d6",
+    "custom_iframe_zNPqWL",
+    "featured_articles_Mq3GKN",
+    "content_callout_large_GffAJH",
+    "featured_product_single_kB6QnT",
+    "featured_product_single_hrgeNn",
+    "split_hero_DiFj6p",
+    "blank",
+    "featured_products_Te9aGq",
+    "featured_product_single_NArXRp",
+    "cb9e57de-fa26-4fe7-b949-9f1cb02b117a",
+    "social-proof-gallery"
+  ]
+}
