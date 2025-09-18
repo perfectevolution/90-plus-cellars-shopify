@@ -100,21 +100,31 @@
       "name": "Large Callout",
       "settings": {
         "anchor_id": "",
-        "header": "\"The Best Non-Alcoholic Sparkling Wines\" - VinePair",
+        "header": "Sustainable Sips From the Russian River Valley",
         "link_label": "",
         "link_url": "",
         "link_external": false
+      }
+    },
+    "basic_header_6abUXT": {
+      "type": "basic-header",
+      "disabled": true,
+      "name": "Basic Header",
+      "settings": {
+        "section_id": "",
+        "header": "Sustainable Sips From the Russian River Valley",
+        "background": "gray-light"
       }
     },
     "featured_product_single_kB6QnT": {
       "type": "featured-product-single",
       "settings": {
         "product": "lot-230-non-alc-sparkling-brut-france",
-        "heading": "NEW Non-Alcoholic",
-        "subheading": "Sparkling Brut",
-        "description": "<p>Our Non-Alcoholic Sparkling Brut is brilliant yellow in color with a beautiful effervescence. Notes of lemon and honeysuckle entice, while on the palate hints of citrus and stone fruits steal the show.</p>",
+        "heading": "Lot 75 Russian River Valley",
+        "subheading": "Pinot Noir",
+        "description": "<p>This wine is the essence of the Russian River Valley with juicy black cherry, soft cocoa, and whispering notes of cedar and violet in every layered sip.</p>",
         "button_text": "Shop Now",
-        "button_link": "shopify://products/lot-230-non-alc-sparkling-brut-france",
+        "button_link": "shopify://products/lot-75-pinot-noir-russian-river-valley-california",
         "button_target": "_self",
         "padding": "md"
       }
@@ -134,6 +144,7 @@
     },
     "split_hero_DiFj6p": {
       "type": "split-hero",
+      "disabled": true,
       "settings": {
         "section_id": "",
         "image_position": "right",
@@ -206,6 +217,7 @@
     "custom_iframe_zNPqWL",
     "featured_articles_Mq3GKN",
     "content_callout_large_GffAJH",
+    "basic_header_6abUXT",
     "featured_product_single_kB6QnT",
     "featured_product_single_hrgeNn",
     "split_hero_DiFj6p",
