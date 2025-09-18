@@ -48,6 +48,24 @@
             "article": "news/getting-to-the-heart-of-sonoma-in-the-russian-river-valley"
           }
         },
+        "article_Lb9xiD": {
+          "type": "article",
+          "settings": {
+            "article": "news/beyond-the-glass-discovering-paso-robles"
+          }
+        },
+        "article_Ch7KEA": {
+          "type": "article",
+          "settings": {
+            "article": "news/stags-leap-napa-valley-cabernet-sauvignon"
+          }
+        },
+        "article_xEGyin": {
+          "type": "article",
+          "settings": {
+            "article": "news/exploring-the-world-of-pinot-noir"
+          }
+        },
         "article_79MPB6": {
           "type": "article",
           "settings": {
@@ -57,6 +75,9 @@
       },
       "block_order": [
         "article_8L4htj",
+        "article_Lb9xiD",
+        "article_Ch7KEA",
+        "article_xEGyin",
         "article_79MPB6"
       ],
       "settings": {
