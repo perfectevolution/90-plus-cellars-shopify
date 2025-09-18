@@ -31,20 +31,6 @@
         "link_external": false
       }
     },
-    "featured_products_MU36d6": {
-      "type": "featured-products",
-      "name": "Featured Products",
-      "settings": {
-        "layout": "swiper",
-        "animated": true,
-        "columns": "6",
-        "header": "Wines under 1g of sugar",
-        "collection": "wines-under-1g-of-sugar",
-        "link_label": "",
-        "link_url": "",
-        "link_external": false
-      }
-    },
     "custom_iframe_zNPqWL": {
       "type": "custom-iframe",
       "disabled": true,
@@ -56,16 +42,10 @@
     "featured_articles_Mq3GKN": {
       "type": "featured-articles",
       "blocks": {
-        "article_WVi8PC": {
-          "type": "article",
-          "settings": {
-            "article": "news/sugar-in-wine-everything-you-need-to-know"
-          }
-        },
         "article_8L4htj": {
           "type": "article",
           "settings": {
-            "article": "news/3-sparkling-cocktails-under-100-calories"
+            "article": "news/getting-to-the-heart-of-sonoma-in-the-russian-river-valley"
           }
         },
         "article_K99P4y": {
@@ -124,7 +104,6 @@
         }
       },
       "block_order": [
-        "article_WVi8PC",
         "article_8L4htj",
         "article_K99P4y",
         "article_pMCnPg",
@@ -140,7 +119,7 @@
         "section_id": "",
         "header": "Get Inspired",
         "script": "",
-        "background_image": "shopify://shop_images/90_Summer_Shoot_V1.jpg",
+        "background_image": "shopify://shop_images/vineyard.png",
         "theme": "light",
         "mode": "blocks",
         "blog": "press",
@@ -259,7 +238,6 @@
   "order": [
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
     "9cb040ee-0588-43ac-b7e0-85580e654bbe",
-    "featured_products_MU36d6",
     "custom_iframe_zNPqWL",
     "featured_articles_Mq3GKN",
     "content_callout_large_GffAJH",
