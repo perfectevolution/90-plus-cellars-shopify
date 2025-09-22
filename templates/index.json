@@ -319,19 +319,19 @@
         "article_7n3zhG": {
           "type": "article",
           "settings": {
-            "article": "news/the-ultimate-grilling-wines-guide"
-          }
-        },
-        "article_AnCEby": {
-          "type": "article",
-          "settings": {
-            "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
+            "article": "news/the-flavors-of-fall"
           }
         },
         "article_U89XMm": {
           "type": "article",
           "settings": {
             "article": "news/the-best-low-alcohol-wines"
+          }
+        },
+        "article_AnCEby": {
+          "type": "article",
+          "settings": {
+            "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
           }
         },
         "article_nR7FDK": {
@@ -415,8 +415,8 @@
       "block_order": [
         "article_9eKGW9",
         "article_7n3zhG",
-        "article_AnCEby",
         "article_U89XMm",
+        "article_AnCEby",
         "article_nR7FDK",
         "article_rGVjqf",
         "article_9TqVWf",
