@@ -52,7 +52,7 @@
         "theme": "light",
         "btn_color": "btn-outline-light",
         "layout": "center-left",
-        "mobile_layout": "bottom-left",
+        "mobile_layout": "bottom-right",
         "header": "Destination California",
         "body": "",
         "image": "shopify://shop_images/25_90__HomePage_Hero_Desktop_055e63cc-fb3d-422c-a560-4f25f83f7a26.jpg",
