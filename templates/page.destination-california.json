@@ -24,7 +24,7 @@
         "layout": "swiper",
         "animated": true,
         "columns": "6",
-        "header": "Explore California's Best",
+        "header": "Explore Our California Sips",
         "collection": "california-wines-for-every-occasion",
         "link_label": "Shop All",
         "link_url": "shopify://collections/california-wines-for-every-occasion",
