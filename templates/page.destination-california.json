@@ -55,12 +55,6 @@
             "article": "news/getting-to-the-heart-of-sonoma-in-the-russian-river-valley"
           }
         },
-        "article_Ch7KEA": {
-          "type": "article",
-          "settings": {
-            "article": "news/stags-leap-napa-valley-cabernet-sauvignon"
-          }
-        },
         "article_xEGyin": {
           "type": "article",
           "settings": {
@@ -82,7 +76,6 @@
       },
       "block_order": [
         "article_8L4htj",
-        "article_Ch7KEA",
         "article_xEGyin",
         "article_Lb9xiD",
         "article_79MPB6"
