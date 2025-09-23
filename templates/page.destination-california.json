@@ -39,8 +39,8 @@
         "image_position": "right",
         "header": "Enter for a Chance to Win a Wine Trip to Sonoma County",
         "body": "<p>Explore all of our everyday and reserve California wine selections below, plus enter for a CHANCE TO WIN a wine trip to the Golden State!</p>",
-        "link_text": "Enter Sweepstakes",
-        "link_url": "https://www.ninetypluscellars.com/blogs/news/everything-you-need-to-know-about-non-alcoholic-wines",
+        "link_text": "",
+        "link_url": "",
         "link_target": "_self",
         "script": "",
         "image": "shopify://shop_images/AdobeStock_1148051188_4ffe211d-16eb-4e5a-ab4f-97fd2f59e43f.jpg"
