@@ -19,7 +19,7 @@
       "settings": {
         "section_id": "",
         "header": "Buy our wines near you.",
-        "background": "gray-light"
+        "background": "light"
       }
     },
     "4668cbce-be94-4823-91d8-a46632bf53fc": {
@@ -80,12 +80,23 @@
     "57a81c86-f1dd-46d3-b7aa-477effd2579b": {
       "type": "store-locator",
       "settings": {}
+    },
+    "basic_header_8MCWXT": {
+      "type": "basic-header",
+      "disabled": true,
+      "name": "Basic Header",
+      "settings": {
+        "section_id": "",
+        "header": "Search for our wines near you.",
+        "background": "light"
+      }
     }
   },
   "order": [
     "blank",
     "basic_header_4HXWyw",
     "4668cbce-be94-4823-91d8-a46632bf53fc",
-    "57a81c86-f1dd-46d3-b7aa-477effd2579b"
+    "57a81c86-f1dd-46d3-b7aa-477effd2579b",
+    "basic_header_8MCWXT"
   ]
 }
