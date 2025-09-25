@@ -83,7 +83,6 @@
     },
     "basic_header_8MCWXT": {
       "type": "basic-header",
-      "disabled": true,
       "name": "Basic Header",
       "settings": {
         "section_id": "",
