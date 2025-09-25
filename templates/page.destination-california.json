@@ -18,6 +18,21 @@
         "body": "From Napa Valley to Russian River, Paso Robles and beyond, California is one of the world's greatest destinations for world class wine. Explore all of our everyday and reserve California wine selections below!"
       }
     },
+    "split_hero_DiFj6p": {
+      "type": "split-hero",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "image_position": "right",
+        "header": "Enter for a Chance to Win a Wine Trip to Sonoma County!",
+        "body": "<p>Experience Sonoma in style! One lucky winner and a guest will enjoy three nights at Villa Vernazza at Balletto Vineyards, with round-trip airfare, a private winery tour and tasting, and $500 in spending money—all on us! To enter, follow @90pluscellars on Instagram and complete the form below with your name, email, and phone number. Entries close December 31, 2025 at 11:59 PM ET and the winner will be announced around January 12, 2026. Must be 21+ to enter. No purchase necessary.</p>",
+        "link_text": "",
+        "link_url": "",
+        "link_target": "_self",
+        "script": "",
+        "image": "shopify://shop_images/balletto_vineyards_summer_2018_029_JPEG_300dpi_1.jpg"
+      }
+    },
     "9cb040ee-0588-43ac-b7e0-85580e654bbe": {
       "type": "featured-products",
       "settings": {
@@ -29,21 +44,6 @@
         "link_label": "Shop All",
         "link_url": "shopify://collections/california-wines-for-every-occasion",
         "link_external": false
-      }
-    },
-    "split_hero_DiFj6p": {
-      "type": "split-hero",
-      "disabled": true,
-      "settings": {
-        "section_id": "",
-        "image_position": "right",
-        "header": "Enter for a Chance to Win a Wine Trip to Sonoma County",
-        "body": "<p>Explore all of our everyday and reserve California wine selections below, plus enter for a CHANCE TO WIN a wine trip to the Golden State!</p>",
-        "link_text": "",
-        "link_url": "",
-        "link_target": "_self",
-        "script": "",
-        "image": "shopify://shop_images/AdobeStock_1148051188_4ffe211d-16eb-4e5a-ab4f-97fd2f59e43f.jpg"
       }
     },
     "featured_articles_Mq3GKN": {
@@ -198,8 +198,8 @@
   },
   "order": [
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
-    "9cb040ee-0588-43ac-b7e0-85580e654bbe",
     "split_hero_DiFj6p",
+    "9cb040ee-0588-43ac-b7e0-85580e654bbe",
     "featured_articles_Mq3GKN",
     "content_callout_large_GffAJH",
     "basic_header_6abUXT",
