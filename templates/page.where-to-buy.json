@@ -90,6 +90,11 @@
         "header": "Search for our wines near you.",
         "background": "light"
       }
+    },
+    "stockist_store_locator_GjVyHj": {
+      "type": "stockist-store-locator",
+      "name": "Stockist Store Locator",
+      "settings": {}
     }
   },
   "order": [
@@ -97,6 +102,7 @@
     "basic_header_4HXWyw",
     "4668cbce-be94-4823-91d8-a46632bf53fc",
     "57a81c86-f1dd-46d3-b7aa-477effd2579b",
-    "basic_header_8MCWXT"
+    "basic_header_8MCWXT",
+    "stockist_store_locator_GjVyHj"
   ]
 }
