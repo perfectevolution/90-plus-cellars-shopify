@@ -33,6 +33,22 @@
         "image": "shopify://shop_images/balletto_vineyards_summer_2018_029_JPEG_300dpi_1.jpg"
       }
     },
+    "17588428879e6e6f38": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_DAyhkj": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "disabled": true,
+          "settings": {
+            "formId": "<div class=\"klaviyo-form-S3ZHia\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_DAyhkj"
+      ],
+      "settings": {}
+    },
     "9cb040ee-0588-43ac-b7e0-85580e654bbe": {
       "type": "featured-products",
       "settings": {
@@ -199,6 +215,7 @@
   "order": [
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
     "split_hero_DiFj6p",
+    "17588428879e6e6f38",
     "9cb040ee-0588-43ac-b7e0-85580e654bbe",
     "featured_articles_Mq3GKN",
     "content_callout_large_GffAJH",
