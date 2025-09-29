@@ -16,7 +16,7 @@
           "type": "card",
           "settings": {
             "header": "Seasonal Favorites",
-            "link_url": "shopify://pages/keep-it-light",
+            "link_url": "https://www.ninetypluscellars.com/collections/fall-favorites",
             "link_external": false,
             "image": "shopify://shop_images/003-WineReccomender-Illustration.png"
           }
