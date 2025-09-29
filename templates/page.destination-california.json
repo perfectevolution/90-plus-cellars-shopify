@@ -25,7 +25,7 @@
         "section_id": "",
         "image_position": "right",
         "header": "Enter for a Chance to Win a Wine Trip to Sonoma County!",
-        "body": "<p>Experience Sonoma in style! One lucky winner and a guest will enjoy three nights at Villa Vernazza at Balletto Vineyards, with round-trip airfare, a private winery tour and tasting, and $500 in spending money—all on us! To enter, follow @90pluscellars on Instagram and complete the form below with your name, email, and phone number. Entries close December 31, 2025 at 11:59 PM ET and the winner will be announced around January 12, 2026. Must be 21+ to enter. No purchase necessary.</p>",
+        "body": "<p>Experience Sonoma in style! One lucky winner and a guest will enjoy three nights at <a href=\"https://5starvr.com/45292/\" title=\"https://5starvr.com/45292/\">Villa Vernazza</a> at <a href=\"https://www.ballettovineyards.com/\" title=\"https://www.ballettovineyards.com/\">Balletto Vineyards</a>, with round-trip airfare, a private winery tour and tasting, and $500 in spending money—all on us! To enter, follow <a href=\"https://www.instagram.com/90pluscellars/\" title=\"https://www.instagram.com/90pluscellars/\">@90pluscellars</a> on Instagram and complete the form below with your name, email, and phone number. Entries close December 31, 2025 at 11:59 PM ET and the winner will be announced around January 12, 2026. Must be 21+ to enter. No purchase necessary. See Official Rules & Regulations.</p>",
         "link_text": "",
         "link_url": "",
         "link_target": "_self",
@@ -40,7 +40,7 @@
           "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
           "disabled": true,
           "settings": {
-            "formId": "<div class=\"klaviyo-form-S3ZHia\"></div>"
+            "formId": ""
           }
         }
       },
