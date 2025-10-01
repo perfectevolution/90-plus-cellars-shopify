@@ -20,6 +20,7 @@
     },
     "split_hero_DiFj6p": {
       "type": "split-hero",
+      "disabled": true,
       "settings": {
         "section_id": "",
         "image_position": "right",
