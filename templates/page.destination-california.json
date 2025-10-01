@@ -20,7 +20,6 @@
     },
     "split_hero_DiFj6p": {
       "type": "split-hero",
-      "disabled": true,
       "settings": {
         "section_id": "",
         "image_position": "right",
@@ -39,7 +38,7 @@
         "klaviyo_email_marketing_sms_form_embed_block_DAyhkj": {
           "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
-            "formId": ""
+            "formId": "<div class=\"klaviyo-form-S3ZHia\"></div>"
           }
         }
       },
