@@ -18,6 +18,19 @@
         "body": "From Napa Valley to Russian River, Paso Robles and beyond, California is one of the world's greatest destinations for world class wine. Explore all of our everyday and reserve California wine selections below!"
       }
     },
+    "9cb040ee-0588-43ac-b7e0-85580e654bbe": {
+      "type": "featured-products",
+      "settings": {
+        "layout": "swiper",
+        "animated": true,
+        "columns": "6",
+        "header": "Explore Our California Sips",
+        "collection": "california-wines-for-every-occasion",
+        "link_label": "Shop All",
+        "link_url": "shopify://collections/california-wines-for-every-occasion",
+        "link_external": false
+      }
+    },
     "split_hero_DiFj6p": {
       "type": "split-hero",
       "settings": {
@@ -46,19 +59,6 @@
         "klaviyo_email_marketing_sms_form_embed_block_DAyhkj"
       ],
       "settings": {}
-    },
-    "9cb040ee-0588-43ac-b7e0-85580e654bbe": {
-      "type": "featured-products",
-      "settings": {
-        "layout": "swiper",
-        "animated": true,
-        "columns": "6",
-        "header": "Explore Our California Sips",
-        "collection": "california-wines-for-every-occasion",
-        "link_label": "Shop All",
-        "link_url": "shopify://collections/california-wines-for-every-occasion",
-        "link_external": false
-      }
     },
     "featured_articles_Mq3GKN": {
       "type": "featured-articles",
@@ -212,9 +212,9 @@
   },
   "order": [
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
+    "9cb040ee-0588-43ac-b7e0-85580e654bbe",
     "split_hero_DiFj6p",
     "17588428879e6e6f38",
-    "9cb040ee-0588-43ac-b7e0-85580e654bbe",
     "featured_articles_Mq3GKN",
     "content_callout_large_GffAJH",
     "basic_header_6abUXT",
