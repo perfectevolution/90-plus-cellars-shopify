@@ -31,60 +31,31 @@
         "link_external": false
       }
     },
-    "split_hero_DiFj6p": {
-      "type": "split-hero",
-      "settings": {
-        "section_id": "",
-        "image_position": "right",
-        "header": "Enter for a Chance to Win a Wine Trip to Sonoma County!",
-        "body": "<p>Experience Sonoma in style! One lucky winner and a guest will enjoy two nights at <a href=\"https://5starvr.com/45292/\" title=\"https://5starvr.com/45292/\">Villa Vernazza</a> at Baletto Vineyards, with round-trip airfare, a private winery tour and tasting, and $500 in spending money—all on us! To enter, follow <a href=\"https://www.instagram.com/90pluscellars/\" title=\"https://www.instagram.com/90pluscellars/\">@90pluscellars</a> on Instagram and complete the form below with your name, email, and phone number. Entries close December 31, 2025 at 11:59 PM ET and the winner will be announced around January 12, 2026. Must be 21+ to enter. No purchase necessary. See <a href=\"https://www.ninetypluscellars.com/pages/90-cellars-sonoma-county-wine-trip-sweepstakes-rules-regulations\" title=\"https://www.ninetypluscellars.com/pages/90-cellars-sonoma-county-wine-trip-sweepstakes-rules-regulations\">Official Rules & Regulations.</a></p>",
-        "link_text": "",
-        "link_url": "",
-        "link_target": "_self",
-        "script": "",
-        "image": "shopify://shop_images/balletto_vineyards_summer_2018_029_JPEG_300dpi_1.jpg"
-      }
-    },
-    "17588428879e6e6f38": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_email_marketing_sms_form_embed_block_DAyhkj": {
-          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
-          "settings": {
-            "formId": "<div class=\"klaviyo-form-S3ZHia\"></div>"
-          }
-        }
-      },
-      "block_order": [
-        "klaviyo_email_marketing_sms_form_embed_block_DAyhkj"
-      ],
-      "settings": {}
-    },
     "featured_articles_Mq3GKN": {
       "type": "featured-articles",
       "blocks": {
         "article_8L4htj": {
           "type": "article",
           "settings": {
-            "article": "news/getting-to-the-heart-of-sonoma-in-the-russian-river-valley"
+            "article": "news/the-flavors-of-fall"
           }
         },
         "article_xEGyin": {
           "type": "article",
           "settings": {
-            "article": "news/exploring-the-world-of-pinot-noir"
+            "article": "news/chillable-reds"
           }
         },
         "article_Lb9xiD": {
           "type": "article",
           "settings": {
-            "article": "news/beyond-the-glass-discovering-paso-robles"
+            "article": "news/3-cozy-fall-recipes-you-need-to-add-to-your-repertoire"
           }
         },
         "article_79MPB6": {
           "type": "article",
           "settings": {
-            "article": "news/sauvignon-blancs-of-the-world"
+            "article": "news/exploring-the-world-of-pinot-noir"
           }
         }
       },
@@ -213,8 +184,6 @@
   "order": [
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
     "9cb040ee-0588-43ac-b7e0-85580e654bbe",
-    "split_hero_DiFj6p",
-    "17588428879e6e6f38",
     "featured_articles_Mq3GKN",
     "content_callout_large_GffAJH",
     "basic_header_6abUXT",
