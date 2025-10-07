@@ -1,0 +1,229 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1f1b37aa-db83-4929-ae29-bd88a549b2ab": {
+      "type": "hero-curved",
+      "settings": {
+        "image": "shopify://shop_images/CoreRed_CurvedHero_Desktop_09-25_1.png",
+        "mobile_image": "shopify://shop_images/CoreRed_CurvedHero_Mobile_09-25.png",
+        "header": "Destination California",
+        "body": "From Napa Valley to Russian River, Paso Robles and beyond, California is one of the world's greatest destinations for world class wine. Explore all of our everyday and reserve California wine selections below!"
+      }
+    },
+    "9cb040ee-0588-43ac-b7e0-85580e654bbe": {
+      "type": "featured-products",
+      "settings": {
+        "layout": "swiper",
+        "animated": true,
+        "columns": "6",
+        "header": "Explore Our California Sips",
+        "collection": "california-wines-for-every-occasion",
+        "link_label": "Shop All",
+        "link_url": "shopify://collections/california-wines-for-every-occasion",
+        "link_external": false
+      }
+    },
+    "split_hero_DiFj6p": {
+      "type": "split-hero",
+      "settings": {
+        "section_id": "",
+        "image_position": "right",
+        "header": "Enter for a Chance to Win a Wine Trip to Sonoma County!",
+        "body": "<p>Experience Sonoma in style! One lucky winner and a guest will enjoy two nights at <a href=\"https://5starvr.com/45292/\" title=\"https://5starvr.com/45292/\">Villa Vernazza</a> at Baletto Vineyards, with round-trip airfare, a private winery tour and tasting, and $500 in spending money—all on us! To enter, follow <a href=\"https://www.instagram.com/90pluscellars/\" title=\"https://www.instagram.com/90pluscellars/\">@90pluscellars</a> on Instagram and complete the form below with your name, email, and phone number. Entries close December 31, 2025 at 11:59 PM ET and the winner will be announced around January 12, 2026. Must be 21+ to enter. No purchase necessary. See <a href=\"https://www.ninetypluscellars.com/pages/90-cellars-sonoma-county-wine-trip-sweepstakes-rules-regulations\" title=\"https://www.ninetypluscellars.com/pages/90-cellars-sonoma-county-wine-trip-sweepstakes-rules-regulations\">Official Rules & Regulations.</a></p>",
+        "link_text": "",
+        "link_url": "",
+        "link_target": "_self",
+        "script": "",
+        "image": "shopify://shop_images/balletto_vineyards_summer_2018_029_JPEG_300dpi_1.jpg"
+      }
+    },
+    "17588428879e6e6f38": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_DAyhkj": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "<div class=\"klaviyo-form-S3ZHia\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_DAyhkj"
+      ],
+      "settings": {}
+    },
+    "featured_articles_Mq3GKN": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_8L4htj": {
+          "type": "article",
+          "settings": {
+            "article": "news/getting-to-the-heart-of-sonoma-in-the-russian-river-valley"
+          }
+        },
+        "article_xEGyin": {
+          "type": "article",
+          "settings": {
+            "article": "news/exploring-the-world-of-pinot-noir"
+          }
+        },
+        "article_Lb9xiD": {
+          "type": "article",
+          "settings": {
+            "article": "news/beyond-the-glass-discovering-paso-robles"
+          }
+        },
+        "article_79MPB6": {
+          "type": "article",
+          "settings": {
+            "article": "news/sauvignon-blancs-of-the-world"
+          }
+        }
+      },
+      "block_order": [
+        "article_8L4htj",
+        "article_xEGyin",
+        "article_Lb9xiD",
+        "article_79MPB6"
+      ],
+      "settings": {
+        "section_id": "",
+        "header": "Get Wine Inspired",
+        "script": "",
+        "background_image": "shopify://shop_images/ABC_90__Fall-39.jpg",
+        "theme": "light",
+        "mode": "blocks",
+        "blog": "press",
+        "tag": "",
+        "limit": 6,
+        "link_label": "",
+        "link_url": "",
+        "link_external": false
+      }
+    },
+    "content_callout_large_GffAJH": {
+      "type": "content-callout-large",
+      "name": "Large Callout",
+      "settings": {
+        "anchor_id": "",
+        "header": "Sustainable Sips From the Russian River Valley",
+        "link_label": "",
+        "link_url": "",
+        "link_external": false
+      }
+    },
+    "basic_header_6abUXT": {
+      "type": "basic-header",
+      "disabled": true,
+      "name": "Basic Header",
+      "settings": {
+        "section_id": "",
+        "header": "Sustainable Sips From the Russian River Valley",
+        "background": "gray-light"
+      }
+    },
+    "featured_product_single_kB6QnT": {
+      "type": "featured-product-single",
+      "settings": {
+        "product": "lot-75-pinot-noir-russian-river-valley-california",
+        "heading": "Lot 75 Russian River Valley",
+        "subheading": "Pinot Noir",
+        "description": "<p>This wine is the essence of the Russian River Valley with juicy black cherry, soft cocoa, and whispering notes of cedar and violet in every layered sip.</p>",
+        "button_text": "Shop Now",
+        "button_link": "shopify://products/lot-75-pinot-noir-russian-river-valley-california",
+        "button_target": "_self",
+        "padding": "md"
+      }
+    },
+    "featured_product_single_hrgeNn": {
+      "type": "featured-product-single",
+      "settings": {
+        "product": "lot-130-chardonnay-russian-river-valley-california",
+        "heading": "Lot 130 Russian River Valley",
+        "subheading": "Chardonnay",
+        "description": "<p>Brilliant gold color, palate overflowing with flavors of crisp citrus, white peach and guava with a touch of toastiness. Take a sip and experience a creamy silkiness which glides into a long, pristine finish.</p>",
+        "button_text": "Shop Now",
+        "button_link": "shopify://products/lot-130-chardonnay-russian-river-valley-california",
+        "button_target": "_self",
+        "padding": "md"
+      }
+    },
+    "blank": {
+      "type": "blank",
+      "disabled": true,
+      "settings": {}
+    },
+    "featured_products_Te9aGq": {
+      "type": "featured-products",
+      "disabled": true,
+      "settings": {
+        "layout": "swiper",
+        "animated": true,
+        "columns": "4",
+        "header": "Explore the world of wine",
+        "collection": "unique-wines-for-holiday-pairings",
+        "link_label": "",
+        "link_url": "",
+        "link_external": false
+      }
+    },
+    "featured_product_single_NArXRp": {
+      "type": "featured-product-single",
+      "disabled": true,
+      "settings": {
+        "product": "explorer-pack",
+        "heading": "NEW Non-Alcoholic",
+        "subheading": "Sparkling Rosé",
+        "description": "<p>Delicately pink in color with fine bubbles, this Non-Alcoholic Sparkling Rosé captures all the delightful notes of a classic rosé, without the alcohol and artificial flavors.</p>",
+        "button_text": "Shop Now",
+        "button_link": "shopify://products/lot-229-non-alcoholic-sparkling-rose-france",
+        "button_target": "_self",
+        "padding": "md"
+      }
+    },
+    "cb9e57de-fa26-4fe7-b949-9f1cb02b117a": {
+      "type": "newsletter-callout",
+      "settings": {
+        "id": "newsletter-callout",
+        "header": "Newsletter",
+        "form_header": "Sign up for our newsletter",
+        "form_sub_header": "Be the first to know about our newest releases, upcoming events, and everything we’re up to on the wine trail. ",
+        "klaviyo_newsletter_id": "klaviyo-form-SNxMx5"
+      }
+    },
+    "social-proof-gallery": {
+      "type": "social-proof-gallery",
+      "settings": {
+        "id": "social-proof-gallery",
+        "metaobject_handle": "social-proof-gallery-main",
+        "footer_header": "Tag us on Instagram",
+        "footer_sub_header": "@90cellars",
+        "footer_sub_header_link": "https://www.instagram.com/90pluscellars/"
+      }
+    }
+  },
+  "order": [
+    "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
+    "9cb040ee-0588-43ac-b7e0-85580e654bbe",
+    "split_hero_DiFj6p",
+    "17588428879e6e6f38",
+    "featured_articles_Mq3GKN",
+    "content_callout_large_GffAJH",
+    "basic_header_6abUXT",
+    "featured_product_single_kB6QnT",
+    "featured_product_single_hrgeNn",
+    "blank",
+    "featured_products_Te9aGq",
+    "featured_product_single_NArXRp",
+    "cb9e57de-fa26-4fe7-b949-9f1cb02b117a",
+    "social-proof-gallery"
+  ]
+}
