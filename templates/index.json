@@ -206,8 +206,21 @@
             "link_external": false
           }
         },
+        "content_Jh4qAH": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/cheers.png",
+            "label": "Fall Favorites",
+            "title": "Sip On",
+            "sub_header": "Seasonal Selections",
+            "link_label": "Explore Wines",
+            "link_url": "https://www.ninetypluscellars.com/collections/fall-favorites",
+            "link_external": false
+          }
+        },
         "eafec4d3-f21c-4a5c-b310-8b78b4db6d70": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/002-Events-Illustration.jpg",
             "label": "Wine truck events & more",
@@ -233,6 +246,7 @@
       },
       "block_order": [
         "b573ed92-7796-42df-90b5-26316f704e22",
+        "content_Jh4qAH",
         "eafec4d3-f21c-4a5c-b310-8b78b4db6d70",
         "32ee8efe-6e2f-48b6-afb7-52ae9644499c"
       ],
