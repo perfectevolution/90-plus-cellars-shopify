@@ -473,16 +473,16 @@
     "c84a0e2e-3469-4cb4-aa01-8531eee9a6dd": {
       "type": "article-grid",
       "blocks": {
+        "746f2adf-fc73-4c14-9074-5139fc9d23b3": {
+          "type": "article",
+          "settings": {
+            "article": "news/comforting-fall-recipes-and-wine-pairings"
+          }
+        },
         "article_qLB9WF": {
           "type": "article",
           "settings": {
             "article": "news/3-cozy-fall-recipes-you-need-to-add-to-your-repertoire"
-          }
-        },
-        "746f2adf-fc73-4c14-9074-5139fc9d23b3": {
-          "type": "article",
-          "settings": {
-            "article": "news/wine-and-cheese-pairings-with-cabot-cheese"
           }
         },
         "ece50542-f37a-4236-98e9-8d18f4adbccd": {
@@ -494,8 +494,8 @@
         }
       },
       "block_order": [
-        "article_qLB9WF",
         "746f2adf-fc73-4c14-9074-5139fc9d23b3",
+        "article_qLB9WF",
         "ece50542-f37a-4236-98e9-8d18f4adbccd"
       ],
       "settings": {
