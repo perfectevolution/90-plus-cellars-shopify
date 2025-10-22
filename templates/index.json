@@ -310,16 +310,17 @@
     "cca4bf33-9b2d-4410-83a9-fc13c47690e3": {
       "type": "article-grid",
       "blocks": {
-        "article_9eKGW9": {
+        "article_FfKBt7": {
           "type": "article",
           "settings": {
-            "article": "news/sugar-in-wine-everything-you-need-to-know"
+            "article": "news/comforting-fall-recipes-and-wine-pairings"
           }
         },
-        "article_7n3zhG": {
+        "article_9eKGW9": {
           "type": "article",
+          "disabled": true,
           "settings": {
-            "article": "news/the-flavors-of-fall"
+            "article": "news/sugar-in-wine-everything-you-need-to-know"
           }
         },
         "article_U89XMm": {
@@ -332,6 +333,12 @@
           "type": "article",
           "settings": {
             "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
+          }
+        },
+        "article_7n3zhG": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-flavors-of-fall"
           }
         },
         "article_nR7FDK": {
@@ -413,10 +420,11 @@
         }
       },
       "block_order": [
+        "article_FfKBt7",
         "article_9eKGW9",
-        "article_7n3zhG",
         "article_U89XMm",
         "article_AnCEby",
+        "article_7n3zhG",
         "article_nR7FDK",
         "article_rGVjqf",
         "article_9TqVWf",
