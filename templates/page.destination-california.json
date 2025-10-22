@@ -63,6 +63,12 @@
     "featured_articles_Mq3GKN": {
       "type": "featured-articles",
       "blocks": {
+        "article_n7ewKA": {
+          "type": "article",
+          "settings": {
+            "article": "news/comforting-fall-recipes-and-wine-pairings"
+          }
+        },
         "article_8L4htj": {
           "type": "article",
           "settings": {
@@ -89,6 +95,7 @@
         }
       },
       "block_order": [
+        "article_n7ewKA",
         "article_8L4htj",
         "article_xEGyin",
         "article_Lb9xiD",
