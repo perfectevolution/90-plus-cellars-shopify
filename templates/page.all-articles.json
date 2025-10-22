@@ -75,6 +75,12 @@
     "0df19425-055f-4186-a616-f974ce70d52e": {
       "type": "article-grid",
       "blocks": {
+        "article_M4cTQz": {
+          "type": "article",
+          "settings": {
+            "article": "news/chillable-reds"
+          }
+        },
         "article_iYPcJD": {
           "type": "article",
           "settings": {
@@ -93,12 +99,6 @@
           "disabled": true,
           "settings": {
             "article": "news/33-qs-with-alex-shaughnessy-90-cellars-wine-director"
-          }
-        },
-        "article_M4cTQz": {
-          "type": "article",
-          "settings": {
-            "article": "news/beyond-the-glass-french-rose-wine-regions"
           }
         },
         "article_ayzBye": {
@@ -129,10 +129,10 @@
         }
       },
       "block_order": [
+        "article_M4cTQz",
         "article_iYPcJD",
         "article_enYYUq",
         "5024da33-e236-41d4-b63c-b48a97513a95",
-        "article_M4cTQz",
         "article_ayzBye",
         "11e1ef49-ad2a-4ea9-a04d-91fcb19283da",
         "61165c89-5b23-498d-93c5-bfbc3ad6d199",
@@ -147,6 +147,83 @@
         "limit": 4,
         "link_label": "View All",
         "link_url": "/blogs/news/tagged/education",
+        "link_external": false
+      }
+    },
+    "fa24498d-40f8-4dad-a5bf-c5610427fbe8": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_BcTqyn": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-best-low-alcohol-wines"
+          }
+        },
+        "article_Ad4mBG": {
+          "type": "article",
+          "settings": {
+            "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
+          }
+        },
+        "article_BPCL6p": {
+          "type": "article",
+          "settings": {
+            "article": "news/10-things-you-should-know-about-prosecco"
+          }
+        },
+        "article_BJmmf8": {
+          "type": "article",
+          "settings": {
+            "article": "news/lambrusco-the-best-sparkling-red-wine"
+          }
+        },
+        "article_FJtP6k": {
+          "type": "article",
+          "settings": {
+            "article": "news/discover-the-classics-chianti-and-montepulciano-d-abruzzo"
+          }
+        },
+        "article_BppqkY": {
+          "type": "article",
+          "settings": {
+            "article": "news/5-things-to-know-about-prosecco-rose"
+          }
+        },
+        "article_gYBrme": {
+          "type": "article",
+          "settings": {
+            "article": "news/introducing-picpoul-de-pinet"
+          }
+        },
+        "article_mk7Lpg": {
+          "type": "article",
+          "settings": {
+            "article": "news/beyond-the-glass-pinot-grigio"
+          }
+        }
+      },
+      "block_order": [
+        "article_BcTqyn",
+        "article_Ad4mBG",
+        "article_BPCL6p",
+        "article_BJmmf8",
+        "article_FJtP6k",
+        "article_BppqkY",
+        "article_gYBrme",
+        "article_mk7Lpg"
+      ],
+      "settings": {
+        "section_id": "",
+        "header": "Most Popular Articles",
+        "script": "",
+        "background_image": "shopify://shop_images/90PLUS-NOV24-7_03d95333-1f33-4395-b564-266fb5085219.jpg",
+        "theme": "light",
+        "mode": "blocks",
+        "blog": "news",
+        "tag": "",
+        "limit": 4,
+        "link_label": "",
+        "link_url": "shopify://pages/all-articles",
         "link_external": false
       }
     },
@@ -390,83 +467,6 @@
         "limit": 4,
         "link_label": "View All",
         "link_url": "/blogs/news/tagged/recipes",
-        "link_external": false
-      }
-    },
-    "fa24498d-40f8-4dad-a5bf-c5610427fbe8": {
-      "type": "featured-articles",
-      "blocks": {
-        "article_BcTqyn": {
-          "type": "article",
-          "settings": {
-            "article": "news/the-best-low-alcohol-wines"
-          }
-        },
-        "article_Ad4mBG": {
-          "type": "article",
-          "settings": {
-            "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
-          }
-        },
-        "article_BPCL6p": {
-          "type": "article",
-          "settings": {
-            "article": "news/10-things-you-should-know-about-prosecco"
-          }
-        },
-        "article_BJmmf8": {
-          "type": "article",
-          "settings": {
-            "article": "news/lambrusco-the-best-sparkling-red-wine"
-          }
-        },
-        "article_FJtP6k": {
-          "type": "article",
-          "settings": {
-            "article": "news/discover-the-classics-chianti-and-montepulciano-d-abruzzo"
-          }
-        },
-        "article_BppqkY": {
-          "type": "article",
-          "settings": {
-            "article": "news/5-things-to-know-about-prosecco-rose"
-          }
-        },
-        "article_gYBrme": {
-          "type": "article",
-          "settings": {
-            "article": "news/introducing-picpoul-de-pinet"
-          }
-        },
-        "article_mk7Lpg": {
-          "type": "article",
-          "settings": {
-            "article": "news/beyond-the-glass-pinot-grigio"
-          }
-        }
-      },
-      "block_order": [
-        "article_BcTqyn",
-        "article_Ad4mBG",
-        "article_BPCL6p",
-        "article_BJmmf8",
-        "article_FJtP6k",
-        "article_BppqkY",
-        "article_gYBrme",
-        "article_mk7Lpg"
-      ],
-      "settings": {
-        "section_id": "",
-        "header": "Most Popular Articles",
-        "script": "",
-        "background_image": "shopify://shop_images/90PLUS-NOV24-7_03d95333-1f33-4395-b564-266fb5085219.jpg",
-        "theme": "light",
-        "mode": "blocks",
-        "blog": "news",
-        "tag": "",
-        "limit": 4,
-        "link_label": "",
-        "link_url": "shopify://pages/all-articles",
         "link_external": false
       }
     },
