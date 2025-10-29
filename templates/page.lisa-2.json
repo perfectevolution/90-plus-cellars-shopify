@@ -15,7 +15,7 @@
         "image": "shopify://shop_images/CoreRed_CurvedHero_Desktop_09-25_1.png",
         "mobile_image": "shopify://shop_images/CoreRed_CurvedHero_Mobile_09-25.png",
         "header": "Lisa Donovan's Favorite Holiday Wines",
-        "body": "This holiday season, Lisa Donovan is celebrating with 90+ Cellars! As the host of Lisa’s Book Club on Kiss 108, she knows a thing or two about bringing people together—and great wine is always part of the story. Whether you’re hosting, gifting, or just treating yourself, these wines deliver exceptional taste and unbeatable value."
+        "body": "This holiday season, Lisa Donovan is celebrating with 90+ Cellars! As the host of Lisa’s Book Club and Kiss 108, she knows a thing or two about bringing people together—and great wine is always part of the story. Whether you’re hosting, gifting, or just treating yourself, these wines deliver exceptional taste and unbeatable value."
       }
     },
     "9cb040ee-0588-43ac-b7e0-85580e654bbe": {
@@ -29,20 +29,6 @@
         "link_label": "Shop All",
         "link_url": "shopify://collections/california-wines-for-every-occasion",
         "link_external": false
-      }
-    },
-    "split_hero_DiFj6p": {
-      "type": "split-hero",
-      "settings": {
-        "section_id": "",
-        "image_position": "right",
-        "header": "Enter for a Chance to Win a Wine Trip to Sonoma County!",
-        "body": "<p>Experience Sonoma in style! One lucky winner and a guest will enjoy two nights at <a href=\"https://5starvr.com/45292/\" title=\"https://5starvr.com/45292/\">Villa Vernazza</a> at Baletto Vineyards, with round-trip airfare, a private winery tour and tasting, and $500 in spending money—all on us! To enter, follow <a href=\"https://www.instagram.com/90pluscellars/\" title=\"https://www.instagram.com/90pluscellars/\">@90pluscellars</a> on Instagram and complete the form below with your name, email, and phone number. Entries close December 31, 2025 at 11:59 PM ET and the winner will be announced around January 12, 2026. Must be 21+ to enter. No purchase necessary. See <a href=\"https://www.ninetypluscellars.com/pages/90-cellars-sonoma-county-wine-trip-sweepstakes-rules-regulations\" title=\"https://www.ninetypluscellars.com/pages/90-cellars-sonoma-county-wine-trip-sweepstakes-rules-regulations\">Official Rules & Regulations.</a></p>",
-        "link_text": "",
-        "link_url": "",
-        "link_target": "_self",
-        "script": "",
-        "image": "shopify://shop_images/balletto_vineyards_summer_2018_029_JPEG_300dpi_1.jpg"
       }
     },
     "featured_articles_Mq3GKN": {
@@ -86,6 +72,7 @@
         "article_Lb9xiD",
         "article_79MPB6"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "header": "Get Wine Inspired",
@@ -101,25 +88,15 @@
         "link_external": false
       }
     },
-    "content_callout_large_GffAJH": {
+    "content_callout_large_r4QDWr": {
       "type": "content-callout-large",
       "name": "Large Callout",
       "settings": {
         "anchor_id": "",
-        "header": "Sustainable Sips From the Russian River Valley",
+        "header": "ndjsanjkds",
         "link_label": "",
         "link_url": "",
         "link_external": false
-      }
-    },
-    "basic_header_6abUXT": {
-      "type": "basic-header",
-      "disabled": true,
-      "name": "Basic Header",
-      "settings": {
-        "section_id": "",
-        "header": "Sustainable Sips From the Russian River Valley",
-        "background": "gray-light"
       }
     },
     "featured_product_single_kB6QnT": {
@@ -153,34 +130,6 @@
       "disabled": true,
       "settings": {}
     },
-    "featured_products_Te9aGq": {
-      "type": "featured-products",
-      "disabled": true,
-      "settings": {
-        "layout": "swiper",
-        "animated": true,
-        "columns": "4",
-        "header": "Explore the world of wine",
-        "collection": "unique-wines-for-holiday-pairings",
-        "link_label": "",
-        "link_url": "",
-        "link_external": false
-      }
-    },
-    "featured_product_single_NArXRp": {
-      "type": "featured-product-single",
-      "disabled": true,
-      "settings": {
-        "product": "explorer-pack",
-        "heading": "NEW Non-Alcoholic",
-        "subheading": "Sparkling Rosé",
-        "description": "<p>Delicately pink in color with fine bubbles, this Non-Alcoholic Sparkling Rosé captures all the delightful notes of a classic rosé, without the alcohol and artificial flavors.</p>",
-        "button_text": "Shop Now",
-        "button_link": "shopify://products/lot-229-non-alcoholic-sparkling-rose-france",
-        "button_target": "_self",
-        "padding": "md"
-      }
-    },
     "cb9e57de-fa26-4fe7-b949-9f1cb02b117a": {
       "type": "newsletter-callout",
       "settings": {
@@ -205,15 +154,11 @@
   "order": [
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
     "9cb040ee-0588-43ac-b7e0-85580e654bbe",
-    "split_hero_DiFj6p",
     "featured_articles_Mq3GKN",
-    "content_callout_large_GffAJH",
-    "basic_header_6abUXT",
+    "content_callout_large_r4QDWr",
     "featured_product_single_kB6QnT",
     "featured_product_single_hrgeNn",
     "blank",
-    "featured_products_Te9aGq",
-    "featured_product_single_NArXRp",
     "cb9e57de-fa26-4fe7-b949-9f1cb02b117a",
     "social-proof-gallery"
   ]
