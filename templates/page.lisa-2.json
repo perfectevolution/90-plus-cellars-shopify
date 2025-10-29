@@ -14,8 +14,8 @@
       "settings": {
         "image": "shopify://shop_images/CoreRed_CurvedHero_Desktop_09-25_1.png",
         "mobile_image": "shopify://shop_images/CoreRed_CurvedHero_Mobile_09-25.png",
-        "header": "Destination California",
-        "body": "From Napa Valley to Russian River, Paso Robles and beyond, California is one of the world's greatest destinations for world class wine. Explore all of our everyday and reserve California wine selections below!"
+        "header": "Lisa Donovan's Favorite Holiday Wines",
+        "body": "This holiday season, Lisa Donovan is celebrating with 90+ Cellars! As the host of Lisa’s Book Club on Kiss 108, she knows a thing or two about bringing people together—and great wine is always part of the story. Whether you’re hosting, gifting, or just treating yourself, these wines deliver exceptional taste and unbeatable value."
       }
     },
     "9cb040ee-0588-43ac-b7e0-85580e654bbe": {
@@ -44,21 +44,6 @@
         "script": "",
         "image": "shopify://shop_images/balletto_vineyards_summer_2018_029_JPEG_300dpi_1.jpg"
       }
-    },
-    "17588428879e6e6f38": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_email_marketing_sms_form_embed_block_DAyhkj": {
-          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
-          "settings": {
-            "formId": "<div class=\"klaviyo-form-S3ZHia\"></div>"
-          }
-        }
-      },
-      "block_order": [
-        "klaviyo_email_marketing_sms_form_embed_block_DAyhkj"
-      ],
-      "settings": {}
     },
     "featured_articles_Mq3GKN": {
       "type": "featured-articles",
@@ -221,7 +206,6 @@
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
     "9cb040ee-0588-43ac-b7e0-85580e654bbe",
     "split_hero_DiFj6p",
-    "17588428879e6e6f38",
     "featured_articles_Mq3GKN",
     "content_callout_large_GffAJH",
     "basic_header_6abUXT",
