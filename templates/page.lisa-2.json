@@ -130,6 +130,21 @@
       "disabled": true,
       "settings": {}
     },
+    "split_hero_ttFF7T": {
+      "type": "split-hero",
+      "name": "Split Hero",
+      "settings": {
+        "section_id": "",
+        "image_position": "right",
+        "header": "Lisa's Favorite Holiday Gift",
+        "body": "<p>Give the gift that keeps on pouring. Sign up for our quarterly Wine Club Membership and get seasonal selections delivered right to your door.</p>",
+        "link_text": "Explore Wine Club",
+        "link_url": "shopify://pages/wine-club",
+        "link_target": "_self",
+        "script": "",
+        "image": "shopify://shop_images/WineClub-5_11f00235-5aa7-411b-a18d-ccbe142351a6.jpg"
+      }
+    },
     "cb9e57de-fa26-4fe7-b949-9f1cb02b117a": {
       "type": "newsletter-callout",
       "settings": {
@@ -159,6 +174,7 @@
     "featured_product_single_kB6QnT",
     "featured_product_single_hrgeNn",
     "blank",
+    "split_hero_ttFF7T",
     "cb9e57de-fa26-4fe7-b949-9f1cb02b117a",
     "social-proof-gallery"
   ]
