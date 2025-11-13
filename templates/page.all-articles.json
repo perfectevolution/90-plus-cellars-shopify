@@ -441,22 +441,22 @@
     "1ed7e9e7-7bc3-4fb7-a908-75b2df075e6b": {
       "type": "article-grid",
       "blocks": {
-        "article_pNXHrk": {
-          "type": "article",
-          "settings": {
-            "article": "news/an-italian-spread-food-wine-pairings-with-chianti-and-barolo"
-          }
-        },
         "311e2e11-723f-4c98-8804-9c36b60728ff": {
           "type": "article",
           "settings": {
             "article": "news/3-sparkling-cocktails-under-100-calories"
           }
+        },
+        "article_pNXHrk": {
+          "type": "article",
+          "settings": {
+            "article": "news/an-italian-spread-food-wine-pairings-with-chianti-and-barolo"
+          }
         }
       },
       "block_order": [
-        "article_pNXHrk",
-        "311e2e11-723f-4c98-8804-9c36b60728ff"
+        "311e2e11-723f-4c98-8804-9c36b60728ff",
+        "article_pNXHrk"
       ],
       "settings": {
         "section_id": "recipe-articles",
