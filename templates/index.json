@@ -324,8 +324,15 @@
     "cca4bf33-9b2d-4410-83a9-fc13c47690e3": {
       "type": "article-grid",
       "blocks": {
+        "article_Q3iCHF": {
+          "type": "article",
+          "settings": {
+            "article": "news/an-italian-spread-food-wine-pairings-with-chianti-and-barolo"
+          }
+        },
         "article_FfKBt7": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/comforting-fall-recipes-and-wine-pairings"
           }
@@ -434,6 +441,7 @@
         }
       },
       "block_order": [
+        "article_Q3iCHF",
         "article_FfKBt7",
         "article_9eKGW9",
         "article_U89XMm",
