@@ -18,24 +18,11 @@
         "body": "From Napa Valley to Russian River, Paso Robles and beyond, California is one of the world's greatest destinations for world class wine. Explore all of our everyday and reserve California wine selections below!"
       }
     },
-    "9cb040ee-0588-43ac-b7e0-85580e654bbe": {
-      "type": "featured-products",
-      "settings": {
-        "layout": "swiper",
-        "animated": true,
-        "columns": "6",
-        "header": "Explore Our California Sips",
-        "collection": "california-wines-for-every-occasion",
-        "link_label": "Shop All",
-        "link_url": "shopify://collections/california-wines-for-every-occasion",
-        "link_external": false
-      }
-    },
     "split_hero_DiFj6p": {
       "type": "split-hero",
       "settings": {
         "section_id": "",
-        "image_position": "right",
+        "image_position": "left",
         "header": "Enter for a Chance to Win a Wine Trip to Sonoma County!",
         "body": "<p>Experience Sonoma in style! One lucky winner and a guest will enjoy two nights at <a href=\"https://5starvr.com/45292/\" title=\"https://5starvr.com/45292/\">Villa Vernazza</a> at Baletto Vineyards, with round-trip airfare, a private winery tour and tasting, and $500 in spending money—all on us! To enter, follow <a href=\"https://www.instagram.com/90pluscellars/\" title=\"https://www.instagram.com/90pluscellars/\">@90pluscellars</a> on Instagram and complete the form below with your name, email, and phone number. Entries close December 31, 2025 at 11:59 PM ET and the winner will be announced around January 12, 2026. Must be 21+ to enter. No purchase necessary. See <a href=\"https://www.ninetypluscellars.com/pages/90-cellars-sonoma-county-wine-trip-sweepstakes-rules-regulations\" title=\"https://www.ninetypluscellars.com/pages/90-cellars-sonoma-county-wine-trip-sweepstakes-rules-regulations\">Official Rules & Regulations.</a></p>",
         "link_text": "",
@@ -59,6 +46,19 @@
         "klaviyo_email_marketing_sms_form_embed_block_DAyhkj"
       ],
       "settings": {}
+    },
+    "9cb040ee-0588-43ac-b7e0-85580e654bbe": {
+      "type": "featured-products",
+      "settings": {
+        "layout": "swiper",
+        "animated": true,
+        "columns": "6",
+        "header": "Explore Our California Sips",
+        "collection": "california-wines-for-every-occasion",
+        "link_label": "Shop All",
+        "link_url": "shopify://collections/california-wines-for-every-occasion",
+        "link_external": false
+      }
     },
     "featured_articles_Mq3GKN": {
       "type": "featured-articles",
@@ -219,9 +219,9 @@
   },
   "order": [
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
-    "9cb040ee-0588-43ac-b7e0-85580e654bbe",
     "split_hero_DiFj6p",
     "17588428879e6e6f38",
+    "9cb040ee-0588-43ac-b7e0-85580e654bbe",
     "featured_articles_Mq3GKN",
     "content_callout_large_GffAJH",
     "basic_header_6abUXT",
