@@ -24,7 +24,7 @@
         "layout": "swiper",
         "animated": true,
         "columns": "6",
-        "header": "Sparkling Wine Favorites",
+        "header": "Favorite Sparkling Wines For the Holidays",
         "collection": "lets-bubbly",
         "link_label": "Shop All Sparkling",
         "link_url": "shopify://collections/lets-bubbly",
@@ -34,16 +34,16 @@
     "featured_articles_Mq3GKN": {
       "type": "featured-articles",
       "blocks": {
+        "article_JLnEgq": {
+          "type": "article",
+          "settings": {
+            "article": "news/wine-thanksgiving-the-perfect-pairing"
+          }
+        },
         "article_kGkfTL": {
           "type": "article",
           "settings": {
             "article": "news/3-festive-sparkling-wine-cocktails-for-the-holidays"
-          }
-        },
-        "article_9xfHE4": {
-          "type": "article",
-          "settings": {
-            "article": "news/the-best-wines-for-the-holidays-make-it-sparkling"
           }
         },
         "article_grRfRr": {
@@ -52,10 +52,34 @@
             "article": "news/holiday-gift-guide-for-every-type-of-wine-lover"
           }
         },
+        "article_9xfHE4": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-best-wines-for-the-holidays-make-it-sparkling"
+          }
+        },
+        "article_6xj9LD": {
+          "type": "article",
+          "settings": {
+            "article": "news/an-italian-spread-food-wine-pairings-with-chianti-and-barolo"
+          }
+        },
+        "article_gnpTtN": {
+          "type": "article",
+          "settings": {
+            "article": "news/an-italian-spread-food-wine-pairings-with-chianti-and-barolo"
+          }
+        },
         "article_dF6tyf": {
           "type": "article",
           "settings": {
             "article": "news/non-traditional-holiday-food-and-wine-pairings"
+          }
+        },
+        "article_N4N3eJ": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-ultimate-holiday-seafood-wine-pairing-with-taylor-shellfish"
           }
         },
         "article_M3BVw8": {
@@ -114,19 +138,17 @@
           "settings": {
             "article": "news/3-sparkling-cocktails-under-100-calories"
           }
-        },
-        "article_N4N3eJ": {
-          "type": "article",
-          "settings": {
-            "article": ""
-          }
         }
       },
       "block_order": [
+        "article_JLnEgq",
         "article_kGkfTL",
-        "article_9xfHE4",
         "article_grRfRr",
+        "article_9xfHE4",
+        "article_6xj9LD",
+        "article_gnpTtN",
         "article_dF6tyf",
+        "article_N4N3eJ",
         "article_M3BVw8",
         "article_wkfHHU",
         "article_t9Wz7Y",
@@ -135,8 +157,7 @@
         "article_fhYdPY",
         "article_HdcVnL",
         "article_xY8RWE",
-        "article_8L4htj",
-        "article_N4N3eJ"
+        "article_8L4htj"
       ],
       "settings": {
         "section_id": "",
