@@ -202,26 +202,10 @@
     },
     "blank": {
       "type": "blank",
-      "disabled": true,
       "settings": {}
-    },
-    "featured_products_Te9aGq": {
-      "type": "featured-products",
-      "disabled": true,
-      "settings": {
-        "layout": "swiper",
-        "animated": true,
-        "columns": "4",
-        "header": "Explore the world of wine",
-        "collection": "unique-wines-for-holiday-pairings",
-        "link_label": "",
-        "link_url": "",
-        "link_external": false
-      }
     },
     "split_hero_DiFj6p": {
       "type": "split-hero",
-      "disabled": true,
       "settings": {
         "section_id": "",
         "image_position": "right",
@@ -232,20 +216,6 @@
         "link_target": "_self",
         "script": "",
         "image": "shopify://shop_images/WineClub-5.jpg"
-      }
-    },
-    "featured_product_single_NArXRp": {
-      "type": "featured-product-single",
-      "disabled": true,
-      "settings": {
-        "product": "explorer-pack",
-        "heading": "NEW Non-Alcoholic",
-        "subheading": "Sparkling Rosé",
-        "description": "<p>Delicately pink in color with fine bubbles, this Non-Alcoholic Sparkling Rosé captures all the delightful notes of a classic rosé, without the alcohol and artificial flavors.</p>",
-        "button_text": "Shop Now",
-        "button_link": "shopify://products/lot-229-non-alcoholic-sparkling-rose-france",
-        "button_target": "_self",
-        "padding": "md"
       }
     },
     "cb9e57de-fa26-4fe7-b949-9f1cb02b117a": {
@@ -276,9 +246,7 @@
     "featured_product_single_hrgeNn",
     "featured_product_single_kB6QnT",
     "blank",
-    "featured_products_Te9aGq",
     "split_hero_DiFj6p",
-    "featured_product_single_NArXRp",
     "cb9e57de-fa26-4fe7-b949-9f1cb02b117a",
     "social-proof-gallery"
   ]
