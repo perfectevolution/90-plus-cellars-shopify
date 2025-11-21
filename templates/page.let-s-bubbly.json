@@ -24,7 +24,7 @@
         "layout": "swiper",
         "animated": true,
         "columns": "6",
-        "header": "The Best Sparkling Wines",
+        "header": "Sparkling Wine Favorites",
         "collection": "lets-bubbly",
         "link_label": "Shop All Sparkling",
         "link_url": "shopify://collections/lets-bubbly",
@@ -149,19 +149,6 @@
         "link_external": false
       }
     },
-    "featured_product_single_kB6QnT": {
-      "type": "featured-product-single",
-      "settings": {
-        "product": "lot-230-non-alc-sparkling-brut-france",
-        "heading": "Lot 230 Non-Alcoholic",
-        "subheading": "Sparkling Brut",
-        "description": "<p>Our Non-Alcoholic Sparkling Brut is brilliant yellow in color with a beautiful effervescence. Notes of lemon and honeysuckle entice, while on the palate hints of citrus and stone fruits steal the show.</p>",
-        "button_text": "Shop Now",
-        "button_link": "shopify://products/lot-230-non-alc-sparkling-brut-france",
-        "button_target": "_self",
-        "padding": "md"
-      }
-    },
     "featured_product_single_hrgeNn": {
       "type": "featured-product-single",
       "settings": {
@@ -171,6 +158,19 @@
         "description": "<p>Delicately pink in color with fine bubbles, this Non-Alcoholic Sparkling Rosé captures all the delightful notes of a classic rosé, without the alcohol and artificial flavors.</p>",
         "button_text": "Shop Now",
         "button_link": "shopify://products/lot-229-non-alcoholic-sparkling-rose-france",
+        "button_target": "_self",
+        "padding": "md"
+      }
+    },
+    "featured_product_single_kB6QnT": {
+      "type": "featured-product-single",
+      "settings": {
+        "product": "lot-230-non-alc-sparkling-brut-france",
+        "heading": "Lot 230 Non-Alcoholic",
+        "subheading": "Sparkling Brut",
+        "description": "<p>Our Non-Alcoholic Sparkling Brut is brilliant yellow in color with a beautiful effervescence. Notes of lemon and honeysuckle entice, while on the palate hints of citrus and stone fruits steal the show.</p>",
+        "button_text": "Shop Now",
+        "button_link": "shopify://products/lot-230-non-alc-sparkling-brut-france",
         "button_target": "_self",
         "padding": "md"
       }
