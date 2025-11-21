@@ -153,7 +153,7 @@
       "type": "featured-product-single",
       "settings": {
         "product": "lot-230-non-alc-sparkling-brut-france",
-        "heading": "NEW Non-Alcoholic",
+        "heading": "Lot 230 Non-Alcoholic",
         "subheading": "Sparkling Brut",
         "description": "<p>Our Non-Alcoholic Sparkling Brut is brilliant yellow in color with a beautiful effervescence. Notes of lemon and honeysuckle entice, while on the palate hints of citrus and stone fruits steal the show.</p>",
         "button_text": "Shop Now",
@@ -166,7 +166,7 @@
       "type": "featured-product-single",
       "settings": {
         "product": "lot-229-non-alcoholic-sparkling-rose-france",
-        "heading": "NEW Non-Alcoholic",
+        "heading": "Lot 229 Non-Alcoholic",
         "subheading": "Sparkling Rosé",
         "description": "<p>Delicately pink in color with fine bubbles, this Non-Alcoholic Sparkling Rosé captures all the delightful notes of a classic rosé, without the alcohol and artificial flavors.</p>",
         "button_text": "Shop Now",
@@ -248,8 +248,8 @@
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
     "9cb040ee-0588-43ac-b7e0-85580e654bbe",
     "featured_articles_Mq3GKN",
-    "featured_product_single_kB6QnT",
     "featured_product_single_hrgeNn",
+    "featured_product_single_kB6QnT",
     "blank",
     "featured_products_Te9aGq",
     "split_hero_DiFj6p",
