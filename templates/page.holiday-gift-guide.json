@@ -1,0 +1,265 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1f1b37aa-db83-4929-ae29-bd88a549b2ab": {
+      "type": "hero-curved",
+      "settings": {
+        "image": "shopify://shop_images/90__Website_CurvedHero_Let_sBubbly_Desktop.png",
+        "mobile_image": "shopify://shop_images/90__Website_CurvedHero_Let_sBubbly_Mobile.png",
+        "header": "Let's Bubbly!",
+        "body": "'Tis the season to pop something sparkling. Whether you're kicking things off with an easy aperitif, mixing a sparkling cocktail, pairing with your favorite bites, or grabbing a bottle to gift, our sparkling wines bring the fun and celebration to any holiday occasion."
+      }
+    },
+    "9cb040ee-0588-43ac-b7e0-85580e654bbe": {
+      "type": "featured-products",
+      "settings": {
+        "layout": "swiper",
+        "animated": true,
+        "columns": "6",
+        "header": "Sparkling Wine Favorites",
+        "collection": "lets-bubbly",
+        "link_label": "Shop All Sparkling",
+        "link_url": "shopify://collections/lets-bubbly",
+        "link_external": false
+      }
+    },
+    "featured_articles_Mq3GKN": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_JLnEgq": {
+          "type": "article",
+          "settings": {
+            "article": "news/wine-thanksgiving-the-perfect-pairing"
+          }
+        },
+        "article_kGkfTL": {
+          "type": "article",
+          "settings": {
+            "article": "news/3-festive-sparkling-wine-cocktails-for-the-holidays"
+          }
+        },
+        "article_grRfRr": {
+          "type": "article",
+          "settings": {
+            "article": "news/holiday-gift-guide-for-every-type-of-wine-lover"
+          }
+        },
+        "article_9xfHE4": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-best-wines-for-the-holidays-make-it-sparkling"
+          }
+        },
+        "article_6xj9LD": {
+          "type": "article",
+          "settings": {
+            "article": "news/an-italian-spread-food-wine-pairings-with-chianti-and-barolo"
+          }
+        },
+        "article_gnpTtN": {
+          "type": "article",
+          "settings": {
+            "article": "news/an-italian-spread-food-wine-pairings-with-chianti-and-barolo"
+          }
+        },
+        "article_dF6tyf": {
+          "type": "article",
+          "settings": {
+            "article": "news/non-traditional-holiday-food-and-wine-pairings"
+          }
+        },
+        "article_N4N3eJ": {
+          "type": "article",
+          "settings": {
+            "article": "news/the-ultimate-holiday-seafood-wine-pairing-with-taylor-shellfish"
+          }
+        },
+        "article_M3BVw8": {
+          "type": "article",
+          "settings": {
+            "article": "news/cremant-dalsace"
+          }
+        },
+        "article_wkfHHU": {
+          "type": "article",
+          "settings": {
+            "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
+          }
+        },
+        "article_t9Wz7Y": {
+          "type": "article",
+          "settings": {
+            "article": "news/5-things-to-know-about-prosecco-rose"
+          }
+        },
+        "article_C3kiGR": {
+          "type": "article",
+          "settings": {
+            "article": "news/lambrusco-the-best-sparkling-red-wine"
+          }
+        },
+        "article_AiPyki": {
+          "type": "article",
+          "settings": {
+            "article": "news/everything-you-need-to-know-about-prosecco"
+          }
+        },
+        "article_fhYdPY": {
+          "type": "article",
+          "settings": {
+            "article": "news/10-things-you-should-know-about-prosecco"
+          }
+        },
+        "article_HdcVnL": {
+          "type": "article",
+          "disabled": true,
+          "settings": {
+            "article": "news/wine-for-the-holidays"
+          }
+        },
+        "article_xY8RWE": {
+          "type": "article",
+          "disabled": true,
+          "settings": {
+            "article": "news/the-best-pinot-noir-for-the-holidays"
+          }
+        },
+        "article_8L4htj": {
+          "type": "article",
+          "disabled": true,
+          "settings": {
+            "article": "news/3-sparkling-cocktails-under-100-calories"
+          }
+        }
+      },
+      "block_order": [
+        "article_JLnEgq",
+        "article_kGkfTL",
+        "article_grRfRr",
+        "article_9xfHE4",
+        "article_6xj9LD",
+        "article_gnpTtN",
+        "article_dF6tyf",
+        "article_N4N3eJ",
+        "article_M3BVw8",
+        "article_wkfHHU",
+        "article_t9Wz7Y",
+        "article_C3kiGR",
+        "article_AiPyki",
+        "article_fhYdPY",
+        "article_HdcVnL",
+        "article_xY8RWE",
+        "article_8L4htj"
+      ],
+      "settings": {
+        "section_id": "",
+        "header": "Get Inspired",
+        "script": "",
+        "background_image": "shopify://shop_images/90_Plus_Cellars_-_Cranberry_Prosecco_Spritz-3.jpg",
+        "theme": "light",
+        "mode": "blocks",
+        "blog": "press",
+        "tag": "",
+        "limit": 6,
+        "link_label": "",
+        "link_url": "",
+        "link_external": false
+      }
+    },
+    "content_callout_large_ER4Cyy": {
+      "type": "content-callout-large",
+      "name": "Large Callout",
+      "settings": {
+        "anchor_id": "",
+        "header": "Pop the bubbles, skip the buzz.",
+        "link_label": "",
+        "link_url": "",
+        "link_external": false
+      }
+    },
+    "featured_product_single_hrgeNn": {
+      "type": "featured-product-single",
+      "settings": {
+        "product": "lot-229-non-alcoholic-sparkling-rose-france",
+        "heading": "Lot 229 Non-Alcoholic",
+        "subheading": "Sparkling Rosé",
+        "description": "<p>Delicately pink in color with fine bubbles, this Non-Alcoholic Sparkling Rosé captures all the delightful notes of a classic rosé, without the alcohol and artificial flavors.</p>",
+        "button_text": "Shop Now",
+        "button_link": "shopify://products/lot-229-non-alcoholic-sparkling-rose-france",
+        "button_target": "_self",
+        "padding": "md"
+      }
+    },
+    "featured_product_single_kB6QnT": {
+      "type": "featured-product-single",
+      "settings": {
+        "product": "lot-230-non-alc-sparkling-brut-france",
+        "heading": "Lot 230 Non-Alcoholic",
+        "subheading": "Sparkling Brut",
+        "description": "<p>Our Non-Alcoholic Sparkling Brut is brilliant yellow in color with a beautiful effervescence. Notes of lemon and honeysuckle entice, while on the palate hints of citrus and stone fruits steal the show.</p>",
+        "button_text": "Shop Now",
+        "button_link": "shopify://products/lot-230-non-alc-sparkling-brut-france",
+        "button_target": "_self",
+        "padding": "md"
+      }
+    },
+    "blank": {
+      "type": "blank",
+      "settings": {}
+    },
+    "split_hero_DiFj6p": {
+      "type": "split-hero",
+      "settings": {
+        "section_id": "",
+        "image_position": "right",
+        "header": "The Gift That Keeps On Pouring",
+        "body": "<p>Treat someone special (or yourself) to a <strong>90+ Cellars Wine Club Membership!</strong> Get a 3, 6 or 12-bottle Red or Mixed Club delivered right to your door every season.</p>",
+        "link_text": "Learn More About Wine Club",
+        "link_url": "https://www.ninetypluscellars.com/pages/wine-club",
+        "link_target": "_self",
+        "script": "",
+        "image": "shopify://shop_images/WineClub-5.jpg"
+      }
+    },
+    "cb9e57de-fa26-4fe7-b949-9f1cb02b117a": {
+      "type": "newsletter-callout",
+      "settings": {
+        "id": "newsletter-callout",
+        "header": "Newsletter",
+        "form_header": "Sign up for our newsletter",
+        "form_sub_header": "Be the first to know about our newest releases, upcoming events, and everything we’re up to on the wine trail. ",
+        "klaviyo_newsletter_id": "klaviyo-form-SNxMx5"
+      }
+    },
+    "social-proof-gallery": {
+      "type": "social-proof-gallery",
+      "settings": {
+        "id": "social-proof-gallery",
+        "metaobject_handle": "social-proof-gallery-main",
+        "footer_header": "Tag us on Instagram",
+        "footer_sub_header": "@90cellars",
+        "footer_sub_header_link": "https://www.instagram.com/90pluscellars/"
+      }
+    }
+  },
+  "order": [
+    "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
+    "9cb040ee-0588-43ac-b7e0-85580e654bbe",
+    "featured_articles_Mq3GKN",
+    "content_callout_large_ER4Cyy",
+    "featured_product_single_hrgeNn",
+    "featured_product_single_kB6QnT",
+    "blank",
+    "split_hero_DiFj6p",
+    "cb9e57de-fa26-4fe7-b949-9f1cb02b117a",
+    "social-proof-gallery"
+  ]
+}
