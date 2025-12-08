@@ -107,10 +107,10 @@
     "featured-articles-test": {
       "type": "featured-articles",
       "blocks": {
-        "article_PFwYcV": {
+        "article_YzwCUD": {
           "type": "article",
           "settings": {
-            "article": "news/comforting-fall-recipes-and-wine-pairings"
+            "article": "news/wine-for-the-holidays"
           }
         },
         "article_X9YJj9": {
@@ -119,17 +119,24 @@
             "article": "news/the-ultimate-holiday-seafood-wine-pairing-with-taylor-shellfish"
           }
         },
-        "article_YzwCUD": {
+        "article_PMkPxQ": {
           "type": "article",
           "settings": {
-            "article": "news/wine-for-the-holidays"
+            "article": "news/the-best-wines-for-the-holidays-make-it-sparkling"
+          }
+        },
+        "article_PFwYcV": {
+          "type": "article",
+          "settings": {
+            "article": "news/comforting-fall-recipes-and-wine-pairings"
           }
         }
       },
       "block_order": [
-        "article_PFwYcV",
+        "article_YzwCUD",
         "article_X9YJj9",
-        "article_YzwCUD"
+        "article_PMkPxQ",
+        "article_PFwYcV"
       ],
       "settings": {
         "section_id": "occasion-articles",
@@ -328,9 +335,9 @@
     "70ec04dc-582e-4c6d-a2d5-ac861004450b",
     "c84a0e2e-3469-4cb4-aa01-8531eee9a6dd",
     "featured-articles-test",
-    "0df19425-055f-4186-a616-f974ce70d52e",
     "1ed7e9e7-7bc3-4fb7-a908-75b2df075e6b",
     "fa24498d-40f8-4dad-a5bf-c5610427fbe8",
+    "0df19425-055f-4186-a616-f974ce70d52e",
     "cb9e57de-fa26-4fe7-b949-9f1cb02b117a",
     "social-proof-gallery"
   ]
