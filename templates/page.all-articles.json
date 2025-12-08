@@ -140,7 +140,7 @@
       ],
       "settings": {
         "section_id": "occasion-articles",
-        "header": "Holiday Inspiratoin",
+        "header": "Holiday Inspiration",
         "script": "",
         "background_image": "shopify://shop_images/Holiday_-_blog.png",
         "theme": "light",
@@ -150,52 +150,6 @@
         "limit": 5,
         "link_label": "View All",
         "link_url": "https://www.ninetypluscellars.com/blogs/news/tagged/occasions",
-        "link_external": false
-      }
-    },
-    "0df19425-055f-4186-a616-f974ce70d52e": {
-      "type": "article-grid",
-      "blocks": {
-        "11e1ef49-ad2a-4ea9-a04d-91fcb19283da": {
-          "type": "article",
-          "settings": {
-            "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
-          }
-        },
-        "article_M4cTQz": {
-          "type": "article",
-          "settings": {
-            "article": "news/chillable-reds"
-          }
-        },
-        "article_iYPcJD": {
-          "type": "article",
-          "settings": {
-            "article": "news/sugar-in-wine-everything-you-need-to-know"
-          }
-        },
-        "article_ayzBye": {
-          "type": "article",
-          "settings": {
-            "article": "news/our-favorite-naturally-low-calorie-wines"
-          }
-        }
-      },
-      "block_order": [
-        "11e1ef49-ad2a-4ea9-a04d-91fcb19283da",
-        "article_M4cTQz",
-        "article_iYPcJD",
-        "article_ayzBye"
-      ],
-      "settings": {
-        "section_id": "education-articles",
-        "header": "Wine Education",
-        "mode": "blocks",
-        "blog": "news",
-        "tag": "Wine Education",
-        "limit": 4,
-        "link_label": "View All",
-        "link_url": "/blogs/news/tagged/education",
         "link_external": false
       }
     },
@@ -305,6 +259,52 @@
         "limit": 4,
         "link_label": "",
         "link_url": "shopify://pages/all-articles",
+        "link_external": false
+      }
+    },
+    "0df19425-055f-4186-a616-f974ce70d52e": {
+      "type": "article-grid",
+      "blocks": {
+        "11e1ef49-ad2a-4ea9-a04d-91fcb19283da": {
+          "type": "article",
+          "settings": {
+            "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
+          }
+        },
+        "article_M4cTQz": {
+          "type": "article",
+          "settings": {
+            "article": "news/chillable-reds"
+          }
+        },
+        "article_iYPcJD": {
+          "type": "article",
+          "settings": {
+            "article": "news/sugar-in-wine-everything-you-need-to-know"
+          }
+        },
+        "article_ayzBye": {
+          "type": "article",
+          "settings": {
+            "article": "news/our-favorite-naturally-low-calorie-wines"
+          }
+        }
+      },
+      "block_order": [
+        "11e1ef49-ad2a-4ea9-a04d-91fcb19283da",
+        "article_M4cTQz",
+        "article_iYPcJD",
+        "article_ayzBye"
+      ],
+      "settings": {
+        "section_id": "education-articles",
+        "header": "Wine Education",
+        "mode": "blocks",
+        "blog": "news",
+        "tag": "Wine Education",
+        "limit": 4,
+        "link_label": "View All",
+        "link_url": "/blogs/news/tagged/education",
         "link_external": false
       }
     },
