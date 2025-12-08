@@ -116,7 +116,13 @@
         "article_X9YJj9": {
           "type": "article",
           "settings": {
-            "article": "news/the-ultimate-holiday-seafood-wine-pairing-with-taylor-shellfish"
+            "article": "news/holiday-gift-guide-for-every-type-of-wine-lover"
+          }
+        },
+        "article_PFwYcV": {
+          "type": "article",
+          "settings": {
+            "article": "news/wine-for-the-holidays"
           }
         },
         "article_PMkPxQ": {
@@ -124,26 +130,13 @@
           "settings": {
             "article": "news/the-best-wines-for-the-holidays-make-it-sparkling"
           }
-        },
-        "article_PFwYcV": {
-          "type": "article",
-          "settings": {
-            "article": "news/comforting-fall-recipes-and-wine-pairings"
-          }
-        },
-        "article_xqKwf7": {
-          "type": "article",
-          "settings": {
-            "article": "news/holiday-gift-guide-for-every-type-of-wine-lover"
-          }
         }
       },
       "block_order": [
         "article_YzwCUD",
         "article_X9YJj9",
-        "article_PMkPxQ",
         "article_PFwYcV",
-        "article_xqKwf7"
+        "article_PMkPxQ"
       ],
       "settings": {
         "section_id": "occasion-articles",
