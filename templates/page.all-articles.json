@@ -110,7 +110,7 @@
         "article_YzwCUD": {
           "type": "article",
           "settings": {
-            "article": "news/wine-for-the-holidays"
+            "article": "news/level-up-drink-better-wine-for-less-with-these-wine-hacks"
           }
         },
         "article_X9YJj9": {
@@ -130,13 +130,20 @@
           "settings": {
             "article": "news/comforting-fall-recipes-and-wine-pairings"
           }
+        },
+        "article_xqKwf7": {
+          "type": "article",
+          "settings": {
+            "article": "news/holiday-gift-guide-for-every-type-of-wine-lover"
+          }
         }
       },
       "block_order": [
         "article_YzwCUD",
         "article_X9YJj9",
         "article_PMkPxQ",
-        "article_PFwYcV"
+        "article_PFwYcV",
+        "article_xqKwf7"
       ],
       "settings": {
         "section_id": "occasion-articles",
