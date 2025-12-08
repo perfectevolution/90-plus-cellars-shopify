@@ -324,49 +324,28 @@
     "cca4bf33-9b2d-4410-83a9-fc13c47690e3": {
       "type": "article-grid",
       "blocks": {
-        "article_Q3iCHF": {
+        "article_LxdKj9": {
           "type": "article",
           "settings": {
-            "article": "news/wine-thanksgiving-the-perfect-pairing"
+            "article": "news/3-festive-sparkling-wine-cocktails-for-the-holidays"
           }
         },
-        "article_FfKBt7": {
+        "article_JjhbhV": {
           "type": "article",
-          "disabled": true,
           "settings": {
-            "article": "news/comforting-fall-recipes-and-wine-pairings"
+            "article": "news/the-ultimate-holiday-seafood-wine-pairing-with-taylor-shellfish"
           }
         },
-        "article_9eKGW9": {
+        "article_He7tNp": {
           "type": "article",
-          "disabled": true,
           "settings": {
-            "article": "news/sugar-in-wine-everything-you-need-to-know"
+            "article": "news/the-best-wines-for-the-holidays-make-it-sparkling"
           }
         },
-        "article_U89XMm": {
+        "article_j3XPci": {
           "type": "article",
           "settings": {
-            "article": "news/the-best-low-alcohol-wines"
-          }
-        },
-        "article_AnCEby": {
-          "type": "article",
-          "settings": {
-            "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
-          }
-        },
-        "article_7n3zhG": {
-          "type": "article",
-          "settings": {
-            "article": "news/the-flavors-of-fall"
-          }
-        },
-        "article_nR7FDK": {
-          "type": "article",
-          "disabled": true,
-          "settings": {
-            "article": "news/spring-dinner-idea-citrus-roasted-salmon-with-provence-rose"
+            "article": "news/holiday-gift-guide-for-every-type-of-wine-lover"
           }
         },
         "article_rGVjqf": {
@@ -376,88 +355,21 @@
             "article": "news/the-best-low-alcohol-wines"
           }
         },
-        "article_9TqVWf": {
-          "type": "article",
-          "disabled": true,
-          "settings": {
-            "article": "news/the-ultimate-easter-wine-food-pairings-from-master-sommelier-michael-meagher"
-          }
-        },
         "article_JrCXUw": {
           "type": "article",
           "disabled": true,
           "settings": {
             "article": "news/our-favorite-naturally-low-calorie-wines"
           }
-        },
-        "article_dm9jhU": {
-          "type": "article",
-          "disabled": true,
-          "settings": {
-            "article": "news/chillable-reds"
-          }
-        },
-        "article_LxdKj9": {
-          "type": "article",
-          "disabled": true,
-          "settings": {
-            "article": "news/3-festive-sparkling-wine-cocktails-for-the-holidays"
-          }
-        },
-        "article_pH7cLR": {
-          "type": "article",
-          "disabled": true,
-          "settings": {
-            "article": "news/wine-pairings-for-springtime"
-          }
-        },
-        "2d7c7acc-53fb-40ce-a29a-f903884dc5b9": {
-          "type": "article",
-          "disabled": true,
-          "settings": {
-            "article": "news/cremant-dalsace"
-          }
-        },
-        "article_j3XPci": {
-          "type": "article",
-          "disabled": true,
-          "settings": {
-            "article": "news/holiday-gift-guide-for-every-type-of-wine-lover"
-          }
-        },
-        "article_He7tNp": {
-          "type": "article",
-          "disabled": true,
-          "settings": {
-            "article": "news/the-best-wines-for-the-holidays-make-it-sparkling"
-          }
-        },
-        "article_pjKrDX": {
-          "type": "article",
-          "disabled": true,
-          "settings": {
-            "article": "news/3-festive-sparkling-wine-cocktails-for-the-holidays"
-          }
         }
       },
       "block_order": [
-        "article_Q3iCHF",
-        "article_FfKBt7",
-        "article_9eKGW9",
-        "article_U89XMm",
-        "article_AnCEby",
-        "article_7n3zhG",
-        "article_nR7FDK",
-        "article_rGVjqf",
-        "article_9TqVWf",
-        "article_JrCXUw",
-        "article_dm9jhU",
         "article_LxdKj9",
-        "article_pH7cLR",
-        "2d7c7acc-53fb-40ce-a29a-f903884dc5b9",
-        "article_j3XPci",
+        "article_JjhbhV",
         "article_He7tNp",
-        "article_pjKrDX"
+        "article_j3XPci",
+        "article_rGVjqf",
+        "article_JrCXUw"
       ],
       "settings": {
         "section_id": "",
