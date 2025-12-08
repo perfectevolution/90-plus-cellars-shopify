@@ -36,6 +36,7 @@
       "blocks": {
         "article_JLnEgq": {
           "type": "article",
+          "disabled": true,
           "settings": {
             "article": "news/wine-thanksgiving-the-perfect-pairing"
           }
@@ -59,12 +60,6 @@
           }
         },
         "article_6xj9LD": {
-          "type": "article",
-          "settings": {
-            "article": "news/an-italian-spread-food-wine-pairings-with-chianti-and-barolo"
-          }
-        },
-        "article_gnpTtN": {
           "type": "article",
           "settings": {
             "article": "news/an-italian-spread-food-wine-pairings-with-chianti-and-barolo"
@@ -146,7 +141,6 @@
         "article_grRfRr",
         "article_9xfHE4",
         "article_6xj9LD",
-        "article_gnpTtN",
         "article_dF6tyf",
         "article_N4N3eJ",
         "article_M3BVw8",
