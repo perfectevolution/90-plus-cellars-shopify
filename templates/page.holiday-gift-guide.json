@@ -23,13 +23,13 @@
       "settings": {
         "section_id": "",
         "image_position": "right",
-        "header": "The Gift That Keeps On Pouring",
+        "header": "For the hostess",
         "body": "<p>Treat someone special (or yourself) to a <strong>90+ Cellars Wine Club Membership!</strong> Get a 3, 6 or 12-bottle Red or Mixed Club delivered right to your door every season.</p>",
-        "link_text": "Learn More About Wine Club",
-        "link_url": "https://www.ninetypluscellars.com/pages/wine-club",
+        "link_text": "Shop Cremant d'Alsace",
+        "link_url": "shopify://products/lot-228-cremant-dalsace-france",
         "link_target": "_self",
         "script": "",
-        "image": "shopify://shop_images/WineClub-5.jpg"
+        "image": "shopify://shop_images/ABC_90_Cellars_Holiday-24_c8e6e76a-3f84-4f47-b5ce-c90379c0b109.jpg"
       }
     },
     "9cb040ee-0588-43ac-b7e0-85580e654bbe": {
