@@ -79,12 +79,12 @@
         "section_id": "",
         "image_position": "left",
         "header": "For the mindful drinker...",
-        "body": "<p>Gift show-stopping Napa Valley Cabs worthy of any serious cellar. Our new, limited releases, Lot 234 Mt. Veeder and Lot 235 Yountville deliver deep dark fruit, balanced tannins, and a long, smooth finish—bottles that will only get better with time.</p>",
-        "link_text": "Shop  Collector Wines",
-        "link_url": "shopify://collections/collector-wines",
+        "body": "<p>Our Non-Alcoholic sparkling wines from the south of France bring all of the festive sparkle, without the buzz. </p>",
+        "link_text": "Shop Non-Alcoholic Wines",
+        "link_url": "shopify://pages/non-alcoholic-sparkling-wines",
         "link_target": "_self",
         "script": "",
-        "image": "shopify://shop_images/mt_veedeer.png"
+        "image": "shopify://shop_images/LAT-BEV-NOV24-1.jpg"
       }
     },
     "featured_articles_Mq3GKN": {
@@ -174,7 +174,7 @@
         "section_id": "",
         "header": "Holiday Inspiration",
         "script": "",
-        "background_image": "shopify://shop_images/90_Plus_Cellars_-_Cranberry_Prosecco_Spritz-3.jpg",
+        "background_image": "shopify://shop_images/keep_it_light_-_hero_desktop_8569a54b-7218-42a5-b3c9-6cdc04d1d03f.png",
         "theme": "light",
         "mode": "blocks",
         "blog": "press",
@@ -187,6 +187,7 @@
     },
     "content_callout_large_ER4Cyy": {
       "type": "content-callout-large",
+      "disabled": true,
       "name": "Large Callout",
       "settings": {
         "anchor_id": "",
@@ -198,6 +199,7 @@
     },
     "featured_product_single_hrgeNn": {
       "type": "featured-product-single",
+      "disabled": true,
       "settings": {
         "product": "lot-229-non-alcoholic-sparkling-rose-france",
         "heading": "Lot 229 Non-Alcoholic",
@@ -211,6 +213,7 @@
     },
     "featured_product_single_kB6QnT": {
       "type": "featured-product-single",
+      "disabled": true,
       "settings": {
         "product": "lot-230-non-alc-sparkling-brut-france",
         "heading": "Lot 230 Non-Alcoholic",
@@ -224,6 +227,7 @@
     },
     "blank": {
       "type": "blank",
+      "disabled": true,
       "settings": {}
     },
     "split_hero_bi3PUK": {
@@ -231,6 +235,20 @@
       "settings": {
         "section_id": "",
         "image_position": "right",
+        "header": "For those looking to explore  the world of wine...",
+        "body": "<p>Treat someone special (or yourself) to a <strong>90+ Cellars Wine Club Membership!</strong> Get a 3, 6 or 12-bottle Red or Mixed Club delivered right to your door every season.</p>",
+        "link_text": "Sign Up For Wine Club",
+        "link_url": "https://www.ninetypluscellars.com/pages/wine-club",
+        "link_target": "_self",
+        "script": "",
+        "image": "shopify://shop_images/WineClub-5.jpg"
+      }
+    },
+    "split_hero_gPNkpU": {
+      "type": "split-hero",
+      "settings": {
+        "section_id": "",
+        "image_position": "left",
         "header": "For those looking to explore  the world of wine...",
         "body": "<p>Treat someone special (or yourself) to a <strong>90+ Cellars Wine Club Membership!</strong> Get a 3, 6 or 12-bottle Red or Mixed Club delivered right to your door every season.</p>",
         "link_text": "Sign Up For Wine Club",
@@ -274,6 +292,7 @@
     "featured_product_single_kB6QnT",
     "blank",
     "split_hero_bi3PUK",
+    "split_hero_gPNkpU",
     "cb9e57de-fa26-4fe7-b949-9f1cb02b117a",
     "social-proof-gallery"
   ]
