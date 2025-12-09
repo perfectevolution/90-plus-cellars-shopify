@@ -65,9 +65,9 @@
         "section_id": "",
         "image_position": "right",
         "header": "For the Wine Collector...",
-        "body": "<p>Gift two classics from Burgundy, the birth place of Pinot Noir and Chardonnay. Our Lot 217 Chablis and Lot 160 Bourgogne deliver crisp minerality, bright citrus, and silky red-fruit elegance that never fails to impress.</p>",
+        "body": "<p>Gift show-stopping Napa Cabernet Sauvignons worthy of any serious cellar. Lot 234 Mt. Veeder and Lot 235 Yountville deliver deep dark fruit, balanced tannins, and a long, smooth finish—bottles that will only get better with time.</p>",
         "link_text": "Shop  Collector Wines",
-        "link_url": "https://www.ninetypluscellars.com/collections/collector-wines",
+        "link_url": "shopify://collections/collector-wines",
         "link_target": "_self",
         "script": "",
         "image": "shopify://shop_images/mt_veedeer.png"
