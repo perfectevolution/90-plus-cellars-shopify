@@ -38,7 +38,7 @@
         "layout": "swiper",
         "animated": true,
         "columns": "6",
-        "header": "For the sparkling wine lover...",
+        "header": "Bubblies for the sparkling wine lovers...",
         "collection": "lets-bubbly",
         "link_label": "Shop All Sparkling",
         "link_url": "shopify://collections/lets-bubbly",
