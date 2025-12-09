@@ -38,7 +38,7 @@
         "layout": "swiper",
         "animated": true,
         "columns": "6",
-        "header": "Bubblies for the sparkling wine lovers",
+        "header": "Bubblies for sparkling wine lovers",
         "collection": "lets-bubbly",
         "link_label": "Shop All Sparkling",
         "link_url": "shopify://collections/lets-bubbly",
@@ -53,7 +53,7 @@
         "header": "For the wine purist with top-notch taste...",
         "body": "<p>Gift two classics from Burgundy, the birth place of Pinot Noir and Chardonnay. Our Lot 217 Chablis and Lot 160 Bourgogne deliver crisp minerality, bright citrus, and silky red-fruit elegance that never fails to impress.</p>",
         "link_text": "Shop Burgundies",
-        "link_url": "shopify://products/lot-228-cremant-dalsace-france",
+        "link_url": "https://www.ninetypluscellars.com/collections/burgundy-wines",
         "link_target": "_self",
         "script": "",
         "image": "shopify://shop_images/90PLUS-CELLARS-APRL24-19.jpg"
