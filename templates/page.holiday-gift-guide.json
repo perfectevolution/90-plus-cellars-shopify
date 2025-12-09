@@ -59,6 +59,20 @@
         "image": "shopify://shop_images/90PLUS-CELLARS-APRL24-19.jpg"
       }
     },
+    "split_hero_mxPi7e": {
+      "type": "split-hero",
+      "settings": {
+        "section_id": "",
+        "image_position": "right",
+        "header": "For the Wine Collector...",
+        "body": "<p>Gift two classics from Burgundy, the birth place of Pinot Noir and Chardonnay. Our Lot 217 Chablis and Lot 160 Bourgogne deliver crisp minerality, bright citrus, and silky red-fruit elegance that never fails to impress.</p>",
+        "link_text": "Shop Burgundies",
+        "link_url": "https://www.ninetypluscellars.com/collections/burgundy-wines",
+        "link_target": "_self",
+        "script": "",
+        "image": "shopify://shop_images/90PLUS-CELLARS-APRL24-19.jpg"
+      }
+    },
     "featured_articles_Mq3GKN": {
       "type": "featured-articles",
       "blocks": {
@@ -238,6 +252,7 @@
     "split_hero_DiFj6p",
     "9cb040ee-0588-43ac-b7e0-85580e654bbe",
     "split_hero_U7EqjQ",
+    "split_hero_mxPi7e",
     "featured_articles_Mq3GKN",
     "content_callout_large_ER4Cyy",
     "featured_product_single_hrgeNn",
