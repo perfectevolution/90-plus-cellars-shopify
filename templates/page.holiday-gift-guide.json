@@ -18,6 +18,20 @@
         "body": "Great wine is one of the easiest holiday gifts you can give and we're here to help you choose the right bottle. Whether you’re shopping for the collector, the casual sipper, or the friend who loves anything bubbly, we have a bottle (or two) for everyone on your list."
       }
     },
+    "split_hero_DiFj6p": {
+      "type": "split-hero",
+      "settings": {
+        "section_id": "",
+        "image_position": "right",
+        "header": "The Gift That Keeps On Pouring",
+        "body": "<p>Treat someone special (or yourself) to a <strong>90+ Cellars Wine Club Membership!</strong> Get a 3, 6 or 12-bottle Red or Mixed Club delivered right to your door every season.</p>",
+        "link_text": "Learn More About Wine Club",
+        "link_url": "https://www.ninetypluscellars.com/pages/wine-club",
+        "link_target": "_self",
+        "script": "",
+        "image": "shopify://shop_images/WineClub-5.jpg"
+      }
+    },
     "9cb040ee-0588-43ac-b7e0-85580e654bbe": {
       "type": "featured-products",
       "settings": {
@@ -170,28 +184,14 @@
       "type": "blank",
       "settings": {}
     },
-    "split_hero_DiFj6p": {
-      "type": "split-hero",
-      "settings": {
-        "section_id": "",
-        "image_position": "right",
-        "header": "The Gift That Keeps On Pouring",
-        "body": "<p>Treat someone special (or yourself) to a <strong>90+ Cellars Wine Club Membership!</strong> Get a 3, 6 or 12-bottle Red or Mixed Club delivered right to your door every season.</p>",
-        "link_text": "Learn More About Wine Club",
-        "link_url": "https://www.ninetypluscellars.com/pages/wine-club",
-        "link_target": "_self",
-        "script": "",
-        "image": "shopify://shop_images/WineClub-5.jpg"
-      }
-    },
     "split_hero_bi3PUK": {
       "type": "split-hero",
       "settings": {
         "section_id": "",
         "image_position": "right",
-        "header": "The Gift That Keeps On Pouring",
+        "header": "For those looking to explore  the world of wine...",
         "body": "<p>Treat someone special (or yourself) to a <strong>90+ Cellars Wine Club Membership!</strong> Get a 3, 6 or 12-bottle Red or Mixed Club delivered right to your door every season.</p>",
-        "link_text": "Learn More About Wine Club",
+        "link_text": "Sign Up For Wine Club",
         "link_url": "https://www.ninetypluscellars.com/pages/wine-club",
         "link_target": "_self",
         "script": "",
@@ -221,13 +221,13 @@
   },
   "order": [
     "1f1b37aa-db83-4929-ae29-bd88a549b2ab",
+    "split_hero_DiFj6p",
     "9cb040ee-0588-43ac-b7e0-85580e654bbe",
     "featured_articles_Mq3GKN",
     "content_callout_large_ER4Cyy",
     "featured_product_single_hrgeNn",
     "featured_product_single_kB6QnT",
     "blank",
-    "split_hero_DiFj6p",
     "split_hero_bi3PUK",
     "cb9e57de-fa26-4fe7-b949-9f1cb02b117a",
     "social-proof-gallery"
