@@ -64,7 +64,21 @@
       "settings": {
         "section_id": "",
         "image_position": "right",
-        "header": "For the Wine Collector...",
+        "header": "For the wine collector...",
+        "body": "<p>Gift show-stopping Napa Valley Cabs worthy of any serious cellar. Our new, limited releases, Lot 234 Mt. Veeder and Lot 235 Yountville deliver deep dark fruit, balanced tannins, and a long, smooth finish—bottles that will only get better with time.</p>",
+        "link_text": "Shop  Collector Wines",
+        "link_url": "shopify://collections/collector-wines",
+        "link_target": "_self",
+        "script": "",
+        "image": "shopify://shop_images/mt_veedeer.png"
+      }
+    },
+    "split_hero_QK7ctt": {
+      "type": "split-hero",
+      "settings": {
+        "section_id": "",
+        "image_position": "left",
+        "header": "For the mindful drinker...",
         "body": "<p>Gift show-stopping Napa Valley Cabs worthy of any serious cellar. Our new, limited releases, Lot 234 Mt. Veeder and Lot 235 Yountville deliver deep dark fruit, balanced tannins, and a long, smooth finish—bottles that will only get better with time.</p>",
         "link_text": "Shop  Collector Wines",
         "link_url": "shopify://collections/collector-wines",
@@ -253,6 +267,7 @@
     "9cb040ee-0588-43ac-b7e0-85580e654bbe",
     "split_hero_U7EqjQ",
     "split_hero_mxPi7e",
+    "split_hero_QK7ctt",
     "featured_articles_Mq3GKN",
     "content_callout_large_ER4Cyy",
     "featured_product_single_hrgeNn",
