@@ -235,13 +235,13 @@
       "settings": {
         "section_id": "",
         "image_position": "right",
-        "header": "For those looking to explore  the world of wine...",
-        "body": "<p>Treat someone special (or yourself) to a <strong>90+ Cellars Wine Club Membership!</strong> Get a 3, 6 or 12-bottle Red or Mixed Club delivered right to your door every season.</p>",
-        "link_text": "Sign Up For Wine Club",
-        "link_url": "https://www.ninetypluscellars.com/pages/wine-club",
+        "header": "For the adventurous palate...",
+        "body": "<p>Lot 215 Orange Vino Bianco is bold, aromatic and sure to get the convo started at any holiday gathering. This orange wine made with extended skin contact hits the palate with a silky texture and zippy tropical fruit flavors.</p>",
+        "link_text": "Shop Orange Wine",
+        "link_url": "shopify://products/lot-215-orange-vino-bianco",
         "link_target": "_self",
         "script": "",
-        "image": "shopify://shop_images/WineClub-5.jpg"
+        "image": "shopify://shop_images/Rose-32.jpg"
       }
     },
     "split_hero_gPNkpU": {
