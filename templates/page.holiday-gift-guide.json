@@ -230,6 +230,15 @@
       "disabled": true,
       "settings": {}
     },
+    "basic_header_WGTLKU": {
+      "type": "basic-header",
+      "name": "Basic Header",
+      "settings": {
+        "section_id": "",
+        "header": "",
+        "background": "light"
+      }
+    },
     "split_hero_bi3PUK": {
       "type": "split-hero",
       "settings": {
@@ -291,6 +300,7 @@
     "featured_product_single_hrgeNn",
     "featured_product_single_kB6QnT",
     "blank",
+    "basic_header_WGTLKU",
     "split_hero_bi3PUK",
     "split_hero_gPNkpU",
     "cb9e57de-fa26-4fe7-b949-9f1cb02b117a",
