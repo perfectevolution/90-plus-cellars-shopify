@@ -14,7 +14,7 @@
       "settings": {
         "image": "shopify://shop_images/curved_hero_baa1f27a-00da-402a-8857-6d42f1e48a19.png",
         "mobile_image": "shopify://shop_images/mobile_1d51c3a8-ab6b-4f30-998f-92f9d971178c.png",
-        "header": "Holiday Gift Guide for Every Kind of Wine Lover",
+        "header": "The Best Wines For Holiday Gifting",
         "body": "Great wine is one of the best holiday gifts you can give, and we're here to help you choose the right bottle. Whether you’re shopping for the collector, the casual sipper, or the friend who loves bubbly, we have a bottle (or two) for everyone on your list."
       }
     },
@@ -85,6 +85,15 @@
         "link_target": "_self",
         "script": "",
         "image": "shopify://shop_images/LAT-BEV-NOV24-1.jpg"
+      }
+    },
+    "basic_header_Mqt4DB": {
+      "type": "basic-header",
+      "name": "Basic Header",
+      "settings": {
+        "section_id": "",
+        "header": "",
+        "background": "light"
       }
     },
     "featured_articles_Mq3GKN": {
@@ -295,6 +304,7 @@
     "split_hero_U7EqjQ",
     "split_hero_mxPi7e",
     "split_hero_QK7ctt",
+    "basic_header_Mqt4DB",
     "featured_articles_Mq3GKN",
     "content_callout_large_ER4Cyy",
     "featured_product_single_hrgeNn",
