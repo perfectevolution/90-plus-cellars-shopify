@@ -324,52 +324,36 @@
     "cca4bf33-9b2d-4410-83a9-fc13c47690e3": {
       "type": "article-grid",
       "blocks": {
-        "article_LxdKj9": {
-          "type": "article",
-          "settings": {
-            "article": "news/3-festive-sparkling-wine-cocktails-for-the-holidays"
-          }
-        },
         "article_JjhbhV": {
           "type": "article",
           "settings": {
             "article": "news/level-up-drink-better-wine-for-less-with-these-wine-hacks"
           }
         },
-        "article_He7tNp": {
-          "type": "article",
-          "settings": {
-            "article": "news/the-best-wines-for-the-holidays-make-it-sparkling"
-          }
-        },
-        "article_j3XPci": {
-          "type": "article",
-          "settings": {
-            "article": "news/holiday-gift-guide-for-every-type-of-wine-lover"
-          }
-        },
-        "article_rGVjqf": {
-          "type": "article",
-          "disabled": true,
-          "settings": {
-            "article": "news/the-best-low-alcohol-wines"
-          }
-        },
         "article_JrCXUw": {
           "type": "article",
-          "disabled": true,
           "settings": {
             "article": "news/our-favorite-naturally-low-calorie-wines"
+          }
+        },
+        "article_XNffGk": {
+          "type": "article",
+          "settings": {
+            "article": "news/3-sparkling-cocktails-under-100-calories"
+          }
+        },
+        "article_NKaart": {
+          "type": "article",
+          "settings": {
+            "article": "news/everything-you-need-to-know-about-non-alcoholic-wines"
           }
         }
       },
       "block_order": [
-        "article_LxdKj9",
         "article_JjhbhV",
-        "article_He7tNp",
-        "article_j3XPci",
-        "article_rGVjqf",
-        "article_JrCXUw"
+        "article_JrCXUw",
+        "article_XNffGk",
+        "article_NKaart"
       ],
       "settings": {
         "section_id": "",
