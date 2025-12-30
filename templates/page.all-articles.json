@@ -81,16 +81,16 @@
             "article": "news/an-italian-spread-food-wine-pairings-with-chianti-and-barolo"
           }
         },
-        "ece50542-f37a-4236-98e9-8d18f4adbccd": {
+        "article_FCf73y": {
           "type": "article",
           "settings": {
-            "article": "news/non-traditional-holiday-food-and-wine-pairings"
+            "article": "news/exploring-italy-s-piedmont-wines"
           }
         }
       },
       "block_order": [
         "article_z6LbDW",
-        "ece50542-f37a-4236-98e9-8d18f4adbccd"
+        "article_FCf73y"
       ],
       "settings": {
         "section_id": "food-and-wine-articles",
@@ -138,6 +138,7 @@
         "article_PFwYcV",
         "article_PMkPxQ"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "occasion-articles",
         "header": "Holiday Inspiration",
@@ -156,22 +157,22 @@
     "1ed7e9e7-7bc3-4fb7-a908-75b2df075e6b": {
       "type": "article-grid",
       "blocks": {
-        "article_cmezt6": {
-          "type": "article",
-          "settings": {
-            "article": "news/3-festive-sparkling-wine-cocktails-for-the-holidays"
-          }
-        },
         "311e2e11-723f-4c98-8804-9c36b60728ff": {
           "type": "article",
           "settings": {
             "article": "news/3-sparkling-cocktails-under-100-calories"
           }
+        },
+        "article_3nrma8": {
+          "type": "article",
+          "settings": {
+            "article": "news/3-festive-sparkling-wine-cocktails-for-the-holidays"
+          }
         }
       },
       "block_order": [
-        "article_cmezt6",
-        "311e2e11-723f-4c98-8804-9c36b60728ff"
+        "311e2e11-723f-4c98-8804-9c36b60728ff",
+        "article_3nrma8"
       ],
       "settings": {
         "section_id": "recipe-articles",
