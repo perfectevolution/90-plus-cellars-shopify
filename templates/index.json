@@ -210,11 +210,11 @@
           "type": "content",
           "settings": {
             "image": "shopify://shop_images/cheers.png",
-            "label": "Fall Favorites",
+            "label": "Winter Warmers",
             "title": "Sip On",
             "sub_header": "Seasonal Selections",
             "link_label": "Explore Wines",
-            "link_url": "https://www.ninetypluscellars.com/collections/fall-favorites",
+            "link_url": "https://www.ninetypluscellars.com/collections/winter-wines",
             "link_external": false
           }
         },
