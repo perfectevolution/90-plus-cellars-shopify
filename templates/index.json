@@ -52,7 +52,7 @@
         "theme": "light",
         "btn_color": "btn-outline-light",
         "layout": "bottom-right",
-        "mobile_layout": "bottom-right",
+        "mobile_layout": "top-left",
         "header": "Start the Year Off Light",
         "body": "",
         "image": "shopify://shop_images/26_90__HomePage_Hero_DryJan_Desktop_NARose_e89a3b4a-c006-48ac-8c32-a5f0fa930d0a.jpg",
