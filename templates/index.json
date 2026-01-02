@@ -50,7 +50,7 @@
       "settings": {
         "anchor_id": "",
         "theme": "light",
-        "btn_color": "btn-outline-light",
+        "btn_color": "btn-primary",
         "layout": "bottom-right",
         "mobile_layout": "top-left",
         "header": "Start the Year Off Light",
