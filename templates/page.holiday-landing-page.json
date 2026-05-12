@@ -25,12 +25,12 @@
     "featured_product_single_Pwy6dx": {
       "type": "featured-product-single",
       "settings": {
-        "product": "boston-rose-3",
+        "product": "boston-rose",
         "heading": "Boston Rosé",
         "subheading": "6th Edition",
         "description": "<p>For our 6th release of Boston Rosé, we're showcasing a quintessential Southern French rosé from Languedoc, France.</p>",
         "button_text": "View product",
-        "button_link": "shopify://products/boston-rose-3",
+        "button_link": "shopify://products/boston-rose",
         "button_target": "_self",
         "padding": "md"
       }
